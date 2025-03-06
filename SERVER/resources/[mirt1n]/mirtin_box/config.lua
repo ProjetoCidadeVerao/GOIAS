@@ -5,7 +5,7 @@ Config = {
     command = 'box', -- COMANDO PARA ABRIR
 
     dirs = { -- DIRETORIO DE IMAGENS
-        item = 'http://189.127.164.72/inventario/',
+        item = 'http://191.96.81.87/inventario/',
         car = 'http://177.54.148.31:4020/base/carros/',
         others = 'http://177.54.148.31:4020/others/'
     },

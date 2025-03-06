@@ -3,7 +3,7 @@
     "base": "vrpex",
     "client": {
         "bankType": "fleeca",
-        "uploadServer": "http://189.127.164.72:8080/upload",
+        "uploadServer": "http://191.96.81.87:8080/upload",
         "allowUnsafeURL": true,
         "videoServer": "auto",
         "case": "iphonexs",

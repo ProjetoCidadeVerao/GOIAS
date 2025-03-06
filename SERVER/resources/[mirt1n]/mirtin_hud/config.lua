@@ -240,7 +240,7 @@ Config = {
     
     NotifyItens = {
         eventName = "NotifyItem",
-        imgDir = "http://189.127.164.72/inventario/"
+        imgDir = "http://191.96.81.87/inventario/"
     }
 }
 

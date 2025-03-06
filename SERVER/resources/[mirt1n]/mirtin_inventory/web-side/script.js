@@ -147,7 +147,7 @@ const updateMochila = () => {
 
 			if (data.inventario[slot] !== undefined) {
 				const v = data.inventario[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 					<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 					<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -166,7 +166,7 @@ const updateMochila = () => {
 			if (nameList2[x - 1] !== undefined) {
 				const v = nameList2[x - 1];
 				
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-id="${v.id}" data-grid="${v.grid}" data-amount="${v.amount}" data-peso="${v.peso}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-id="${v.id}" data-grid="${v.grid}" data-amount="${v.amount}" data-peso="${v.peso}" data-slot="${slot}">
 				<div class="top">
 				<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 				<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -505,7 +505,7 @@ const requestVehicles = () => {
 
 			if (data.inventario[slot] !== undefined) {
 				const v = data.inventario[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -526,7 +526,7 @@ const requestVehicles = () => {
 			const slot = x.toString();
 			if (data.inventario2[slot] !== undefined) {
 				const v = data.inventario2[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -755,7 +755,7 @@ const requestOrgChest = () => {
 
 			if (data.inventario[slot] !== undefined) {
 				const v = data.inventario[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -776,7 +776,7 @@ const requestOrgChest = () => {
 			const slot = x.toString();
 			if (data.inventario2[slot] !== undefined) {
 				const v = data.inventario2[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -1006,7 +1006,7 @@ const requestHouseChest = () => {
 
 			if (data.inventario[slot] !== undefined) {
 				const v = data.inventario[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -1027,7 +1027,7 @@ const requestHouseChest = () => {
 			const slot = x.toString();
 			if (data.inventario2[slot] !== undefined) {
 				const v = data.inventario2[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -1260,7 +1260,7 @@ const requestStore = () => {
 			if (data.inventario[slot] !== undefined) {
 				const v = data.inventario[slot];
 				console.log(data.inventario)
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -1284,7 +1284,7 @@ const requestStore = () => {
 				if (v.buyPrice == 0) { v.buyPrice = "Free" } else if (v.buyPrice == undefined) { v.buyPrice = "Sem Estoque" } 		
 				if (v.sellPrice == 0) { v.sellPrice = "Free" } else if (v.sellPrice == undefined) { v.sellPrice = "Indisponivel" } 
 
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight"><b style="color: green;">B: </b>${v.buyPrice}<br><b style="color: red;">S:</b> ${v.sellPrice}</div>
 					</div>
@@ -1498,7 +1498,7 @@ const requestRevistar = () => {
 
 			if (data.inventario[slot] !== undefined) {
 				const v = data.inventario[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
@@ -1519,7 +1519,7 @@ const requestRevistar = () => {
 			const slot = x.toString();
 			if (data.inventario2[slot] !== undefined) {
 				const v = data.inventario2[slot];
-				const item = `<div class="item populated" style="background-image: url('http://189.127.164.72/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('http://191.96.81.87/inventario/${v.key}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
 						<div class="itemWeight">${(v.peso*v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>

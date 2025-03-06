@@ -2143,7 +2143,7 @@ Citizen.CreateThread(function()
 		content = '@everyone',
         embeds = {
             {
-                description = 'CIDADE GOIÁS ROLEPLAY ESTA ONLINE:\n\nF8 NO FIVEM E COLOQUE: \n\n connect 189.127.164.72',
+                description = 'CIDADE GOIÁS ROLEPLAY ESTA ONLINE:\n\nF8 NO FIVEM E COLOQUE: \n\n connect 191.96.81.87',
                 color = 2723266 -- Se quiser mudar a cor é aqui
             }
         }

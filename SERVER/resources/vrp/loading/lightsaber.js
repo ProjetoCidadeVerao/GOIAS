@@ -3,7 +3,7 @@ var playlist = [
 		"song"    : "Loading",
 		"album"   : "Loading",
 		"artist"  : "Loading",
-		"mp3"     : "http://189.127.164.72/Loading/audio.mp3"
+		"mp3"     : "http://191.96.81.87/Loading/audio.mp3"
 	}
 ];
 
