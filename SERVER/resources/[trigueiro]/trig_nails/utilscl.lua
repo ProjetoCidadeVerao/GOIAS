@@ -1,0 +1,11 @@
+Citizen.CreateThread(function()
+    local coords = NailShops[1]['coords']
+    local blip = AddBlipForCoord(coords[1],coords[2],coords[3])
+    SetBlipSprite(blip,75)
+    SetBlipAsShortRange(blip,true)
+    SetBlipColour(blip,48)
+    SetBlipScale(blip,0.5)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString('Nailshop')
+    EndTextCommandSetBlipName(blip)
+end)

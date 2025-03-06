@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/web/build/static/css/main.4ac12272.css",
+    "main.js": "/web/build/static/js/main.1957aa80.js",
+    "static/media/character.png": "/web/build/static/media/character.6ce76aa5f47ff79ad0d0.png",
+    "static/media/beep.mp3": "/web/build/static/media/beep.c2a64e554292f848f12b.mp3",
+    "static/media/target.svg": "/web/build/static/media/target.117bddb29a2f3a71f4190998ddf0e959.svg",
+    "static/media/attention.svg": "/web/build/static/media/attention.c627d22bebc31b0ee3a8a312d95bc208.svg",
+    "static/media/search.svg": "/web/build/static/media/search.ce68a212a2eed8310d7607c9f044b2b7.svg",
+    "static/media/x.svg": "/web/build/static/media/x.e11dcdbc57c871411541f10451c257a5.svg",
+    "static/media/person.svg": "/web/build/static/media/person.17811aef4649a24cfd71ded732f0919d.svg",
+    "index.html": "/web/build/index.html",
+    "static/media/arrow.svg": "/web/build/static/media/arrow.594be0165d38462f1d7f7dc0d432ef1f.svg",
+    "main.4ac12272.css.map": "/web/build/static/css/main.4ac12272.css.map",
+    "main.1957aa80.js.map": "/web/build/static/js/main.1957aa80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ac12272.css",
+    "static/js/main.1957aa80.js"
+  ]
+}

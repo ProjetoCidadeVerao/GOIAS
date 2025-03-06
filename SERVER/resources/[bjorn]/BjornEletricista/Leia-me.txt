@@ -1,0 +1,31 @@
+PT-BR
+
+• Sua base precisa rodar na build 2699 ou superior.
+
+• Como configurar: https://youtu.be/2P1YeOVzFzY
+
+
+• Caso queira o veiculo utilizado no vídeo basta pesquisar
+por uno no GTA V mods.
+
+DISCORD: https://discord.gg/PJRRHQtavX
+-----------------------------------------------
+
+EN-US (Translate)
+
+• Your base needs to run on build 2699 or higher.
+
+• How to configure (Use Subtitles): https://youtu.be/2P1YeOVzFzY
+
+
+• If you want the vehicle used in the video, just search
+por uno in GTA V mods.
+
+• To use the script in ESX, just go to the "ESXconfig.lua" file, rename it only to "config.lua" and replace it with the config inside the "BjornEletricista" folder! after that, open the fxmanifest file and remove the line that contains: "@vrp/lib/utils.lua" .
+
+• Unfortunately I couldn't test the ESX version and the adaptation was made based on ESX scripts.
+
+• If you need support or if the script needs adaptations for ESX, please contact us on discord below.
+
+
+DISCORD: https://discord.gg/PJRRHQtavX

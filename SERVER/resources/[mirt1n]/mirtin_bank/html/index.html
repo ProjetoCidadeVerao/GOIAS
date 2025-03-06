@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRTIN Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="top">
+            <div class="welcome">
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="text_welcome">
+                    <p>SEJA BEM-VINDO AO</p>
+                    <b>MIRTIN BANK</b>
+                </div>
+            </div>
+            <div class="outBank">
+                <p>SAIR</p>
+                <img src="images/outbank.png" alt="">
+            </div>
+        </div>
+        <div class="menu">
+            <div class="item_menu deposit" onclick="setAction('deposit')"></div>
+            <div class="item_menu withdraw" onclick="setAction('withdraw')"></div>
+            <div class="item_menu transfer" onclick="setAction('transfer')"></div>
+            <div class="item_menu fines" onclick="setAction('fines')"></div>
+        </div>
+
+        <div class="top_content">
+            <div class="graphic">
+                <div class="title">Grafico</div>
+                <canvas id="line-chart" width="450" height="160"></canvas>
+            </div>
+            <div class="action">
+                <div class="title">Depositar</div>
+                <input type="text" class="value" placeholder="Valor">
+                <input type="text" class="id" placeholder="Passaporte">
+                <div class="buttons">
+                    <div class="confirm" onclick="submit()">CONFIRMAR</div>
+                    <div class="reset">RESETAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_content">
+            <div class="card">
+                <div class="title">
+                    Dados Bancarios
+                </div>
+                <div class="item_card">
+                </div>
+            </div>
+            <div class="history">
+                <div class="title">Historico de Transações</div>
+                <div class="list_history">
+                    <div class="item_history par">
+                        <div class="action_history history_deposit">
+                            DEPOSITO
+                        </div>
+                        <div class="value_history">
+                            R$25.000
+                        </div>
+                        <div class="date_history">
+                            21/09/2022
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var myChart = new Chart(document.getElementById('line-chart').getContext('2d'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Saque', 'Deposito', 'Transferencia', 'Multas'],
+                datasets: [{
+                    label: 'Movimentações',
+                    data: [0,0,0,0],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                    ],
+                    options: {
+                        plugins: {
+                            legend: {
+                                display: false,
+                                labels: {
+                                    color: 'rgb(255, 99, 132)'
+                                }
+                            }
+                        }
+                    },
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

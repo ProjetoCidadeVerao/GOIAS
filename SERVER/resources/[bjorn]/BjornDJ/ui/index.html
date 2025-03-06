@@ -1,0 +1,74 @@
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">         
+    <title>Bjorn Dj</title>          
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://css.gg/css' rel='stylesheet'>
+  </head>
+  
+  <body onselectstart="return false">
+    <div class=bjorndj>
+      <div class=background>
+        <div  class="background">
+        </div>
+        
+        <div  class="backplaylist">
+        <div  class="listareproducao">
+          <div  class="grid" id="playlist" >                    
+             <li>B</li>
+             <li>J</li>
+             <li>O</li>
+             <li>R</li>
+             <li>N</li>
+          </div>    
+        </div>
+        <div  class="txtlistareproducao">
+          <span id="txt">LISTA DE REPRODUÇÃO</span>
+        </div>
+		</div>
+      </div>
+      <div class=botoes>
+        <button  class="play"></button>
+        <button  class="pause"></button>
+        <button  class="voltar"></button>
+        <button  class="pular"></button>
+        <button  class="avancar"></button>
+        <button  class="retroceder"></button>
+      </div>
+	  <div class="botaodance">
+		<button  class="danca"></button>
+	  </div>
+		
+		<input  class="linkform" id = "linkMsc" onselectstart="return true" placeholder="https://www.youtube.com/watch?v=xjeafrlFKF0"></input>
+		<button class="searchBtn"><i class="gg-add"></i></button>
+		
+      <img class="logo" src = "images/logo.png" alt="logo">
+
+      <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="20" class="volume" id="myRange">
+      </div>
+
+      <div class="Chks">
+        <label class="toggle">
+            <input id ="luz" class="toggle-checkbox" type="checkbox">
+            <div class="toggle-switch"></div>
+            <span class="toggle-label">Luzes    </span>
+        </label>
+        <label class="toggle">
+          <input id ="fumaca" class="toggle-checkbox" type="checkbox">
+          <div class="toggle-switch"></div>
+          <span class="toggle-label">Fumaça    </span>
+        </label>
+		<label class="toggle">
+          <input id ="fogos" class="toggle-checkbox" type="checkbox">
+          <div class="toggle-switch"></div>
+          <span class="toggle-label">Fogos</span>
+        </label>
+      
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

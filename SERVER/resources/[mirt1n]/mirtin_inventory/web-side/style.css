@@ -1,0 +1,306 @@
+*{margin: 0; padding: 0; user-select: none;}
+
+
+@font-face {
+    font-family: ablack;
+    src: url(fonts/ablack.otf);
+}
+
+
+@font-face {
+    font-family: aebold;
+    src: url(fonts/aebold.otf);
+}
+
+@font-face {
+    font-family: anormal;
+    src: url(fonts/anormal.ttf);
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.inventory{
+    display: none;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    font-family: anormal;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(13, 13, 22, 0.95) 0%, rgba(8, 9, 15, 0.93) 100%);
+    color: #fff;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contents{
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+    justify-content:  center;
+}
+
+.inv, .chest{
+    width: 37.6%;
+}
+
+.title{
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    font-weight: 800;
+    font-family: ablack;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+
+.pesoBau{
+    position: absolute;
+    top: 0.8vh;
+    left: 34.4vh;
+
+    font-size: 0.8vh;
+}
+
+.title::after{
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.59%, #FFFFFF 50.3%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.invLeft{
+    width: 100%;
+    height: 57.4vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.invRight{
+    width: 100%;
+    height: 57.4vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.item{
+    width: 5.5vw;
+    height: 8vw;
+    margin: 0.5%;
+    background: rgba(255, 255, 255, 0.2);
+
+    float: left;
+
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.item_name{
+    width: 100%;
+    min-height: 15%;
+
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size: 1.8vh !important;
+
+    background: #20129e80;
+}
+
+.middle{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.qtd{
+    width: 75%;
+    height: 6%;
+    text-align: center;
+    border: 0;
+    background: radial-gradient(125.58% 111.25% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.button{
+    width: 75%;
+    height: 6%;
+    text-align: center;
+    border: 0;
+    background: radial-gradient(125.58% 111.25% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+
+    transition: all .2s ease-in-out;
+}
+
+
+.hotkey{
+    width: 71vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 4vh;
+
+    display: none;
+}
+
+.list_keybar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.list_keybar .item{
+    width: 11.55vh;
+    height: 14vh;
+    margin: 0.5%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.button:hover{
+    transform: scale(1.05);
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.item:hover{
+    transform: scale(1.035);
+}
+
+.ldBar-label{
+    display: none;
+}
+
+
+.weight{
+    position: relative;
+    
+}
+
+
+.weight_bar{
+    width: 14vh !important;
+    height: 14vh !important;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.weight_info{
+    width: 14vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+
+
+    position: absolute;
+    top: 0;
+    left: .25vh;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.nivel{
+    width: 100%;
+    height: 3vh;
+    margin-top: 1vh;
+}
+
+.bars{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar{
+    width: 4vh;
+    height: 0.3vh;
+    background: #ffffff80;
+}
+
+.item_amount, .item_weight{
+    font-size: 1.6vh !important;
+}
+
+.item_amount{
+    margin-left: 0.6vh;
+}
+.item_weight{
+    margin-right: 0.6vh;
+}
+
+
+.on{
+    background-color: #fff;
+}
+
+.select_hover{
+    transform: scale(1.05);
+}
+
+.use, .send, .drop{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.item:hover{
+    filter: brightness(0.9);
+}

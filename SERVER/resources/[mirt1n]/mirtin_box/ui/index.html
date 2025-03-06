@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirtin Box | Por Boliva#0001 e Mirt1n</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="top">
+
+            <div class="title">
+                <h1>Sistema de</h1>
+                <p>CAIXAS</p>
+            </div>
+
+
+            <div class="menu">
+                <div class="item_menu item_menu_select" onclick="selectType(this, 'tuto')">INICIO</div>
+                <div class="item_menu " onclick="selectType(this, 'points')">POINTS</div>
+                <div class="item_menu" onclick="selectType(this, 'coins')">COINS</div>
+                <div class="item_menu" onclick="selectType(this, 'shop')">LOJA</div>
+                <div class="item_menu" onclick="selectType(this, 'ranking')">RANKING</div>
+                <div class="wallet wallet_points">
+                    <img src="images/points.png" alt="">
+                    <div class="saldo">
+                        <span>587</span> Points
+                    </div>
+                </div>
+                <div class="wallet wallet_coins">
+                    <img src="images/coins.png" alt="">
+                    <div class="saldo">
+                        <span>587</span> Coins
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content content_tuto">
+
+            <div class="timeRemaing"></div>
+
+            <h1>TUTORIAL</h1>
+
+
+            <div class="item_tuto">
+                <div class="id_tuto">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <span>Seja bem vindo ao tutorial do nosso <b>Sistema de BOX</b>, para ganhar moedas, basta ficar online,
+                    que você receberá seus <b>POINTS</b>.</span>
+            </div>
+            <div class="item_tuto">
+                <div class="id_tuto">
+                    <span>
+                        2
+                    </span>
+                </div>
+                <span>As moedas <b>COINS</b> são vendidas em nosso site, mas não são geradas a cada 30 minutos.</span>
+            </div>
+            <div class="item_tuto">
+                <div class="id_tuto">
+                    <span>
+                        3
+                    </span>
+                </div>
+                <span>Escolha a caixa que deseja, quanto mais cara, melhor os premios.</span>
+            </div>
+            <div class="item_tuto">
+                <div class="id_tuto">
+                    <span>
+                        4
+                    </span>
+                </div>
+                <span>Selecione a quantidade de caixas que deseja abrir, e pronto, só clicar em <b>GIRAR</b>.</span>
+            </div>
+            <div class="item_tuto">
+                <div class="id_tuto">
+                    <span>
+                        5
+                    </span>
+                </div>
+                <span>Também temos a LOJA, que você pode comprar itens, veiculos, vip, etc.</span>
+            </div>
+            <div class="item_tuto">
+                <div class="id_tuto">
+                    <span>
+                        6
+                    </span>
+                </div>
+                <span>Os itens variam, e podem ser vendidos por POINTS ou COINS.</span>
+            </div>
+        </div>
+
+        <div class="content content_roll">
+            <div class="menu">
+                <div class="list_menu">
+                    <div class="item_menu item_submenu_select">COMUM</div>
+                    <div class="item_menu">INCOMUM</div>
+                    <div class="item_menu">RARA</div>
+                    <div class="item_menu">EPICA</div>
+                    <div class="item_menu">LENDARIA</div>
+                </div>
+
+            </div>
+            <div class="roll">
+                <div class="list_roll">
+                </div>
+            </div>
+            <div class="action_roll">
+                <div class="cost">
+                    <h3>CUSTO</h3>
+                    <div class="wallet">
+                        <img src="images/coins.png" alt="">
+                        <div class="saldo">
+                            <span>587</span> <b>Points</b>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="girar" onclick="roll()">GIRAR</button>
+
+                <div class="times">
+                    <div class="time oneTime selected_time_box" onclick="timesBox(1, this)">1x</div>
+                    <div class="time" onclick="timesBox(2, this)">2x</div>
+                    <div class="time" onclick="timesBox(3, this)">3x</div>
+                    <div class="time" onclick="timesBox(4, this)">4x</div>
+                    <div class="time" onclick="timesBox(5, this)">5x</div>
+                    <div class="time" onclick="timesBox(6, this)">6x</div>
+                </div>
+            </div>
+
+            <div class="options">
+                <h2>RECOMPENSAS</h2>
+                <p>CAIXA SELECIONADA: <b class="selected_Box">COMUM</b></p>
+                <div class="list_options">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content content_shop">
+            <div class="title">
+                <h3>LOJA</h3>
+            </div>
+
+            <div class="list_shop">
+
+            </div>
+        </div>
+        
+        <div class="content_Ranking">
+            <div class="remainingTime">
+                <h3>Tempo Restante</h3>
+                <div class="time">
+                    
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Nome</th>
+                        <th>ID</th>
+                        <th>Total de Horas</th>
+                        <th>Premiação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="modal_points">
+    </div>
+
+
+    <div class="modal_shop">
+        <div class="content">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    color: #fff;
+    overflow: hidden;
+    text-shadow: 0px 2px 2px rgba(12, 77, 3, 0.25);
+}
+
+body, input, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#notwhitelisted {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #FC0000;
+    text-align: center;
+}
+
+#warn {
+    font-weight: 600;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+#instrucoes {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#content img {
+    width: 25vw;
+    height: 25vh;
+}
+
+#idarea { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+#id {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    color: white;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#acessardc {
+    color: white;
+    border: 0;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background: #523BE3;
+    cursor: pointer;
+    box-shadow: 1px 9px 10px rgba(82, 59, 227, 0.25);
+}
+
+#acessardc:hover {
+    opacity: 0.5;
+}
+
+#confirm {
+    color: white;
+    border: 0;
+    width: 12rem;
+    height: 3rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    background: #1DEC32;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 1px 10px 10px rgba(29, 236, 50, 0.25);
+}
+
+#confirm:hover {
+    opacity: 0.5;
+}
