@@ -3001,7 +3001,7 @@ Garages.List = {
         
         coords = vec3(-461.52,-1030.65,38.3),
         spawnCoords = {
-            vector4(-453.58,-1029.79,38.4),
+            vector4(-453.58,-1029.79,38.4,337.69),
         },
     
         vehicles = {

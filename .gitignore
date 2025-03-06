@@ -3,6 +3,7 @@ SERVER/resources/\[auth\]/hydrus-v2/latest.log
 SERVER/resources/\[mods\]
 SERVER/resources/\[roupas\]
 SERVER/cache/
+SERVER/selfgur/
 SERVER/config.cfg
 SERVER/db
 SERVER/.replxx_history
