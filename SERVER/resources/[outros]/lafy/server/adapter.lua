@@ -8,10 +8,11 @@ exports('hasPermission', function(source, permission)
 
     local user_id = vRP.getUserId(source) or vRP.Passport(source)
     if user_id then
+      if permission == 'nil.permissao' then 
+        return true 
+      end
       return (
-        vRP.hasPermission(user_id, permission)
-        or
-        vRP.HasPermission(user_id, permission)
+        vRP.hasPermission(user_id, permission) or vRP.HasPermission(user_id, permission) or vRP.hasGroup(user_id, permission) or vRP.HasGroup(user_id, permission)
       )
     end
   elseif GetResourceState('nyo_modules') == 'started' then

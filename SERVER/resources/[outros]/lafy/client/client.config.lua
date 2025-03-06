@@ -6,17 +6,6 @@ Config = {
   realismIgnore = {
     [`amarokbr`] = true,
   },
-
-  -- Com o modo paranoia ativo, toda imagem de música/álbum será ocultada
-  paranoia = false,
-
-  -- Permite a busca de músicas com letras explícitas
-  -- Este filtro não é infalível, algumas produtoras ignoram essa opção
-  allowExplicit = true,
-
-  -- Bloqueia certas palavras da busca
-  -- Todos os bloqueios precisam ser minusculos
-  blockedWords = { 'gemidao', 'gemidão' },
   
   -- Volume máximo, é bom aumentar este valor quando muitos jogadores reclamarem de som baixo
   -- Valor mínimo 0, Valor máximo 1
@@ -33,11 +22,7 @@ Config = {
 
   -- Lista de coordenadas de interiores onde o som será desabilitado (precisa ser dentro do interior)
   blockedInteriors = {
-    --vector3(148.95, -1039.27, 29.37), -- Banco da praça
-  },
-
-  blockedZones = {
-    -- [vector3(0, 0, 0)] = 100, -- Na coordenada [0,0,0], em um raio de 0 metros, ninguém pode ouvir o lafy
+    vector3(148.95, -1039.27, 29.37), -- Banco da praça
   },
 
   isWindowsOpen = function(vehicle)
