@@ -27,6 +27,7 @@ Config = {
                 { org = "Buenavista", permission = "perm.buenavista" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
                 { org = "Franca", permission = "perm.franca" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
                 { org = "Grota", permission = "perm.grota" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "WEB", permission = "perm.web" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
                 { org = "Vanilla", permission = "perm.redline" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
             },
             -- fala pra eles dominar ok

@@ -44,17 +44,17 @@
         {
             "name": "Paramédico",
             "number": "192",
-            "permission": "perm.unizk"
+            "permission": "perm.hospital"
         },
         {
             "name": "Mecanica",
             "number": "105",
-            "permission": "perm.mecanica"
+            "permission": "perm.mecanico"
         },
         {
             "name": "Admin",
             "number": "1",
-            "permission": "ticket.permissao"
+            "permission": "suporte.permissao"
         }
     ],
     "base": "vrpex",

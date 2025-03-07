@@ -2567,7 +2567,7 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'energy450'},
+            {vehicle = 'kuruma'},
             {vehicle = 'sanchez'},
 
         },
@@ -2583,7 +2583,7 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'energy450'},
+            {vehicle = 'kuruma'},
             {vehicle = 'sanchez'},
 
         },
@@ -2615,7 +2615,7 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'energy450'},
+            {vehicle = 'kuruma'},
             {vehicle = 'sanchez'},
 
         },
@@ -2649,7 +2649,7 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'energy450'},
+            {vehicle = 'kuruma'},
             {vehicle = 'sanchez'},
 
         },
@@ -3846,5 +3846,48 @@ Garages.List = {
             vector4(193.69,-881.34,85.63,337.69),
         },
     },
+    [220] = {
+        type = "service", -- public / service [ tipo da garagem ] -- fac web
+        permiss = "perm.web", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(1275.29,-850.15,75.39),
+        spawnCoords = {
+            vector4(1268.76,-853.0,75.39,355.63),
+        },
+    
+        vehicles = {
+            {vehicle = 'kuruma'},
+            {vehicle = 'sanchez'},
+
+        },
+    },
+    [212] = {
+        type = "public", -- public / service [ tipo da garagem ] -- buena vista
+        permiss = nil, -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(1260.18,-873.75,75.39),
+        spawnCoords = {
+            vector4(1265.71,-875.19,75.39,342.12),
+        },
+    },
+    [22] = {
+        type = "service", -- public / service [ tipo da garagem ] -- fac web
+        permiss = "perm.helicoptero", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(1288.09,-852.32,78.45),
+        spawnCoords = {
+            vector4(1284.6,-843.15,78.45,81.22),
+        },
+    
+        vehicles = {
+            {vehicle = 'volatus'},
+            {vehicle = 'supervolito'},
+
+        },
+    },
     
 }  
+

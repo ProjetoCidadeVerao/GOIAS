@@ -7,7 +7,7 @@ SERVER/resources/\verpi_sp_legion/
 SERVER/resources/\pack_favelas_2_cp/
 
 SERVER/resources/\pacific_bluffs_resort/
-SERVER/resources/\AKIRA_RoupasV1Bruxo/
+SERVER/resources/\AKIRA_RoupasV1Bruxo/stream/
 SERVER/resources/\[Carros\]
 SERVER/resources/\[stream\]
 SERVER/resources/\[vehs\]
@@ -18,7 +18,8 @@ SERVER/resources/[outros]/\anime_eb/
 SERVER/resources/\[outros]/\AdultoAndradeRelikiaShop/
 SERVER/resources/\[mansao\]
 SERVER/resources/\pablos_restaurante/
-
+SERVER/resources/\one_praca/
+SERVER/resources/\[EB\]
 SERVER/cache/
 SERVER/selfgur/
 SERVER/config.cfg
