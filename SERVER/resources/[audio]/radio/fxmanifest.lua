@@ -1,4 +1,5 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
+shared_script "@EQPG/shared.lua"
+
 shared_script '@likizao_ac/client/library.lua'
 fx_version 'adamant'
 games { 'gta5' }

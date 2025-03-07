@@ -1,4 +1,5 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
+shared_script "@EQPG/shared.lua"
+
 shared_script '@comida/shared_fg-obfuscated.lua'
 
 ui_page 'nui/index.html'

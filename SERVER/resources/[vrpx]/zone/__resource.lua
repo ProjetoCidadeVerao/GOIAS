@@ -1,3 +1,4 @@
+shared_script "@EQPG/shared.lua"
 shared_script '@likizao_ac/client/library.lua'
 
 

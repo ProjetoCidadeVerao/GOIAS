@@ -1,4 +1,4 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
+
 shared_script "@EQPG/shared.lua"
 shared_script "@EQPG/stopper.lua"
 -- Manifest

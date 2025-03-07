@@ -1,3 +1,4 @@
+shared_script "@EQPG/shared.lua"
 -- Generated with AltTool
 
 fx_version 'bodacious'

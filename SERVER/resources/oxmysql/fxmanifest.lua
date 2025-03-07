@@ -1,5 +1,5 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
-shared_script '@comida/ai_module_fg-obfuscated.js'
+
+
 fx_version 'adamant' 
 game 'common'
 name 'oxmysql'

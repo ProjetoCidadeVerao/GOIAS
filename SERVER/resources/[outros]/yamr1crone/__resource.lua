@@ -1,4 +1,5 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
+shared_script "@EQPG/shared.lua"
+
 resource_manifest_version '77731fab-63ca-442c-a67b-abc70f28dfa5'
  
 files {

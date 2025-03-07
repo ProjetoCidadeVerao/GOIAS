@@ -1,4 +1,4 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
+
 fx_version 'cerulean'
 lua54 'yes'
 game 'gta5'

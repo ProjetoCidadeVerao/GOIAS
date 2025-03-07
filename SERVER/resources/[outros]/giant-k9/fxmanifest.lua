@@ -1,4 +1,5 @@
-shared_script '@comida/ai_module_fg-obfuscated.lua'
+shared_script "@EQPG/shared.lua"
+
 fx_version 'cerulean'
 game 'gta5'
 author 'AngelicXS'
