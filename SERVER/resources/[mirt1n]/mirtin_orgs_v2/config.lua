@@ -1158,8 +1158,8 @@ Config.Groups = {
                 prefix = 'Gerente',
                 tier = 3
             },
-            ['Irmão [WEB]'] = {
-                prefix = 'Irmão',
+            ['Membro [WEB]'] = {
+                prefix = 'Membro',
                 tier = 4
             },
         }

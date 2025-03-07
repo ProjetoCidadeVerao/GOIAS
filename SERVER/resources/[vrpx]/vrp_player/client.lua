@@ -717,6 +717,7 @@ local pedlist = {
 	{ ['x'] = -656.65, ['y'] = -858.77, ['z'] = 24.5, ['h'] = 353.72, ['hash'] = 0x69E8ABC3, ['hash2'] = "cs_tom" },
 	{ ['x'] = 77.38, ['y'] = -1387.68, ['z'] = 29.38, ['h'] = 178.121, ['hash'] = 0xC7496729, ['hash2'] = "a_f_y_runner_01"},
 	{ ['x'] = 705.58, ['y'] = -965.82, ['z'] = 30.4, ['h'] = 277.11, ['hash'] = 0x4D5696F7, ['hash2'] = "mp_m_bogdangoon"},
+	{ ['x'] = -1605.81, ['y'] = -1049.07, ['z'] = 13.04, ['h'] = 131.69, ['hash'] = 0x4D5696F7, ['hash2'] = "mp_m_bogdangoon"},
 
 	{ ['x'] = -438.68, ['y'] = -324.54, ['z'] = 34.92, ['h'] = 152.81, ['hash'] = 0xD47303AC, ['hash2'] = "s_m_m_doctor_01"},
 } 
@@ -1291,13 +1292,24 @@ local vehicleData = {
         rotationSpeed = 0.1
     },
 	{
-        model = "BC_gt3hycade",   -- CARRO DA PRAÇA
+        model = "BC_gt3hycade",   -- CARRO DA PRAÇA	
         name = "BC_gt3hycade",
         x = 264.85,
         y = -77.76,
         z = 69.39,
         heading = 0.0,
         rotationPoint = vector3(160.78,-1004.82,29.47),
+        rotationSpeed = 0.1
+    },
+
+	{
+        model = "saveirodeboxe",   -- CARRO PIER  
+        name = "saveirodeboxe",
+        x = -1613.09,
+        y = -1049.4,
+        z = 13.09,
+        heading = 0.0,
+        rotationPoint = vector3(-1613.64,-1047.85,13.11),
         rotationSpeed = 0.1
     },
 }  

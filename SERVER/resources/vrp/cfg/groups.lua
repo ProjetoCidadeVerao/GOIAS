@@ -34,6 +34,7 @@ cfg.groups = {
 	["Black"] = { _config = { gtype = "Black", salario = 22000 }, "perm.vips", "perm.black", "perm.som", "perm.verificado", "perm.mochila", "perm.helivip", "perm.reparo" },
 	["Passe"] = { _config = { gtype = "Passe", salario = 0 }, "perm.passedebatalha2" },
 	["Som"] = { _config = { gtype = "Som", salario = 0 }, "perm.som" },
+	["inicialvip"] = { _config = { gtype = "Vip Inicial", salario = 3000 }, "perm.som", "perm.inicial" },
 	["Dj"] = { _config = { gtype = "Dj", salario = 0 }, "perm.som1" },
 	["Salario1"] = { _config = { gtype = "Salario1", salario = 10000 }, "perm.salario1" },
 	["Salario2"] = { _config = { gtype = "Salario2", salario = 20000 }, "perm.salario1" },
