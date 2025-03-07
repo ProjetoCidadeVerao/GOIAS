@@ -92,8 +92,8 @@ end
 -- Comando para abrir o menu
 EQPG.acmenu = "acmenu"
 -- Permissões para notifys
-EQPG.notify = {"admin.permissao","Admin"}
+EQPG.notify = {"admin.permissao","suporte.permissao"}
 -- Permissões para acessar o painel
-EQPG.painel = {"admin.permissao","Admin"}
+EQPG.painel = {"admin.permissao","suporte.permissao"}
 -- Permissões para funções do painel
-EQPG.functions = {"admin.permissao","Admin"}
+EQPG.functions = {"admin.permissao","suporte.permissao"}

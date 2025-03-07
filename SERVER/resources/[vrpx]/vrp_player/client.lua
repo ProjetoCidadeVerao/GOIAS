@@ -1678,3 +1678,18 @@ CreateThread( function()
 	  RestorePlayerStamina(PlayerId(), 1.0)
 	end
 end)
+
+----ATIRAR DENTRO DO CARRO
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(500) -- Executa a cada frame
+        local playerPed = PlayerPedId()
+
+        if IsPedInAnyVehicle(playerPed, false) then
+            DisableControlAction(0, 24, true) -- Bloqueia tiro (botão esquerdo do mouse)
+            DisableControlAction(0, 25, true) -- Bloqueia mira (botão direito do mouse)
+            DisableControlAction(0, 68, true) -- Bloqueia tiro de arma secundária
+            DisableControlAction(0, 91, true) -- Bloqueia tiro de sniper
+        end
+    end
+end)
