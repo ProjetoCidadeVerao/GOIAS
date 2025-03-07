@@ -1,0 +1,20 @@
+DP.Emotes = {
+        -----memo officer v.1 set----
+        ["memoanim_OFC_01"] = {"memoanims@officerv1_01", "officerv1_01", "memoofficerv1_01", AnimationOptions =
+        {
+        EmoteLoop = true,
+        EmoteMoving = false,
+        }},
+        ["memoanim_OFC_02"] = {"memoanims@officerv1_02", "officerv1_02", "memoofficerv1_02", AnimationOptions =
+        {
+        EmoteLoop = true,
+        EmoteMoving = false,
+        }},
+        ["memoanim_OFC_03"] = {"memoanims@officerv1_03", "officerv1_03", "memoofficerv1_03", AnimationOptions =
+        {
+        EmoteLoop = true,
+        EmoteMoving = false,
+        }},
+       
+       
+

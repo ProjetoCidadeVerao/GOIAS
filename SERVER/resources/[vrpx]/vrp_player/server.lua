@@ -495,7 +495,7 @@ function src.checkAttachs()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		if vRP.hasPermission(user_id, "perm.vips") or vRP.hasPermission(user_id, "perm.booster") then
+		if vRP.hasPermission(user_id, "perm.vips") or vRP.hasPermission(user_id, "perm.booster") or vRP.hasPermission(user_id, "perm.inicial") then
 			return true
 		end
 	end
