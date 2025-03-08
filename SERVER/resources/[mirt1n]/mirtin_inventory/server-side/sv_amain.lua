@@ -1899,6 +1899,12 @@ function src.checkOpenRevistar(AdminMode, PlyId)
 					return
 				end
 
+				if vRP.hasPermission(nuser_id, "ticket.permissao")  then
+					print("passando por aqui")
+					TriggerClientEvent("Notify",source,"negado","VOCE NÃO PODE REVISTAR STAFF EM SERVIÇO, REPORTE SE ESTIVER EM RP.", 3)
+					return
+				end
+
 				if vRP.hasPermission(nuser_id, "perm.policiacivil")  then
 					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um policia em patrulhamento.", 3)
 					return
