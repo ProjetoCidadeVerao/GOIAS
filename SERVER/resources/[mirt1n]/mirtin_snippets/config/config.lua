@@ -208,8 +208,18 @@ config.doors = {
 -- maze bank
     { text = true, hash = 220394186, ['x'] = -75.13, ['y'] = -822.21, ['z'] = 243.38, lock = true, perm = "perm.prf" },
     { text = true, hash = 220394186, ['x'] = -74.54, ['y'] = -821.86, ['z'] = 243.38, lock = true, perm = "perm.prf" },
-    
-     -- ,,
+    { text = true, hash = -436860425, ['x'] = -2658.36, ['y'] = 2365.59, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2655.19, ['y'] = 2364.93, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2651.89, ['y'] = 2364.4, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2648.49, ['y'] = 2363.69, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2647.95, ['y'] = 2366.75, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2654.49, ['y'] = 2368.11, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2650.21, ['y'] = 2377.24, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2651.07, ['y'] = 2373.57, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2649.01, ['y'] = 2384.77, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+    { text = true, hash = -436860425, ['x'] = -2647.06, ['y'] = 2392.2, ['z'] = 18.82, lock = true, perm = "perm.prf" },
+ 
+     -- ,, 
      
      
 }  
