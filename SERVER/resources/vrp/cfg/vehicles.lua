@@ -364,6 +364,7 @@ configVehicles.list = {
     { name = "chargerf8", nome = "chargerf8", price = 300000, portamalas = 10, tipo = "vip", quantidade = 100, hash =  -698663530, vendivel = false },
     { name = "hellcatf9", nome = "hellcatf9", price = 300000, portamalas = 10, tipo = "vip", quantidade = 100, hash =  701647779, vendivel = false },
     { name = "q8prior", nome = "q8prior", price = 300000, portamalas = 10, tipo = "vip", quantidade = 100, hash =  571788523, vendivel = false },
+	{ name = "m4hardcore", nome = "m4hardcore", price = 300000, portamalas = 10, tipo = "vip", quantidade = 100, hash =  571788523, vendivel = false },
 	{ name = "amarok", nome = "amarok", price = 300000, portamalas = 10, tipo = "vip", quantidade = 100, hash =  493030188, vendivel = false },
 	{ name = "160chumbo", nome = "160chumbo", price = 300000, portamalas = 10, tipo = "moto", quantidade = 100, hash =  -2063308561, vendivel = false },
 	{ name = "samumav", nome = "samumav", price = 300000, portamalas = 10, tipo = "vip", quantidade = 100, hash =  1084099044, vendivel = false },

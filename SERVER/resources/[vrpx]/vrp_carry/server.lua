@@ -540,6 +540,7 @@ configVehicleslist = {
 	{ name = "HellcatRed", nome = "HellcatRed", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("HellcatRed"), vendivel = false },
 	{ name = "vironmichalski", nome = "vironmichalski", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100000, hash = GetHashKey("vironmichalski"), vendivel = false },
 	{ name = "cbtwister22k", nome = "cbtwister22k", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("cbtwister22k"), vendivel = false },
+	{ name = "m4hardcore", nome = "m4hardcore", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("m4hardcore"), vendivel = false },
 }
 
 

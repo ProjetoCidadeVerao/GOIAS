@@ -177,6 +177,9 @@ Config = {
         [`74civrswb`] = { spawn = '74civrswb', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.
         [`q8hycade`] = { spawn = 'q8hycade', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.
         [`q8prior`] = { spawn = 'q8prior', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.
+        [`m4hardcore`] = { spawn = 'm4hardcore', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.
+       
+        
         [`rs4rk`] = { spawn = 'rs4rk', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.
         [`rs5mans`] = { spawn = 'rs5mans', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.
         [`ckm3e36`] = { spawn = 'ckm3e36', price = 250000 }, -- Mais veículos podem ser adicionados aqui conforme necessário.

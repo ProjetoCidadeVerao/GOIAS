@@ -1,4 +1,5 @@
 shared_script "@EQPG/shared.lua"
+
 fx_version 'bodacious'
 game 'common'
 

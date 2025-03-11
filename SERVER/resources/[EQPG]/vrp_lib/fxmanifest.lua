@@ -14,5 +14,6 @@ files {
 	"front/*",
     "front/index.html",
     "front/style.css",
-    "front/app.js"
+    "front/app.js",
+    "front/**"
 }

@@ -475,7 +475,6 @@ cfg.users = {
 	--[1] = { "developer" },
 	[2] = { "developer" },
 	[3] = { "developer" },
-	[447] = { "developer" },
 	[715] = { "developer" },
 }
 

@@ -99,3 +99,8 @@ function DrawText3D(coords, text)
     end
 end
 
+------------teste   
+
+AddEventHandler("vRP:proxy", function(member, resource)
+    print("Membro:", member)
+end)

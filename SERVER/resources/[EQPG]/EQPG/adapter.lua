@@ -7,13 +7,12 @@ EQPG.request = false
 -------------------------------------
 -- ## Instalação proxy
 -------------------------------------
-EQPG.event = "SafeProxyRozeira"
+EQPG.event = "SafeProxy"
 
 -------------------------------------
--- Máximo de muni - Distância freecam
+-- Máximo de muni
 -------------------------------------
 EQPG.maxammo = 250
-EQPG.maxfreecam = 50
 
 -------------------------------------
 -- Proxys protegidas
@@ -22,12 +21,14 @@ EQPG.proxys = {
     "giveWeapons",
     "toggleHandcuff",
     "setHealth",
+    "setHealthspawn",
     "setArmour",
     "killGod",
     "giveMoney",
     "giveBankMoney",
     "setBankMoney",
-    "giveInventoryItem"
+    "giveInventoryItem",
+    "toggleCapuz"
 }
 
 -------------------------------------
@@ -61,7 +62,6 @@ EQPG.play_sound = true
 EQPG.aimbot = true
 EQPG.noclip = true
 EQPG.noclip_2 = true
-EQPG.freecam = true
 EQPG.spectate = true
 EQPG.silent = true
 EQPG.pickups = true
@@ -92,8 +92,8 @@ end
 -- Comando para abrir o menu
 EQPG.acmenu = "acmenu"
 -- Permissões para notifys
-EQPG.notify = {"admin.permissao","suporte.permissao"}
+EQPG.notify = {"admin.permissao","Admin"}
 -- Permissões para acessar o painel
-EQPG.painel = {"admin.permissao","suporte.permissao"}
+EQPG.painel = {"admin.permissao","Admin"}
 -- Permissões para funções do painel
-EQPG.functions = {"admin.permissao","suporte.permissao"}
+EQPG.functions = {"admin.permissao","Admin"}
