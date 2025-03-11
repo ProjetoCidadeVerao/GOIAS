@@ -776,12 +776,12 @@ Config.Locations = {
     },
 
     {
-        permission = 'desmanchecamorra.permissao', -- Permissão para acessar
+        permission = 'perm.madregermano', -- Permissão para acessar
         percentual = 40, -- 10% do valor do veiculo
         
         coords = {
-            blip = vec3(-280.21, -2689.71, 6.15),
-            shelves = vec4(-280.79,-2683.72,6.15,226.78)
+            blip = vec3(-1232.1,812.13,193.39),
+            shelves = vec4(-1228.64,845.08,193.37,316.15)
         },
     },
 

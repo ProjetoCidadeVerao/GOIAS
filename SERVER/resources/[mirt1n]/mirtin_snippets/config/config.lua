@@ -118,6 +118,9 @@ config.doors = {
     { text = true, hash = -1186396713, ['x'] = 139.3, ['y'] = 335.77, ['z'] = 116.6, lock = true, perm = "perm.vilacanaa" },
     { text = true, hash = -1953149158, ['x'] = 134.44, ['y'] = 324.59, ['z'] = 116.6, lock = true, perm = "perm.vilacanaa" },
 
+    { text = true, hash = 1286535678, ['x'] = -1265.72, ['y'] = 848.27, ['z'] = 190.76, lock = true, perm = "perm.madregermano" },
+    
+
     { text = true, hash = 1277875019, ['x'] = -383.86, ['y'] = 213.92, ['z'] = 83.66, lock = true, perm = "perm.nextlevel" },
     { text = true, hash = 1277875019, ['x'] = -384.6, ['y'] = 214.73, ['z'] = 83.66, lock = true, perm = "perm.nextlevel" },
     { text = true, hash = 214586378, ['x'] = -372.25, ['y'] = 194.08, ['z'] = 84.06, lock = true, perm = "perm.nextlevel" },
@@ -129,8 +132,8 @@ config.doors = {
     { text = true, hash = 993120320, ['x'] = -564.55, ['y'] = 275.99, ['z'] = 83.1, lock = true, perm = "perm.tequila" },
 
 
-    { text = true, hash = -1186396713, ['x'] = -1520.63, ['y'] = 849.29, ['z'] = 181.59, lock = true, perm = "perm.mafia" },
-    { text = true, hash = -1186396713, ['x'] = -1500.15, ['y'] = 853.77, ['z'] = 181.59, lock = true, perm = "perm.mafia" },
+    { text = true, hash = 1286535678, ['x'] = 819.59, ['y'] = 971.93, ['z'] = 240.87, lock = true, perm = "perm.mafia" },
+    { text = true, hash = 1286535678, ['x'] = 669.51, ['y'] = 950.73, ['z'] = 247.69, lock = true, perm = "perm.mafia" },
 
     { text = true, hash = -626684119, ['x'] = 2519.04, ['y'] = 4107.1, ['z'] = 38.59, lock = true, perm = "perm.roses" },
     { text = true, hash = -626684119, ['x'] = 2520.28, ['y'] = 4106.37, ['z'] = 38.59, lock = true, perm = "perm.roses" },
@@ -223,7 +226,6 @@ config.doors = {
     { text = true, hash = 21324050, ['x'] = 925.96, ['y'] = 46.69, ['z'] = 81.11, lock = true, perm = "perm.cassino" },
     { text = true, hash = 21324050, ['x'] = 923.83, ['y'] = 43.34, ['z'] = 81.1, lock = true, perm = "perm.cassino" },
     { text = true, hash = 21324050, ['x'] = 924.62, ['y'] = 44.14, ['z'] = 81.11, lock = true, perm = "perm.cassino" },
-    { text = true, hash = -436860425, ['x'] = -2647.06, ['y'] = 2392.2, ['z'] = 18.82, lock = true, perm = "perm.cassino" },
  
      -- ,, 
      

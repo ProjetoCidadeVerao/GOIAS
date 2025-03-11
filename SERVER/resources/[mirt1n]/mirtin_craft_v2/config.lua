@@ -1,5 +1,5 @@
 Config = {
-     images = 'http://177.54.148.31:4020/inventario/', -- URL DAS SUAS IMAGENS
+     images = 'http://191.96.81.87/inventario/', -- URL DAS SUAS IMAGENS
      storeLink = '',                                   -- LINK DA SUA LOJA
      dirtymoney = 'dirty_money', -- SPAWN DO DINHEIRO SUJO
   
@@ -1430,7 +1430,7 @@ Config = {
 
                {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'Mafia',
-                         coords = vec3(-3278.17,580.11,6.13), -- COORDENADAS DA BANCADA
+                         coords = vec3(677.29,906.14,242.52), -- COORDENADAS DA BANCADA
 
                          requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
                               active = true,
@@ -1961,6 +1961,13 @@ Config = {
 
           -- LAVAGEM
           ['RedLine'] = {
+               itens = {
+                    ['dirty_money'] = 99999999999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+                    ['l-alvejante'] = 99999999999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+               },
+          },
+
+          ['Cassino'] = {
                itens = {
                     ['dirty_money'] = 99999999999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                     ['l-alvejante'] = 99999999999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR

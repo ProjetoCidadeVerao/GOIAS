@@ -1732,15 +1732,14 @@ Garages.List = {
         permiss = "perm.mafia", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(376.09,-13.95,82.99),
+        coords = vec3(635.53,954.22,247.57 ),
         spawnCoords = {
-            vector4(372.61,-12.68,82.99,34.89),
+            vector4(639.55,951.54,247.57,255.0),
         },
     
         vehicles = {
-            {vehicle = 'q820'},
-            {vehicle = 'tiger800'},
-            {vehicle = 'mule'},
+            {vehicle = 'sanchez'},
+            {vehicle = 'kuruma'},
 
         },
     },
@@ -2792,9 +2791,9 @@ Garages.List = {
         permiss = "perm.madregermano", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(2020.07,3908.88,34.46),
+        coords = vec3(-1260.02,819.16,193.37),
         spawnCoords = {
-            vector4(2023.4,3913.32,33.68,337.69),
+            vector4(-1264.37,816.22,193.37,251.9),
         },
     
         vehicles = {
@@ -3897,6 +3896,16 @@ Garages.List = {
         coords = vec3(931.44,26.7,81.15),
         spawnCoords = {
             vector4(942.6,22.41,81.15,236.19),
+        },
+    },
+    [224] = {
+        type = "public", -- public / service [ tipo da garagem ] -- madregermano publiba
+        permiss = nil, -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(-1264.33,808.86,193.37),
+        spawnCoords = {
+            vector4(-1265.23,809.58,193.37,245.85),
         },
     },
     

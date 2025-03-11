@@ -927,7 +927,7 @@ Citizen.CreateThread(function()
 			if not blockHour[hour] or blockHour[hour] == nil then
 				blockHour[hour] = true		
 
-				local mafia01 = #vRP.getUsersByPermission("perm.mafia01")
+				local mafia01 = #vRP.getUsersByPermission("perm.mafia")
 				local mafia02 = #vRP.getUsersByPermission("perm.mafia02")
 				local mafia03 = #vRP.getUsersByPermission("perm.mafia03")
 				local egito = #vRP.getUsersByPermission("perm.egito")
