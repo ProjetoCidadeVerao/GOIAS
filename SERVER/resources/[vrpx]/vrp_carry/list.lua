@@ -475,5 +475,3 @@
 [GetHashKey('vironmichalski')] = { model = 'vironmichalski', price = 300000, banned = false, name = 'vironmichalski', trunk = 10000, type = 'vip'},
 [GetHashKey('cbtwister22k')] = { model = 'cbtwister22k', price = 300000, banned = false, name = 'cbtwister22k', trunk = 10000, type = 'vip'},
 [GetHashKey('m4hardcore')] = { model = 'm4hardcore', price = 300000, banned = false, name = 'm4hardcore', trunk = 10000, type = 'vip'},
-
-
