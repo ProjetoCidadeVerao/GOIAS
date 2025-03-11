@@ -1910,15 +1910,15 @@ function src.checkOpenRevistar(AdminMode, PlyId)
 					return
 				end
 
-				if vRP.hasPermission(nuser_id, "perm.hospital") then
-					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um medico.", 3)
-					return
-				end
+				-- if vRP.hasPermission(nuser_id, "perm.hospital") then
+				-- 	TriggerClientEvent("Notify",source,"negado","Você não pode saquear um medico.", 3)
+				-- 	return
+				-- end
 
-				if vRP.hasPermission(nuser_id, "perm.mecanico") then
-					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um mecanico.", 3)
-					return
-				end
+				-- if vRP.hasPermission(nuser_id, "perm.mecanico") then
+				-- 	TriggerClientEvent("Notify",source,"negado","Você não pode saquear um mecanico.", 3)
+				-- 	return
+				-- end
 
 				if vRP.hasPermission(nuser_id, "perm.cot")  then
 					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um policial.", 3)

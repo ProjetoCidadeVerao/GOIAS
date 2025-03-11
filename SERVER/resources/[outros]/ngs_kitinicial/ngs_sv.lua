@@ -74,6 +74,7 @@ end)
 
 -- Verificação no login do jogador
 AddEventHandler("vRP:playerSpawn", function(user_id, source, first_spawn)
+    local user_id = vRP.getUserId(source)
     if first_spawn then
         local removalTime = vRP.getUData(user_id, "vip:removal_time")
         removalTime = tonumber(removalTime)

@@ -226,7 +226,8 @@ config.doors = {
     { text = true, hash = 21324050, ['x'] = 925.96, ['y'] = 46.69, ['z'] = 81.11, lock = true, perm = "perm.cassino" },
     { text = true, hash = 21324050, ['x'] = 923.83, ['y'] = 43.34, ['z'] = 81.1, lock = true, perm = "perm.cassino" },
     { text = true, hash = 21324050, ['x'] = 924.62, ['y'] = 44.14, ['z'] = 81.11, lock = true, perm = "perm.cassino" },
- 
+    { text = true, hash = 21324050, ['x'] = 926.93, ['y'] = 48.12, ['z'] = 81.1, lock = true, perm = "perm.cassino" },
+    { text = true, hash = 21324050, ['x'] = 927.5, ['y'] = 48.86, ['z'] = 81.08, lock = true, perm = "perm.cassino" },
      -- ,, 
      
      

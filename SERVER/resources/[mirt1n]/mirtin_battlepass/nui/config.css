@@ -1,0 +1,10 @@
+:root {
+  --primary-gradient: linear-gradient(102deg, rgb(93, 252, 0) 0%, rgb(0, 0, 0) 100%);
+  --primary-color: #000000;
+  --button-gradient: linear-gradient(102deg, rgb(0, 255, 34) 0%, rgba(99, 169, 234, 0.11) 100%);
+  --config-modal: rgba(255, 1, 1, 0.8);
+  --banner-color: rgb(255, 12, 12);
+  --border-color: rgb(255, 12, 12);
+  --muted-foreground: linear-gradient(92deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%), rgb(0, 0, 0);
+  --foreground-color: linear-gradient(0deg, rgba(0, 140, 242, 0.01) 0%, rgba(0, 140, 242, 0.01) 100%), radial-gradient(95.47% 60.03% at 49.84% 76.67%, rgba(217, 217, 217, 0.06) 0%, rgba(115, 115, 115, 0.00) 100%), linear-gradient(91deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.02) 100%);
+}

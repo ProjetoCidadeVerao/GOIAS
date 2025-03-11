@@ -5,7 +5,7 @@
         "allowUnsafeURL": true,
         "videoServer": "ws://191.96.81.87:8080/",
         "case": "iphone14pro",
-        "isAndroid": false,
+        "isAndroid": true,
         "useGameClock": true,
         "phone_template": "XXX-XXX",
         "backgroundURL": "",

@@ -1270,28 +1270,6 @@ Config = {
                     end,                                    -- BLIP DO CHAO
                },
 
-               {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                         name = 'Mafia',
-                         coords = vec3(677.29,906.14,242.52), -- COORDENADAS DA BANCADA
-
-                         requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                              active = true,
-                              name = 'Mafia'
-                         },
-                         amountSlots = 2,                                -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-
-                         tablePermission = "perm.mafia",          -- PERMISSAO PARA ACESSAR A BANCADA
-                         craftPermission = "perm.mafia",    -- PERMISSAO PARA CRAFTAR ITEM
-                         withdrawPermission = "perm.mafia", -- PERMISSAO PARA RETIRAR ITEM
-
-                         drawMarker = function(coords, dist)
-                              if dist <= 5.0 then
-                                   DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                                   DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                                   255, 180, 0, 0, 0, 1)
-                              end
-                         end,                                   -- BLIP DO CHAO
-                    },
 
                {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                     name = 'Tiradentes',
@@ -1871,11 +1849,6 @@ Config = {
                     -- COCAÍNA
 
           ['Novaesperanca'] = {
-               itens = {
-                    ['pastabase'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-               },
-          },
-          ['Mafia'] = {
                itens = {
                     ['pastabase'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                },

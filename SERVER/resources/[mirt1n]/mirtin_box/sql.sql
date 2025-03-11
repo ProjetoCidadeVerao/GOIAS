@@ -15,13 +15,15 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 -- Copiando estrutura para tabela vrp.mirtin_box
-CREATE TABLE IF NOT EXISTS `mirtin_box` (
-  `user_id` int(11) NOT NULL,
-  `coins` int(11) DEFAULT 0,
-  `points` int(11) DEFAULT 0,
-  `timePlayed` int(11) DEFAULT 0,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+-- CREATE TABLE IF NOT EXISTS `mirtin_box` (
+--   `user_id` int(11) NOT NULL,
+--   `coins` int(11) DEFAULT 0,
+--   `points` int(11) DEFAULT 0,
+--   `timePlayed` int(11) DEFAULT 0,
+--   PRIMARY KEY (`user_id`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Exportação de dados foi desmarcado.
 

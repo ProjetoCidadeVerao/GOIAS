@@ -6,8 +6,8 @@ Config = {
 
     dirs = { -- DIRETORIO DE IMAGENS
         item = 'http://191.96.81.87/inventario/',
-        car = 'http://177.54.148.31:4020/base/carros/',
-        others = 'http://177.54.148.31:4020/others/'
+        car = 'http://191.96.81.87carros/',
+        others = 'http://191.96.81.87/inventario/'
     },
 
     rewards = { -- Givar Pontos com jogador online
@@ -52,7 +52,7 @@ Config = {
     weebhook = {
         color = 6356736,
         logo = "https://cdn.discordapp.com/attachments/941082057449279498/951537784433303663/logo_sem_fundo.png?ex=65e9fe9e&is=65d7899e&hm=653c1d7e9eaeb8a7e973e7eef5b394348a99d615fa56294ec5139f196135ccf3&",
-        footer = "© MIRTIN STORE"
+        footer = "© Goias"
     },
 
 

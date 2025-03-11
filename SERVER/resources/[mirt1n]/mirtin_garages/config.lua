@@ -1728,19 +1728,13 @@ Garages.List = {
     },
     
     [63] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1695.19,561.2,154.36
-        permiss = "perm.mafia", -- permissao
+        type = "public", -- public / service [ tipo da garagem ] -- publica mafia
+        permiss = nil, -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(635.53,954.22,247.57 ),
+        coords = vec3(632.7,938.66,247.57),
         spawnCoords = {
-            vector4(639.55,951.54,247.57,255.0),
-        },
-    
-        vehicles = {
-            {vehicle = 'sanchez'},
-            {vehicle = 'kuruma'},
-
+            vector4(636.89,939.82,247.57,261.57),
         },
     },
 
@@ -2638,22 +2632,22 @@ Garages.List = {
 
         },
     },
-    [124] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.mafia", -- permissao
-        blip = false, -- blip no mapa
+    -- [124] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -3286.58,517.85,12.27
+    --     permiss = "perm.mafia", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-3286.58,517.85,12.27),
-        spawnCoords = {
-            vector4(-3289.56,520.65,12.27,337.69),
-        },
+    --     coords = vec3(-3286.58,517.85,12.27),
+    --     spawnCoords = {
+    --         vector4(-3289.56,520.65,12.27,337.69),
+    --     },
     
-        vehicles = {
-            {vehicle = 'kuruma'},
-            {vehicle = 'sanchez'},
+    --     vehicles = {
+    --         {vehicle = 'kuruma'},
+    --         {vehicle = 'sanchez'},
 
-        },
-    },
+    --     },
+    -- },
     [125] = {
         type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
         permiss = "perm.lider.macaco", -- permissao
@@ -3215,16 +3209,16 @@ Garages.List = {
             vector4(-3014.7,91.96,11.61,147.31),
         },
     },
-    [165] = {
-        type = "public", -- public / service [ tipo da garagem ] --  mafia
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [165] = {
+    --     type = "public", -- public / service [ tipo da garagem ] --  
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-3288.46,526.79,12.27),
-        spawnCoords = {
-            vector4(-3293.36,522.0,12.27,147.31),
-        },
-    },
+    --     coords = vec3(-3288.46,526.79,12.27),
+    --     spawnCoords = {
+    --         vector4(-3293.36,522.0,12.27,147.31),
+    --     },
+    -- },
     [166] = {
         type = "public", -- public / service [ tipo da garagem ] --  yakuza
         permiss = nil, -- permissao

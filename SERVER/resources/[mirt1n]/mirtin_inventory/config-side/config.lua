@@ -24,9 +24,9 @@ cfg.chestOrgs = {
     [21] = { coords = { x= -2240.76, y= -163.14, z= 86.52  }, maxbau = 30000, org = "Brasil", perm = "perm.brasil", weebhook = "https://discord.com/api/webhooks/1257505233781657625/QP8oRwoghCZkDg5EpR-eVMpv_jq7VtA41W6esmE3qkVWHZtQHiivyVGpcpuRklBZ_ZDt" }, -- ARMAS  -
     [22] = { coords = { x= 1400.66, y= -741.56, z= 72.15  }, maxbau = 10000, org = "Helipa", perm = "perm.helipa", weebhook = "https://discord.com/api/webhooks/1329800918144647178/dA_eKatwssrbqZ-J9VaiLeUU6wkj59RtuzWP9keuEFKHpY6GHVrgxShrazZ3NsWL7LSj" }, 
     [23] = { coords = { x= 1269.59, y= -895.33, z= 75.39  }, maxbau = 10000, org = "WebLider", perm = "perm.web", weebhook = "" },-- ,,
-    [24] = { coords = { x= 941.5, y= 8.89, z= 116.16  }, maxbau = 10000, org = "Cassino", perm = "perm.lider.cassino", weebhook = "" },
-    [25] = { coords = { x= 2916.41, y= 4166.59, z= 51.9 }, maxbau = 10000, org = "Cassino", perm = "perm.mecanico", weebhook = "" },-- ,,
-    [26] = { coords = { x= -2237.45, y= -165.4, z= 86.52  }, maxbau = 30000, org = "Liderbrasil", perm = "perm.lider.brasil", weebhook = "https://discord.com/api/webhooks/1306540709670686721/ZlL9TWgDH4Ny_xqpY_8D8hWEqNo3ij0BkSb7ZzgrHLQEpK_c06C_tLpEeZK4TaFA7czI" }, -- ARMAS  -
+    --[24] = { coords = { x= 941.5, y= 8.89, z= 116.16  }, maxbau = 10000, org = "Cassino", perm = "perm.lider.cassino", weebhook = "" },
+    [25] = { coords = { x= 951.04, y= 30.45, z= 51.9 }, maxbau = 10000, org = "Cassino", perm = "perm.cassino", weebhook = "" },--
+    [26] = { coords = { x= -2237.45, y= -165.4, z= 71.83  }, maxbau = 30000, org = "Liderbrasil", perm = "perm.lider.brasil", weebhook = "https://discord.com/api/webhooks/1306540709670686721/ZlL9TWgDH4Ny_xqpY_8D8hWEqNo3ij0BkSb7ZzgrHLQEpK_c06C_tLpEeZK4TaFA7czI" }, -- ARMAS  -
     --[27] = { coords = { x= 2056.21, y= 3924.44, z= 36.04  }, maxbau = 10000, org = "Madregermano", perm = "perm.lider.madregermano", weebhook = "https://discord.com/api/webhooks/1306538415235272704/J9Z1Q7TX5eathdAHIsNcflxdDyyxuz0BjQMnci7jIgSmLu79yghMB50zg3dM8N2ZhCs3" }, -- ARMAS  -
     [28] = { coords = { x= -2679.71, y= 1336.55, z= 215.48  }, maxbau = 10000, org = "LFranca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341099851798024282/vEiQ4vrt9YWOrdIlBJTKVDAOq7bbHsd-fb1to7S8lSb2iXLiD1rMZDNsq4mj6oFPH0zF" }, -- ARMAS  -
     [29] = { coords = { x= 138.93, y= 339.68, z= 144.25 }, maxbau = 10000, org = "LMotoclub", perm = "perm.lider.motoclub", weebhook = "" }, -- ARMAS  -
