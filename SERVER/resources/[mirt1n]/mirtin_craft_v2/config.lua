@@ -1070,28 +1070,28 @@ Config = {
                          end,                                 -- BLIP DO CHAO
                     },
 
-                   -- {                                          -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                   --      name = 'Cassino',
-                   --      coords = vec3(930.3,37.36,81.1), -- COORDENADAS DA BANCADA
- --
-                   --      requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                   --           active = true,
-                   --           name = 'Cassino'
-                   --      },
-                   --      amountSlots = 2,                                 -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
- --
-                   --      tablePermission = "perm.ilegal",          -- PERMISSAO PARA ACESSAR A BANCADA
-                   --      craftPermission = "perm.ilegal",    -- PERMISSAO PARA CRAFTAR ITEM
-                   --      withdrawPermission = "perm.ilegal", -- PERMISSAO PARA RETIRAR ITEM
- --
-                   --      drawMarker = function(coords, dist)
-                   --           if dist <= 5.0 then
-                   --                DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                   --                DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                   --                255, 180, 0, 0, 0, 1)
-                   --           end
-                   --      end,                                 -- BLIP DO CHAO
-                   -- },
+                   {                                          -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
+                        name = 'Cassino',
+                        coords = vec3(949.4,44.55,71.63), -- COORDENADAS DA BANCADA
+ 
+                        requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
+                             active = true,
+                             name = 'Cassino'
+                        },
+                        amountSlots = 2,                                 -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
+ 
+                        tablePermission = "perm.cassino",          -- PERMISSAO PARA ACESSAR A BANCADA
+                        craftPermission = "perm.cassino",    -- PERMISSAO PARA CRAFTAR ITEM
+                        withdrawPermission = "perm.cassino", -- PERMISSAO PARA RETIRAR ITEM
+ 
+                        drawMarker = function(coords, dist)
+                             if dist <= 5.0 then
+                                  DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
+                                  DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
+                                  255, 180, 0, 0, 0, 1)
+                             end
+                        end,                                 -- BLIP DO CHAO
+                   },
 
 
                },
@@ -1774,7 +1774,7 @@ Config = {
                          givePayment = false,                  -- Caso Deseja Efetuar um  pagamento ao craftar este item ( Pode ser UTILIZADO Para Lavagem de Dinheiro )
  
                          requires = {                          -- ITENS NECESSARIOS PARA O CRAFT
-                              { item = "placademetal", amount = 5 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
+                              { item = "metal", amount = 5 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
                          }
                     },
                     {
@@ -1785,7 +1785,7 @@ Config = {
                          givePayment = false,                  -- Caso Deseja Efetuar um  pagamento ao craftar este item ( Pode ser UTILIZADO Para Lavagem de Dinheiro )
  
                          requires = {                          -- ITENS NECESSARIOS PARA O CRAFT
-                              { item = "placademetal", amount = 8 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
+                              { item = "metal", amount = 8 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
                          }
                     },
                     {
@@ -1796,7 +1796,7 @@ Config = {
                          givePayment = false,                  -- Caso Deseja Efetuar um  pagamento ao craftar este item ( Pode ser UTILIZADO Para Lavagem de Dinheiro )
  
                          requires = {                          -- ITENS NECESSARIOS PARA O CRAFT
-                              { item = "placademetal", amount = 10 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
+                              { item = "metal", amount = 10 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
                          }
                     },
                },
@@ -1819,7 +1819,7 @@ Config = {
                                    bonus = 2,            -- 2x Quantidade que o farm vai duplicar quando estiver com a zona dominada.
                               },
                               itensList = {
-                                   { item = "placademetal", minAmount = 1, maxAmount = 2, percentual = 100 },
+                                   { item = "metal", minAmount = 1, maxAmount = 2, percentual = 100 },
                               },
                          },
                     },
@@ -1828,7 +1828,7 @@ Config = {
                locations = {                                   -- LOCALIZACOES DESSAS BANCADAS
                     {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'craftproibido',
-                         coords = vec3(929.71,38.17,81.1), -- COORDENADAS DA BANCADA
+                         coords = vec3(959.56,34.13,71.83), -- COORDENADAS DA BANCADA
  
                          requireStorage = {                      -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
                               active = true,
@@ -1836,9 +1836,9 @@ Config = {
                          },
                          amountSlots = 2,                                      -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
  
-                         tablePermission = "perm.ilegal",          -- PERMISSAO PARA ACESSAR A BANCADA
-                         craftPermission = "perm.ilegal",    -- PERMISSAO PARA CRAFTAR ITEM
-                         withdrawPermission = "perm.ilegal", -- PERMISSAO PARA RETIRAR ITEM
+                         tablePermission = "perm.cassino",          -- PERMISSAO PARA ACESSAR A BANCADA
+                         craftPermission = "perm.cassino",    -- PERMISSAO PARA CRAFTAR ITEM
+                         withdrawPermission = "perm.cassino", -- PERMISSAO PARA RETIRAR ITEM
  
                          drawMarker = function(coords, dist)
                               if dist <= 5.0 then
@@ -2137,7 +2137,7 @@ Config = {
           },
           ['craftproibido'] = {
                itens = {
-                    ['keycard'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+                    ['metal'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                },
           },
      },

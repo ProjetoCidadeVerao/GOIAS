@@ -476,7 +476,7 @@ cfg.storesLocs = {
     
     { type = "Acessorios", blip = false, blipName = "Acessorios", blipID = 52, blipColor = 0, perm = nil, coords = vector3(77.3,-1389.44,29.38 ) },
     { type = "Bahamas", blip = false, blipName = "Bahamas", blipID = 52, blipColor = 2, perm = "perm.bahamas", coords = vector3(-1386.21,-591.12,30.31 ) },
-    { type = "Cassino", blip = false, blipName = "Cassino", blipID = 52, blipColor = 2, perm = "perm.cassino", coords = vector3(937.36,26.77,71.84 ) },
+    { type = "Cassino", blip = false, blipName = "Cassino", blipID = 52, blipColor = 2, perm = "perm.cassino", coords = vector3(948.62,34.0,71.83) },
     -- { type = "DigitalDen", blip = true, blipName = "DigitalDen", blipID = 459, blipColor = 0, perm = nil, coords = vector3(-656.93,-857.51,24.5) },
     { type = "Loja de Bebidas", blip = false, blipName = "Loja de Bebidas", blipID = 459, blipColor = 0, perm = nil, coords = vector3(33.73,-1345.2,29.5) },
     { type = "Loja de Bebidas", blip = false, blipName = "Loja de Bebidas", blipID = 459, blipColor = 0, perm = nil, coords = vector3(-3055.67,98.55,12.82) }  ----bahamas

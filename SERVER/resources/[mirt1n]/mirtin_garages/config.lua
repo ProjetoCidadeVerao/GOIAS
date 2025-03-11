@@ -885,6 +885,7 @@ Garages.VehList = {
     [GetHashKey('BC_Purosangue')] = { model = 'BC_Purosangue', price = 300000, banned = false, name = 'BC_Purosangue', trunk = 10000, type = 'vip'},
     [GetHashKey('BCs_LHEvo')] = { model = 'BCs_LHEvo', price = 300000, banned = false, name = 'BCs_LHEvo', trunk = 10000, type = 'vip'},
     [GetHashKey('vanztt')] = { model = 'vanztt', price = 300000, banned = false, name = 'vanztt', trunk = 10000, type = 'vip'},
+    [GetHashKey('m4hardcore')] = { model = 'm4hardcore', price = 300000, banned = false, name = 'm4hardcore', trunk = 10000, type = 'vip'},
 } 
 
 
@@ -2836,9 +2837,9 @@ Garages.List = {
         permiss = "perm.cassino", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(945.68,16.96,116.16),
+        coords = vec3(930.98,27.1,81.15),
         spawnCoords = {
-            vector4(945.68,16.96,116.16,337.69),
+            vector4(940.01,30.16,81.15,232.46),
         },
     
         vehicles = {
@@ -3538,7 +3539,7 @@ Garages.List = {
     },
     [194] = {
         type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.tatico", -- permissao
+        permiss = "perm.policia", -- permissao
         blip = false, -- blip no mapa
         
         coords = vec3(-908.49,-2040.0,9.4),
@@ -3862,7 +3863,7 @@ Garages.List = {
 
         },
     },
-    [212] = {
+    [221] = {
         type = "public", -- public / service [ tipo da garagem ] -- buena vista
         permiss = nil, -- permissao
         blip = false, -- blip no mapa
@@ -3872,7 +3873,7 @@ Garages.List = {
             vector4(1265.71,-875.19,75.39,342.12),
         },
     },
-    [22] = {
+    [222] = {
         type = "service", -- public / service [ tipo da garagem ] -- fac web
         permiss = "perm.helicoptero", -- permissao
         blip = false, -- blip no mapa
@@ -3886,6 +3887,16 @@ Garages.List = {
             {vehicle = 'volatus'},
             {vehicle = 'supervolito'},
 
+        },
+    },
+    [223] = {
+        type = "public", -- public / service [ tipo da garagem ] -- cassino publiba
+        permiss = nil, -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(931.44,26.7,81.15),
+        spawnCoords = {
+            vector4(942.6,22.41,81.15,236.19),
         },
     },
     
