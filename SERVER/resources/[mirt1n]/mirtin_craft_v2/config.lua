@@ -238,76 +238,9 @@ Config = {
                end,                                    -- BLIP DO CHAO
                },
 
-                  --- {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                  ---      name = 'Recantodosol',
-                  ---      coords = vec3(-3366.52,1134.02,9.65), -- COORDENADAS DA BANCADA
 
-                  ---      requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                  ---           active = true,
-                  ---           name = 'Recantodosol'
-                  ---      },
-                  ---      amountSlots = 9999,                                -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-
-                  ---      tablePermission = "perm.recantodosol",          -- PERMISSAO PARA ACESSAR A BANCADA
-                  ---      craftPermission = "perm.recantodosol",    -- PERMISSAO PARA CRAFTAR ITEM
-                  ---      withdrawPermission = "perm.recantodosol", -- PERMISSAO PARA RETIRAR ITEM
-
-                  ---      drawMarker = function(coords, dist)
-                  ---           if dist <= 5.0 then
-                  ---                DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                  ---                DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                  ---                255, 180, 0, 0, 0, 1)
-                  ---           end
-                  ---      end,                                   -- BLIP DO CHAO
-                  --- },
-
-                    --{                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                    --     name = 'Goiania',
-                    --     coords = vec3(-3278.17,580.11,6.13), -- COORDENADAS DA BANCADA
---
-                    --     requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                    --          active = true,
-                    --          name = 'Goiania'
-                    --     },
-                    --     amountSlots = 2,                                -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
---
-                    --     tablePermission = "perm.goiania",          -- PERMISSAO PARA ACESSAR A BANCADA
-                    --     craftPermission = "perm.goiania",    -- PERMISSAO PARA CRAFTAR ITEM
-                    --     withdrawPermission = "perm.goiania", -- PERMISSAO PARA RETIRAR ITEM
---
-                    --     drawMarker = function(coords, dist)
-                    --          if dist <= 5.0 then
-                    --               DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                    --               DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                    --               255, 180, 0, 0, 0, 1)
-                    --          end
-                    --     end,                                   -- BLIP DO CHAO
-                    --},
-
-                   -- {     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                   -- name = 'Web',
-                   -- coords = vec3(-1518.23,112.29,50.04), -- COORDENADAS DA BANCADA
-   
-                   -- requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                   --      active = true,
-                   --      name = 'Web'
-                   -- },
-                   -- amountSlots = 5,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-   
-                   -- tablePermission = "perm.web",          -- PERMISSAO PARA ACESSAR A BANCADA
-                   -- craftPermission = "perm.web",    -- PERMISSAO PARA CRAFTAR ITEM
-                   -- withdrawPermission = "perm.web", -- PERMISSAO PARA RETIRAR ITEM
-   
-                   -- drawMarker = function(coords, dist)
-                   --      if dist <= 5.0 then
-                   --           DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                   --           DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                   --           255, 180, 0, 0, 0, 1)
-                   --      end
-                   -- end,                                     -- BLIP DO CHAO
-                   -- },
-                    {     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                    name = 'Yakuza',
+                   {     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
+                   name = 'Yakuza',
                     coords = vec3(-3366.52,1134.02,9.65), -- COORDENADAS DA BANCADA
 
                     requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
@@ -348,32 +281,30 @@ Config = {
                               DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
                               255, 180, 0, 0, 0, 1)
                          end
-                         end,                                    -- BLIP DO CHAO
+                         end,                                    
                     },
-          
-                   --{     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                   --     name = 'Jardimnovomundo',
-                   --     coords = vec3(-2238.61,-159.44,86.52), -- COORDENADAS DA BANCADA
+                    {                                         -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
+                    name = 'MAFIA',
+                    coords = vec3(677.29,906.14,242.52), -- COORDENADAS DA BANCADA
 
-                   --     requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                   --          active = true,
-                   --          name = 'Jardimnovomundo'
-                   --     },
+                    requireStorage = {                    -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
+                         active = true,
+                         name = 'MAFIA'
+                    },
+                    amountSlots = 5,                             -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
 
-                   --     amountSlots = 8,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
+                    tablePermission = "perm.mafia",          -- PERMISSAO PARA ACESSAR A BANCADA
+                    craftPermission = "perm.mafia",    -- PERMISSAO PARA CRAFTAR ITEM
+                    withdrawPermission = "perm.mafia", -- PERMISSAO PARA RETIRAR ITEM
 
-                   --     tablePermission = "perm.jardimnovomundo",          -- PERMISSAO PARA ACESSAR A BANCADA
-                   --     craftPermission = "perm.lider.jardimnovomundo",    -- PERMISSAO PARA CRAFTAR ITEM
-                   --     withdrawPermission = "perm.lider.jardimnovomundo", -- PERMISSAO PARA RETIRAR ITEM
-
-                   --     drawMarker = function(coords, dist)
-                   --          if dist <= 5.0 then
-                   --               DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                   --               DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                   --               255, 180, 0, 0, 0, 1)
-                   --          end
-                   --     end,                                     -- BLIP DO CHAO
-                   --},
+                    drawMarker = function(coords, dist)
+                    if dist <= 5.0 then
+                         DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
+                         DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
+                         255, 180, 0, 0, 0, 1)
+                    end
+                    end,                                    
+               },
                },
           }, -- FIM DE UMA BANCADA
  
@@ -570,28 +501,7 @@ Config = {
                          end
                     end,                                     -- BLIP DO CHAO
                     },
-                   --{                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                   --     name = 'Yakuza',
-                   --     coords = vec3(-3366.52,1134.02,9.65), -- COORDENADAS DA BANCADA
 
-                   --     requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                   --          active = true,
-                   --          name = 'Yakuza'
-                   --     },
-                   --     amountSlots = 9999,                                -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-
-                   --     tablePermission = "perm.yakuza",          -- PERMISSAO PARA ACESSAR A BANCADA
-                   --     craftPermission = "perm.lider.yakuza",    -- PERMISSAO PARA CRAFTAR ITEM
-                   --     withdrawPermission = "perm.lider.yakuza", -- PERMISSAO PARA RETIRAR ITEM
-
-                   --     drawMarker = function(coords, dist)
-                   --          if dist <= 5.0 then
-                   --               DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                   --               DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                   --               255, 180, 0, 0, 0, 1)
-                   --          end
-                   --     end,                                   -- BLIP DO CHAO
-                   --},
                     {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'Buenavista',
                          coords = vec3(-2678.94,1330.04,140.88), -- COORDENADAS DA BANCADA
@@ -638,7 +548,28 @@ Config = {
                          end,                                   -- BLIP DO CHAO
                     },
 
-                    
+                    {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
+                        name = 'Madregermano',
+                        coords = vec3(-2683.47,2334.22,21.13), -- COORDENADAS DA BANCADA
+
+                        requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
+                         active = true,
+                         name = 'Madregermano'
+                        },
+                        amountSlots = 2,                                -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
+
+                          tablePermission = "perm.madregermano",          -- PERMISSAO PARA ACESSAR A BANCADA
+                         craftPermission = "perm.madregermano",    -- PERMISSAO PARA CRAFTAR ITEM
+                         withdrawPermission = "perm.madregermano", -- PERMISSAO PARA RETIRAR ITEM
+
+                         drawMarker = function(coords, dist)
+                              if dist <= 5.0 then
+                                   DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
+                                  DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
+                                  255, 180, 0, 0, 0, 1)
+                             end
+                        end,                                   -- BLIP DO CHAO
+                    },
 
                     {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'Vovo',
@@ -826,72 +757,9 @@ Config = {
                          end
                     end,                                 -- BLIP DO CHAO
                },
-               {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                    name = 'Madregermano',
-                    coords = vec3(-1418.24,1604.54,150.23), -- COORDENADAS DA BANCADA
-
-                    requireStorage = {                      -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                         active = true,
-                         name = 'Madregermano'
-                    },
-                    amountSlots = 2,                                      -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-
-                    tablePermission = "perm.madregermano",          -- PERMISSAO PARA ACESSAR A BANCADA
-                    craftPermission = "perm.madregermano",    -- PERMISSAO PARA CRAFTAR ITEM
-                    withdrawPermission = "perm.madregermano", -- PERMISSAO PARA RETIRAR ITEM
-
-                    drawMarker = function(coords, dist)
-                         if dist <= 5.0 then
-                              DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                              DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                              255, 180, 0, 0, 0, 1)
-                         end
-                    end,                                    -- BLIP DO CHAO
-               },
-               {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                    name = 'Macacomuamba',
-                    coords = vec3(-399.12,1533.33,384.21), -- COORDENADAS DA BANCADA
-
-                    requireStorage = {                      -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                         active = true,
-                         name = 'Macacomuamba'
-                    },
-                    amountSlots = 2,                                      -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-
-                    tablePermission = "perm.macaco",          -- PERMISSAO PARA ACESSAR A BANCADA
-                    craftPermission = "perm.lider.macaco",    -- PERMISSAO PARA CRAFTAR ITEM
-                    withdrawPermission = "perm.lider.macaco", -- PERMISSAO PARA RETIRAR ITEM
-
-                    drawMarker = function(coords, dist)
-                         if dist <= 5.0 then
-                              DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                              DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                              255, 180, 0, 0, 0, 1)
-                         end
-                    end,                                    -- BLIP DO CHAO
-               },
-               --{                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-          --     name = 'Tequila',
-          --     coords = vec3(-561.95,281.64,85.68), -- COORDENADAS DA BANCA
-          --     requireStorage = {                      -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-          --          active = true,
-          --          name = 'Tequila'
-          --     },
-          --     amountSlots = 2,                                      -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site
-          --     tablePermission = "perm.tequila",          -- PERMISSAO PARA ACESSAR A BANCADA
-          --     craftPermission = "perm.tequila",    -- PERMISSAO PARA CRAFTAR ITEM
-          --     withdrawPermission = "perm.tequila", -- PERMISSAO PARA RETIRAR IT
-          --     drawMarker = function(coords, dist)
-          --          if dist <= 5.0 then
-          --               DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-          --               DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-          --               255, 180, 0, 0, 0, 1)
-          --          end
-          --     end,                                    -- BLIP DO CHAO
-          --},
-
-               },
+               
           },
+     },
  
           ['Lavagem'] = {
                craft = {
@@ -1139,41 +1007,41 @@ Config = {
                },         
  
                locations = {                                    -- LOCALIZACOES DESSAS BANCADAS
-                  --{                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                  --     name = 'Cartel',
-                  --     coords = vec3(1402.67,1136.68,109.74), -- COORDENADAS DA BANCADA
+                  {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
+                      name = 'Madregermanodesmanche',
+                      coords = vec3(-1220.83,829.35,193.37), -- COORDENADAS DA BANCADA
  
-                  --     requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                  --          active = true,
-                  --          name = 'Cartel'
-                  --     },
-                  --     amountSlots = 4,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
+                      requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
+                           active = true,
+                           name = 'Madregermanodesmanche'
+                      },
+                      amountSlots = 4,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
  
-                  --     tablePermission = "perm.cartel",          -- PERMISSAO PARA ACESSAR A BANCADA
-                  --     craftPermission = "perm.cartel",    -- PERMISSAO PARA CRAFTAR ITEM
-                  --     withdrawPermission = "perm.cartel", -- PERMISSAO PARA RETIRAR ITEM
+                      tablePermission = "perm.madregermano",          -- PERMISSAO PARA ACESSAR A BANCADA
+                      craftPermission = "perm.madregermano",    -- PERMISSAO PARA CRAFTAR ITEM
+                      withdrawPermission = "perm.madregermano", -- PERMISSAO PARA RETIRAR ITEM
  
-                  --     drawMarker = function(coords, dist)
-                  --     if dist <= 5.0 then
-                  --          DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                  --          DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                  --          255, 180, 0, 0, 0, 1)
-                  --     end
-                  --     end,                                   -- BLIP DO CHAO
-                  --},
+                      drawMarker = function(coords, dist)
+                      if dist <= 5.0 then
+                           DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
+                           DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
+                           255, 180, 0, 0, 0, 1)
+                      end
+                      end,                                   -- BLIP DO CHAO
+                  },
                     {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                         name = 'MacacoDesmanche',
-                         coords = vec3(612.47,2229.63,63.39), -- COORDENADAS DA BANCADA
+                         name = 'MafiaDesmanche',
+                         coords = vec3(622.37,921.37,247.57), -- COORDENADAS DA BANCADA
  
                          requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
                               active = true,
-                              name = 'MacacoDesmanche'
+                              name = 'MafiaDesmanche'
                          },
                          amountSlots = 4,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
  
-                         tablePermission = "perm.macaco",          -- PERMISSAO PARA ACESSAR A BANCADA
-                         craftPermission = "perm.macaco",    -- PERMISSAO PARA CRAFTAR ITEM
-                         withdrawPermission = "perm.macaco", -- PERMISSAO PARA RETIRAR ITEM
+                         tablePermission = "perm.mafia",          -- PERMISSAO PARA ACESSAR A BANCADA
+                         craftPermission = "perm.mafia",    -- PERMISSAO PARA CRAFTAR ITEM
+                         withdrawPermission = "perm.mafia", -- PERMISSAO PARA RETIRAR ITEM
  
                          drawMarker = function(coords, dist)
                          if dist <= 5.0 then
@@ -1271,32 +1139,6 @@ Config = {
                          end
                          end,                                    -- BLIP DO CHAO
                     },
-                    
-                 -- {                                         -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                 --      name = 'Veracruz',
-                 --      coords = vec3(191.21,750.94,208.63), -- COORDENADAS DA BANCADA
- 
-                 --      requireStorage = {                    -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                 --           active = true,
-                 --           name = 'Veracruz'
-                 --      },
-                 --      amountSlots = 5,                             -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
- 
-                 --      tablePermission = "perm.veracruz",          -- PERMISSAO PARA ACESSAR A BANCADA
-                 --      craftPermission = "perm.veracruz",    -- PERMISSAO PARA CRAFTAR ITEM
-                 --      withdrawPermission = "perm.veracruz", -- PERMISSAO PARA RETIRAR ITEM
- 
-                 --      drawMarker = function(coords, dist)
-                 --      if dist <= 5.0 then
-                 --           DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                 --           DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                 --           255, 180, 0, 0, 0, 1)
-                 --      end
-                 --      end,                                    -- BLIP DO CHAO
-                 -- },
- 
- 
- 
                },
           },
                                    ------- MODIFICAR O GRUPO A BAIXO. -------------
@@ -1669,29 +1511,6 @@ Config = {
                          end,                                    -- BLIP DO CHAO
                     },
 
-                    ---{                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                    ---     name = 'CartelBalinha',
-                    ---     coords = vec3(1396.61,1154.75,108.61), -- COORDENADAS DA BANCADA
- ---
-                    ---     requireStorage = {                       -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                    ---          active = true,
-                    ---          name = 'CartelBalinha'
-                    ---     },
-                    ---     amountSlots = 4,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
- ---
-                    ---     tablePermission = "perm.cartel",          -- PERMISSAO PARA ACESSAR A BANCADA
-                    ---     craftPermission = "perm.cartel",    -- PERMISSAO PARA CRAFTAR ITEM
-                    ---     withdrawPermission = "perm.cartel", -- PERMISSAO PARA RETIRAR ITEM
- ---
-                    ---     drawMarker = function(coords, dist)
-                    ---     if dist <= 5.0 then
-                    ---          DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                    ---          DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                    ---          255, 180, 0, 0, 0, 1)
-                    ---     end
-                    ---     end,                                   -- BLIP DO CHAO
-                    ---},
-
                     {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'EmilioPovoa',
                          coords = vec3(-1904.83,4528.95,20.59), -- COORDENADAS DA BANCADA
@@ -1714,30 +1533,6 @@ Config = {
                               end
                          end,                                    -- BLIP DO CHAO
                     },
-
-                   --- {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                   ---      name = 'Macaco',
-                   ---      coords = vec3(-1805.35,572.33,167.05), -- COORDENADAS DA BANCADA
----
-                   ---      requireStorage = {                      -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                   ---           active = true,
-                   ---           name = 'Macaco'
-                   ---      },
-                   ---      amountSlots = 2,                                      -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
----
-                   ---      tablePermission = "perm.macaco",          -- PERMISSAO PARA ACESSAR A BANCADA
-                   ---      craftPermission = "perm.macaco",    -- PERMISSAO PARA CRAFTAR ITEM
-                   ---      withdrawPermission = "perm.macaco", -- PERMISSAO PARA RETIRAR ITEM
----
-                   ---      drawMarker = function(coords, dist)
-                   ---           if dist <= 5.0 then
-                   ---                DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                   ---                DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                   ---                255, 180, 0, 0, 0, 1)
-                   ---           end
-                   ---      end,                                    -- BLIP DO CHAO
-                   --- },
-
                     {                                           -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'QuebraCaixote',
                          coords = vec3(-636.05,2165.93,126.14), -- COORDENADAS DA BANCADA
@@ -1856,15 +1651,6 @@ Config = {
      -- CONFIGURACAO DOS ARMAZENS
      Storages = {
           -- ARMAS
-          --['Goiania'] = {
-          --     itens = {
-          --          ['pecadearma'] = 5000,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-          --          ['gatilho'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-          --          ['molas'] = 9999999, -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-          --          ['metal'] = 9999999,      -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-          --     },
-          --},
-
           ['Jardimnovomundo'] = {
                itens = {
                     ['pecadearma'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
@@ -1892,12 +1678,14 @@ Config = {
                },
           },
 
-          --['Yakuza'] = {
-          --     itens = {
-          --          ['polvora'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-          --          ['capsulas'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-          --     },
-          --},
+          ['Mafia'] = {
+              itens = {
+               ['pecadearma'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+               ['gatilho'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+               ['molas'] = 9999999, -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+               ['metal'] = 9999999,      -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+              },
+          },
 
           ['Lagunapark'] = {
                itens = {
@@ -1930,7 +1718,14 @@ Config = {
                     ['capsulas'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                },
           },
-          
+
+          ['Madregermano'] = {
+               itens = {
+                    ['polvora'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+                    ['capsulas'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+               },
+          },
+
           ['Web'] = {
                itens = {
                     ['polvora'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
@@ -2012,7 +1807,14 @@ Config = {
                },
           },
 
-          ['MacacoDesmanche'] = {
+          ['MafiaDesmanche'] = {
+               itens = {
+                    ['ferro'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+                    ['aluminio'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
+               },
+          },
+
+          ['Madregermanodesmanche'] = {
                itens = {
                     ['ferro'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                     ['aluminio'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
@@ -2039,22 +1841,6 @@ Config = {
                itens = {
                     ['dirty_money'] = 99999999999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                     ['l-alvejante'] = 99999999999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-               },
-          },
-
-          ['Macacomuamba'] = {
-               itens = {
-                    ['plastico'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['c-fio'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['c-ferro'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-               },
-          },
-
-          ['Madregermano'] = {
-               itens = {
-                    ['plastico'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['c-fio'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['c-ferro'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                },
           },
 

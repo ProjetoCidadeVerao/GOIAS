@@ -10,7 +10,7 @@ Config = {
             end,
 
             image = function(user_id, source)
-                return "nao-encontrado.png"
+                return "http://191.96.81.87/logo/logo.png"
             end,
 
             wallet = function(user_id, source) 
@@ -47,7 +47,7 @@ Config = {
             end,
     
             ['TRABALHO'] = function(user_id, source, identity) 
-                return vRP.getUserGroupByType(user_id, "job")
+                return vRP.getUserGroupByType(user_id, "org")
             end,
     
             ['IDENTIDADE'] = function(user_id, source, identity) 

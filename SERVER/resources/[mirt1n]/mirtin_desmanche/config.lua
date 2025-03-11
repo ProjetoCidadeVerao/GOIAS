@@ -745,16 +745,6 @@ Config.Locations = {
         },
     },
 
-   -- {
-   --     permission = 'perm.ilegal', -- Permissão para acessar
-   --     percentual = 25, -- 10% do valor do veiculo
-   --     
-   --     coords = {
-   --         blip = vec3(2133.97,4779.93,40.96),
-   --         shelves = vec4(2132.75,4775.23,40.96,187.09)           
-   --     },
-   -- },
-
     {
         permission = 'perm.grota', -- Permissão para acessar
         percentual = 40, -- 10% do valor do veiculo
@@ -766,12 +756,12 @@ Config.Locations = {
     },
 
     {
-        permission = 'perm.macaco', -- Permissão para acessar
+        permission = 'perm.mafia', -- Permissão para acessar
         percentual = 40, -- 10% do valor do veiculo
         
         coords = {
-            blip = vec3(588.07,2250.08,66.67),
-            shelves = vec4(596.47,2253.37,66.67,209.77)
+            blip = vec3(633.38,920.22,247.57),
+            shelves = vec4(622.65,922.42,247.57,82.98)
         },
     },
 
@@ -780,7 +770,7 @@ Config.Locations = {
         percentual = 40, -- 10% do valor do veiculo
         
         coords = {
-            blip = vec3(-1232.1,812.13,193.39),
+            blip = vec3(-1221.62,834.24,193.37),
             shelves = vec4(-1228.64,845.08,193.37,316.15)
         },
     },
