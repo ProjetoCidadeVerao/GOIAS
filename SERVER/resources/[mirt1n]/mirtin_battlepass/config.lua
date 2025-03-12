@@ -231,8 +231,8 @@ Config = {
                 end
             },
             [2] = {
-                spawn = 'cbtwister22k', -- spawn
-                name = 'cbtwister22k', -- Nome do Carro
+                spawn = 'G2', -- spawn
+                name = 'Saveiro G2', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -267,8 +267,8 @@ Config = {
                 end
             },
             [6] = {
-                spawn = 'GolG5', -- spawn
-                name = 'GolG5', -- Nome do Carro
+                spawn = '21hilux', -- spawn
+                name = 'Hilux Deboxe', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -303,8 +303,8 @@ Config = {
                 end
             },
             [10] = {
-                spawn = '1300', -- spawn
-                name = 'R1300', -- Nome do Carro
+                spawn = 'kawagala', -- spawn
+                name = 'kawagala', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
