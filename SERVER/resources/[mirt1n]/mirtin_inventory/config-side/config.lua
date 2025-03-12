@@ -48,7 +48,7 @@ cfg.chestOrgs = {
     [46] = { coords = { x= -2680.06, y= 2336.3, z= 21.13  }, maxbau = 300000, org = "Lvovo", perm = "perm.lider.vovo", weebhook = "https://discord.com/api/webhooks/1329142637973737483/CodyJat3tZnFEkFxF-MKXtoc-8kjfGmgZXAykPoniIDkuqca-Px-iUjIS_2OEKYAJQGn" }, -- ARMAS  - 
     [47] = { coords = { x= 1144.94, y= -1573.47, z= 35.38 }, maxbau = 100000, org = "Hopsital", perm = "perm.hospital", weebhook = "" }, -- ARMAS  -
     [48] = { coords = { x= -940.29, y= -2042.71, z= 9.4 }, maxbau = 10000, org = "Militar", perm = "perm.policia", weebhook = "" }, -- ARMAS
-    [49] = { coords = { x= 1566.04, y= 831.22, z= 82.04 }, maxbau = 10000, org = "Bombeiro", perm = "perm.hospital", weebhook = "" }, -- ARMAS
+    [49] = { coords = { x= -396.34, y= 1216.55, z= 325.76 }, maxbau = 10000, org = "Bombeiro", perm = "perm.hospital", weebhook = "" }, -- ARMAS
     [50] = { coords = { x= -2065.7, y= -457.05, z= 12.27 }, maxbau = 10000, org = "Rotam", perm = "perm.liderpolicia", weebhook = "" }, -- ARMAS
     [51] = { coords = { x= 1403.89, y= 1153.48, z= 114.33 }, maxbau = 10000, org = "Cartel", perm = "perm.cartel", weebhook = "https://discord.com/api/webhooks/1325882049457950742/WmkpQc2Jm0w3VJPxVIDYCBH0SJmYQFhhT3SeYTdlt_ZfISzUnT_qSlnr84s6HTrE7Lhx" },
     [52] = { coords = { x= -1756.9, y= -793.17, z= 17.04 }, maxbau = 10000, org = "Giro", perm = "perm.policia", weebhook = "" },
@@ -64,7 +64,7 @@ cfg.chestOrgs = {
     [62] = { coords = { x= 93.62, y= -1291.17, z= 29.27 }, maxbau = 10000, org = "LVanilla", perm = "perm.lider.redline", weebhook = "https://discord.com/api/webhooks/1341498891090264064/3-u9YRZKX_s3rYhc3JiZhu79VoSaADOFw1-mKVYg4Ixcr8uBjS6noSQKvVFYMzbV_e9H" }, -- ARMAS --
     [63] = { coords = { x= 108.56, y= -1304.69, z= 28.76 }, maxbau = 10000, org = "L2Vanilla", perm = "perm.redline", weebhook = "https://discord.com/api/webhooks/1342244026954416200/e7faIpMLyEkPXDS0tn4cUuJWuYSECCQdlBdEHJBMHXPkHlCH_p2NPjwcY_jpvuaLc_Uw" }, -- ARMAS --
 }   
-
+ 
 cfg.stores = { 
     ["Medicamentos"] = {               
         bonus = false,

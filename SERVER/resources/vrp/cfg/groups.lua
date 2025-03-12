@@ -124,25 +124,6 @@ cfg.groups = {
 	["Penal [TATICO]"] = { _config = { gtype = "org", salario = 1000, orgName = "Tatico" }, "perm.policia", "perm.legal", "perm.tatico"},
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- BOMBEIRO
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	-- BOMBEIRO
-	["Comando [BOMBEIRO]"] = { _config = { gtype = "org", salario = 35000, orgName = "Bombeiro" }, "perm.liderhospital", "perm.hospital", "perm.dv", "perm.legal", "perm.recrutamentobombeiro", "perm.bombeiro", "perm.re"},	
-	["Sub-Comando [BOMBEIRO]"] = { _config = { gtype = "org", salario = 34000, orgName = "Bombeiro" }, "perm.liderhospital", "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
-	["Coronel [BOMBEIRO]"] = { _config = { gtype = "org", salario = 33000, orgName = "Bombeiro" }, "perm.liderhospital", "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
-	["Tenente Coronel [BOMBEIRO]"] = { _config = { gtype = "org", salario = 32000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
-	["Major [BOMBEIRO]"] = { _config = { gtype = "org", salario = 31000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
-	["Capitao [BOMBEIRO]"] = { _config = { gtype = "org", salario = 300000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
-	["1 Tenente [BOMBEIRO]"] = { _config = { gtype = "org", salario = 29000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
-	["2 Tenente [BOMBEIRO]"] = { _config = { gtype = "org", salario = 28000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["Cadete [BOMBEIRO]"] = { _config = { gtype = "org", salario = 27000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["Sub Tenente [BOMBEIRO]"] = { _config = { gtype = "org", salario = 26000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["1 Sargento [BOMBEIRO]"] = { _config = { gtype = "org", salario = 24000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["2 Sargento [BOMBEIRO]"] = { _config = { gtype = "org", salario = 22000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["3 Sargento [BOMBEIRO]"] = { _config = { gtype = "org", salario = 20000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["Cabo [BOMBEIRO]"] = { _config = { gtype = "org", salario = 18000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["Soldado [BOMBEIRO]"] = { _config = { gtype = "org", salario = 12000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
-	["Penal [BOMBEIRO]"] = { _config = { gtype = "org", salario = 10000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
 
 	-- MILITAR
 	["Comando [MILITAR]"] = { _config = { gtype = "org", salario = 44000, orgName = "Militar" }, "perm.liderpolicia", "perm.policia", "perm.dv", "perm.legal", "perm.recrutamentomilitar", "perm.militar"},	
@@ -240,6 +221,28 @@ cfg.groups = {
 	["Paramedico [HOSPITAL]"] = { _config = { gtype = "org", salario = 28000, orgName = "Hospital" }, "perm.hospital", "perm.legal", "perm.re", "perm.hp"},
 	["Enfermeiro-Chefe [HOSPITAL]"] = { _config = { gtype = "org", salario = 27000, orgName = "Hospital" }, "perm.hospital", "perm.legal", "perm.re", "perm.hp"},
 	["Enfermeiro [HOSPITAL]"] = { _config = { gtype = "org", salario = 20000, orgName = "Hospital" }, "perm.hospital", "perm.legal", "perm.re", "perm.hp"},
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- BOMBEIRO
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	-- BOMBEIRO
+	["Comando [BOMBEIRO]"] = { _config = { gtype = "org", salario = 35000, orgName = "Bombeiro" }, "perm.liderhospital", "perm.hospital", "perm.dv", "perm.legal", "perm.recrutamentobombeiro", "perm.bombeiro", "perm.re"},	
+	["Sub-Comando [BOMBEIRO]"] = { _config = { gtype = "org", salario = 34000, orgName = "Bombeiro" }, "perm.liderhospital", "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
+	["Coronel [BOMBEIRO]"] = { _config = { gtype = "org", salario = 33000, orgName = "Bombeiro" }, "perm.liderhospital", "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
+	["Tenente Coronel [BOMBEIRO]"] = { _config = { gtype = "org", salario = 32000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
+	["Major [BOMBEIRO]"] = { _config = { gtype = "org", salario = 31000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
+	["Capitao [BOMBEIRO]"] = { _config = { gtype = "org", salario = 300000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
+	["1 Tenente [BOMBEIRO]"] = { _config = { gtype = "org", salario = 29000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},	
+	["2 Tenente [BOMBEIRO]"] = { _config = { gtype = "org", salario = 28000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["Cadete [BOMBEIRO]"] = { _config = { gtype = "org", salario = 27000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["Sub Tenente [BOMBEIRO]"] = { _config = { gtype = "org", salario = 26000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["1 Sargento [BOMBEIRO]"] = { _config = { gtype = "org", salario = 24000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["2 Sargento [BOMBEIRO]"] = { _config = { gtype = "org", salario = 22000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["3 Sargento [BOMBEIRO]"] = { _config = { gtype = "org", salario = 20000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["Cabo [BOMBEIRO]"] = { _config = { gtype = "org", salario = 18000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["Soldado [BOMBEIRO]"] = { _config = { gtype = "org", salario = 12000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+	["Penal [BOMBEIRO]"] = { _config = { gtype = "org", salario = 10000, orgName = "Bombeiro" }, "perm.hospital", "perm.legal", "perm.bombeiro", "perm.re"},
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- JUDICIARIO
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

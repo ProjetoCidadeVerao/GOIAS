@@ -393,12 +393,12 @@ Config = {
                 end
             },
             [20] = {
-                spawn = 'maconha', -- spawn
-                name = 'maconha', -- Nome do Carro
+                spawn = 'fxiaop', -- spawn
+                name = 'Drone 2 Lugares', -- Nome do Carro
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveItem(source, user_id, spawn)
+                    Config.payments.giveCar(source, user_id, spawn)
                 end
             }
         }

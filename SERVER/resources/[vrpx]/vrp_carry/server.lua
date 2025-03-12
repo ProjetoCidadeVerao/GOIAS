@@ -480,6 +480,7 @@ configVehicleslist = {
 	{ name = "NBFiretruck", nome = "NBFiretruck", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("NBFiretruck"), vendivel = false },
 	{ name = "trail22grau", nome = "trail22grau", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("trail22grau"), vendivel = false },
 	{ name = "xt660cb2", nome = "xt660cb2", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("xt660cb2"), vendivel = false },
+	{ name = "fxiaop", nome = "fxiaop", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("xt660cb2"), vendivel = false },
 	{ name = "savapikachu", nome = "savapikachu", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("savapikachu"), vendivel = false },
 	{ name = "tenere", nome = "tenere", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("tenere"), vendivel = false },
 	{ name = "golsupreme", nome = "golsupreme", price = 300000, portamalas = 10000, tipo = "vip", quantidade = 100, hash = GetHashKey("golsupreme"), vendivel = false },

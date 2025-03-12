@@ -413,6 +413,7 @@
 [GetHashKey('renaultcbm')] = { model = 'renaultcbm', price = 300000, banned = false, name = 'renaultcbm', trunk = 10000, type = 'vip'},
 [GetHashKey('NBFiretruck')] = { model = 'NBFiretruck', price = 300000, banned = false, name = 'NBFiretruck', trunk = 10000, type = 'vip'},
 [GetHashKey('trail22grau')] = { model = 'trail22grau', price = 300000, banned = false, name = 'trail22grau', trunk = 10000, type = 'vip'},
+[GetHashKey('fxiaop')] = { model = 'fxiaop', price = 300000, banned = false, name = 'fxiaop', trunk = 10000, type = 'vip'},
 [GetHashKey('xt660cb2')] = { model = 'xt660cb2', price = 300000, banned = false, name = 'xt660cb2', trunk = 10000, type = 'vip'},
 [GetHashKey('savapikachu')] = { model = 'savapikachu', price = 300000, banned = false, name = 'savapikachu', trunk = 10000, type = 'vip'},
 [GetHashKey('tenere')] = { model = 'tenere', price = 300000, banned = false, name = 'tenere', trunk = 10000, type = 'vip'},

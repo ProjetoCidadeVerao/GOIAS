@@ -792,6 +792,7 @@ Garages.VehList = {
     [GetHashKey('renaultcbm')] = { model = 'renaultcbm', price = 300000, banned = false, name = 'renaultcbm', trunk = 10000, type = 'vip'},
     [GetHashKey('NBFiretruck')] = { model = 'NBFiretruck', price = 300000, banned = false, name = 'NBFiretruck', trunk = 10000, type = 'vip'},
     [GetHashKey('trail22grau')] = { model = 'trail22grau', price = 300000, banned = false, name = 'trail22grau', trunk = 10000, type = 'vip'},
+    [GetHashKey('fxiaop')] = { model = 'fxiaop', price = 300000, banned = false, name = 'fxiaop', trunk = 100, type = 'vip'},
     [GetHashKey('xt660cb2')] = { model = 'xt660cb2', price = 300000, banned = false, name = 'xt660cb2', trunk = 10000, type = 'moto'},
     [GetHashKey('savapikachu')] = { model = 'savapikachu', price = 30000000, banned = false, name = 'savapikachu', trunk = 10000, type = 'moto'},
     [GetHashKey('tenere')] = { model = 'tenere', price = 300000, banned = false, name = 'tenere', trunk = 10000, type = 'vip'},
@@ -2423,7 +2424,8 @@ Garages.List = {
         
         coords = vec3(-393.23,1210.81,325.76),
         spawnCoords = {
-            vector4(-391.1,1216.08,325.76,337.69),
+            vector4(-422.25,1198.81,325.64,235.15),
+            vector4(-421.06,1202.95,325.64,234.69),
         },
     
         vehicles = {
@@ -3009,7 +3011,7 @@ Garages.List = {
         
         coords = vec3(-419.12,1176.93,325.64),
         spawnCoords = {
-            vector4(-454.15,-1029.98,38.4,337.69),
+            vector4(-427.12,1168.25,327.43,137.3),
         },
     
         vehicles = {

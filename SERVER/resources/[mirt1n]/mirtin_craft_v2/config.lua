@@ -152,7 +152,7 @@ Config = {
                delivery = {
                     list = {
                          {
-                              randomicRoutes = false, -- ROTAS RANDOMICAS ( EXEMPLO: DA 1 PULA PRA 3/4 )
+                              randomicRoutes = true, -- ROTAS RANDOMICAS ( EXEMPLO: DA 1 PULA PRA 3/4 )
 
                               dangerRoute = {
                                    status = true,       -- Rota Perigosa ( CHANCE DE CHAMAR A POLICIA )
@@ -284,12 +284,12 @@ Config = {
                          end,                                    
                     },
                     {                                         -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                    name = 'MAFIA',
+                    name = 'Mafia',
                     coords = vec3(677.29,906.14,242.52), -- COORDENADAS DA BANCADA
 
                     requireStorage = {                    -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
                          active = true,
-                         name = 'MAFIA'
+                         name = 'Mafia'
                     },
                     amountSlots = 5,                             -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
 
