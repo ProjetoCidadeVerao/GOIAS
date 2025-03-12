@@ -26,17 +26,18 @@ RegisterCommand('deus',function(source,args,rawCommand)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	local identity = vRP.getUserIdentity(user_id)
+	local x,y,z = vRPclient.getPosition(source)
 	if user_id then
 		for k,v in pairs(aExpediente2) do
 			if vRP.hasGroup(user_id, v.grupo2) then
 				vRP.addUserGroup(user_id, v.grupo1)
 				TriggerClientEvent("Notify",source,"sucesso","[STAFF] Você entrou em Expediente.", 5)
-				vRP.sendLog("https://discord.com/api/webhooks/1320744700252000286/0zofEHDIUXonErOSWKRMmryCZTZmoBR2cTCkils_rWpjbncY2FZZtfSuZKJVFCpoXb6j", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.." " ..identity.sobrenome.." ("..user_id..")] acabou de entrar em expediente.```")
+				vRP.sendLog("https://discord.com/api/webhooks/1320744700252000286/0zofEHDIUXonErOSWKRMmryCZTZmoBR2cTCkils_rWpjbncY2FZZtfSuZKJVFCpoXb6j", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.." " ..identity.sobrenome.." ("..user_id..")] acabou de entrar em expediente. \n [LOCALIZAÇÃO]: "..x..","..y..","..z.."```")
 			else
 				if vRP.hasGroup(user_id, v.grupo1) then
 					vRP.addUserGroup(user_id, v.grupo2)
 					TriggerClientEvent("Notify",source,"negado","[STAFF] Você saiu do Expediente.", 5)
-					vRP.sendLog("https://discord.com/api/webhooks/1320744815050358888/G9ibD66PlaAunFmR5Y8-bkmMoe2PItULu9B1sS2E9kFiI210_fQUzzAG-rWGtOcMFIIr", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.. " " ..identity.sobrenome.." ("..user_id..")] acabou de sair em expediente.```")
+					vRP.sendLog("https://discord.com/api/webhooks/1320744815050358888/G9ibD66PlaAunFmR5Y8-bkmMoe2PItULu9B1sS2E9kFiI210_fQUzzAG-rWGtOcMFIIr", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.. " " ..identity.sobrenome.." ("..user_id..")] acabou de sair em expediente. \n [LOCALIZAÇÃO]: "..x..","..y..","..z.."```")
 				end
 			end
 		end
@@ -47,12 +48,16 @@ end)
 -- DV
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('dv',function(source,args,rawCommand)
+	local source = source
 	local user_id = vRP.getUserId(source)
+	local identity = vRP.getUserIdentity(user_id)
+	local x,y,z = vRPclient.getPosition(source)
 	if vRP.hasPermission(user_id,"admin.permissao") or vRP.hasPermission(user_id,"moderador.permissao") or vRP.hasPermission(user_id,"suporte.permissao") or vRP.hasPermission(user_id,"streamer2.permissao") or vRP.hasPermission(user_id,"perm.abelvolks") or vRP.hasPermission(user_id,"perm.policia") or vRP.hasPermission(user_id,"perm.hospital") then
         local vehicle = vRPclient.getNearestVehicle(source,7)
 		if vehicle then
             TriggerClientEvent('deletarveiculo',source,vehicle)
 		end
+		vRP.sendLog("https://discord.com/api/webhooks/1349207416033640541/IUvMCWTJyeJGqfelzS5DXa3TobCe9vpUKwuXlQp3yDEnAEwWdc1ftMYU7CI5UkNH8Nvu", "```css\n Usou DV as "..os.date("[%d/%m/%Y as %X]").." \n Staff ["..identity.nome.. " " ..identity.sobrenome.." ("..user_id..")] \n [LOCALIZAÇÃO]: "..x..","..y..","..z..".```")
 	end
 end)
 
@@ -241,12 +246,16 @@ end
 -- FIX
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('fix',function(source,args,rawCommand)
+	local source = source
 	local user_id = vRP.getUserId(source)
+	local identity = vRP.getUserIdentity(user_id)
+	local x,y,z = vRPclient.getPosition(source)
 	if vRP.hasPermission(user_id,"admin.permissao") or vRP.hasPermission(user_id,"moderador.permissao") or vRP.hasPermission(user_id,"perm.fixvip") then
 		local vehicle = vRPclient.getNearestVehicle(source,7)
 		if vehicle then
 			TriggerClientEvent('reparar',source,vehicle)
 		end
+		vRP.sendLog("https://discord.com/api/webhooks/1349211231378214943/_0V3OIggpFa0yYBoJcn17Dd7718JaZ_48tu6uL6HTYyGeXXhpxAbKjQYz7bFvIaiJe69", "```css\n Usou FIX as "..os.date("[%d/%m/%Y as %X]").." \n Staff ["..identity.nome.. " " ..identity.sobrenome.." ("..user_id..")] \n LOCALIZAÇÃO: [ "..x..","..y..","..z.."].```")
 	end
 end)  
 
