@@ -120,6 +120,19 @@ Citizen.CreateThread(function()
 end)
 
 -----------------------------------------------------------------------------------------------------------------------------------------
+-- PUXAR VEICULO TUNADO
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterNetEvent('nation:applymods')
+AddEventHandler('nation:applymods',function(id,veiculo)
+	local requestTuning = vSERVER.requestTuning(veiculo, GetVehicleNumberPlateText(id))
+	vSERVER.syncModsAplly(requestTuning, id)
+end)
+
+function src.syncTunagem(custom,vnet)
+	setVehicleMods(vnet,custom)
+end
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 -- TOW
 -----------------------------------------------------------------------------------------------------------------------------------------
 local reboque = nil
@@ -200,9 +213,9 @@ RegisterNUICallback("pagar",function(data)
 			if not IsPedInAnyVehicle(PlayerPedId()) then
 				vRP.playAnim(false,{{"mini@repair","fixing_a_player"}},true)
 			end
-			--TriggerEvent("progress", 10)
-			--Wait(10000)
-			--vRP.stopAnim(false)
+			TriggerEvent("progress", 10)
+			Wait(10000)
+			vRP.stopAnim(false)
 			myveh = getAllVehicleMods(vehicle)
 			
 			local mPlaca,mName = vRP.ModelName(5)
@@ -581,7 +594,7 @@ function getAllVehicleMods(veh)
 	return myveh
 end
 
-function setVehicleMods(veh,myveh,tunnerChip) 
+function setVehicleMods(veh,myveh,tunnerChip)
 	SetVehicleModKit(veh,0)
 	if not myveh or not myveh.customPcolor then
 		return

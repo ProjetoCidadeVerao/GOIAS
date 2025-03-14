@@ -1,6 +1,6 @@
-shared_script "@EQPG/shared.lua"
 
-fx_version 'adamant' 
+client_script "@vrp/lib/lib.lua" --Para remover esta pendencia de todos scripts, execute no console o comando "uninstall"
+ fx_version "adamant"
 game "gta5"
 ui_page "nui/index.html"
 client_scripts {
@@ -18,4 +18,4 @@ files {
 	"nui/script.js",
 	"nui/css.css"
 }              
-                            
+              
