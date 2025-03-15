@@ -10,9 +10,7 @@ Config = {
             end,
 
             image = function(user_id, source)
-                local rows = vRP.query("identity/getImagem", { user_id = user_id })
- 
-                return (#rows > 0 and rows[1].avatarURL or "nao-encontrado.png" )
+                return "nao-encontrado.png"
             end,
 
             wallet = function(user_id, source) 

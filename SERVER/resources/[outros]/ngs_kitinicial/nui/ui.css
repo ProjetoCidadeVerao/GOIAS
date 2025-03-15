@@ -1,0 +1,393 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border: 0;
+    outline: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: fonte;
+    src: url(https://fontsfree.net//wp-content/fonts/basic/sans-serif//FontsFree-Net-Geometria-ExtraBold.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-leitao2 {
+    border-radius: 5px;
+    margin: 0;
+    width: 20vw;
+    height: 22vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: .8vw;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, #0303b7,#112651, #060314); 
+    transition: all 0.5s ease;
+}
+
+.box-div {
+    position: relative;
+    top: 1.730707823310272vw;
+    left: 03vw;
+    width:13.571048430015965vw;
+    height: 12.772751463544438vw;
+    align-items: center;
+    justify-content: center;
+    font-size: .8vw;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, #397bc1,#02368a, #301486); 
+    transition: all 0.5s ease;
+
+}
+
+.btn {
+    background: linear-gradient(to right, #030318, #061c499d);
+    position: relative;
+    top: 65%;
+    margin: 7.5%;
+    width: 11.708355508249069vw;
+    height: 2.660989888238425vw;
+    align-items: center;
+    justify-content: center;
+    font-size: .8vw;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffffff,#58578a, #418c96); 
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    opacity: 1;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    transform: translateX(1px) scale(0.95);
+}
+
+.btn-3 {
+    position: relative;
+    font-size: 0.4854177754124534vw;
+    left: 8.487706226716338vw;
+    top: 27%;
+    margin-left: 2%;
+    width: 3.892336349121873vw;
+    height: 1.06439595529537vw;
+    border-radius: 1px;
+    color: rgb(194, 194, 194);
+    border-top: 0;
+    border-left: 0;
+    font-family: fonte;
+    align-items: center;
+    justify-content: center;
+    font-size: .8vw;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, #009688, #00bcd4); 
+    transition: all 0.5s ease;
+}
+
+.ngs-icone {
+    position: absolute;
+    width: 7.982969664715274vw;
+    height: 7.982969664715274vw;
+    top: 7%;
+    left: 20%;
+    cursor: pointer;
+}
+
+.ngs-icone2 {
+    position: absolute;
+    height: 7.982969664715274vw;
+    top: 8.5%;
+    left: -37%;
+    cursor: pointer;
+}
+
+.valor {
+    cursor: 0;
+    padding: 0;
+    left: 4%;
+    top: 5%;
+    width: 5.4592868547099522vw;
+    position: absolute;
+    font-family: fonte;
+    color: rgb(194, 194, 194);
+    font-size: 0.8vw;
+    border-top: 0;
+    border-left: 0;
+    background: linear-gradient(to right, #030318, #061c499d);
+}
+
+.tituloo {
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: linear-gradient(to right, #030318, #061c499d);
+    height: 5vw;
+}
+
+.nome {
+    position: absolute;
+    top: -0.1004949441192124vw;
+    left: 23%;
+    font-size: 1.90989888238425vw;
+    color: rgb(240, 240, 240);
+    font-family: fonte;
+}
+
+
+.iconwi {
+    margin-left:  0.532197977647685vw;
+    padding: 0;
+    opacity: 0.8;
+    position: relative;
+    left: 58.5vw;
+    top: 35%;
+    width: 0.9313464608834486vw;
+    height: 0.9047365620010644vw;
+}
+
+.iconbet {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    position: relative;
+    left: 58.9vw;
+    top: 35%;
+    width: 1.3304949441192124vw;
+    height: 0.7982969664715274vw;
+}
+
+.iconlimpar {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    position: absolute;
+    left: 57vw;
+    top: 4.7%;
+    width: 1.7vw;
+}
+
+.iconset {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    left: 91%;
+    top: 37%;
+    position: relative;
+    color: white;
+} */
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* IMPORT FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); /* IMPORT FONTE */
+
+* {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border: 0;
+    outline: none;
+    user-select: none;
+}
+@font-face {
+    font-family: fonte;
+    src: url(https://fontsfree.net//wp-content/fonts/basic/sans-serif//FontsFree-Net-Geometria-ExtraBold.ttf);
+}
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-leitao2 {
+    border-radius: 10px;
+    background: linear-gradient(to right, #010114, #041333);
+    border-left: 3px solid rgba(255, 255, 255, 0);
+    margin: 0;
+    width: 15vw;
+    height: 18vw;
+    left: 150%;
+    position: relative;
+    transition: transform 0.3s ease; 
+    transform: translateY(0); /* Posição inicial é 0 */
+    background-color: transparent;
+    border: 4px solid #d1cfde;
+    align-items: center;
+
+    
+}
+
+.box-div {
+    position: relative;
+    top: 1.730707823310272vw;
+    left: 03vw;
+    width:19.561048430015965vw;
+    height: 16.772751463544438vw;
+    border-radius: 2px;
+    top: 65%;
+    left: 03;
+    border-left: 3px solid rgba(255, 251, 251, 0);
+    background-color: rgba(19, 19, 19, 0);
+    background: linear-gradient(to right, #03031800, #061c4900);
+}
+
+.btn {
+    left: 1%;
+    background: linear-gradient(to right, #0554949d, #0554949d);
+    position: relative;
+    top: 49%;
+    margin: 7.5%;
+    width: 11.708355508249069vw;
+    height: 2.660989888238425vw;
+    border-radius: 1px;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    font-size: 1.3304949441192124vw;
+    color: white;
+    border-left: 3px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, #2f5095, #009688); /* Reversed gradient for a futuristic look */
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+    overflow: hidden; /* Clip the gradient to button boundaries */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover for interactivity */
+}
+
+.active {
+    background: linear-gradient(to right, #00bcd4, #009688); /* Reversed gradient for the active state */
+}
+
+/* Optional: Add animation for a smooth transition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.equipar {
+    animation: fadeIn 0.5s ease; /* Apply a fade-in animation on load */
+}
+
+.equipar:hover {
+    background: linear-gradient(to right, #00bcd4, #009688); /* Reversed gradient on hover */
+}
+
+.btn:hover {
+    /* background: linear-gradient(to right, #030318, #061c499d); */
+    opacity: 1;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    transform: translateX(1px) scale(0.95);
+}
+
+
+.ngs-icone {
+    position: absolute;
+    width: 10.982969664715274vw;
+    height: 7.982969664715274vw;
+    top: 5%;
+    left: 8%;
+    cursor: pointer;
+}
+.ngs-icone2 {
+    position: absolute;
+    height: 7.982969664715274vw;
+    top: 8.5%;
+    left: -37%;
+    cursor: pointer;
+}
+.valor {
+    cursor: 0;
+    padding: 0;
+    left: 4%;
+    top: 5%;
+    width: 5.4592868547099522vw;
+    position: absolute;
+    font-family: fonte;
+    color: rgba(194, 194, 194, 0);
+    font-size: 0.8vw;
+    border-top: 0;
+    border-left: 0;
+    background: linear-gradient(to right, #030318, #061c499d);
+}
+.tituloo {
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: linear-gradient(to right, #030318, #061c499d);
+    height: 5vw;
+}
+.nome {
+    position: absolute;
+    top: -0.1004949441192124vw;
+    left: 16%;
+    font-size: 1.90989888238425vw;
+    color: rgb(240, 240, 240);
+    font-family: fonte;
+}
+.iconwi {
+    margin-left:  0.532197977647685vw;
+    padding: 0;
+    opacity: 0.8;
+    position: relative;
+    left: 58.5vw;
+    top: 35%;
+    width: 0.9313464608834486vw;
+    height: 0.9047365620010644vw;
+}
+.iconbet {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    position: relative;
+    left: 58.9vw;
+    top: 35%;
+    width: 1.3304949441192124vw;
+    height: 0.7982969664715274vw;
+}
+.iconlimpar {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    position: absolute;
+    left: 57vw;
+    top: 4.7%;
+    width: 1.7vw;
+}
+.iconset {
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    left: 91%;
+    top: 37%;
+    position: relative;
+    color: white;
+}
+
+

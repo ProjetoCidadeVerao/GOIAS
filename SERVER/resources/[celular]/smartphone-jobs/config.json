@@ -1,0 +1,54 @@
+{
+  "locale": "pt-BR",
+  "currency": "BRL",
+  "uber": {
+    "pricing": {
+      "base": 600,
+      "per_km": 350
+    },
+    "common_places": [
+      { "name": "Praça", "location": [-1182.06,-881.84,13.8] }
+    ],
+    "cancelable": 1
+  },
+  "food": {
+    "categories": [
+      { "id": 1, "name": "Restaurantes" }
+    ],
+    "stores": [
+      {
+        "id": 1,
+        "name": "BurguerShot",
+        "icon": "https://ih1.redbubble.net/image.2293502912.2530/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+        "category_id": 1,
+        "price": 1,
+        "fee": 250,
+        "location": [-1182.06,-881.84,13.8],
+        "products": [
+          {
+            "id": 1,
+            "name": "Sanduiche de Presunto",
+            "description": "Pão, presunto, queijo e o molho da casa!",
+            "price": 150,
+            "section": "Lanches",
+            "image": "http://191.96.81.87/inventory/sanduiche.png",
+            "items": {
+              "sanduiche": 1
+            }
+          },
+          {
+            "id": 2,
+            "name": "Agua",
+            "description": "Agua mineral",
+            "price": 100,
+            "section": "Bebidas",
+            "image": "http://191.96.81.87/inventory/water.png",
+            "items": {
+              "water": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

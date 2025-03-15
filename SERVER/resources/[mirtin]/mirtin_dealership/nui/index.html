@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRTIN CONCE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>CONCESSIONARIA</h1>
+            <div class="flex ">
+                <input type="text" onkeyup="searchVehicle(event)" placeholder="Pesquisar veiculos">
+                <div class="buttons topButtons">
+                    <div class="flex">
+                        <p>Filtros</p>
+                        <button class="buttonType activeType all" onclick="setType('all')">TODOS</button>
+                        <button class="buttonType car" onclick="setType('carros')">CARROS</button>
+                        <button class="buttonType bike" onclick="setType('motos')">MOTOS</button>
+                        <button class="buttonType others" onclick="setType('others')">VIPS</button>
+                    </div>
+                    <div class="buttonsVehicle">
+                        <button onclick="payment()">COMPRAR</button>
+                        <button onclick="testDrive()">TESTE-DRIVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showVehicle">
+            <div class="left">
+                <div class="nameBorder">
+                    PORSHE TLG 511
+                </div>
+                <img class="imageShow" src="http://177.54.148.31:4020/huntersrj/carros/t20.png" alt="">
+                <div class="nameShow">PORSCHE TLG 511</div>
+            </div>
+            <div class="right">
+                <div class="itemShow">
+                    <p>VELOCIDADE MAX</p>
+                    <div class="progress"><span></span></div>
+                </div>
+                <div class="itemShow">
+                    <p>ACELERAÇÃO</p>
+                    <div class="progress"><span></span></div>
+                </div>
+                <div class="itemShow">
+                    <p>FRENAGEM</p>
+                    <div class="progress"><span></span></div>
+                </div>
+                <div class="itemShow">
+                    <p>AGILIDADE</p>
+                    <div class="progress"><span></span></div>
+                </div>
+
+                <div class="price">
+                    R$ 25.000.000
+                </div>
+            </div>
+        </div>
+        <div class="listVehicle">
+            <div class="item ${vehicle.spawn}">
+                <div class="itemTop">
+                    <p>SAVEIRO</p>
+                    <img class="itemImg" src="https://cdn.discordapp.com/attachments/1124743741526253750/1301787674662801449/image.png?ex=6725bfbf&is=67246e3f&hm=482c30c7c20e8d99b00e95aa870ef7631f165de12574f5b7d86d67641b1af61f&" alt="">
+                </div>
+                <div class="itemBottom">
+                 SAVEIRO
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal">
+        <div class="contentModal">
+            <div class="title">
+                DESEJA CONFIRMAR?
+            </div>
+
+            <div class="flex">
+                <button onclick="exitModal()">SAIR</button>
+                <button onclick="buyVehicle()">PAGAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
