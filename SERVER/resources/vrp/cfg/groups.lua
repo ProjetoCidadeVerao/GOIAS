@@ -4,48 +4,64 @@ cfg.groups = {
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ADMINISTRAÇÃO
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["developer"] = { _config = { gtype = "staff", salario = 8000 }, "admin.permissao", "dv.permissao", "ticket.permissao", "developer.permissao","player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff","player.som", "perm.algemar" },
+	["developer"] = { _config = { gtype = "staff", salario = 8000 }, "admin.permissao", "perm.wall", "dv.permissao", "ticket.permissao", "developer.permissao","player.blips", "perm.re", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff","player.som", "perm.algemar" },
 	["developeroff"] = { _config = { gtype = "staff", salario = 8000 }, "perm.user", "staffoff.permissao", "perm.ptr.staff", "perm.algemar" },
-	["admin"] = { _config = { gtype = "staff", salario = 6000 }, "admin.permissao", "dv.permissao", "ticket.permissao", "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff", "perm.algemar" },
+	["admin"] = { _config = { gtype = "staff", salario = 6000 }, "admin.permissao", "perm.wall", "dv.permissao", "ticket.permissao", "perm.re", "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff", "perm.algemar" },
 	["adminoff"] = { _config = { gtype = "staff", salario = 6000 }, "perm.user", "staffoff.permissao", "perm.ptr.staff", "perm.algemar" },
-	["moderador"] = { _config = { gtype = "staff", salario = 4000 }, "moderador.permissao", "dv.permissao", "ticket.permissao", "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff", "perm.algemar" },
+	["moderador"] = { _config = { gtype = "staff", salario = 4000 }, "moderador.permissao", "perm.wall", "dv.permissao", "perm.re", "ticket.permissao", "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff", "perm.algemar" },
 	["moderadoroff"] = { _config = { gtype = "staff", salario = 4000 }, "perm.user", "staffoff.permissao", "perm.ptr.staff", "perm.algemar" },
-	["suporte"] = { _config = { gtype = "staff", salario = 2000 }, "suporte.permissao", "dv.permissao", "ticket.permissao", "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff", "perm.algemar" },
+	["suporte"] = { _config = { gtype = "staff", salario = 2000 }, "suporte.permissao", "perm.wall", "dv.permissao", "perm.re", "ticket.permissao", "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall","spec.permissao", "mqcu.permissao", "perm.ptr.staff", "perm.algemar" },
 	["suporteoff"] = { _config = { gtype = "staff", salario = 2000 }, "perm.user", "staffoff.permissao", "perm.ptr.staff", "perm.algemar" },
 	["user"] = { "perm.user"},
+	--["wall"] = { "permi.bobao"},
 	["streamer"] = { _config = { gtype = "staff" }, "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall", "mqcu.permissao", "streamer.permissao", "perm.algemar" },
+	["streamer2"] = { _config = { gtype = "staff" }, "player.blips", "dv.permissao", "streamer2.permissao", "perm.wall", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall", "mqcu.permissao", "streamer.permissao", "perm.algemar" },
 	["investidoranjo"] = { _config = { gtype = "staff" }, "investidoranjo.permissao" },
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- VIPS
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Bronze"] = { _config = { gtype = "Bronze", salario = 2000 }, "perm.vips", "perm.bronze" },
-	["Prata"] = { _config = { gtype = "Prata", salario = 4000 }, "perm.vips", "perm.prata" },
-	["Ouro"] = { _config = { gtype = "Ouro", salario = 6000 }, "perm.vips", "perm.ouro" },
-	["Platina"] = { _config = { gtype = "Platina", salario = 8000 }, "perm.vips", "perm.platina" },
-	["Diamante"] = { _config = { gtype = "Diamante", salario = 10000 }, "perm.vips", "perm.diamante" },
-	["Ruby"] = { _config = { gtype = "Ruby", salario = 15000 }, "perm.vips", "perm.ruby" },
-	["Safira"] = { _config = { gtype = "Safira", salario = 17000 }, "perm.vips", "perm.safira" },
-	["Green"] = { _config = { gtype = "Green", salario = 20000 }, "perm.vips", "perm.green" },
-	["Black"] = { _config = { gtype = "Black", salario = 25000 }, "perm.vips", "perm.black" },
-
+    ["Promo"] = { _config = { gtype = "Promo", salario = 15000 }, "perm.vips", "perm.promo", "perm.mochila", "perm.verificado", "perm.som", "perm.som1", "perm.helivip", "rastreador.permissao", "perm.reparo", "perm.fixvip" },
+	["Exclusiva"] = { _config = { gtype = "Exclusiva", salario = 10000 }, "perm.vips", "perm.exclusiva", "perm.mochila", "perm.verificado", "perm.som" },		
+    ["Bronze"] = { _config = { gtype = "Bronze", salario = 5000 }, "perm.vips", "perm.bronze", "perm.mochila" },
+	["Prata"] = { _config = { gtype = "Prata", salario = 7000 }, "perm.vips", "perm.prata", "perm.som", "perm.verificado", "perm.mochila" },
+	["Ouro"] = { _config = { gtype = "Ouro", salario = 9000 }, "perm.vips", "perm.ouro", "perm.som", "perm.verificado", "perm.mochila" },
+	["Platina"] = { _config = { gtype = "Platina", salario = 11000 }, "perm.vips", "perm.platina", "perm.som", "perm.verificado", "perm.mochila" },
+	["Diamante"] = { _config = { gtype = "Diamante", salario = 13000 }, "perm.vips", "perm.diamante", "perm.som", "perm.verificado", "perm.mochila", "perm.helivip" },
+	["Ruby"] = { _config = { gtype = "Ruby", salario = 15000 }, "perm.vips", "perm.ruby", "perm.som", "perm.verificado", "perm.mochila", "perm.helivip" },
+	["Safira"] = { _config = { gtype = "Safira", salario = 18000 }, "perm.vips", "perm.safira", "perm.som", "perm.verificado", "perm.mochila", "perm.helivip", "perm.reparo" },
+	["Green"] = { _config = { gtype = "Green", salario = 20000 }, "perm.vips", "perm.green", "perm.som", "perm.verificado", "perm.mochila", "perm.helivip", "perm.reparo" },
+	["Black"] = { _config = { gtype = "Black", salario = 22000 }, "perm.vips", "perm.black", "perm.som", "perm.verificado", "perm.mochila", "perm.helivip", "perm.reparo" },
+	["Passe3"] = { _config = { gtype = "Passe3", salario = 0 }, "perm.passedebatalha3" },
+	["Som"] = { _config = { gtype = "Som", salario = 0 }, "perm.som" },
+	["inicialvip"] = { _config = { gtype = "Vip Inicial", salario = 3000 }, "perm.som", "perm.inicial" },
+	["Dj"] = { _config = { gtype = "Dj", salario = 0 }, "perm.som1" },
+	["Salario1"] = { _config = { gtype = "Salario1", salario = 10000 }, "perm.salario1" },
+	["Salario2"] = { _config = { gtype = "Salario2", salario = 20000 }, "perm.salario1" },
+	["Salario3"] = { _config = { gtype = "Salario3", salario = 30000 }, "perm.salario1" },
+	["Rastreador"] = { _config = { gtype = "Rastreador", salario = 0 }, "rastreador.permissao" },
+	["Janeiro"] = { _config = { gtype = "Janeiro", salario = 1000 }, "perm.vips", "perm.janeiro" },
+	["Fixvip"] = { _config = { gtype = "Fixvip", salario = 0 }, "perm.fixvip" },
+	["Helivip"] = { _config = { gtype = "Helivip", salario = 0 }, "perm.helivip" },
+	["Vipfacbronze"] = { _config = { gtype = "Vipfacbronze", salario = 7000 }, "perm.vips", "perm.vipfacbronze" },
+	["Vipfacprata"] = { _config = { gtype = "Vipfacprata", salario = 10000 }, "perm.vips", "perm.vipfacprata" },
+	["Vipfacouro"] = { _config = { gtype = "Vipfacouro", salario = 12000 }, "perm.vips", "perm.vipfacouro" },
+	["Vipfacplatina"] = { _config = { gtype = "Vipfacplatina", salario = 15000 }, "perm.vips", "perm.vipfacplatina" },
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- BENEFICIOS
+-- BENEFICIOS 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	["Verificado"] = { _config = { salario = nil }, "perm.verificado"},
 	["valecasa"] = { _config = { salario = nil }, "valecasa.permissao"}, 
 	["valegaragem"] = { _config = { salario = nil }, "valegaragem.permissao"}, 
-	["manobras"] = { _config = { salario = nil }, "perm.manobras"}, 
-
+	["comboxj"] = { _config = { salario = nil }, "perm.comboxj"},
+	["salariobooster"] = { _config = { salario = nil }, "perm.booster"},
+	["Suspevip"] = { _config = { salario = nil }, "perm.suspevip"},
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- OUTROS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["paintball"] = { _config = { salario = nil }, "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall" },
-	["Porte de Armas"] = { _config = { salario = nil }, "perm.portearmas" },
-	["Paisana"] = { _config = { salario = nil }, "-perm.hospital", "-perm.policia" },
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- POLICIA
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	["paintball"] = { _config = { salario = 15000 }, "player.blips", "player.noclip", "player.teleport", "player.secret", "player.spec", "player.wall" },
+	["Porte de Armas"] = { _config = { salario = 10000 }, "perm.portearmas" },
+	["Paisana"] = { _config = { salario = 5000 }, "-perm.hospital", "-perm.policia" },
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ROTAM
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -275,90 +291,194 @@ cfg.groups = {
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- DROGAS E ETC
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Lider [CDT]"] = { _config = { gtype = "org", salario = nil, orgName = "CDT" }, "perm.lider.cdt", "perm.cdt"},
-	["Gerente [CDT]"] = { _config = { gtype = "org", salario = nil, orgName = "CDT" }, "perm.cdt"},
-	["Membro [CDT]"] = { _config = { gtype = "org", salario = nil, orgName = "CDT" }, "perm.cdt"},
+	-- TURQUIA
+	["Lider [TURQUIA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Turquia" }, "perm.lider.turquia", "perm.turquia", "perm.ilegal", "perm.dv"},
+	["Sub Lider [TURQUIA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Turquia" }, "perm.lider.turquia", "perm.turquia", "perm.ilegal"},
+	["Gerente [TURQUIA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Turquia" }, "perm.turquia", "perm.ilegal"},
+	["Membro [TURQUIA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Turquia" }, "perm.turquia", "perm.ilegal"},
 
-	["Lider [FRANCA]"] = { _config = { gtype = "org", salario = nil, orgName = "Franca" }, "perm.lider.franca", "perm.franca"},
-	["Gerente [FRANCA]"] = { _config = { gtype = "org", salario = nil, orgName = "Franca" }, "perm.franca"},
-	["Membro [FRANCA]"] = { _config = { gtype = "org", salario = nil, orgName = "Franca" }, "perm.franca"},
+	-- COREIA  ----  NOVA-ESPERANCA
+	["Lider [NOVA-ESPERANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Novaesperanca" }, "perm.lider.novaesperanca", "perm.novaesperanca", "perm.ilegal", "perm.dv", "perm.recrutamentonova"},
+	["Sub Lider [NOVA-ESPERANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Novaesperanca" }, "perm.lider.novaesperanca", "perm.novaesperanca", "perm.ilegal"},
+	["Gerente [NOVA-ESPERANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Novaesperanca" }, "perm.novaesperanca", "perm.ilegal"},
+	["Membro [NOVA-ESPERANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Novaesperanca" }, "perm.novaesperanca", "perm.ilegal"},
 
-	["Lider [GROVE]"] = { _config = { gtype = "org", salario = nil, orgName = "Grove" }, "perm.lider.grove", "perm.grove"},
-	["Gerente [GROVE]"] = { _config = { gtype = "org", salario = nil, orgName = "Grove" }, "perm.grove"},
-	["Membro [GROVE]"] = { _config = { gtype = "org", salario = nil, orgName = "Grove" }, "perm.grove"},
+	-- EGITO   - TIRADENTES
+	["Lider [TIRADENTES]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tiradentes" }, "perm.lider.tiradentes", "perm.tiradentes", "perm.ilegal", "perm.dv"},
+	["Sub Lider [TIRADENTES]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tiradentes" }, "perm.lider.tiradentes", "perm.tiradentes", "perm.ilegal"},
+	["Gerente [TIRADENTES]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tiradentes" }, "perm.tiradentes", "perm.ilegal"},
+	["Membro [TIRADENTES]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tiradentes" }, "perm.tiradentes", "perm.ilegal"},
 
-	["Lider [MEDELIN]"] = { _config = { gtype = "org", salario = nil, orgName = "Medelin" }, "perm.lider.medelin", "perm.medelin"},
-	["Gerente [MEDELIN]"] = { _config = { gtype = "org", salario = nil, orgName = "Medelin" }, "perm.medelin"},
-	["Membro [MEDELIN]"] = { _config = { gtype = "org", salario = nil, orgName = "Medelin" }, "perm.medelin"},
+	-- EMILIOPOVOA
+	["Lider [EMILIOPOVOA]"] = { _config = { gtype = "org", salario = 5000, orgName = "EmilioPovoa" }, "perm.lider.emiliopovoa", "perm.emiliopovoa", "perm.ilegal", "perm.dv"},
+	["Sub Lider [EMILIOPOVOA]"] = { _config = { gtype = "org", salario = 5000, orgName = "EmilioPovoa" }, "perm.lider.emiliopovoa", "perm.emiliopovoa", "perm.ilegal"},
+	["Gerente [EMILIOPOVOA]"] = { _config = { gtype = "org", salario = 5000, orgName = "EmilioPovoa" }, "perm.emiliopovoa", "perm.ilegal"},
+	["Membro [EMILIOPOVOA]"] = { _config = { gtype = "org", salario = 5000, orgName = "EmilioPovoa" }, "perm.emiliopovoa", "perm.ilegal"},
 
-	["Lider [ROXOS]"] = { _config = { gtype = "org", salario = nil, orgName = "Roxos" }, "perm.lider.roxos", "perm.roxos"},
-	["Gerente [ROXOS]"] = { _config = { gtype = "org", salario = nil, orgName = "Roxos" }, "perm.roxos"},
-	["Membro [ROXOS]"] = { _config = { gtype = "org", salario = nil, orgName = "Roxos" }, "perm.roxos"},
+	-- VIETNA PARQUE OESTE
+	["Lider [PARQUE-OESTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Parqueoeste" }, "perm.lider.parqueoeste", "perm.parqueoeste", "perm.ilegal", "perm.dv"},
+	["Sub Lider [PARQUE-OESTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Parqueoeste" }, "perm.lider.parqueoeste", "perm.parqueoeste", "perm.ilegal"},
+	["Gerente [PARQUE-OESTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Parqueoeste" }, "perm.parqueoeste", "perm.ilegal"},
+	["Membro [PARQUE-OESTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Parqueoeste" }, "perm.parqueoeste", "perm.ilegal"},
 
+	-- QUEBRACAIXOTE
+	["Lider [QUEBRACAIXOTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "QuebraCaixote" }, "perm.lider.quebracaixote", "perm.quebracaixote", "perm.ilegal", "perm.dv"},
+	["Sub Lider [QUEBRACAIXOTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "QuebraCaixote" }, "perm.lider.quebracaixote", "perm.quebracaixote", "perm.ilegal"},
+	["Gerente [QUEBRACAIXOTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "QuebraCaixote" }, "perm.quebracaixote", "perm.ilegal"},
+	["Membro [QUEBRACAIXOTE]"] = { _config = { gtype = "org", salario = 5000, orgName = "QuebraCaixote" }, "perm.quebracaixote", "perm.ilegal"},
+
+	-- FRANCA VERA-CRUZ
+	["Lider [VERA-CRUZ]"] = { _config = { gtype = "org", salario = 5000, orgName = "Veracruz" }, "perm.lider.veracruz", "perm.veracruz", "perm.ilegal", "perm.dv", "perm.recrutamentoveracruz"},
+	["Sub Lider [VERA-CRUZ]"] = { _config = { gtype = "org", salario = 5000, orgName = "Veracruz" }, "perm.lider.veracruz", "perm.veracruz", "perm.ilegal"},
+	["Gerente [VERA-CRUZ]"] = { _config = { gtype = "org", salario = 5000, orgName = "Veracruz" }, "perm.veracruz", "perm.ilegal"},
+	["Membro [VERA-CRUZ]"] = { _config = { gtype = "org", salario = 5000, orgName = "Veracruz" }, "perm.veracruz", "perm.ilegal"},
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- LAVAGEM E ETC
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Lider [NEXTLEVEL]"] = { _config = { gtype = "org", salario = nil, orgName = "Next Level" }, "perm.lider.nextlevel", "perm.nextlevel"},
-	["Gerente [NEXTLEVEL]"] = { _config = { gtype = "org", salario = nil, orgName = "Next Level" }, "perm.nextlevel"},
-	["Membro [NEXTLEVEL]"] = { _config = { gtype = "org", salario = nil, orgName = "Next Level" }, "perm.nextlevel"},
+	-- CASSINO
+	["Lider [CASSINO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Cassino" }, "perm.lider.cassino", "perm.cassino", "perm.ilegal", "perm.dv"},
+	["Sub Lider [CASSINO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Cassino" }, "perm.lider.cassino", "perm.cassino", "perm.ilegal"},
+	["Gerente [CASSINO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Cassino" }, "perm.cassino", "perm.ilegal"},
+	["Membro [CASSINO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Cassino" }, "perm.cassino", "perm.ilegal"},
 
-	["Lider [VANILLA]"] = { _config = { gtype = "org", salario = nil, orgName = "Vanilla" }, "perm.lider.vanilla", "perm.vanilla"},
-	["Gerente [VANILLA]"] = { _config = { gtype = "org", salario = nil, orgName = "Vanilla" }, "perm.vanilla"},
-	["Membro [VANILLA]"] = { _config = { gtype = "org", salario = nil, orgName = "Vanilla" }, "perm.vanilla"},
+	-- RED LINE
+	["Lider [RED-LINE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Redline" }, "perm.lider.redline", "perm.redline", "perm.ilegal", "perm.dv"},
+	["Sub Lider [RED-LINE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Redline" }, "perm.lider.redline", "perm.redline", "perm.ilegal"},
+	["Gerente [RED-LINE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Redline" }, "perm.redline", "perm.ilegal"},
+	["Membro [RED-LINE]"] = { _config = { gtype = "org", salario = 5000, orgName = "Redline" }, "perm.redline", "perm.ilegal"},
 
-	["Lider [TEQUILALA]"] = { _config = { gtype = "org", salario = nil, orgName = "Tequilala" }, "perm.lider.tequilala", "perm.tequilala"},
-	["Gerente [TEQUILALA]"] = { _config = { gtype = "org", salario = nil, orgName = "Tequilala" }, "perm.tequilala"},
-	["Membro [TEQUILALA]"] = { _config = { gtype = "org", salario = nil, orgName = "Tequilala" }, "perm.tequilala"},
-
+	-- VINHEDO   -- GARAVELO
+	["Lider [BAHAMAS]"] = { _config = { gtype = "org", salario = 5000, orgName = "Bahamas" }, "perm.lider.bahamas", "perm.bahamas", "perm.ilegal", "perm.dv", "perm.recrutamentobahamas"},
+	["Sub Lider [BAHAMAS]"] = { _config = { gtype = "org", salario = 5000, orgName = "Bahamas" }, "perm.lider.bahamas", "perm.bahamas", "perm.ilegal"},
+	["Gerente [BAHAMAS]"] = { _config = { gtype = "org", salario = 5000, orgName = "Bahamas" }, "perm.bahamas", "perm.ilegal"},
+	["Membro [BAHAMAS]"] = { _config = { gtype = "org", salario = 5000, orgName = "Bahamas" }, "perm.bahamas", "perm.ilegal"},
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- MUNICAO
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Lider [TOKYO]"] = { _config = { gtype = "org", salario = nil, orgName = "Tokyo" }, "perm.lider.tokyo", "perm.tokyo"},
-	["Gerente [TOKYO]"] = { _config = { gtype = "org", salario = nil, orgName = "Tokyo" }, "perm.tokyo"},
-	["Membro [TOKYO]"] = { _config = { gtype = "org", salario = nil, orgName = "Tokyo" }, "perm.tokyo"},
+	-- YAKUZA ---- RECANTO-DO-SOL -- yakuza
+	["Lider [YAKUZA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Yakuza" }, "perm.lider.yakuza", "perm.yakuza", "perm.ilegal", "perm.dv", "perm.recrutamentoyakuza"},
+	["Sub Lider [YAKUZA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Yakuza" }, "perm.lider.yakuza", "perm.yakuza", "perm.ilegal"},
+	["Gerente [YAKUZA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Yakuza" }, "perm.yakuza", "perm.lider.yakuza", "perm.ilegal"},
+	["Membro [YAKUZA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Yakuza" }, "perm.yakuza", "perm.ilegal"},
 
-	["Lider [ROSES]"] = { _config = { gtype = "org", salario = nil, orgName = "Roses" }, "perm.lider.roses", "perm.roses"},
-	["Gerente [ROSES]"] = { _config = { gtype = "org", salario = nil, orgName = "Roses" }, "perm.roses"},
-	["Membro [ROSES]"] = { _config = { gtype = "org", salario = nil, orgName = "Roses" }, "perm.roses"},
+	-- CARTEL    -- BUENA-VISTA
+	["Lider [BUENA-VISTA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Buenavista" }, "perm.lider.buenavista", "perm.buenavista", "perm.ilegal", "perm.dv"},
+	["Sub Lider [BUENA-VISTA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Buenavista" }, "perm.lider.buenavista", "perm.buenavista", "perm.ilegal"},
+	["Gerente [BUENA-VISTA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Buenavista" }, "perm.buenavista", "perm.ilegal"},
+	["Membro [BUENA-VISTA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Buenavista" }, "perm.buenavista", "perm.ilegal"},
 
+	-- VOVO 
+	["Lider [VOVO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vovo" }, "perm.lider.vovo", "perm.vovo", "perm.ilegal", "perm.dv", "perm.recrutamentovovo"},
+	["Sub Lider [VOVO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vovo" }, "perm.lider.vovo", "perm.vovo", "perm.ilegal"},
+	["Gerente [VOVO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vovo" }, "perm.vovo", "perm.ilegal"},
+	["Membro [VOVO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vovo" }, "perm.vovo", "perm.ilegal"},
+
+	["Lider [MORRODOCHAPADAO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Chapadao" }, "perm.lider.chapadao", "perm.chapadao", "perm.ilegal", "perm.dv", "perm.recrutamentochapadao"},
+	["Sub Lider [MORRODOCHAPADAO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Chapadao" }, "perm.lider.chapadao", "perm.vovo", "perm.ilegal"},
+	["Gerente [MORRODOCHAPADAO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Chapadao" }, "perm.chapadao", "perm.lider.chapadao", "perm.ilegal"},
+	["Membro [MORRODOCHAPADAO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Chapadao" }, "perm.chapadao", "perm.ilegal"},
+
+	-- FRANCA 
+	["Lider [FRANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Franca" }, "perm.lider.franca", "perm.franca", "perm.ilegal", "perm.dv", "perm.recrutamentofranca"},
+	["Sub Lider [FRANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Franca" }, "perm.lider.franca", "perm.franca", "perm.ilegal"},
+	["Gerente [FRANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Franca" }, "perm.franca", "perm.lider.franca", "perm.ilegal"},
+	["Membro [FRANCA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Franca" }, "perm.franca", "perm.ilegal"},
+
+	-- GROTA
+	["Lider [GROTA]"] = { _config = { gtype = "org", salario = 17000, orgName = "Grota" }, "perm.lider.grota", "perm.grota", "perm.ilegal", "perm.dv", "perm.peneu", "perm.recrutamentogrota"},
+	["Sub Lider [GROTA]"] = { _config = { gtype = "org", salario = 17000, orgName = "Grota" }, "perm.lider.grota", "perm.grota", "perm.ilegal"},
+	["Gerente [GROTA]"] = { _config = { gtype = "org", salario = 17000, orgName = "Grota" }, "perm.lider.grota", "perm.grota", "perm.ilegal"},
+	["Membro [GROTA]"] = { _config = { gtype = "org", salario = 17000, orgName = "Grota" }, "perm.grota", "perm.ilegal"},
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- DESMANCHE / LOCKPICK
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Lider [REDNECK]"] = { _config = { gtype = "org", salario = nil, orgName = "RedNeck" }, "perm.lider.redneck", "perm.redneck"},
-	["Gerente [REDNECK]"] = { _config = { gtype = "org", salario = nil, orgName = "RedNeck" }, "perm.redneck"},
-	["Membro [REDNECK]"] = { _config = { gtype = "org", salario = nil, orgName = "RedNeck" }, "perm.redneck"},
+	-- CARTEL
+	["Lider [CARTEL]"] = { _config = { gtype = "org", salario = 17000, orgName = "Cartel" }, "perm.lider.cartel", "perm.cartel", "perm.ilegal", "perm.dv"},
+	["Sub Lider [CARTEL]"] = { _config = { gtype = "org", salario = 17000, orgName = "Cartel" }, "perm.lider.cartel", "perm.cartel", "perm.ilegal"},
+	["Gerente [CARTEL]"] = { _config = { gtype = "org", salario = 17000, orgName = "Cartel" }, "perm.cartel", "perm.ilegal"},
+	["Membro [CARTEL]"] = { _config = { gtype = "org", salario = 17000, orgName = "Cartel" }, "perm.cartel", "perm.ilegal"},
 
-	["Lider [EGITO]"] = { _config = { gtype = "org", salario = nil, orgName = "Egito" }, "perm.lider.egito", "perm.egito"},
-	["Gerente [EGITO]"] = { _config = { gtype = "org", salario = nil, orgName = "Egito" }, "perm.egito"},
-	["Membro [EGITO]"] = { _config = { gtype = "org", salario = nil, orgName = "Egito" }, "perm.egito"},
-
-	["Lider [JACKAL]"] = { _config = { gtype = "org", salario = nil, orgName = "Jackal" }, "perm.lider.jackal", "perm.jackal"},
-	["Gerente [JACKAL]"] = { _config = { gtype = "org", salario = nil, orgName = "Jackal" }, "perm.jackal"},
-	["Membro [JACKAL]"] = { _config = { gtype = "org", salario = nil, orgName = "Jackal" }, "perm.jackal"},
-
+	-- MOTOCLUB --- VILA CANAA
+	["Lider [VILA-CANAA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vilacanaa" }, "perm.lider.vilacanaa", "perm.vilacanaa", "perm.ilegal", "perm.dv", "perm.recrutamentovilacanaa"},
+	["Gerente [VILA-CANAA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vilacanaa" }, "perm.vilacanaa", "perm.ilegal"},
+	["Membro [VILA-CANAA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Vilacanaa" }, "perm.vilacanaa", "perm.ilegal"},
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ARMAS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Lider [MAFIA]"] = { _config = { gtype = "org", salario = nil, orgName = "Mafia" }, "perm.lider.mafia", "perm.mafia"},
-	["Gerente [MAFIA]"] = { _config = { gtype = "org", salario = nil, orgName = "Mafia" }, "perm.mafia"},
-	["Membro [MAFIA]"] = { _config = { gtype = "org", salario = nil, orgName = "Mafia" }, "perm.mafia"},
+	-- MAFIA  -jardimnovomundo
+	["Lider [BRASIL]"] = { _config = { gtype = "org", salario = 10000, orgName = "Brasil" }, "perm.brasil", "perm.lider.brasil", "perm.ilegal", "perm.dv", "perm.recrutamentobrasil"},
+	["Sub Lider [BRASIL]"] = { _config = { gtype = "org", salario = 10000, orgName = "Brasil" }, "perm.brasil", "perm.lider.brasil", "perm.ilegal"},
+	["Gerente [BRASIL]"] = { _config = { gtype = "org", salario = 10000, orgName = "Brasil" }, "perm.brasil", "perm.ilegal"},
+	["Membro [BRASIL]"] = { _config = { gtype = "org", salario = 10000, orgName = "Brasil" }, "perm.brasil", "perm.ilegal"},
 
-	["Lider [MOTOCLUBE]"] = { _config = { gtype = "org", salario = nil, orgName = "MotoClube" }, "perm.lider.motoclube", "perm.motoclube"},
-	["Gerente [MOTOCLUBE]"] = { _config = { gtype = "org", salario = nil, orgName = "MotoClube" }, "perm.motoclube"},
-	["Membro [MOTOCLUBE]"] = { _config = { gtype = "org", salario = nil, orgName = "MotoClube" }, "perm.motoclube"},
+	-- SINDICATO   --- 
+	["Lider [LAGUNA-PARK]"] = { _config = { gtype = "org", salario = 5000, orgName = "Lagunapark" }, "perm.lider.lagunapark", "perm.lagunapark", "perm.ilegal", "perm.dv", "perm.recrutamentolagunapark"},
+	["Sub Lider [LAGUNA-PARK]"] = { _config = { gtype = "org", salario = 5000, orgName = "Lagunapark" }, "perm.lider.lagunapark", "perm.lagunapark", "perm.ilegal"},
+	["Gerente [LAGUNA-PARK]"] = { _config = { gtype = "org", salario = 5000, orgName = "Lagunapark" }, "perm.lagunapark", "perm.ilegal"},
+	["Membro [LAGUNA-PARK]"] = { _config = { gtype = "org", salario = 5000, orgName = "Lagunapark" }, "perm.lagunapark", "perm.ilegal"},
 
+	-- mafia
+	["Lider [MAFIA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Mafia" }, "perm.lider.mafia", "perm.mafia", "perm.ilegal", "perm.dv", "perm.peneu"},
+	["Sub Lider [MAFIA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Mafia" }, "perm.lider.mafia", "perm.mafia", "perm.ilegal"},
+	["Gerente [MAFIA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Mafia" }, "perm.mafia", "perm.ilegal"},
+	["Membro [MAFIA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Mafia" }, "perm.mafia", "perm.ilegal"},
+
+	-- HELIPA
+	["Lider [HELIPA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Helipa" }, "perm.lider.helipa", "perm.helipa", "perm.ilegal", "perm.dv", "perm.peneu", "perm.recrutamentohelipa"},
+	["Sub Lider [HELIPA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Helipa" }, "perm.lider.helipa", "perm.helipa", "perm.ilegal"},
+	["Gerente [HELIPA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Helipa" }, "perm.helipa", "perm.lider.helipa", "perm.ilegal"},
+	["Membro [HELIPA]"] = { _config = { gtype = "org", salario = 7000, orgName = "Helipa" }, "perm.helipa", "perm.ilegal"},
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- OUTROS
+-- MUAMBA
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	["Lider [CUPULA]"] = { _config = { gtype = "org", salario = nil, orgName = "Cupula" }, "perm.lider.cupula", "perm.cupula"},
-	["Gerente [CUPULA]"] = { _config = { gtype = "org", salario = nil, orgName = "Cupula" }, "perm.cupula"},
-	["Membro [CUPULA]"] = { _config = { gtype = "org", salario = nil, orgName = "Cupula" }, "perm.cupula"},
+	-- TEQUILA
+	["Lider [TEQUILA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tequila" }, "perm.lider.tequila", "perm.tequila", "perm.ilegal", "perm.dv", "perm.recrutamentotequila"},
+	["Sub Lider [TEQUILA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tequila" }, "perm.lider.tequila", "perm.tequila", "perm.ilegal"},
+	["Gerente [TEQUILA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tequila" }, "perm.tequila", "perm.ilegal"},
+	["Membro [TEQUILA]"] = { _config = { gtype = "org", salario = 5000, orgName = "Tequila" }, "perm.tequila", "perm.ilegal"},
+
+	-- LARANJAS  -  MADRE GERMANO
+	["Lider [MADRE-GERMANO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Madregermano" }, "perm.lider.madregermano", "perm.madregermano", "perm.ilegal", "perm.dv"},
+	["Sub Lider [MADRE-GERMANO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Madregermano" }, "perm.lider.madregermano", "perm.madregermano", "perm.ilegal"},
+	["Gerente [MADRE-GERMANO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Madregermano" }, "perm.madregermano", "perm.ilegal"},
+	["Membro [MADRE-GERMANO]"] = { _config = { gtype = "org", salario = 5000, orgName = "Madregermano" }, "perm.madregermano", "perm.ilegal"},
+
+	-- CV
+	["Lider [CV]"] = { _config = { gtype = "org", salario = 5000, orgName = "CV" }, "perm.lider.cv", "perm.cv", "perm.ilegal", "perm.dv"},
+	["Sub Lider [CV]"] = { _config = { gtype = "org", salario = 5000, orgName = "CV" }, "perm.lider.cv", "perm.cv", "perm.ilegal"},
+	["Gerente [CV]"] = { _config = { gtype = "org", salario = 5000, orgName = "CV" }, "perm.cv", "perm.ilegal"},
+	["Membro [CV]"] = { _config = { gtype = "org", salario = 5000, orgName = "CV" }, "perm.cv", "perm.ilegal"},
+
+	-- CAIXABAIXA
+	["Lider [CAIXABAIXA]"] = { _config = { gtype = "org", salario = 5000, orgName = "CaixaBaixa" }, "perm.lider.caixabaixa", "perm.caixabaixa", "perm.ilegal", "perm.dv"},
+	["Sub Lider [CAIXABAIXA]"] = { _config = { gtype = "org", salario = 5000, orgName = "CaixaBaixa" }, "perm.lider.caixabaixa", "perm.caixabaixa", "perm.ilegal"},
+	["Gerente [CAIXABAIXA]"] = { _config = { gtype = "org", salario = 5000, orgName = "CaixaBaixa" }, "perm.caixabaixa", "perm.ilegal"},
+	["Membro [CAIXABAIXA]"] = { _config = { gtype = "org", salario = 5000, orgName = "CaixaBaixa" }, "perm.caixabaixa", "perm.ilegal"},
+
+	-- MANSÃO WEB
+	["Lider [WEB]"] = { _config = { gtype = "org", salario = 5000, orgName = "Web" }, "perm.lider.web", "perm.web", "perm.ilegal", "perm.dv"},
+	["Sub Lider [WEB]"] = { _config = { gtype = "org", salario = 5000, orgName = "Web" }, "perm.lider.web", "perm.web", "perm.ilegal"},
+	["Gerente [WEB]"] = { _config = { gtype = "org", salario = 5000, orgName = "Web" }, "perm.web", "perm.ilegal"},
+	["Membro [WEB]"] = { _config = { gtype = "org", salario = 5000, orgName = "Web" }, "perm.web", "perm.ilegal"},
+
+	-- MACACO
+	["Lider [MACACOMORRO]"] = { _config = { gtype = "org", salario = 15000, orgName = "MacacoMorro" }, "perm.lider.macaco", "perm.macaco", "perm.ilegal", "perm.dv", "perm.recrutamentomacaco"},
+	["Sub Lider [MACACOMORRO]"] = { _config = { gtype = "org", salario = 15000, orgName = "MacacoMorro" }, "perm.lider.macaco", "perm.macaco", "perm.ilegal"},
+	["Gerente [MACACOMORRO]"] = { _config = { gtype = "org", salario = 15000, orgName = "MacacoMorro" }, "perm.macaco", "perm.ilegal"},
+	["Membro [MACACOMORRO]"] = { _config = { gtype = "org", salario = 15000, orgName = "MacacoMorro" }, "perm.macaco", "perm.ilegal"},
+
+	----- MACACO
+	---["Lider [MORRODOMACACO]"] = { _config = { gtype = "org", salario = 15000, orgName = "Macaco" }, "perm.lider.macaco", "perm.macaco", "perm.ilegal", "perm.dv", "perm.recrutamentomacaco"},
+	---["Sub Lider [MORRODOMACACO]"] = { _config = { gtype = "org", salario = 15000, orgName = "Macaco" }, "perm.lider.macaco", "perm.macaco", "perm.ilegal"},
+	---["Gerente [MORRODOMACACO]"] = { _config = { gtype = "org", salario = 15000, orgName = "Macaco" }, "perm.macaco", "perm.ilegal"},
+	---["Membro [MORRODOMACACO]"] = { _config = { gtype = "org", salario = 15000, orgName = "Macaco" }, "perm.macaco", "perm.ilegal"},
 }
 
 cfg.users = {
 	[1] = { "developer" },
 	[2] = { "developer" },
 	[3] = { "developer" },
+	
 }
 
 cfg.selectors = { }

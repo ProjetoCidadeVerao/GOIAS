@@ -42,10 +42,6 @@ AddEventHandler("character:finishedCharacter",function(currentCharacterMode)
 		vRP.giveInventoryItem(user_id, "celular", 1, false, 2)
 		SetPlayerRoutingBucket(source, 0) 
 
-		SetTimeout(60*1000, function()
-			exports['fivem']:dispatch('vrp', 'addTemporaryGroup', 5, user_id, 'Vipfree')
-			TriggerClientEvent('__title', source, 'PARABÉNS, VOCÊ FOI PREMIADO!', 'VOCÊ ACABA DE GANHAR UM VIP GRATUITO POR 5 DIAS, /vip PARA MAIS INFORMAÇÕES')
-		end)
 	end
 end)
 
