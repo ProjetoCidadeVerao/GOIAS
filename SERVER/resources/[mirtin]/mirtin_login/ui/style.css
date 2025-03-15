@@ -52,7 +52,7 @@ body{
 
 
 .top b{
-    background: linear-gradient(92.9deg, #7176FF 1.73%, rgba(113, 118, 255, 0.46) 98.62%);
+    background: linear-gradient(92.9deg, #71ff89 1.73%, rgba(67, 226, 5, 0.46) 98.62%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -64,8 +64,8 @@ body{
     width: 3.90625vw;
     height: 3.90625vw;
     border-radius: 50%;
-    border: 0.15625vw dashed #7176FF;
-    box-shadow: 0px 0px 0.4770833333333334vw #7176FF;
+    border: 0.15625vw dashed #71ff89;
+    box-shadow: 0px 0px 0.4770833333333334vw #71ff89;
 
     display: flex;
     align-items: center;
@@ -214,10 +214,10 @@ body{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #7176FF;
+    background: #06ac2f;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #4549ae;
+    background: #89d80a;
   }

@@ -15,7 +15,7 @@ Garages.Main = {
         carPosition = vec4(404.99, -949.60, -99.98, 10)
     },
 }
-    --- WORK - CARROS - M0TOS - VIP
+    --- service - CARROS - M0TOS - VIP
 Garages.VehList = {
 
 
@@ -741,7 +741,7 @@ Garages.VehList = {
 [GetHashKey("ckbmwm4offwhite")] = { model = "ckbmwm4offwhite", name = "Jaguar", price = 320145, type = "exclusive", trunk = 70, banned = false },
 [GetHashKey("fanpounder")] = { model = "fanpounder", name = "Pounder", price = 320145, type = "exclusive", trunk = 70, banned = false },
 [GetHashKey("gta5rp_veh_gtr33")] = { model = "gta5rp_veh_gtr33", name = "Nissan GTR 33", price = 320145, type = "exclusive", trunk = 70, banned = false },
-[GetHashKey("hyundaiveloster")] = { model = "hyundaiveloster", name = "Veloster", price = 320145, type = "work", trunk = 70, banned = false },
+[GetHashKey("hyundaiveloster")] = { model = "hyundaiveloster", name = "Veloster", price = 320145, type = "service", trunk = 70, banned = false },
 [GetHashKey("ikx3mc2021")] = { model = "ikx3mc2021", name = "Ferrari 2021", price = 320145, type = "exclusive", trunk = 70, banned = false },
 [GetHashKey("lc500")] = { model = "lc500", name = "lc500", price = 320145, type = "exclusive", trunk = 70, banned = false },
 [GetHashKey("manhartx7")] = { model = "manhartx7", name = "BMW X7", price = 320145, type = "exclusive", trunk = 70, banned = false },
@@ -795,14 +795,14 @@ Garages.VehList = {
 
 ---------------------------------------POLICIA FEDERAL
 
-[GetHashKey("bcs_aguiapf")] = { model = "bcs_aguiapf", name = "Aguia PF", price = 1320145, type = "work", trunk = 30,GetHashKey banned = false },
-[GetHashKey("bcs_blindadopf")] = { model = "bcs_blindadopf", name = "Blindado PF", price = 1320145, type = "work", trunk = 30, banned = false },
-[GetHashKey("bcs_camaropf")] = { model = "bcs_camaropf", name = "Camaro PF", price = 1320145, type = "work", trunk = 30, banned = false },
-[GetHashKey("bcs_corollapf")] = { model = "bcs_corollapf", name = "Corolla PF", price = 1320145, type = "work", trunk = 30, banned = false },
-[GetHashKey("bcs_l200pf")] = { model = "bcs_l200pf", name = "L200 PF", price = 1320145, type = "work", trunk = 30, banned = false },
-[GetHashKey("bcs_rampf")] = { model = "bcs_rampf", name = "DodRam PF", price = 1320145, type = "work", trunk = 30, banned = false },
-[GetHashKey("bcs_robopf")] = { model = "bcs_robopf", name = "R1200 PF", price = 1320145, type = "work", trunk = 30, banned = false },
-[GetHashKey("bcs_trailpf")] = { model = "bcs_trailpf", name = "Trail PF", price = 1320145, type = "work", trunk = 30, banned = false },
+[GetHashKey("bcs_aguiapf")] = { model = "bcs_aguiapf", name = "Aguia PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_blindadopf")] = { model = "bcs_blindadopf", name = "Blindado PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_camaropf")] = { model = "bcs_camaropf", name = "Camaro PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_corollapf")] = { model = "bcs_corollapf", name = "Corolla PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_l200pf")] = { model = "bcs_l200pf", name = "L200 PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_rampf")] = { model = "bcs_rampf", name = "DodRam PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_robopf")] = { model = "bcs_robopf", name = "R1200 PF", price = 1320145, type = "service", trunk = 30, banned = false },
+[GetHashKey("bcs_trailpf")] = { model = "bcs_trailpf", name = "Trail PF", price = 1320145, type = "service", trunk = 30, banned = false }
 
 
 
@@ -854,16 +854,16 @@ Garages.List = {
         },
     },
 
-   -- [5] = {
-   --     type = "public", -- public / service [ tipo da garagem ]
-   --     permiss = nil, -- permissao
-   --     blip = true, -- blip no mapa
-   --     
-   --     coords = vec3(275.36,-345.07,45.17),
-   --     spawnCoords = {
-   --         vec4(283.02,-342.35,44.25,248.48),
-   --     },
-   -- },
+   [5] = {
+       type = "public", -- public / service [ tipo da garagem ]
+       permiss = nil, -- permissao
+       blip = true, -- blip no mapa
+       
+       coords = vec3(275.36,-345.07,45.17),
+       spawnCoords = {
+           vec4(283.02,-342.35,44.25,248.48),
+       },
+   },
 
     [6] = {
         type = "public", -- public / service [ tipo da garagem ]
@@ -1891,22 +1891,22 @@ Garages.List = {
         },
     },
 
-   -- [81] = {
-   --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-   --     permiss = "perm.helicoptero", -- permissao
-   --     blip = false, -- blip no mapa
-   --     
-   --     coords = vec3(-754.15,-1467.25,4.99),
-   --     spawnCoords = {
-   --         vector4(-277.8,-726.31,131.8,67.28),
-   --     },
-   -- 
-   --     vehicles = {
-   --         {vehicle = 'volatus'},
-   --         {vehicle = 'supervolito'},
---
-   --     },
-   -- },
+   [81] = {
+       type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+       permiss = "perm.helicoptero", -- permissao
+       blip = false, -- blip no mapa
+       
+       coords = vec3(-754.15,-1467.25,4.99),
+       spawnCoords = {
+           vector4(-277.8,-726.31,131.8,67.28),
+       },
+   
+       vehicles = {
+           {vehicle = 'volatus'},
+           {vehicle = 'supervolito'},
+
+       },
+   },
 
     [82] = {
         type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53

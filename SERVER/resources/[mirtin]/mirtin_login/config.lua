@@ -2,26 +2,27 @@ Config = {
     NameEvent = "vrp:ToogleLoginMenu", -- NOME DO EVENTO
     EventBack = "ToogleBackCharacter", -- EVENTO PARA RETORNAR PRA CRIACAO
     
-    Title = "<p> BEM-VINDO AO </p> <b>Rocket RP</b>",
+    Title = "<p> BEM-VINDO A </p> <b>Goias Roleplay</b>",
     
+
     SpawnsLocs = {
         { -- Começo de uma localização
-            Name = 'Pier', -- Nome
-            Description = 'Spawn do Pier em LOS SANTOS', -- Descrição
+            Name = 'Delegacia', -- Nome
+            Description = 'O local mais Seguro da Cidade, Bora lá?,', -- Descrição
             Image = 'https://media.discordapp.net/attachments/712813090952970344/1035231435826667571/pier.png', -- Nome da Imagem
-            Spawn = vector3(-1653.42,-1001.83,13.02), -- Coordenadas
+            Spawn = vector3(-1680.83,-746.49,10.24), -- Coordenadas
 
             Nui = { -- Posição na Nui
-                top = 17, -- Cima
+                top = 90.5, -- Cima
                 left = 30 -- Esquerda [ Numero Negativo Movimenta pra Esquerda ]
             }
         }, -- Fim da localização
 
         { -- Começo de uma localização
-            Name = 'Aeroporto', -- Nome
-            Description = 'Spawn do Pier em LOS SANTOS', -- Descrição
+            Name = 'Hospital', -- Nome
+            Description = 'Um dos locais mais movimentados de nossa cidade, muitas pessoas circulando por ai, você terá facilidade em fazer contatos aqui, vamos lá?', -- Descrição
             Image = 'https://media.discordapp.net/attachments/712813090952970344/1035231436707471440/aeroporto.png?width=994&height=559', -- Nome da Imagem
-            Spawn = vector3(-1034.61,-2732.09,13.76), -- Coordenadas
+            Spawn = vector3(-513.65,-978.64,23.51), -- Coordenadas
 
             Nui = { -- Posição na Nui
                 top = 27, -- Cima
@@ -31,9 +32,9 @@ Config = {
 
         { -- Começo de uma localização
             Name = 'Praça', -- Nome
-            Description = 'Spawn do Pier em LOS SANTOS', -- Descrição
+            Description = 'Um dos Locais mais divertidos e descontraidos da cidade, Bora lá?', -- Descrição
             Image = 'https://media.discordapp.net/attachments/712813090952970344/1035231436250300518/praca.png?width=994&height=559', -- Nome da Imagem
-            Spawn = vector3(224.19,-874.89,30.5), -- Coordenadas
+            Spawn = vector3(99.99,-1078.02,29.21), -- Coordenadas
 
             Nui = { -- Posição na Nui
                 top = 41.7, -- Cima
