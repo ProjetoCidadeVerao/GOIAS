@@ -10,7 +10,7 @@ Config = {
             end,
 
             image = function(user_id, source)
-                return "nao-encontrado.png"
+                return "http://191.96.81.87/logo/logo.png"
             end,
 
             wallet = function(user_id, source) 

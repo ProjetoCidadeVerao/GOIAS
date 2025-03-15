@@ -1,5 +1,5 @@
 Config = {
-     images = 'http://177.54.148.31:4020/inventario/', -- URL DAS SUAS IMAGENS
+     images = 'http://191.96.81.87/inventario/', -- URL DAS SUAS IMAGENS
      storeLink = '',                                   -- LINK DA SUA LOJA
      dirtymoney = 'dirty_money', -- SPAWN DO DINHEIRO SUJO
   

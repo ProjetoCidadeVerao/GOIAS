@@ -2,7 +2,7 @@ var playlist = [{
         "song": "Texas Music",
         "album": "N/A",
         "artist": "Vulcaner",
-        "mp3": "http://177.54.148.31:4020/loadscreen/intro.mp3"
+        "mp3": "http://191.96.81.87/Loading/audio.mp3"
     }
 ];
 

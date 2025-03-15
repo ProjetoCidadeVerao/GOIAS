@@ -284,12 +284,12 @@ vRP.prepare("mirtin_bans/getUserBans", "SELECT user_id,banimento,desbanimento,mo
 vRP.prepare("mirtin_bans/addToken","INSERT IGNORE INTO mirtin_bans_hwid(id,token) VALUES(@user_id,@token)")
 
 local geral = {
-	logo = "", -- LOGO do Servidor
+	logo = "http://191.96.81.87/logo/logo.png", -- LOGO do Servidor
     background = "https://cdn.discordapp.com/attachments/403296672748142595/875522538510368858/download_1.jpg", -- Fundo da Tela de banimento
-    discord = "https://discord.gg/seu_discord", -- Discord do Servidor (Colocar https://)
+    discord = "https://discord.gg/cP5BRnRwY3", -- Discord do Servidor (Colocar https://)
 
     color = 6356736, -- Cor da Lateral do WeebHook
-    footer = "© Mirtin Base", -- RODAPE do WeebHook
+    footer = "© Goias Roleplay", -- RODAPE do WeebHook
 
     whookHWIDlogin = "", -- WEEBHOOK para quando o estiver banido HWID e logar com outra conta.
 }
@@ -353,7 +353,7 @@ end
 -- CONECTANDO NO SERVIDOR
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 AddEventHandler("playerConnecting", function(name, setKickReason, deferrals)
-	if not GeneratingCache then deferrals.update("[MIRTIN BASE] Ops, houve um problema. tente novamente.") return end
+	if not GeneratingCache then deferrals.update("[Goias Roleplay] Ops, houve um problema. tente novamente.") return end
 	
 	local source = source
 	deferrals.defer()
@@ -362,26 +362,26 @@ AddEventHandler("playerConnecting", function(name, setKickReason, deferrals)
 	local playerIP  = GetPlayerEndpoint(source)
 
 	if ids == nil or #ids == 0 then
-		deferrals.done("[MIRTIN BASE] Ocorreu um problema de identidade.")
+		deferrals.done("[Goias Roleplay] Ocorreu um problema de identidade.")
 		return
 	end
 
 	local user_id = vRP.getUserIdByIdentifiers(ids)
 	if not user_id then
-		deferrals.done("[MIRTIN BASE] Ocorreu um problema de identificação.")
+		deferrals.done("[Goias Roleplay] Ocorreu um problema de identificação.")
 		return
 	end
 	if(vRP.user_sources[user_id]~=nil)then
 		if(GetPlayerName(vRP.user_sources[user_id])~=nil)then
-			deferrals.done("[MQCU] Você está bugado, reinicie o fivem!")
+			deferrals.done("Você está bugado, reinicie o fivem!")
 			TriggerEvent("queue:playerConnectingRemoveQueues",ids)
-			DropPlayer(vRP.user_sources[user_id],"[MQCU] Voce foi kikado, tente logar novamente")
+			DropPlayer(vRP.user_sources[user_id],"Voce foi kikado, tente logar novamente")
 			return
 		end
 	end
 
 	if not vRP.isWhitelisted(user_id) then
-		deferrals.done("\n[MIRTIN BASE] Bem vindo a Mirtin Base \n Para entrar no nosso servidor basta você acessar nosso discord e fazer a White-list \n Seu ID: [ "..user_id.." ]\n Nosso Discord: https://discord.gg/SEU_DISCORD")
+		deferrals.done("\n[Goias Roleplay] Bem vindo a Goias Roleplay \n Para entrar no nosso servidor basta você acessar nosso discord e fazer a White-list \n Seu ID: [ "..user_id.." ]\n Nosso Discord: https://discord.gg/cP5BRnRwY3")
 		return
 	end
 

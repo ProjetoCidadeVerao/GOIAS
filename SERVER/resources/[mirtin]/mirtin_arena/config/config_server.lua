@@ -10,8 +10,8 @@ local old_health = {}
 config = {}
 
 config.weebhook = {
-    link = "https://discord.com/api/webhooks/937578709039333396/2Gr5lMCHYE2hZugqYWDf8IRZQeOkcSqnI54E4am0VkmoOJtpgHaW40GRVbWEKdnU0cXs",
-    logo = "https://cdn.discordapp.com/attachments/1026982384438091856/1027360541439705098/LOGO-TEXAS-ROLEPLAY_sem_fundio.png",
+    link = "WEBHOOK",
+    logo = "http://191.96.81.87/logo/logo.png",
     color = 6356736
 }
 

@@ -7,6 +7,27 @@ src = {}
 Tunnel.bindInterface("vrp_player",src)
 vSERVER = Tunnel.getInterface("vrp_player")
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- DISCORD  
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+local user_id = nil
+
+RegisterNetEvent("vRP:playerSpawn", function(userId)
+    user_id = userId
+    Wait(2000)
+    SetRichPresence("ID: " .. user_id)
+end)
+
+CreateThread(function()
+    SetDiscordAppId(1343220190661312542)
+    SetDiscordRichPresenceAsset("http://191.96.81.87/logo/logo.png")
+    SetDiscordRichPresenceAssetText("Goiás RP")
+    SetDiscordRichPresenceAction(0, "💬 Discord 💬", "https://discord.gg/goiasroleplay")
+    SetDiscordRichPresenceAction(1, "🌍 Cidade 🌍", "fivem://connect/cfx.re/join/8dmx63")
+    SetRichPresence("Melhor Cidade tema Goiás...")
+end)
+
 function src.updateWeapons()
     vRPserver.updateWeapons(vRP.getWeapons())
     vRPserver.updateArmor(vRP.getArmour())
@@ -37,20 +58,6 @@ AddEventHandler('FOGO',function(source)
     end
 end)
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- DISCORD API
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Citizen.CreateThread(function()
-    while true do
-        local players = vSERVER.CheckPlayers()
-        SetDiscordAppId("SEU ID, RETIRAR ASPAS DUPLAS")
-        SetDiscordRichPresenceAssetText('discord.gg/XXX')
-        SetDiscordRichPresenceAsset("logo")
-        SetRichPresence("Jogando Mirtin Base")
-        SetDiscordRichPresenceAction(1, "Discord", "https://discord.gg/XXX")
-        Citizen.Wait(60*1000)
-    end
-end)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CONTADOR DE SALARIO

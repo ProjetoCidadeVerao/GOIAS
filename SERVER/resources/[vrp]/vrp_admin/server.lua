@@ -1232,7 +1232,7 @@ RegisterCommand('consultar', function(source,args)
 					mensagem = mensagem.. "```cs\nNão possui propriedades```"
                 end ]]
 				
-				sendToDiscord("https://discord.com/api/webhooks/920802107324522527/Ej78pYh2oMMqRsYRBSB-SZ1kkOeRa4-LnZBGo_QCJ57BGetFHhYKpipoKRw7dXNmocHq", 6356736, "Sistema de Consultas", mensagem, "© Paris Roleplay")
+				sendToDiscord("https://discord.com/api/webhooks/920802107324522527/Ej78pYh2oMMqRsYRBSB-SZ1kkOeRa4-LnZBGo_QCJ57BGetFHhYKpipoKRw7dXNmocHq", 6356736, "Sistema de Consultas", mensagem, "© Goias Roleplay")
             end
         end
 

@@ -5,9 +5,9 @@ Config = {
     command = 'box', -- COMANDO PARA ABRIR
 
     dirs = { -- DIRETORIO DE IMAGENS
-        item = 'http://177.54.148.31:4020/inventario/',
-        car = 'http://177.54.148.31:4020/veiculos/',
-        others = 'http://177.54.148.31:4020/others/'
+        item = 'http://191.96.81.87/inventario/',
+        car = 'http://191.96.81.87carros/',
+        others = 'http://191.96.81.87/inventario/'
     },
 
     rewards = { -- Givar Pontos com jogador online
