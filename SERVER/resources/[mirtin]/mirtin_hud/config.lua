@@ -10,7 +10,7 @@ Config = {
         cupom = { -- SISTEMA DE CUPOM
             active = true, -- Ativado / Desativado
 
-            name = "MIRTINSTORE55" -- nome do cupom
+            name = "GOIAS35" -- nome do cupom
         },
         
         assault = { -- Horario de Assalto
@@ -31,12 +31,12 @@ Config = {
         },
 
         colors = { -- Cores da HUD
-            primaryBgColor = "#2F2E62", -- Cor do lado esquerdo do gradient do background
+            primaryBgColor = "#2F622E", -- Cor do lado esquerdo do gradient do background
             secundaryBgColor = "#32315B80", -- Cor do lado direito do gradient do background
-            primaryIconColor = "#7B4EFD", -- Cor do lado esquerdo do gradiente do icone
+            primaryIconColor = "#4EFD7B", -- Cor do lado esquerdo do gradiente do icone
             secondaryIconColor = "#32315B", -- Cor do lado direito do gradiente do icone
-            borderColor = "#5E5CA7", -- Cor da borda
-            titleColor = "#7B4EFD", -- Cor dos titulos
+            borderColor = "#5CA75E", -- Cor da borda
+            titleColor = "#4EFD7B", -- Cor dos titulos
             subtitleColor = "#fff", -- Cor dos textos em baixo
         },
 
