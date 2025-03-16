@@ -2,7 +2,7 @@
 -- CONFIGS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Config = {
-    dirty_money = 'dinheirosujo', -- Nome do item de dinheiro sujo que será dado ao jogador após desmanchar o veículo.
+    dirty_money = 'dirty_money', -- Nome do item de dinheiro sujo que será dado ao jogador após desmanchar o veículo.
     dismantleTime = 5, -- Tempo em minutos para desmanchar o veículo. Se o tempo esgotar sem finalizar, o processo é cancelado.
     
     custom_vehicles = false, -- Define se a lista de veículos de desmanche será personalizada ou usará uma lista padrão.
@@ -360,12 +360,82 @@ Config = {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Config.Locations = {
     {
-        permission = 'desmanchemc.permissao', -- Permissão para acessar
-        percentual = 40, -- 40% do valor do veiculo
+        permission = 'perm.vilacanaa', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
         
         coords = {
-            blip = vec3(973.64, -1803.45, 31.29),
-            shelves = vec4(973.27,-1798.49,31.29,187.09)           
+            blip = vec3(146.25,320.19,112.14),
+            shelves = vec4(146.59,325.31,112.34,35.4)
+        },
+    },
+
+    {
+        permission = 'perm.grota', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(1456.7,1107.95,114.44),
+            shelves = vec4(1450.88,1109.16,114.39,229.61)
+        },
+    },
+
+    {
+        permission = 'perm.mafia', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(633.38,920.22,247.57),
+            shelves = vec4(622.65,922.42,247.57,82.98)
+        },
+    },
+
+    {
+        permission = 'perm.madregermano', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(-1221.62,834.24,193.37),
+            shelves = vec4(-1228.64,845.08,193.37,316.15)
+        },
+    },
+
+    {
+        permission = 'desmanchesublime.permissao', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(-593.8, -1601.09, 27.01),
+            shelves = vec4(-594.17,-1604.94,27.01,357.17)
+        },
+    },
+
+    {
+        permission = 'desmanchestreetrace.permissao', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(888.2, -2101.46, 30.46),
+            shelves = vec4(888.51,-2097.94,30.46,175.75)
+        },
+    },
+
+    {
+        permission = 'desmanchelscustoms.permissao', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(-339.3, -95.15, 39.01),
+            shelves = vec4(-332.79,-93.03,39.01,150.24)
+        },
+    },
+
+    {
+        permission = 'desmancheunderground.permissao', -- Permissão para acessar
+        percentual = 40, -- 10% do valor do veiculo
+        
+        coords = {
+            blip = vec3(2718.22, 3480.59, 55.25),
+            shelves = vec4(2712.97,3479.87,55.25,297.64)
         },
     },
 }

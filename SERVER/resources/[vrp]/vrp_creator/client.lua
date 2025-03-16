@@ -525,9 +525,9 @@ function loadCutSine()
 			end
 
 			Wait(2000)
-			RequestCollisionAtCoord(PlayerPedId(),-1032.09,-2730.78,13.76)
-			SetEntityCoordsNoOffset(PlayerPedId(),-1032.09,-2730.78,13.76,true,true,true)
-			SetEntityHeading(PlayerPedId(),f(84.41))
+			RequestCollisionAtCoord(PlayerPedId(),-1620.91,-1059.99,13.1)
+			SetEntityCoordsNoOffset(PlayerPedId(),-1620.91,-1059.99,13.1,true,true,true)
+			SetEntityHeading(PlayerPedId(),f(278.83))
 			
 			StopCutsceneImmediately()
 			EndSrl()

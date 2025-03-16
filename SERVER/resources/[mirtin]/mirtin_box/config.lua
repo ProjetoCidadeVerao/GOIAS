@@ -13,18 +13,23 @@ Config = {
     rewards = { -- Givar Pontos com jogador online
         active = true, -- Ligado / Desativado
         alertPlayer = true, -- Se vai aletar o jogador que ele recebeu os pontos.
-        time = 5, -- Tempo que vai givar os pontos em minuto(s)
+        time = 30, -- Tempo que vai givar os pontos em minuto(s)
         points = 1, -- Quantidade de Coins que vai givar
     },
 
     ranking = {
-        reset_time = 5, -- Tempo para resetar o ranking em dia(s)
+        reset_time = 7, -- Tempo para resetar o ranking em dia(s)
         rewardPositions = {
-            [1] = '1x Vip Platina',
-            [2] = '1x Vip Ouro',
-            [3] = '1x Vip Prata',
-            [4] = '1x Vip Bronze',
-            [5] = '1x Vip Esmeralda',
+            [1] = '1x Vale Compras na loja Vip [100 R$] ',
+            [2] = '1x Vale Compras na loja Vip [90 R$]',
+            [3] = '1x Vale Compras na loja Vip [80 R$]',
+            [4] = '1x Vale Compras na loja Vip [70 R$]',
+            [5] = '1x Vale Compras na loja Vip [60 R$]',
+            [6] = '1x Vale Compras na loja Vip [50 R$]',
+            [7] = '1x Vale Compras na loja Vip [40 R$]',
+            [8] = '1x Vale Compras na loja Vip [30 R$]',
+            [9] = '1x Vale Compras na loja Vip [20 R$]',
+            [10] = '1x Vale Compras na loja Vip [10 R$]',
         },    
     },
 
@@ -32,7 +37,7 @@ Config = {
         uncommon = 80, -- 80%
         common = 60, -- 60%
         rare = 50, -- 50%
-        epic = 30, -- 30%
+        epic = 5, -- 30%
         legendary = 1, -- 1%
     },
 
@@ -47,13 +52,13 @@ Config = {
     weebhook = {
         color = 6356736,
         logo = "https://cdn.discordapp.com/attachments/941082057449279498/951537784433303663/logo_sem_fundo.png?ex=65e9fe9e&is=65d7899e&hm=653c1d7e9eaeb8a7e973e7eef5b394348a99d615fa56294ec5139f196135ccf3&",
-        footer = "© MIRTIN STORE"
+        footer = "© Goias"
     },
 
 
     langs = {
         giveCoin = function(source, amount) 
-            TriggerClientEvent("Notify",source,"sucesso","[MIRTIN_BOX]<br>Você acaba de receber <b>"..amount.." point(s)</b> para utilizar no <b>/"..Config.command.."</b>.", 5000)
+            TriggerClientEvent("Notify",source,"sucesso","[GOIAS_BOX]<br>Você acaba de receber <b>"..amount.." point(s)</b> para utilizar no <b>/"..Config.command.."</b>.", 5000)
         end,
 
         notMoney = function(source) 
@@ -94,15 +99,15 @@ Config = {
 Config.cratesPoints = { -- Todas que vao ser usada por [ Points ] 
     { -- CAIXA COMUM
         crate = "Comum", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/953364940390023179/gA-98pyMLoOs1v5lL_9zIyJzUL6Y9njB-kpq1teBWDAvXJ6qXWakvE7d5QqFVDB1pXPk", -- WEEBHOOK Dessa Caixa
-        price = 30, -- PREÇO Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318227644197765200/X1QGpYZ1JLy8Uvx-B8pM2gmaXkGAOKAvavyPL7WBMBLaT4_c7LiFxaL9NhDbYqM4LGow", -- WEEBHOOK Dessa Caixa
+        price = 60, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
 
             {
                 rarity = "uncommon", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
-                index = "dinheiro", -- INDEX Que vai passar no execute abaixo
-                name = "Dinheiro", -- Nome da Recompensa
+                index = "money", -- INDEX Que vai passar no execute abaixo
+                name = "Money", -- Nome da Recompensa
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 50000, -- Quantidade da Recompensa
 
@@ -221,7 +226,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
     { -- CAIXA LENDARIA
         crate = "Lendaria", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/953364940390023179/gA-98pyMLoOs1v5lL_9zIyJzUL6Y9njB-kpq1teBWDAvXJ6qXWakvE7d5QqFVDB1pXPk", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318227786695053363/jGSvBnpymqvHTY3hZwePHlmI1aEEflK5QXn15a4t41zjX-pVMrFN8vPeoJVsGVLBubG3", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -235,7 +240,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },
 
@@ -248,23 +253,23 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveGroup(source, user_id, index)
+                    Config.payments.giveGroup(source, user_id, "Verificado")
                 end,
             },
 
             
-            {
-                rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+           --{
+           --    rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
 
-                index = "vipdiamante", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
-                name = "Vip Diamante", -- Nome da Recompensa
-                type = 'other', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
-                amount = 1, -- Quantidade da Recompensa
+           --    index = "vipdiamante", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+           --    name = "Vip Diamante", -- Nome da Recompensa
+           --    type = 'other', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+           --    amount = 1, -- Quantidade da Recompensa
 
-                execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
-                end,
-            },
+           --    execute = function(source, user_id, index, amount)
+           --        Config.payments.giveGroup(source, user_id, "vipdiamante")
+           --    end,
+           --},
 
             {
                 rarity = "rare", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
@@ -275,7 +280,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -288,7 +293,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 200, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -301,7 +306,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 30, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -314,7 +319,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 100, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -327,7 +332,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 150, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -340,7 +345,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 5, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -353,7 +358,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 500000, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
         }
@@ -361,7 +366,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
     { -- CAIXA MAGNIFICA
         crate = "Magnifica", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/953364940390023179/gA-98pyMLoOs1v5lL_9zIyJzUL6Y9njB-kpq1teBWDAvXJ6qXWakvE7d5QqFVDB1pXPk", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318228221094920253/jno6ax1dvtl_8tQVT8BiYr10xwZPy9w2UXJ4Wnp9_7a0DzxKK0yN5VYjG5NHotEF1lyE", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -375,7 +380,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },
 
@@ -388,34 +393,34 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveGroup(source, user_id, index)
+                    Config.payments.giveGroup(source, user_id, "Verificado")
                 end,
             },
 
             
-            {
-                rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
-
-                index = "vipruby", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
-                name = "Vip Ruby", -- Nome da Recompensa
-                type = 'other', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
-                amount = 1, -- Quantidade da Recompensa
-
-                execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
-                end,
-            },
+           -- {
+           --     rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+--
+           --     index = "vipruby", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+           --     name = "Vip Ruby", -- Nome da Recompensa
+           --     type = 'other', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+           --     amount = 1, -- Quantidade da Recompensa
+--
+           --     execute = function(source, user_id, index, amount)
+           --         Config.payments.giveCar(source, user_id, "vipruby")
+           --     end,
+           -- },
 
             {
                 rarity = "rare", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
 
-                index = "WEAPON_SPECIALCARBINE", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+                index = "WEAPON_SPECIALCARBINE_MK2", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
                 name = "Parafal", -- Nome da Recompensa
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+                type = 'others', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -424,11 +429,11 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
                 index = "rubi", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
                 name = "Rubi", -- Nome da Recompensa
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+                type = 'others', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
                 amount = 200, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -437,11 +442,11 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
                 index = "bandagem", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
                 name = "Bandagem", -- Nome da Recompensa
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+                type = 'others', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
                 amount = 20, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -454,7 +459,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 100, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -467,7 +472,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 20, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -480,7 +485,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 5, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -493,7 +498,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1000000, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
         }
@@ -501,7 +506,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
     { -- CAIXA Fantastica
         crate = "Fantastica", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/953364940390023179/gA-98pyMLoOs1v5lL_9zIyJzUL6Y9njB-kpq1teBWDAvXJ6qXWakvE7d5QqFVDB1pXPk", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318228356612886629/PctBpXskJzlAAaV8KEeKxRlKqWlgJQBGKBH2VEfEH-3SEXf6OGUdL3LyuglMoSkQek7S", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -515,7 +520,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },
 
@@ -528,36 +533,36 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveGroup(source, user_id, index)
+                    Config.payments.giveGroup(source, user_id, "Verificado")
                 end,
             },
 
             
-            {
-                rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+           -- {
+           --     rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+--
+           --     index = "vipruby", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+           --     name = "Vip Ruby", -- Nome da Recompensa
+           --     type = 'other', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+           --     amount = 1, -- Quantidade da Recompensa
+--
+           --     execute = function(source, user_id, index, amount)
+           --         Config.payments.giveGroup(source, user_id, "vipruby")
+           --     end,
+           -- },
 
-                index = "vipruby", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
-                name = "Vip Ruby", -- Nome da Recompensa
-                type = 'other', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
-                amount = 1, -- Quantidade da Recompensa
-
-                execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
-                end,
-            },
-
-            {
-                rarity = "rare", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
-
-                index = "WEAPON_BULLPUPRIFLE", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
-                name = "Bullpup", -- Nome da Recompensa
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
-                amount = 1, -- Quantidade da Recompensa
-
-                execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
-                end,
-            },
+            --{
+            --    rarity = "rare", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+--
+            --    index = "WEAPON_BULLPUPRIFLE", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+            --    name = "Bullpup", -- Nome da Recompensa
+            --    type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+            --    amount = 1, -- Quantidade da Recompensa
+--
+            --    execute = function(source, user_id, index, amount)
+            --        Config.payments.giveItem(source, user_id, "WEAPON_BULLPUPRIFLE")
+            --    end,
+            --},
 
             {
                 rarity = "common", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
@@ -568,7 +573,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 200, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -581,7 +586,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 20, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -594,7 +599,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 100, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -607,7 +612,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 40, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
 
@@ -620,7 +625,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 5, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveGroup(source, user_id, "attachs")
                 end,
             },
 
@@ -633,7 +638,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
                 amount = 1500000, -- Quantidade da Recompensa
 
                 execute = function(source, user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, index)
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },
         }
@@ -646,7 +651,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ] 
     { -- CAIXA DE PACOTES VIPS
         crate = "Caixa da Maldade", -- Nome da Caixa
-        weebhook = "https://ptb.discord.com/api/webhooks/1003989017467039894/MwW-4rDQAiWJ-tRVv2c6M_HVZQj7ktZHCAIMhCHVX-rXnJwApAFsRpMbIAtmF4MZfW6S", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318228480877662208/3ccMrkOTMBjCibR94_c2Nss2eb7QbPJD4-4I-bSU-1Cf37h41v63riVcHChXS4K7Eblo", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -690,7 +695,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'urus')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },
 
@@ -703,7 +708,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'pendrive')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
             
@@ -716,7 +721,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, '440i')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -729,7 +734,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'tornado5')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -742,7 +747,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 5, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'c4')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -755,7 +760,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 2, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'WEAPON_COMBATPDW')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -768,7 +773,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 500, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'heroina')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -781,7 +786,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'hakuchou2')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
             
@@ -790,7 +795,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
 
     { -- CAIXA DE PACOTES VIPS
         crate = "Caixa de Pandora", -- Nome da Caixa
-        weebhook = "https://ptb.discord.com/api/webhooks/1003989017467039894/MwW-4rDQAiWJ-tRVv2c6M_HVZQj7ktZHCAIMhCHVX-rXnJwApAFsRpMbIAtmF4MZfW6S", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318228480877662208/3ccMrkOTMBjCibR94_c2Nss2eb7QbPJD4-4I-bSU-1Cf37h41v63riVcHChXS4K7Eblo", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -833,7 +838,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'havok')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },
 
@@ -846,7 +851,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'pendrive')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
             
@@ -859,7 +864,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'mgt')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -872,7 +877,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'gsrx')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -885,7 +890,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 15, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'lockpick')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -898,7 +903,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 5, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'WEAPON_ASSAULTRIFLE_MK2')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -911,7 +916,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 2, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'heroina')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -924,7 +929,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'lectro')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
             
@@ -933,40 +938,40 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
 
     { -- CAIXA DE PACOTES VIPS
         crate = "Caixa do Madruga", -- Nome da Caixa
-        weebhook = "https://ptb.discord.com/api/webhooks/1003989017467039894/MwW-4rDQAiWJ-tRVv2c6M_HVZQj7ktZHCAIMhCHVX-rXnJwApAFsRpMbIAtmF4MZfW6S", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://discord.com/api/webhooks/1318228480877662208/3ccMrkOTMBjCibR94_c2Nss2eb7QbPJD4-4I-bSU-1Cf37h41v63riVcHChXS4K7Eblo", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
         
-            {
-                rarity = "common", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
-
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
-                index = "VipRuby", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
-                name = "VIP Ruby", -- Nome da Recompensa
-                amount = 1, -- Quantidade da Recompensa
-
-                execute = function(user_id, index, amount)
-                    Config.payments.giveGroup(source, user_id, 'VipRuby')
-                    Config.payments.giveCar(source, user_id, 'zentorno')
-                    Config.payments.giveMoney(source, user_id, 50000)
-                end,
-            },        
+          --  {
+          --      rarity = "common", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+--
+          --      type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+          --      index = "VipRuby", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+          --      name = "VIP Ruby", -- Nome da Recompensa
+          --      amount = 1, -- Quantidade da Recompensa
+--
+          --      execute = function(user_id, index, amount)
+          --          Config.payments.giveGroup(source, user_id, 'VipRuby')
+          --          Config.payments.giveCar(source, user_id, 'zentorno')
+          --          Config.payments.giveMoney(source, user_id, 50000)
+          --      end,
+          --  },        
             
-            {
-                rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
+          -- {
+          --     rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
 
-                type = 'others', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
-                index = "VipLendario", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
-                name = "VIP Lendario", -- Nome da Recompensa
-                amount = 1, -- Quantidade da Recompensa
+          --     type = 'others', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
+          --     index = "VipLendario", -- INDEX Que vai passar no execute abaixo e tambem ser utilizado para identificar a imagem.
+          --     name = "VIP Lendario", -- Nome da Recompensa
+          --     amount = 1, -- Quantidade da Recompensa
 
-                execute = function(user_id, index, amount)
-                    Config.payments.giveGroup(source, user_id, 'VipLendario')
-                    Config.payments.giveCar(source, user_id, 't20')
-                    Config.payments.giveMoney(source, user_id, 500000)
-                end,
-            },       
+          --     execute = function(user_id, index, amount)
+          --         Config.payments.giveGroup(source, user_id, 'VipLendario')
+          --         Config.payments.giveCar(source, user_id, 't20')
+          --         Config.payments.giveMoney(source, user_id, 500000)
+          --     end,
+          -- },       
         
             {
                 rarity = "legendary", --  DIFICULDADE DESSE ITEM [ uncommon, common, rare, epic, legendary ]
@@ -977,7 +982,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'zentorno')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },
 
@@ -990,7 +995,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 10, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'c4')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
             
@@ -1003,7 +1008,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'amggt63s')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -1016,7 +1021,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'velociraptor')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -1029,7 +1034,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 15, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'c4')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -1042,7 +1047,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 2, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'WEAPON_COMBATPDW')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -1055,7 +1060,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 500, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveItem(source, user_id, 'heroina')
+                    Config.payments.giveItem(source, user_id, index, amount, true)
                 end,
             },    
 
@@ -1068,7 +1073,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
                 amount = 1, -- Quantidade da Recompensa
 
                 execute = function(user_id, index, amount)
-                    Config.payments.giveCar(source, user_id, 'hakuchou2')
+                    Config.payments.giveCar(source, user_id, index, amount, true)
                 end,
             },    
             
@@ -1087,10 +1092,10 @@ Config.store = { -- Loja
         amount = 500,
         
         payment_type = 'points', -- coins/points
-        payment_value = 10, -- valor do item
+        payment_value = 5000, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveGroup(source, user_id, 'VipPrata')
+            Config.payments.giveGroup(source, user_id, 'Prata')
             Config.payments.giveCar(source, user_id, 'adder')
             Config.payments.giveMoney(source, user_id, 5000)
         end,
@@ -1120,7 +1125,7 @@ Config.store = { -- Loja
         payment_value = 400, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveCar(source, user_id, index)
+            Config.payments.giveCar(source, user_id, index, amount)
         end,
     },
     
@@ -1134,7 +1139,7 @@ Config.store = { -- Loja
         payment_value = 300, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveCar(source, user_id, index)
+            Config.payments.giveItem(source, user_id, index, amount)
         end,
     }, 
 
@@ -1148,7 +1153,7 @@ Config.store = { -- Loja
         payment_value = 300, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveCar(source, user_id, index)
+            Config.payments.giveItem(source, user_id, index, amount)
         end,
     }, 
 
@@ -1158,11 +1163,11 @@ Config.store = { -- Loja
         type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS DOS VEICULOS [ car, item, others ]
         amount = 1, -- Quantidade da Recompensa
         
-        payment_type = 'coins', -- coins/points
-        payment_value = 300, -- valor do item
+        payment_type = 'points', -- coins/points
+        payment_value = 7000, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveCar(source, user_id, index)
+            Config.payments.giveGroup(source, user_id, index, amount)
         end,
     }, 
 
@@ -1176,7 +1181,7 @@ Config.store = { -- Loja
         payment_value = 300, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveCar(source, user_id, index)
+            Config.payments.giveItem(source, user_id, index, amount)
         end,
     }, 
 
@@ -1190,7 +1195,7 @@ Config.store = { -- Loja
         payment_value = 300, -- valor do item
 
         execute = function(user_id, index, amount)
-            Config.payments.giveCar(source, user_id, index)
+            Config.payments.giveItem(source, user_id, index, amount)
         end,
     }, 
 }

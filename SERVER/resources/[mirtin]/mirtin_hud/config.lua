@@ -21,7 +21,7 @@ Config = {
         },
 
         foodSystem = { -- SISTEMA DE FOME E SEDE
-            active = false, -- Ativado / Desativado
+            active = true, -- Ativado / Desativado
             eventHunger = "vrp_hud:updateHunger",
             eventThrist = "vrp_hud:updateThrist"
         },

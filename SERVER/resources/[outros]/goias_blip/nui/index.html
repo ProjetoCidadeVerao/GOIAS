@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Monkey Blip</title>
+   <!-- Jquery js -->
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <!-- Fonte -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <!-- Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- SweetAlert -->
+   <link rel="stylesheet" href="sweetalert2.css">
+   <!-- Css -->
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div id="app">
+      <div v-if="isLogado" id="header">
+         <img :src="logoImg == null ? '' : logoImg" onerror="imageError(this)" class="iconLogo" />
+      </div>
+
+      <div v-if="isLogado" id="content">
+         <div id="menuLateral">
+            <div class="row">
+               <div id="infoUserLogado">
+                  <div class="card mb-0 w-100">
+                     <div class="row">
+                        <div class="w-max-content align-self-center">
+                           <img src="images/man.png" />
+                        </div>
+                        <div class="flex align-self-center">
+                           <h4 class="regulaTexto">{{ infoUserLogado.nome }}</h4>
+                        </div>
+                        <div class="w-max-content align-self-center">
+                           <i class="fas fa-sign-out-alt text-danger" @click="sair(true)"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="w-100 mx-3 mt-3">
+                  <div class="card weight-600 mb-2 text-center">
+                     <p class="pb-0 font-50 mb-2 mt-1"><i class="fas fa-map-marked-alt"></i></p>
+                     <p class="pb-0 font-14">Gerenciador</p>
+                     <p class="pb-0 font-16 mb-1 mt-2 color-theme">BLIP'S</p>
+                  </div>
+               </div>
+
+               <div class="w-100 mx-3 mb-3">
+                  <div class="card cursor-pointer weight-400 text-center" @click="criarBlip.show = true;" v-if="criarBlip.show != true">
+                     <i class="fas fa-plus font-14 mr-2"></i>Adicionar blip
+                  </div>
+                  <div class="card cursor-pointer weight-400 text-center" @click="criarBlip.show = false;" v-else>
+                     <i class="fas fa-undo-alt font-14 mr-2"></i>Voltar
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="corpo">
+            <div class="row">
+               <div class="w-100" v-if="criarBlip.show != true">
+                  <div class="cards">
+                     <div v-for="(blip, index) in listaBlipsCriados" :key="index" class="item" :style="'background-image: url('+ urlFotosIcones + blip.icone +'.png)'">
+                        <div class="itemIcon"><i class="fas fa-trash text-danger cursor-pointer" @click="removerBlip(blip.id)"></i></div>
+                        <div class="info">
+                           <div class="itemAmount"><i class="fas fa-palette font-11 mr-1"></i> {{ blip.cor }}</div>
+                           <div class="itemAmount2"><i class="fas fa-expand-alt font-10 mr-2"></i>{{ blip.tamanho }}</div>
+                        </div>
+                        <div class="nameItem cursor-pointer" @click="teleportar(blip.x, blip.y, blip.z)">
+                           <span>{{ blip.nome != null ? blip.nome.toUpperCase() : 'Desconhecido' }}</span>
+                           <span>{{ parseInt(blip.x) +', '+ parseInt(blip.y) +', '+ parseInt(blip.z) }}</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="w-100" v-else>
+                  <div class="card">
+                     <div class="row">
+                        <div class="w-50 px-1 mb-2">
+                           <label class="font-12 w-100"><i class="fas fa-hashtag font-11 mr-1"></i>Nome</label>
+                           <input type="text" v-model="criarBlip.nome" class="w-100 mt-1" />
+                        </div>
+                        <div class="w-50 px-1 mb-2">
+                           <label class="font-12 w-100"><i class="fas fa-expand-alt font-11 mr-1"></i>Tamanho</label>
+                           <input type="text" v-model="criarBlip.tamanho" class="w-100 mt-1" />
+                        </div>
+                        <div class="w-50 px-1">
+                           <div class="row">
+                              <label class="font-12 w-100 mt-1"><i class="fas fa-palette font-11 mr-1"></i>Cor</label>
+                              <div class="iconBlip" :class="'cor-'+ criarBlip.cor"></div>
+
+                              <div class="flex">
+                                 <input type="text" v-model="criarBlip.cor" class="w-100 mt-1" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="w-50 px-1">
+                           <div class="row">
+                              <label class="font-12 w-100 mt-1"><i class="fas fa-star font-11 mr-1"></i>Icone</label>
+                              <img class="iconBlip" :src="urlFotosIcones + criarBlip.icone +'.png'" onerror="imageError(this)" />
+
+                              <div class="flex">
+                                 <input type="text" v-model="criarBlip.icone" class="w-100 mt-1" />
+                              </div>
+                           </div>
+                        </div>
+                        <div class="w-100 px-1 text-right">
+                           <button class="btn-search mt-2" onclick="criarBlip()">
+                              <i class="fas fa-check mr-1"></i>Adicionar
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="w-100 text-center" v-if="listaBlipsCriados.length == 0 && criarBlip.show != true">
+                  <div class="card py-4">Nenhum blip adicionado</div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div v-else class="loginContent">
+         <div class="w-100 align-self-center">
+            <img class="mb-3" :src="logoImg == null ? '' : logoImg" onerror="imageError(this)" /><br/>
+            <div class="mb-4">Bem-vindo(a) {{ infoUserLogado.nome }}!</div>
+            <div class="btn-login" @click="isLogado = true">Entrar</div>
+         </div>
+      </div>
+
+      <!-- Carregando -->
+      <div v-if="carregando == true" class="loadingContent">
+         <div class="loading">
+            <p>Carregando</p>
+            <span></span>
+         </div>
+      </div>
+   </div>
+
+   <!-- Jquery js -->
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <!-- SweetAlert -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+   <!-- Vue -->
+   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+   <!-- Js -->
+   <script src="script.js"></script>
+</body>
+</html>

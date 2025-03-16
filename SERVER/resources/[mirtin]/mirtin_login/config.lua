@@ -13,8 +13,8 @@ Config = {
             Spawn = vector3(-1680.83,-746.49,10.24), -- Coordenadas
 
             Nui = { -- Posição na Nui
-                top = 90.5, -- Cima
-                left = 30 -- Esquerda [ Numero Negativo Movimenta pra Esquerda ]
+                top = 31, -- Cima
+                left = 13.5 -- Esquerda [ Numero Negativo Movimenta pra Esquerda ]
             }
         }, -- Fim da localização
 

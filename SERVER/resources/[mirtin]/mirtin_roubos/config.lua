@@ -2,84 +2,84 @@ cfg = {}
 
 cfg.roubos = {
     ["Loja"] = {
-        pmPTR = 10,
-        tempo = 350,
-        cooldown = 500,
+        pmPTR = 5,
+        tempo = 2500,
+        cooldown = 2500,
         minValue = 571,
         maxValue = 571,
-        itens = { },
+        itens = { "cartaoazul" },
         permiss = "perm.ilegal",
     },
 
     ["Bebidas"] = {
         pmPTR = 10,
-        tempo = 350,
+        tempo = 2500,
         cooldown = 500,
         minValue = 571,
         maxValue = 571,
-        itens = { },
+        itens = { "cartaoazul" },
         permiss = "perm.ilegal",
     },
 
     ["China"] = {
-        pmPTR = 10,
-        tempo = 350,
+        pmPTR = 5,
+        tempo = 2500,
         cooldown = 500,
         minValue = 571,
         maxValue = 571,
-        itens = { },
+        itens = { "cartaoazul" },
         permiss = "perm.ilegal",
     },
 
     ["Banco Central"] = {
         pmPTR = 10,
-        tempo = 700,
-        cooldown = 500,
-        minValue = 1,
-        maxValue = 1,
-        itens = { },
+        tempo = 2500,
+        cooldown = 700,
+        minValue = 2000,
+        maxValue = 2500,
+        itens = { "cartaopreto" },
         permiss = "perm.ilegal",
     },
 
     ["Galinheiro"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 700,
         minValue = 1090,
         maxValue = 1090,
 
-        itens = { },
+        itens = { "cartaovermelho" },
         permiss = "perm.ilegal",
     },
 
     ["Joalheria"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 1,
+        cooldown = 2500,
 
         tempo = 550,
         minValue = 1454,
         maxValue = 1454,
 
-        itens = { },
+        itens = { "cartaovermelho" },
         permiss = "perm.ilegal",
     },
 
     ["Acougue"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 8,
+        cooldown = 2500,
 
         tempo = 550,
         minValue = 1272,
         maxValue = 1272,
 
-        itens = { },
+        itens = { "cartaovermelho" },
         permiss = "perm.ilegal",
     },
 
     ["Yellow Jack"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 350,
         minValue = 714,
@@ -90,8 +90,8 @@ cfg.roubos = {
     },
 
     ["Trevor"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 350,
         minValue = 575,
@@ -102,8 +102,8 @@ cfg.roubos = {
     },
 
     ["Teatro"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 500,
         minValue = 1050,
@@ -114,8 +114,8 @@ cfg.roubos = {
     },
 
     ["Observatorio"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 500,
         minValue = 1050,
@@ -126,20 +126,20 @@ cfg.roubos = {
     },
 
     ["Niobio"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
-        tempo = 800,
+        tempo = 350,
         minValue = 6250,
         maxValue = 6250,
 
-        itens = { },
+        itens = { "cartaovermelho" },
         permiss = "perm.ilegal",
     },
 
     ["Banco Paleto"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 650,
         minValue = 1,
@@ -150,8 +150,8 @@ cfg.roubos = {
     },
 
     ["Faculdade"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 500,
         minValue = 2000,
@@ -162,8 +162,8 @@ cfg.roubos = {
     },
 
     ["Festa Junina"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 400,
         minValue = 750,
@@ -174,8 +174,8 @@ cfg.roubos = {
     },
 
     ["Life Invader"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 450,
         minValue = 900,
@@ -185,21 +185,21 @@ cfg.roubos = {
         permiss = "perm.ilegal",
     },
 
-    ["Tequila"] = {
-        pmPTR = 10,
-        cooldown = 500,
+   --["Tequila"] = {
+   --    pmPTR = 10,
+   --    cooldown = 500,
 
-        tempo = 750,
-        minValue = 400,
-        maxValue = 400,
+   --    tempo = 750,
+   --    minValue = 400,
+   --    maxValue = 400,
 
-        itens = { },
-        permiss = "perm.ilegal",
-    },
+   --    itens = { },
+   --    permiss = "perm.ilegal",
+   --},
 
     ["Fleeca"] = {
-        pmPTR = 10,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 650,
         minValue = 1800,
@@ -210,22 +210,22 @@ cfg.roubos = {
     },
 
     ["Caixa Eletronico"] = {
-        pmPTR = 2,
-        cooldown = 500,
+        pmPTR = 3,
+        cooldown = 2500,
 
         tempo = 60,
-        minValue = 25,
-        maxValue = 25,
+        minValue = 615,
+        maxValue = 1515,
         maxCollects = 60,
         collectCooldown = 1,
 
-        itens = { --[[ "c4" ]] },
+        itens = { "c4" },
         permiss = "perm.nil",
     },
 
     ["Registradora"] = {
-        pmPTR = 2,
-        cooldown = 500,
+        pmPTR = 3,
+        cooldown = 2500,
 
         tempo = 15,
         minValue = 133,
@@ -233,19 +233,19 @@ cfg.roubos = {
         maxCollects = 15,
         collectCooldown = 1,
 
-        itens = { },
+        itens = { "cartaoazul" },
         permiss = "perm.nil",
     },
 
     ["Ammunation"] = {
-        pmPTR = 2,
-        cooldown = 500,
+        pmPTR = 5,
+        cooldown = 2500,
 
         tempo = 120,
         minValue = 420,
         maxValue = 420,
 
-        itens = { },
+        itens = { "cartaoazul" },
         permiss = "perm.nil",
     },
 
@@ -326,12 +326,26 @@ cfg.locationRoubos = {
     [71] = { type = "Registradora", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Registradora~w~ ", coords = vec3(1211.52,-470.31 ,66.20), heading = 72.0, visibleBlip = 0.7 },
     [72] = { type = "Registradora", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Registradora~w~ ", coords = vec3(-30.42,-151.77 ,57.07), heading = 336.0, visibleBlip = 0.7 },
     [73] = { type = "Registradora", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Registradora~w~ ", coords = vec3(-277.76,6230.73 ,31.69), heading = 38.0, visibleBlip = 0.7 },
+    [74] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(23.58,-1105.88,29.79), heading = 306.26 },
+    [75] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(1692.97,3761.85,34.69), heading = 306.26 },
+    [76] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(253.31,-51.86,69.94), heading = 306.26 },
+    [77] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(841.27,-1035.32,28.19), heading = 306.26 },
+    [78] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(-330.48,6086.18,31.46), heading = 306.26 },
+    [79] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(-660.83,-933.36,21.82), heading = 306.26 },
+    [80] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(-1304.43,-396.3,36.7), heading = 306.26 },
+    [81] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(-1117.88,2700.68,18.55), heading = 306.26 },
+    [82] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(2566.45,292.53,108.73), heading = 306.26 },
+    [83] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(-3173.02,1089.74,20.84), heading = 306.26 },
+    [84] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(808.75,-2159.05,29.62), heading = 306.26 },
+    [85] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(23.82,-1105.86,29.8), heading = 306.26 },
 
---[[     [87] = { type = "Loja", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Loja~w~ ", coords = vec3(-43.37,-1748.43,29.43), heading = 47.44 },
+
+
+    [87] = { type = "Loja", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Loja~w~ ", coords = vec3(-43.37,-1748.43,29.43), heading = 47.44 },
     [88] = { type = "Loja", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Loja~w~ ", coords = vec3(378.12,333.24,103.57), heading = 113.15 },
     [89] = { type = "Loja", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Loja~w~ ", coords = vec3(-3047.85,585.63,7.91), heading = 81.35},
     [90] = { type = "Loja", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Loja~w~ ", coords = vec3(1159.56,-314.03,69.21), heading = 198.01 },
-
+    
     [91] = { type = "Bebidas", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Bebidas~w~ ", coords = vec3(1126.82,-980.37,45.42), heading = 198.01 },
 
     [92] = { type = "China", mensagem = "~r~F~w~ para iniciar o roubo a ~r~China~w~ ", coords = vec3(-709.45,-904.15,19.22), heading = 198.01 },
@@ -351,7 +365,7 @@ cfg.locationRoubos = {
     [105] = { type = "Life Invader", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Life Invader~w~ ", coords = vec3(-1064.0,-249.24,44.03), heading = 198.01 },
     [106] = { type = "Tequila", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Tequila~w~ ", coords = vec3(-571.86,289.18,79.18), heading = 198.01 },
     [107] = { type = "Fleeca", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Fleeca~w~ ", coords = vec3(-2957.8,481.68,15.7), heading = 198.01 },
-    [108] = { type = "Fleeca", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Fleeca~w~ ", coords = vec3(-353.43,-54.31,49.0), heading = 198.01 }, ]]
+    [108] = { type = "Fleeca", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Fleeca~w~ ", coords = vec3(-353.43,-54.31,49.0), heading = 198.01 }, 
 
     [109] = { type = "Caixa Eletronico", mensagem = "~r~F~w~ para iniciar o roubo a ~r~CAIXA ELETRONICO~w~ ", coords = vec3(1138.26,-469.03,66.73), heading = 340.46 },
     [111] = { type = "Caixa Eletronico", mensagem = "~r~F~w~ para iniciar o roubo a ~r~CAIXA ELETRONICO~w~ ", coords = vec3(89.57,2.16,68.32), heading = 340.46 },
@@ -415,9 +429,11 @@ cfg.locationRoubos = {
     [172] = { type = "Caixa Eletronico", mensagem = "~r~F~w~ para iniciar o roubo a ~r~CAIXA ELETRONICO~w~ ", coords = vec3(-1315.73,-834.75,16.97), heading = 314.52 },
     [173] = { type = "Caixa Eletronico", mensagem = "~r~F~w~ para iniciar o roubo a ~r~CAIXA ELETRONICO~w~ ", coords = vec3(-1314.77,-836.06,16.97), heading = 306.26 },
 
+    [174] = { type = "Loja", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Loja~w~ ", coords = vec3(28.08,-1339.23,29.49), heading = 198.01 },
 
---[[     [174] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(23.82,-1105.86,29.8), heading = 306.26 },
-    [175] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(808.91,-2159.11,29.62), heading = 306.26 }, ]]
+
+   -- [174] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(23.82,-1105.86,29.8), heading = 306.26 },
+   -- [175] = { type = "Ammunation", mensagem = "~r~F~w~ para iniciar o roubo a ~r~Ammunation~w~ ", coords = vec3(808.91,-2159.11,29.62), heading = 306.26 }, 
 }
 
  

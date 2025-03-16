@@ -14,11 +14,12 @@ vSERVER = Tunnel.getInterface(GetCurrentResourceName())
 --  DECODE
 -----------------------------------------------------------------------------------------------------------------------------------------
 local services = { 
-    [1] = {"HOSPITAL", 1149.91,-1551.21,35.38, "perm.hospital", "perm.liderhospital" },
-    [2] = {"Sport RACE", -1307.27,-295.41,40.73, "perm.mecanica", "perm.lidermecanica" },
-    [3] = {"Sport RACE", -340.06,-157.25,44.58, "perm.mecanica", "perm.lidermecanica" },
-    [4] = {"Sport RACE", 124.86,-3010.95,7.04, "perm.mecanica", "perm.lidermecanica" },
-    [5] = {"POLICIA", -947.61,-2040.76,9.4, "perm.policia", "perm.liderpolicia" },
+    [1] = {"HOSPITAL", -477.47,-1040.5,24.29, "perm.hospital", "perm.liderhospital" },
+    [2] = {"Sport RACE", 821.3,-929.39,32.44, "perm.mecanica", "perm.lidermecanica" },
+    [3] = {"Civil", 370.78,-1602.26,29.3, "perm.civil", "perm.liderpolicia" },
+    [4] = {"Giro", -1758.56,-793.06,17.04, "perm.policia", "perm.liderpolicia" },
+    [5] = {"POLICIA", -2035.94,-446.46,12.28, "perm.policia", "perm.liderpolicia" },
+    [6] = {"Rotam", -2035.94,-446.46,12.28, "perm.policia", "perm.liderpolicia" },
 }
 
 

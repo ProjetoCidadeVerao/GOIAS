@@ -1,7 +1,7 @@
 dealershipConfig = {}
 
 dealershipConfig.main = {
-    dir = "http://177.54.148.31:4020/huntersrj/carros", -- Diretorio das imagens dos veiculos
+    dir = "http://191.96.81.87/carros/", -- Diretorio das imagens dos veiculos
     
     showVehicleOutStock = true, -- Mostrar na concessionaria veiculo sem estoque
     
@@ -10,7 +10,7 @@ dealershipConfig.main = {
     cooldownTestDriver = 120, -- TEMPO DO TEST DRIVER EM SEGUNDOS
     maxDistanceTestDriver = 1500.0, -- MAXIMO DE DISTANCIA QUE O JOGADOR PODE SE AFASTAR DA ZONA DO TEST-DRIVE
 
-    sellVehicle = 99, -- PORCENTAGEM QUE VAI RECEBER DA CONCESSIONARIA APOS VENDER VEICULO
+    sellVehicle = 60, -- PORCENTAGEM QUE VAI RECEBER DA CONCESSIONARIA APOS VENDER VEICULO
     maxCars = 5, -- Total de maximo de carros
 
     zoneVips = { -- DESCONTOS E MAXIMO DE CARROS NA GARAGEM
@@ -29,7 +29,7 @@ dealershipConfig.main = {
 
 dealershipConfig.locations = {
     {
-        coords = vec3(-38.65,-1098.43,26.42),
+        coords = vec3(-337.33,-1369.95,31.86),
         test_drive = vector4(-1512.73,-2852.47,13.95,194.17),
     },
 }

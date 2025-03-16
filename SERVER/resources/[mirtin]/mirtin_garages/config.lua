@@ -1,7 +1,7 @@
 Garages = {}
 
 Garages.Main = {
-    dir = "DIR", -- DIRETORIO DAS IMAGENS DOS CARROS
+    dir = "http://191.96.81.87/carros/", -- DIRETORIO DAS IMAGENS DOS CARROS
 
     ipvaVencimento = 7, -- DIAS PARA O VENCIMENTO DO IPVA
 	ipvaValue = 0.05, -- 5% VALOR  DO VEICULO IPVA
@@ -300,7 +300,43 @@ Garages.VehList = {
  [GetHashKey('cruiser')] = { model = 'cruiser', price = nil, banned = false, name = 'Cruiser', trunk = 0, type = 'service' },
  [GetHashKey('bmx')] = { model = 'bmx', price = 20000, banned = false, name = 'Bmx', trunk = 0, type = 'service' },
 
+
+ ----- HOSPITAL
+ [GetHashKey('trail22grau')] = { model = 'trail22grau', price = 20000, banned = false, name = 'TRAIL BOMBEIRO', trunk = 0, type = 'service' },
+ [GetHashKey('xt660cb2')] = { model = 'xt660cb2', price = 20000, banned = false, name = 'xt660 BOMBEIRO', trunk = 0, type = 'service' },
+ [GetHashKey('Wrasprinter')] = { model = 'Wrasprinter', price = 20000, banned = false, name = 'Ambulancia HUGO', trunk = 0, type = 'service' },
+ [GetHashKey('Wrgle53')] = { model = 'Wrgle53', price = 20000, banned = false, name = 'GLE53 Hospital', trunk = 0, type = 'service' },
+ [GetHashKey('WRr1200')] = { model = 'WRr1200', price = 20000, banned = false, name = 'R1200 Hospital', trunk = 0, type = 'service' },
+ [GetHashKey('as350samu')] = { model = 'as350samu', price = 20000, banned = false, name = 'AS350 Samu', trunk = 0, type = 'service' },
+ [GetHashKey('firetruk')] = { model = 'firetruk', price = 20000, banned = false, name = 'Caminhao Bomeiro', trunk = 0, type = 'service' },
+ [GetHashKey('helibombeiros')] = { model = 'helibombeiros', price = 20000, banned = false, name = 'Heli Bombeiros', trunk = 0, type = 'service' },
+ [GetHashKey('l200bombeiros')] = { model = 'l200bombeiros', price = 20000, banned = false, name = 'L200 Bombeiros', trunk = 0, type = 'service' },
+ [GetHashKey('sprinter')] = { model = 'sprinter', price = 20000, banned = false, name = 'Ambulancia Bombeiros', trunk = 0, type = 'service' },
+ [GetHashKey('sw4grau1')] = { model = 'sw4grau1', price = 20000, banned = false, name = 'SW4 Bombeiro', trunk = 0, type = 'service' },
  
+-----------POLICIA
+[GetHashKey('as350prf')] = { model = 'as350prf', price = 20000, banned = false, name = 'AS350 PRF', trunk = 0, type = 'service' },
+[GetHashKey('dusterpc')] = { model = 'dusterpc', price = 20000, banned = false, name = 'Duster PC', trunk = 0, type = 'service' },
+[GetHashKey('dusterrp1')] = { model = 'dusterrp1', price = 20000, banned = false, name = 'Duster PM', trunk = 0, type = 'service' },
+[GetHashKey('dusterrp2')] = { model = 'dusterrp2', price = 20000, banned = false, name = 'Duster PM2', trunk = 0, type = 'service' },
+[GetHashKey('equinoxprf')] = { model = 'equinoxprf', price = 20000, banned = false, name = 'PRF SUV', trunk = 0, type = 'service' },
+[GetHashKey('pantera')] = { model = 'pantera', price = 20000, banned = false, name = 'Pantera PM', trunk = 0, type = 'service' },
+[GetHashKey('pbus')] = { model = 'pbus', price = 20000, banned = false, name = 'Onibus Transporte', trunk = 0, type = 'service' },
+[GetHashKey('polmav')] = { model = 'polmav', price = 20000, banned = false, name = 'Heli PM', trunk = 0, type = 'service' },
+[GetHashKey('r1200pm')] = { model = 'r1200pm', price = 20000, banned = false, name = 'R1200PM', trunk = 0, type = 'service' },
+[GetHashKey('r1200prf')] = { model = 'r1200prf', price = 20000, banned = false, name = 'R1200PRF', trunk = 0, type = 'service' },
+[GetHashKey('s10eb')] = { model = 's10eb', price = 20000, banned = false, name = 'S10 Policia Exercito', trunk = 0, type = 'service' },
+[GetHashKey('s10iml')] = { model = 's10iml', price = 20000, banned = false, name = 'S10 IML', trunk = 0, type = 'service' },
+[GetHashKey('s10pm')] = { model = 's10pm', price = 20000, banned = false, name = 'S10 PM', trunk = 0, type = 'service' },
+[GetHashKey('s10rotam')] = { model = 's10rotam', price = 20000, banned = false, name = 'S10 Rotam', trunk = 0, type = 'service' },
+[GetHashKey('sw4grau1')] = { model = 'sw4grau1', price = 20000, banned = false, name = 'SW4', trunk = 0, type = 'service' },
+[GetHashKey('swift')] = { model = 'swift', price = 20000, banned = false, name = 'Heli Militar', trunk = 0, type = 'service' },
+[GetHashKey('tigerpm')] = { model = 'tigerpm', price = 20000, banned = false, name = 'Tiger PM', trunk = 0, type = 'service' },
+[GetHashKey('trail20pm')] = { model = 'bmtrail20pmx', price = 20000, banned = false, name = 'Trail PM', trunk = 0, type = 'service' },
+[GetHashKey('trail20prf')] = { model = 'trail20prf', price = 20000, banned = false, name = 'Trail PRF', trunk = 0, type = 'service' },
+[GetHashKey('trail21pc')] = { model = 'trail21pc', price = 20000, banned = false, name = 'Trail PCIVIL', trunk = 0, type = 'service' },
+[GetHashKey('trail22prf')] = { model = 'trail22prf', price = 20000, banned = false, name = 'Trail PRF2', trunk = 0, type = 'service' },
+
  ------------------------------------------------------------------------------------------------------------------------------------------------------
  --IMPORTADOS 
  [GetHashKey('furia')] = { model = 'furia', price = nil0, banned = false, name = 'Furia', trunk = 100, type = 'imports' },
@@ -405,8 +441,11 @@ Garages.VehList = {
  [GetHashKey('blazer4')] = { model = 'blazer4', price = 800000, banned = false, name = 'Blazer4', trunk = 40, type = 'motos' },
  [GetHashKey('shotaro')] = { model = 'shotaro', price = nil0, banned = false, name = 'Shotaro', trunk = 40, type = 'motos' },
  [GetHashKey('ratbike')] = { model = 'ratbike', price = nil, banned = false, name = 'Ratbike', trunk = 40, type = 'motos' },
+ 
+ [GetHashKey('cavaloautomotivo')] = { model = 'cavaloautomotivo', price = nil, banned = false, name = 'Carroça Automotiva', trunk = 0, type = 'service' },
+ [GetHashKey('unofirma')] = { model = 'unofirma', price = nil, banned = false, name = 'UNO Equatorial', trunk = 0, type = 'service' },
     
-    
+ 
 -----------------------------------------------------veiculos sem logooooooo-------------------------------------------------------
 -----------------------------------------------------veiculos sem logooooooo-------------------------------------------------------
 -----------------------------------------------------veiculos sem logooooooo-------------------------------------------------------
@@ -1120,33 +1159,17 @@ Garages.List = {
 
     [29] = {
         type = "service", -- public / service [ tipo da garagem ] 
-        permiss = "perm.policiaM", -- permissao
+        permiss = "perm.policia", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(1011.99,-2290.2,31.81),
+        coords = vec3(-918.04,-2052.58,9.41),
         spawnCoords = {
-            vector4(1015.27,-2294.03,31.58,37.09),
+            vector4(-912.76,-2049.63,9.3,224.54),
         },
     
         vehicles = {
-            {vehicle = 'corollapmerj'},
-            {vehicle = 'rangerptm'},
-            {vehicle = 'dusterpmerj'},
-            {vehicle = 'fordkapmerj'},
-            {vehicle = 'hiluxpmerj'},
-            {vehicle = 'l200pmerj22'},
-            {vehicle = 'l200pmerj22c'},
-            {vehicle = 'rangerpmerj'},
-            {vehicle = 'rangerxlspmerj'},
-            {vehicle = 'versapmerj'},
-            {vehicle = 'versapmerjrf'},
-            {vehicle = 'xrepmerj22'},
-            {vehicle = 'xrepmerj'},
-            {vehicle = 'blindadocpp'},
-            {vehicle = 'blindadomike'},
-            {vehicle = 'blindadopmerj'},
-            {vehicle = 'blindadopmerj14'},
-            {vehicle = 'blindadoturq'},
+            {vehicle = 'dusterrp1'},
+            {vehicle = 'dusterrp2'},
 
         },
     },
@@ -1266,13 +1289,17 @@ Garages.List = {
         permiss = "perm.hospital", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(-463.43,-350.51,34.49),
+        coords = vec3(-485.05,-978.56,23.8),
         spawnCoords = {
-            vector4(-470.47,-350.57,34.37,166.68),
+            vector4(-485.87,-953.42,23.56,181.57),
+            vector4(-490.26,-952.49,23.56,176.04),
         },
     
         vehicles = {
-            {vehicle = 'sprintersamu2'},
+            {vehicle = 'Wrgle53'},
+            {vehicle = 'WRr1200'},
+            {vehicle = 'Wrasprinter'},
+            {vehicle = 'Wrasprinter'},
 
         },
     },
@@ -2215,13 +2242,13 @@ Garages.List = {
         permiss = "perm.hospital", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(-464.53,-286.87,78.17),
+        coords = vec3(-459.71,-1030.34,38.31),
         spawnCoords = {
-            vector4(-456.65,-290.88,78.17,244.37),
+            vector4(-453.9,-1029.53,38.4,174.93),
         },
     
         vehicles = {
-            {vehicle = 'fenixpmerj'},
+            {vehicle = 'as350samu'},
 
         },
     },
@@ -2259,9 +2286,34 @@ Garages.List = {
         },
     },
 
+    [107] = {
+        type = "service", -- public / service [ tipo da garagem ] -- 
+        permiss = nil, -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(-1603.57,-1050.26,13.03),
+        spawnCoords = {
+            vector4(-1599.05,-1044.03,13.02,3.23),
+        },
     
+        vehicles = {
+            {vehicle = 'cavaloautomotivo'},
 
+        },
+    },
 
+    [108] = {
+        type = "public", -- public / service [ tipo da garagem ] -- 
+        permiss = nil, -- permissao
+        blip = true, -- blip no mapa
+        
+        coords = vec3(-938.63,-2113.95,9.79),
+        spawnCoords = {
+            vector4(-941.25,-2107.74,9.3,48.31),
+        },
+    },
 
     
 }
+
+--  

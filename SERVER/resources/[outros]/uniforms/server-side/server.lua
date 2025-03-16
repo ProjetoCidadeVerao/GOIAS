@@ -31,6 +31,9 @@ local maxServices = {
     ["HOSPITAL"] = {15},
     ["Sport RACE"] = {15},
     ["POLICIA"] = {15},
+    ["Civil"] = {15},
+    ["Giro"] = {15},
+    ["Rotam"] = {15},
 }
 
 local equipamentos = {
@@ -342,13 +345,27 @@ AddEventHandler("sysClothes:applyPreset",function(perm)
             if permiss == "" then return end
             TriggerEvent('eblips:add',{ name = permiss, src = source, color = 3 })
 
-            for index in pairs(equipamentos) do
-                if vRP.hasGroup(user_id, index) then
-                    equipamentos[index](source, user_id)
-                    TriggerClientEvent("Notify",source,"sucesso","Você recebeu seus equipamentos ..",6000)
-                    break;
+            -- for index in pairs(equipamentos) do
+            --     if vRP.hasGroup(user_id, index) then
+            --         equipamentos[index](source, user_id)
+            --         TriggerClientEvent("Notify",source,"sucesso","Você recebeu seus equipamentos ..",6000)
+            --         break;
+            --     end
+            -- end
+
+            for index, equipamento in pairs(equipamentos) do
+                -- Verifica se o usuário tem o grupo e a permissão necessária para o armamento
+                if vRP.hasGroup(user_id, index) and vRP.hasPermission(user_id, "perm.policia") then
+                    -- Chama a função para entregar o equipamento
+                    equipamento(source, user_id)
+                    TriggerClientEvent("Notify", source, "sucesso", "Você recebeu seus equipamentos ..", 6000)
+                    break
+                else
+                    -- Caso não tenha permissão, notifica o jogador
+                    --TriggerClientEvent("Notify", source, "erro", "Você não tem permissão para este equipamento.", 6000)
                 end
             end
+            
 
             if vRP.hasPermission(user_id, "perm.policia") then
                 vRP.sendLog("https://discordapp.com/api/webhooks/1029551169711906897/nhM3PCiwEIWk6lWPb1Br7KKWU-PGN0R0TzQNWtRXNBRJstrGuxUUh1Ep7TCdoAhSWJqy", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")

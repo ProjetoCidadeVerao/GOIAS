@@ -9,7 +9,7 @@ Config = {
         -- WEEBHOOK DAS MORTES
         webhook = {
             url = '',
-            logo = 'https://cdn.discordapp.com/attachments/941082057449279498/951537784433303663/logo_sem_fundo.png',
+            logo = 'http://191.96.81.87/logo/logo.png',
             color = 6356736
         },
 
@@ -137,7 +137,7 @@ Config = {
     AntiCL = {
         active = true, -- active = true ( Sistema Ativo ), active = false ( Sistema Desligado )
         command = 'cl', -- COMANDO PARA LIGAR / DESLIGAR ANTI-CL ( SO VAI DESLIGAR PRA QUEM DIGITAR O COMANDO )
-        hideDelay = 30, -- Delay que vai sumir a notifação no chão.
+        hideDelay = 50, -- Delay que vai sumir a notifação no chão.
 
         marker = function(data)
             DrawText3D(data.coords.x,data.coords.y,data.coords.z, "~r~QUIT ~n~ ~w~ID: ".. data.user_id .." ~n~ Motivo: "..data.reason)

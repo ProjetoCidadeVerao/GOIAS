@@ -478,7 +478,6 @@ cfg.users = {
 	[1] = { "developer" },
 	[2] = { "developer" },
 	[3] = { "developer" },
-	
 }
 
 cfg.selectors = { }

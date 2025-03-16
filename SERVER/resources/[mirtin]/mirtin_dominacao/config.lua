@@ -6,61 +6,61 @@ Config = {
     saveZones = false, -- SALVAR OS DADOS NO BANCO DE DADOS ( MANTER AS AREAS DOMINADAS SE REINICIAR O SERVIDOR OU SCRIPT )
 
     CreateModePerm = "admin.permissao", -- Permissao para o comando /create_zone, feito para facilitar a desenhar a zona de dominação.
-    debugPoly = false, -- DEBUG DAS coordsZone da dominação. ( ATIVAR APENAS QUANDO ESTIVER CRIANDO AS AREAS )
+    debugPoly = true, -- DEBUG DAS coordsZone da dominação. ( ATIVAR APENAS QUANDO ESTIVER CRIANDO AS AREAS )
 
     Zones = {
         
         { -- INICIO DE UMA ZONA
-            name = "Armas", -- NOME DA ZONA DE DOMINACAO
 
-            coords = vec3(54.64,3712.75,39.75), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+            name = "MUNIÇÃO DOMINAÇÃO", -- NOME DA ZONA DE DOMINACAO
+
+            coords = vec3(-126.52,-2375.39,9.32), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
             coordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
-                vec3(252.6,4278.99,37.67),
-                vec3(-252.69,3738.82,54.74),
-                vec3(452.37,3386.69,42.21),
-                vec3(627.29,4177.31,36.01),
-                vec3(243.13,4281.86,33.2)
+                vec3(-116.18,-2379.0,9.32),
+                vec3(-211.68,-2378.41,9.32),
+                vec3(-212.37,-2353.18,9.32),
+                vec3(-121.6,-2354.53,9.32)
             },
 
             permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
-                { org = "Mafia 01", permission = "perm.mafia01" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
-                { org = "China", permission = "perm.china" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
-                { org = "Tokyo", permission = "perm.tokyo" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "MorroDoChapadao", permission = "perm.chapadao" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Buenavista", permission = "perm.buenavista" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Franca", permission = "perm.franca" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Grota", permission = "perm.grota" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "WEB", permission = "perm.web" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Vanilla", permission = "perm.redline" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
             },
-
+            -- fala pra eles dominar ok
             dominationConfig = {
                 dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
-                vehicles = true, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
+                vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
                 playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
-                totalPoints = 1000, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
-                cooldown = 5, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+                totalPoints = 1500, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+                cooldown = 60, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
             },
 
             avaliableWeapons = {
-                ["Pistola"] = true,
-                ["Metralhadora"] = true,
-                ["Smg"] = false,
-                ["Fuzil"] = false,
-                ["Sniper"] = true,
-                ["Shotgun"] = true,
+                ["Branca"] = false,
             },
 
             blip = { -- CONFIGURACAO DO BLIP DO MAPA
                 display = true, -- ATIVAR/DESATIVAR BLIP NO MAPA PARA MOSTRAR ZONA DOMINADA POR XXX
                 blipId = 84, -- ID DO BLIP
                 blipColor = 1, -- ID DA COR
-                blipScale = 0.5, -- TAMANHO DO BLIP
+                blipScale = 0.8, -- TAMANHO DO BLIP
                 blipName = "[%s] Dominado Por: %s" -- NOME DO BLIP
             },
 
             paymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
             -------- EXEMPLO --------
-            --[[ local users = vRP.getUsersByPermission(permission)
+             local users = vRP.getUsersByPermission(permission)
                 for source,user_id in pairs(users) do
                     async(function()
-                        vRP.giveInventoryItem(user_id, "dinheiro-sujo", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+                        --vRP.giveInventoryItem(user_id, "pecadearma", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+                        vRP.giveInventoryItem(user_id, "dirty_money",250000 ) -- GIVANDO DINHEIRO NO INVENTARIO
+                        vRP.giveInventoryItem(user_id, "c4",1 ) -- GIVANDO DINHEIRO NO INVENTARIO
                     end)
-                end  ]]
+                end
             ------- FIM EXEMPLO ------
 
             end,
@@ -68,39 +68,37 @@ Config = {
         }, -- FIM DE UMA ZONA
 
         { -- INICIO DE UMA ZONA
-            name = "Municao", -- NOME DA ZONA DE DOMINACAO
 
-            coords = vec3(3534.51,3737.94,36.7), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+            name = "ARMAS DOMINAÇÃO", -- NOME DA ZONA DE DOMINACAO
+
+            coords = vec3(2654.25,1692.76,24.48), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
             coordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
-                vec3(3621.62,3821.55,32.88),
-                vec3(3375.78,3777.33,46.06),
-                vec3(3369.31,3644.85,60.34),
-                vec3(3623.84,3571.19,56.54),
-                vec3(3702.35,3712.28,37.5),
-                vec3(3626.78,3819.64,31.46)
+                vec3(2694.64,1651.17,24.62),
+                vec3(2650.55,1651.14,24.92),
+                vec3(2649.46,1724.54,24.48),
+                vec3(2693.1,1725.09,24.48),
             },
 
             permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
-                { org = "Mafia 01", permission = "perm.mafia01" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
-                { org = "China", permission = "perm.china" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
-                { org = "Tokyo", permission = "perm.tokyo" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Helipa", permission = "perm.helipa" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Jardimnovomundo", permission = "perm.jardimnovomundo" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Mafia", permission = "perm.mafia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Lagunapark", permission = "perm.lagunapark" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "MacacoMorro", permission = "perm.macaco" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Veracruz", permission = "perm.veracruz" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "Yakuza", permission = "perm.yakuza" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
             },
-
+            -- fala pra eles dominar ok
             dominationConfig = {
                 dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
                 vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
-                playerPoints = 100, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
-                totalPoints = 1000, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
-                cooldown = 5, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+                playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
+                totalPoints = 1500, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+                cooldown = 60, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
             },
 
             avaliableWeapons = {
-                ["Pistola"] = false,
-                ["Metralhadora"] = true,
-                ["Smg"] = false,
-                ["Fuzil"] = false,
-                ["Sniper"] = true,
-                ["Shotgun"] = true,
+                ["Branca"] = true,
             },
 
             blip = { -- CONFIGURACAO DO BLIP DO MAPA
@@ -113,17 +111,333 @@ Config = {
 
             paymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
             -------- EXEMPLO --------
-            --[[ local users = vRP.getUsersByPermission(permission)
+             local users = vRP.getUsersByPermission(permission)
                 for source,user_id in pairs(users) do
                     async(function()
-                        vRP.giveInventoryItem(user_id, "dinheiro-sujo", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+                        --vRP.giveInventoryItem(user_id, "pecadearma", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+                        vRP.giveInventoryItem(user_id, "dirty_money",250000 ) -- GIVANDO DINHEIRO NO INVENTARIO
+                        vRP.giveInventoryItem(user_id, "c4",1 ) -- GIVANDO DINHEIRO NO INVENTARIO
                     end)
-                end  ]]
+                end
             ------- FIM EXEMPLO ------
 
             end,
             
         }, -- FIM DE UMA ZONA
+
+        { -- INICIO DE UMA ZONA
+
+            name = "DESMANCHE DOMINAÇÃO", -- NOME DA ZONA DE DOMINACAO
+
+            coords = vec3(2339.65,2570.1,47.72), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+            coordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
+                vec3(2363.9,2525.98,46.66),
+                vec3(2327.25,2503.6,46.51),
+                vec3(2297.71,2521.32,46.61),
+                vec3(2299.57,2547.95,46.66),
+                vec3(2320.82,2619.96,46.69),
+                vec3(2350.42,2630.06,46.66),
+            },
+
+            permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
+                { org = "Grota", permission = "perm.grota" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "VilaCanaa", permission = "perm.vilacanaa" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+                { org = "MacacoMorro", permission = "perm.macaco" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!
+            },
+            -- fala pra eles dominar ok
+            dominationConfig = {
+                dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
+                vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
+                playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
+                totalPoints = 1500, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+                cooldown = 60, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+            },
+
+            avaliableWeapons = {
+                ["Branca"] = true,
+            },
+
+            blip = { -- CONFIGURACAO DO BLIP DO MAPA
+                display = true, -- ATIVAR/DESATIVAR BLIP NO MAPA PARA MOSTRAR ZONA DOMINADA POR XXX
+                blipId = 84, -- ID DO BLIP
+                blipColor = 1, -- ID DA COR
+                blipScale = 0.5, -- TAMANHO DO BLIP
+                blipName = "[%s] Dominado Por: %s" -- NOME DO BLIP
+            },
+
+            paymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
+            -------- EXEMPLO --------
+             local users = vRP.getUsersByPermission(permission)
+                for source,user_id in pairs(users) do
+                    async(function()
+                        --vRP.giveInventoryItem(user_id, "pecadearma", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+                        vRP.giveInventoryItem(user_id, "dirty_money",250000 ) -- GIVANDO DINHEIRO NO INVENTARIO
+                        vRP.giveInventoryItem(user_id, "c4",1 ) -- GIVANDO DINHEIRO NO INVENTARIO
+                    end)
+                end
+            ------- FIM EXEMPLO ------
+
+            end,
+            
+        }, -- FIM DE UMA ZONA
+
+        { -- INICIO DE UMA ZONA
+
+        name = "ORGS LEGAL DOMINAÇÃO", -- NOME DA ZONA DE DOMINACAO
+
+        coords = vec3(645.1,635.78,129.05), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+        coordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
+            vec3(586.46,607.44,128.9),
+            vec3(600.66,650.29,128.9),
+            vec3(645.71,664.21,128.9),
+            vec3(665.07,630.82,128.9),
+            vec3(647.97,581.69,129.04),
+        },
+
+        permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
+        { org = "Rotam", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Civil", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Militar", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Militar01", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Prf", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Competcar", permission = "perm.competcar" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Deboxe", permission = "perm.deboxe" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Abelvolks", permission = "perm.abelvolks" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Bombeiro", permission = "perm.hospital" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        { org = "Hospital", permission = "perm.hospital" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        },
+        -- fala pra eles dominar ok
+        dominationConfig = {
+            dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
+            vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
+            playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
+            totalPoints = 150, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+            cooldown = 120, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+        },
+
+        avaliableWeapons = {
+            ["Branca"] = true,
+        },
+
+        blip = { -- CONFIGURACAO DO BLIP DO MAPA
+            display = true, -- ATIVAR/DESATIVAR BLIP NO MAPA PARA MOSTRAR ZONA DOMINADA POR XXX
+            blipId = 84, -- ID DO BLIP
+            blipColor = 1, -- ID DA COR
+            blipScale = 0.5, -- TAMANHO DO BLIP
+            blipName = "[%s] Dominado Por: %s" -- NOME DO BLIP
+        },
+
+        paymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
+        -------- EXEMPLO --------
+         local users = vRP.getUsersByPermission(permission)
+            for source,user_id in pairs(users) do
+                async(function()
+                    --vRP.giveInventoryItem(user_id, "pecadearma", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+                    vRP.giveInventoryItem(user_id, "money",150000 ) -- GIVANDO DINHEIRO NO INVENTARIO
+                    vRP.giveInventoryItem(user_id, "bandagem",1 ) -- GIVANDO DINHEIRO NO INVENTARIO
+                end)
+            end
+        ------- FIM EXEMPLO ------
+
+        end,
+        
+    }, -- FIM DE UMA ZONA
+
+
+        ---permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
+        ---        { org = "Rotam", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Civil", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Militar", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Prf", permission = "perm.policia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Deboxe", permission = "perm.deboxe" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Abelvolks", permission = "perm.abelvolks" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Bombeiro", permission = "perm.hospital" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---        { org = "Hospital", permission = "perm.hospital" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---    },
+        
+        ---{ -- INICIO DE UMA ZONA
+        ---name = "Municao", -- NOME DA ZONA DE DOMINACAO
+---
+        ---coords = vec3(129.74,-3108.66,5.91), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+        ---coordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
+        ---        vec3(184.04,-2958.9,6.09),
+        ---        vec3(179.81,-3339.01,5.77),
+        ---        vec3(108.27,-3338.57,6.0),
+        ---        vec3(107.86,-2961.54,6.01),
+        ---        vec3(184.06,-2958.74,6.1)
+        ---    },
+---
+        ---permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
+        ---    { org = "Buenavista", permission = "perm.buenavista" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---    { org = "Caveira", permission = "perm.caveira" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---    { org = "Medelin", permission = "perm.medelin" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---    { org = "Grota", permission = "perm.grota" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+        ---},
+---
+        ---dominationConfig = {
+        ---    dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
+        ---    vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
+        ---    playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
+        ---    totalPoints = 1000, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+        ---    cooldown = 60, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+        ---},
+---
+        ---avaliableWeapons = {
+        ---    ["Pistola"] = true,
+        ---    ["Metralhadora"] = true,
+        ---    ["Smg"] = true,
+        ---    ["Fuzil"] = true,
+        ---    ["Sniper"] = true,
+        ---    ["Shotgun"] = true,
+        ---},
+---
+        ---blip = { -- CONFIGURACAO DO BLIP DO MAPA
+        ---    display = true, -- ATIVAR/DESATIVAR BLIP NO MAPA PARA MOSTRAR ZONA DOMINADA POR XXX
+        ---    blipId = 84, -- ID DO BLIP
+        ---    blipColor = 1, -- ID DA COR
+        ---    blipScale = 0.5, -- TAMANHO DO BLIP
+        ---    blipName = "[%s] Dominado Por: %s" -- NOME DO BLIP
+        ---},
+---
+        ---paymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
+        ----------- EXEMPLO --------
+        --- local users = vRP.getUsersByPermission(permission)
+        ---    for source,user_id in pairs(users) do
+        ---        async(function()
+        ---            vRP.giveInventoryItem(user_id, "capsulas", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+        ---            vRP.giveInventoryItem(user_id, "polvora", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+        ---        end)
+        ---    end
+        ---------- FIM EXEMPLO ------
+
+ --       end,
+ --       
+ --   }, 
+
+--   { -- INICIO DE UMA ZONA
+--   name = "Lavagem", -- NOME DA ZONA DE DOMINACAO
+--
+--   coords = vec3(-220.02,-1998.79,27.75), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+--   coordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
+--       vec3(-210.26,-1999.92,27.63),
+--       vec3(-221.81,-1941.1,27.76),
+--       vec3(-291.88,-1876.44,27.74),
+--       vec3(-403.3,-1877.56,29.48),
+--       vec3(-427.0,-1990.55,28.66),
+--       vec3(-283.8,-2076.35,29.39),
+--       vec3(-210.23,-2000.15,27.57)
+--   },
+--
+--   permissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
+--       { org = "Cassino", permission = "perm.cassino" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--       { org = "Vinhedo", permission = "perm.vinhedo" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--       { org = "Garavelo", permission = "perm.garavelo" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   },
+--
+--   dominationConfig = {
+--       dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
+--       vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
+--       playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
+--       totalPoints = 1000, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+--       cooldown = 60, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+--   },
+--
+--   avaliableWeapons = {
+--       ["Pistola"] = true,
+--       ["Metralhadora"] = true,
+--       ["Smg"] = true,
+--       ["Fuzil"] = true,
+--       ["Sniper"] = true,
+--       ["Shotgun"] = true,
+--   },
+--
+--   blip = { -- CONFIGURACAO DO BLIP DO MAPA
+--       display = true, -- ATIVAR/DESATIVAR BLIP NO MAPA PARA MOSTRAR ZONA DOMINADA POR XXX
+--       blipId = 84, -- ID DO BLIP
+--       blipColor = 1, -- ID DA COR
+--       blipScale = 0.5, -- TAMANHO DO BLIP
+--       blipName = "[%s] Dominado Por: %s" -- NOME DO BLIP
+--   },
+--
+--   paymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
+--   -------- EXEMPLO --------
+--    local users = vRP.getUsersByPermission(permission)
+--       for source,user_id in pairs(users) do
+--           async(function()
+--               vRP.giveInventoryItem(user_id, "l-alvejante", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+--               vRP.giveInventoryItem(user_id, "m-tecido", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+--               vRP.giveInventoryItem(user_id, "m-malha", 30) -- GIVANDO DINHEIRO NO INVENTARIO
+--           end)
+--       end
+--   ------- FIM EXEMPLO ------
+--
+--   end,
+--   
+--, 
+--
+-- -- INICIO DE UMA ZONA
+--ame = "Drogas", -- NOME DA ZONA DE DOMINACAO
+--
+--oords = vec3(2750.73,1492.49,24.51), -- LOCALIZAÇÃO DA ZONA DE DOMINAÇÃO
+--oordsZone = { -- CORDENADAS DA ZONA DE DOMINAÇÃO ( LIGUE OS PONTOS EM LINHA RETAS SEM CRUZAR )
+--   vec3(2648.72,1726.06,24.49),
+--   vec3(2647.07,1343.87,24.52),
+--   vec3(2794.61,1336.74,31.48),
+--   vec3(2911.82,1627.87,21.84),
+--   vec3(2854.27,1726.12,27.08),
+--   vec3(2645.02,1725.69,24.52)
+--,
+--
+--ermissions = { -- PERMISSOES DE QUEM VAI PODER DOMINAR O LOCAL
+--   { org = "Coreia", permission = "perm.coreia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "EmilioPovoa", permission = "perm.emiliopovoa" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "Turquia", permission = "perm.turquia" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "Parqueoeste", permission = "perm.parqueoeste" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "QuebraCaixote", permission = "perm.quebracaixote" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "Veracruz", permission = "perm.veracruz" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "Tiradentes", permission = "perm.tiradentes" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--   { org = "Novaesperanca", permission = "perm.novaesperanca" }, -- SE FOR ADICIONAR A MESMA PERMISSAO EM OUTRO LOCAL, MANTER A ORG COM MESMO NOME!!
+--,
+--
+--ominationConfig = {
+--   dominationDebug = true, -- DEBUG PARA APARECER PARA TODOS JOGADORES PROXIMOS A ZONA DEMARCADA.
+--   vehicles = false, -- SE VAI PERMITIR TRANSIÇÃO DE VEICULOS DENTRO DA ZONA.
+--   playerPoints = 1, -- PONTUACAO QUE CADA JOGADOR VAI SOMAR NA DOMINACAO
+--   totalPoints = 1000, -- TOTAL DE PONTOS NECESSARIOS PARA DOMINAR A ZONA
+--   cooldown = 60, -- COOLDOWN EM MINUTOS, PARA A ZONA APOS SER DOMINADA.
+--,
+--
+--valiableWeapons = {
+--   ["Pistola"] = true,
+--   ["Metralhadora"] = true,
+--   ["Smg"] = true,
+--   ["Fuzil"] = true,
+--   ["Sniper"] = true,
+--   ["Shotgun"] = true,
+--,
+--
+--lip = { -- CONFIGURACAO DO BLIP DO MAPA
+--   display = true, -- ATIVAR/DESATIVAR BLIP NO MAPA PARA MOSTRAR ZONA DOMINADA POR XXX
+--   blipId = 84, -- ID DO BLIP
+--   blipColor = 1, -- ID DA COR
+--   blipScale = 0.5, -- TAMANHO DO BLIP
+--   blipName = "[%s] Dominado Por: %s" -- NOME DO BLIP
+--,
+--
+--aymentWinner = function(org, permission) -- Caso queira dar recompensas a parte para jogadores da organizacao
+------- EXEMPLO --------
+--local users = vRP.getUsersByPermission(permission)
+--   for source,user_id in pairs(users) do
+--       async(function()
+--           vRP.giveInventoryItem(user_id, "dirty_money", 10000) -- GIVANDO DINHEIRO NO INVENTARIO
+--       end)
+--   end
+------ FIM EXEMPLO ------
+--
+--nd,
+--
+--, 
+
         
     },
 

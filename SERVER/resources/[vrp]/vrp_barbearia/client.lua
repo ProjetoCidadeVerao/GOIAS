@@ -186,6 +186,7 @@ local locations = {
 	{ -1887.38,2071.96,140.98, false },
 	{ -1229.41,-1651.97,4.75, false },
 	{ 290.75,-2047.21,19.65, false },
+	{ -1601.92,-1060.94,13.09, true },
 }
 
 Citizen.CreateThread(function()

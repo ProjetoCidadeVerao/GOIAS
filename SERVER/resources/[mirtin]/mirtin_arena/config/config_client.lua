@@ -5,7 +5,7 @@ config = {}
 config.rangeDistance = 100 -- Distancia se o player se afastar muito voltar para a arena
 
 config.locArenas = { -- Localizações das arenas
-    vec3(214.13,-920.98,30.68)
+    vec3(154.2,-987.57,30.09)
 }
 
 config.keys = {

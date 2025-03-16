@@ -138,6 +138,7 @@ body {
 }
 
 
+
 .date {
     width: 118px;
     height: 51px;
@@ -254,7 +255,7 @@ body {
 .on {
     width: 7px;
     height: 7px;
-    background: #4EFD5F;
+    background: #ffffff;
     border-radius: 1px;
 }
 

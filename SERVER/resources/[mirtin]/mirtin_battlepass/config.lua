@@ -2,9 +2,9 @@ Config = {
     main = {
         command = 'passe', -- Comando para abrir passe de batalha
         resetDays = 30, -- em dia(s) tempo para resetar o passe
-        minPerLevel = 120, -- Minutos necessario para upar 1 level do passe ( 60 = 1 hora, 120 = 2 horas ... )
+        minPerLevel = 180, -- Minutos necessario para upar 1 level do passe ( 60 = 1 hora, 120 = 2 horas ... )
 
-        premiumPermission = 'passedebatalha.permissao', -- Grupo que identifica que o jogador tem o passe de batalha.
+        premiumPermission = 'perm.passedebatalha3', -- Grupo que identifica que o jogador tem o passe de batalha.
 
         dirs = { -- Lista de diretorios para encontrar a imagem do item.
             ['item'] = 'http://191.96.81.87/inventario',
@@ -39,21 +39,21 @@ Config = {
 
         free = { -- ITENS GRATUITOS DO PASSE
             [1] = {
-                spawn = 'mochila', -- spawn
-                name = 'Mochila', -- Nome do Item
+                spawn = 'c4', -- spawn
+                name = 'C4', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 10, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [2] = {
-                spawn = 'skate', -- spawn
-                name = 'Skate', -- Nome do Item
+                spawn = 'bandagem', -- spawn
+                name = 'Bandagem', -- Nome do Carro
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 10, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                    Config.payments.giveItem(source, user_id, spawn)
                 end
             },
             [3] = {
@@ -66,30 +66,30 @@ Config = {
                 end
             },
             [4] = {
-                spawn = 'pneus', -- spawn
-                name = 'Pneus', -- Nome do Item
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                spawn = 'shotaro', -- spawn
+                name = 'shotaro', -- Nome do Carro
+                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                    Config.payments.giveCar(source, user_id, spawn)
                 end
             },
             [5] = {
                 spawn = 'repairkit', -- spawn
                 name = 'Kit de Reparação', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 10, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [6] = {
-                spawn = 'radio', -- spawn
-                name = 'Rádio', -- Nome do Item
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                spawn = 'pop110i', -- spawn
+                name = 'pop110i', -- Nome do Carro
+                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                    Config.payments.giveCar(source, user_id, spawn)
                 end
             },
             [7] = {
@@ -102,10 +102,10 @@ Config = {
                 end
             },
             [8] = {
-                spawn = 'apple_watch', -- spawn
-                name = 'Apple Watch', -- Nome do Item
+                spawn = 'money', -- spawn
+                name = 'Money', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 10000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
@@ -114,43 +114,43 @@ Config = {
                 spawn = 'c4', -- spawn
                 name = 'C4', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 10, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [10] = {
-                spawn = 'furadeira', -- spawn
-                name = 'Furadeira', -- Nome do Item
+                spawn = 'WEAPON_SPECIALCARBINE_MK2', -- spawn
+                name = 'WEAPON_SPECIALCARBINE_MK2', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 2, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [11] = {
-                spawn = 'lockpick', -- spawn
-                name = 'Lockpick', -- Nome do Item
+                spawn = 'AMMO_SPECIALCARBINE_MK2', -- spawn
+                name = 'AMMO_SPECIALCARBINE_MK2', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 250, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [12] = {
-                spawn = 'maconha', -- spawn
-                name = 'Maconha', -- Nome do Item
+                spawn = 'WEAPON_PISTOL_MK2', -- spawn
+                name = 'WEAPON_PISTOL_MK2', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 2, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [13] = {
-                spawn = 'cocaina', -- spawn
-                name = 'Cocaína', -- Nome do Item
+                spawn = 'AMMO_PISTOL_MK2', -- spawn
+                name = 'AMMO_PISTOL_MK2', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 150, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
@@ -159,16 +159,61 @@ Config = {
                 spawn = 'metanfetamina', -- spawn
                 name = 'Metanfetamina', -- Nome do Item
                 type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                amount = 100, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [15] = {
-                spawn = 'heroina', -- spawn
-                name = 'Heroína', -- Nome do Item
-                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                spawn = 'xre2019', -- spawn
+                name = 'xre2019', -- Nome do Carro
+                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveCar(source, user_id, spawn)
+                end
+            },
+            [16] = {
+                spawn = 'money', -- spawn
+                name = '100 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 100000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [17] = {
+                spawn = 'money', -- spawn
+                name = '150 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 150000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [18] = {
+                spawn = 'money', -- spawn
+                name = '200 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 200000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [19] = {
+                spawn = 'money', -- spawn
+                name = '300 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 300000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [20] = {
+                spawn = 'money', -- spawn
+                name = '500 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 500000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
@@ -177,17 +222,17 @@ Config = {
 
         paid = { -- ITENS PAGOS DO PASSE
             [1] = {
-                spawn = '18velar', -- spawn
-                name = '18 Velar', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                spawn = 'money', -- spawn
+                name = '100 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 100000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [2] = {
-                spawn = '440i', -- spawn
-                name = '440i', -- Nome do Carro
+                spawn = 'G2', -- spawn
+                name = 'Saveiro G2', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -195,35 +240,35 @@ Config = {
                 end
             },
             [3] = {
-                spawn = '718caymans', -- spawn
-                name = '718 Caymans', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                spawn = 'money', -- spawn
+                name = '150 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 150000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [4] = {
-                spawn = 'akuma', -- spawn
-                name = 'Akuma', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                spawn = 'c4', -- spawn
+                name = 'c4', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 20, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn)
                 end
             },
-            [5] = {
-                spawn = 'furia', -- spawn
-                name = 'Furia', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+            [3] = {
+                spawn = 'money', -- spawn
+                name = '200 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 200000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [6] = {
-                spawn = 'gsxr', -- spawn
-                name = 'GSXR', -- Nome do Carro
+                spawn = '21hilux', -- spawn
+                name = 'Hilux Deboxe', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -231,17 +276,17 @@ Config = {
                 end
             },
             [7] = {
-                spawn = 'guardian', -- spawn
-                name = 'Guardian', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                spawn = 'balinha', -- spawn
+                name = 'balinha', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 100, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn)
                 end
             },
             [8] = {
-                spawn = 'hakuchou', -- spawn
-                name = 'Hakuchou', -- Nome do Carro
+                spawn = 'impronta4', -- spawn
+                name = 'Ferrari Impronta', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -249,17 +294,17 @@ Config = {
                 end
             },
             [9] = {
-                spawn = 'hakuchou2', -- spawn
-                name = 'Hakuchou2', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                spawn = 'money', -- spawn
+                name = '250 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 250000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
                 end
             },
             [10] = {
-                spawn = 'impaler', -- spawn
-                name = 'Impaler', -- Nome do Carro
+                spawn = 'kawagala', -- spawn
+                name = 'kawagala', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -267,17 +312,17 @@ Config = {
                 end
             },
             [11] = {
-                spawn = 'infernus2', -- spawn
-                name = 'Infernus2', -- Nome do Carro
-                type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
-                amount = 1, -- quantidade
+                spawn = 'money', -- spawn
+                name = '250 mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 250000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
-                    Config.payments.giveCar(source, user_id, spawn)
+                    Config.payments.giveItem(source, user_id, spawn)
                 end
             },
             [12] = {
-                spawn = 'innovation', -- spawn
-                name = 'Innovation', -- Nome do Carro
+                spawn = 'km1000rr', -- spawn
+                name = '1000RR', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
                 execute = function(source, user_id, spawn, amount)
@@ -285,10 +330,73 @@ Config = {
                 end
             },
             [13] = {
-                spawn = 'komoda', -- spawn
-                name = 'Komoda', -- Nome do Carro
+                spawn = 'money', -- spawn
+                name = '350 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 350000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [14] = {
+                spawn = 'money', -- spawn
+                name = '400 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 400000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [15] = {
+                spawn = 'money', -- spawn
+                name = '450 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 450000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [16] = {
+                spawn = 'money', -- spawn
+                name = '500 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 500000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [17] = {
+                spawn = 'money', -- spawn
+                name = '550 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 550000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [18] = {
+                spawn = 'money', -- spawn
+                name = '600 Mil', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 550000, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveItem(source, user_id, spawn, amount, true)
+                end
+            },
+            [19] = {
+                spawn = 'BC_gt3hycade', -- spawn
+                name = 'Exclusivo GT3', -- Nome do Carro
                 type = 'car', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
                 amount = 1, -- quantidade
+                execute = function(source, user_id, spawn, amount)
+                    Config.payments.giveCar(source, user_id, spawn)
+                end
+            },
+            [20] = {
+                spawn = 'fxiaop', -- spawn
+                name = 'Drone 2 Lugares', -- Nome do Carro
+                type = 'item', -- PARA O SCRIPT IDENTIFICAR A URL DAS IMAGENS [ car, item, others ]
+                amount = 1000, -- quantidade
                 execute = function(source, user_id, spawn, amount)
                     Config.payments.giveCar(source, user_id, spawn)
                 end

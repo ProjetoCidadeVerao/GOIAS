@@ -79,7 +79,7 @@ Citizen.CreateThread( function()
 		local speed = GetEntitySpeed(vehicle) * 3.6
 
 		if speed >= 300 then
-			local maxSpeed = 400.0 / 3.6
+			local maxSpeed = 350.0 / 3.6
 			SetEntityMaxSpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false), maxSpeed)
 		end
 

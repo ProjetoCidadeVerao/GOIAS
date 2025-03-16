@@ -7,8 +7,8 @@ Config = {
          install_command = 'instalar_suspensao', -- Para instalar a suspensao a AR ( Uso para mecanicos )
  
          permissions = {
-             vip_permission = 'mirtin_suspension.vip', -- Permissao para abrir a suspensao a AR sem precisar ser instalada ( Uso para beneficios VIP )
-             install_permission = 'mirtin_suspension.install', -- Permissao para instalar a suspensao a AR ( Uso para mecanicos )
+             vip_permission = 'perm.suspevip', -- Permissao para abrir a suspensao a AR sem precisar ser instalada ( Uso para beneficios VIP )
+             install_permission = 'perm.mecanico', -- Permissao para instalar a suspensao a AR ( Uso para mecanicos )
          },
  
          requireItem = { -- Precisa de item para abrir a suspensao a AR

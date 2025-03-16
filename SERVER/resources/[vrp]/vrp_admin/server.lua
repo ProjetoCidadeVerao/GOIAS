@@ -21,6 +21,7 @@ local groups = cfgGroups.groups
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local aExpediente = {
 	{ ['grupo1'] = "admin", ['grupo2'] = "adminoff"},
+	{ ['grupo1'] = "developer", ['grupo2'] = "developeroff"},
 	{ ['grupo1'] = "moderador", ['grupo2'] = "moderadoroff"},
 	{ ['grupo1'] = "suporte", ['grupo2'] = "suporteoff"}
 }
@@ -65,6 +66,97 @@ RegisterCommand('addcar',function(source,args,rawCommand)
             TriggerClientEvent("Notify",source,"sucesso","Voce adicionou o veículo <b>"..args[1].."</b> para o Passaporte: <b>"..parseInt(args[2]).."</b>.") 
         end
     end
+end)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- GROUP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('group',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.hasPermission(user_id,"developer.permissao") then
+		if args[1] == 'developer' then
+			if not vRP.hasPermission(user_id,'developer.permissao') then
+				TriggerClientEvent("Notify",source,"negado","Se tentar se setar como <b>Developer</b> novamente, irei avisar o VEIO, cuidado!.", 5)
+				return 
+			end
+		end
+		local group = ""
+		for i = 2, #args do
+			group = group.. args[i].." "
+		end
+		group = group:sub(1, -2)
+		
+		if not groups[group] then 
+			TriggerClientEvent("Notify",source,"negado","Grupo não encontrado.", 5)
+			return
+		end
+
+		if args[1] and group ~= "" then
+			local nsource = vRP.getUserSource(parseInt(args[1]))
+			if nsource then
+				vRP.addUserGroup(parseInt(args[1]),group)
+				TriggerClientEvent("Notify",source,"sucesso","Você adicionou o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
+				vRP.sendLog("GROUPADD", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..group.."")
+			else
+				local rows = vRP.getUData(parseInt(args[1]), "vRP:datatable")
+				if #rows > 0 then
+					local data = json.decode(rows) or {}
+					if data then
+						if data then
+							data.groups[group] = true
+						end
+					end
+
+					vRP.setUData(parseInt(args[1]),"vRP:datatable",json.encode(data))
+					TriggerClientEvent("Notify",source,"sucesso","** OFFLINE ** Você adicionou o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
+					vRP.sendLog("GROUPADD", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..group.."")
+				end
+			end
+		end
+	end
+end)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- GROUPREM
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('ungroup',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.hasPermission(user_id,"developer.permissao") then
+		local group = ""
+		for i = 2, #args do
+			group = group.. args[i].." "
+		end
+		group = group:sub(1, -2)
+		
+		if not groups[group] then 
+			TriggerClientEvent("Notify",source,"negado","Grupo não encontrado.", 5)
+			return
+		end
+
+
+		if args[1] and group ~= "" then
+			local nsource = vRP.getUserSource(parseInt(args[1]))
+			if nsource then
+				vRP.removeUserGroup(parseInt(args[1]),group)
+
+				TriggerClientEvent("Notify",source,"negado","Você removeu o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
+				vRP.sendLog("GROUPREM", "O ID "..user_id.." removeu o grupo "..group.." do id "..args[1].."")
+			else
+				local rows = vRP.getUData(parseInt(args[1]), "vRP:datatable")
+				if #rows > 0 then
+					local data = json.decode(rows) or {}
+					if data then
+						if data then
+							data.groups[group] = nil
+						end
+					end
+
+					vRP.setUData(parseInt(args[1]),"vRP:datatable",json.encode(data))
+					TriggerClientEvent("Notify",source,"negado","** OFFLINE ** Você removeu o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
+					vRP.sendLog("GROUPREM", "O ID "..user_id.." removeu o grupo "..group.." do id "..args[1].."")
+				end
+			end
+		end
+	end
 end)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

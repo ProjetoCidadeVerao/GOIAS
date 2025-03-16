@@ -2,7 +2,7 @@ Config = {
     Info = {
         main = {
             name = function(user_id, source, identity) 
-                return identity.firstname .. " " .. identity.name
+                return identity.name .. " " .. identity.firstname
             end,
 
             genre = function(user_id, source) 
@@ -41,7 +41,7 @@ Config = {
             end,
     
             ['TRABALHO'] = function(user_id, source, identity) 
-                return vRP.getUserGroupByType(user_id, "job")
+                return vRP.getUserGroupByType(user_id, "org")
             end,
     
             ['IDENTIDADE'] = function(user_id, source, identity) 

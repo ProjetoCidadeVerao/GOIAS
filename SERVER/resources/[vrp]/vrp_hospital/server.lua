@@ -63,7 +63,7 @@ vRP._addStaticMenuChoices("unizk_equipamentos", unizk_equipamentos)
 local tentativas = {}
 RegisterCommand('re',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"perm.unizk") then 
+	if vRP.hasPermission(user_id,"perm.hospital") then 
 	if user_id ~= nil then
 		local nplayer = vRPclient.getNearestPlayer(source,5)
 		if nplayer then
@@ -154,7 +154,7 @@ end)
 --  SISTEMA DE MACA HOSPITAL
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function src.checkUNZIK()
-	local unizk = vRP.getUsersByPermission("perm.unizk")
+	local unizk = vRP.getUsersByPermission("perm.hospital")
 	local count = 0
 	
 	for k,v in pairs(unizk) do
@@ -179,7 +179,7 @@ function src.checkTratamento()
 		local deitado,tratamento = vCLIENT.checkPaciente(nplayer)
 		if deitado then
 			if not tratamento then
-				if vRP.hasPermission(user_id, "perm.unizk") then
+				if vRP.hasPermission(user_id, "perm.hospital") then
 					if vRP.tryFullPayment(nuser_id, 3000) then
 						vRP.giveMoney(user_id, 3000)
 						vCLIENT.iniciarTratamento(nplayer)

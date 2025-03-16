@@ -97,6 +97,77 @@ config.stores = { -- Configure os tipos de loja
             [9] = { spawn = "scubagear", price = 1000 },
             [10] = { spawn = "radio", price = 500 },
         }
+    },
+    ["Bebidas"] = {
+        estoque = 1000, -- Valor maximo do estoque da loja ( obs: cada compra de unidade na loja será removido 1 estoque ) ( se a loja não estiver proprietario, não sera descontado estoque )
+        percentual = 0.3, -- 30% Percentual de vendas que o proprietario recebe por unidade. ( se a loja não estiver proprietario, não recebera valor )
+        abastecimento = 2, -- Valor da unidade para abastecimento ( ex: 1000 de estoque, para completar é R$ 2000 )
+        blips = { show = true, blipid = 59, blipcolor = 2, blipscale = 0.5, blipname = "Mercado" }, -- Blips no mapa ( caso não queira que apareça show = false )
+
+        adjustValue = { -- Para o Proprietario alterar os valores dos itens na loja
+            increase = { -- Aumentar o valor dos itens
+                enable = true, -- Ativado = true, Desativado = false
+                max = 80 -- % Porcentagem maxima que ele consegue aumentar o valor dos itens
+            },
+
+            decrease = { -- Diminuir o valor dos itens
+                enable = true, -- Ativado = true, Desativado = false
+                max = 10 -- % Porcentagem maxima que ele consegue diminuir o valor dos itens
+            },
+        },
+        
+        storeItens = {
+            [1] = { spawn = "cocacola", price = 500 },
+            [2] = { spawn = "water", price = 1000 },
+        }
+    },
+
+    ["Farmacia"] = {
+        estoque = 1000, -- Valor maximo do estoque da loja ( obs: cada compra de unidade na loja será removido 1 estoque ) ( se a loja não estiver proprietario, não sera descontado estoque )
+        percentual = 0.3, -- 30% Percentual de vendas que o proprietario recebe por unidade. ( se a loja não estiver proprietario, não recebera valor )
+        abastecimento = 2, -- Valor da unidade para abastecimento ( ex: 1000 de estoque, para completar é R$ 2000 )
+        blips = { show = true, blipid = 59, blipcolor = 2, blipscale = 0.5, blipname = "Mercado" }, -- Blips no mapa ( caso não queira que apareça show = false )
+
+        adjustValue = { -- Para o Proprietario alterar os valores dos itens na loja
+            increase = { -- Aumentar o valor dos itens
+                enable = true, -- Ativado = true, Desativado = false
+                max = 80 -- % Porcentagem maxima que ele consegue aumentar o valor dos itens
+            },
+
+            decrease = { -- Diminuir o valor dos itens
+                enable = true, -- Ativado = true, Desativado = false
+                max = 10 -- % Porcentagem maxima que ele consegue diminuir o valor dos itens
+            },
+        },
+        
+        storeItens = {
+            [1] = { spawn = "bandagem", price = 15000 },
+            [2] = { spawn = "water", price = 1000 },
+        }
+    },
+
+    ["Oficina"] = {
+        estoque = 10000, -- Valor maximo do estoque da loja ( obs: cada compra de unidade na loja será removido 1 estoque ) ( se a loja não estiver proprietario, não sera descontado estoque )
+        percentual = 0.3, -- 30% Percentual de vendas que o proprietario recebe por unidade. ( se a loja não estiver proprietario, não recebera valor )
+        abastecimento = 2, -- Valor da unidade para abastecimento ( ex: 1000 de estoque, para completar é R$ 2000 )
+        blips = { show = false, blipid = 59, blipcolor = 2, blipscale = 0.5, blipname = "Mercado" }, -- Blips no mapa ( caso não queira que apareça show = false )
+
+        adjustValue = { -- Para o Proprietario alterar os valores dos itens na loja
+            increase = { -- Aumentar o valor dos itens
+                enable = true, -- Ativado = true, Desativado = false
+                max = 80 -- % Porcentagem maxima que ele consegue aumentar o valor dos itens
+            },
+
+            decrease = { -- Diminuir o valor dos itens
+                enable = true, -- Ativado = true, Desativado = false
+                max = 10 -- % Porcentagem maxima que ele consegue diminuir o valor dos itens
+            },
+        },
+        
+        storeItens = {
+            [1] = { spawn = "repairkit", price = 500 },
+            [2] = { spawn = "pneus", price = 500 },
+        }
     }
 }
 

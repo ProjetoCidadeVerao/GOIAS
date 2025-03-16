@@ -12,7 +12,7 @@ end)
 -- CONFIGS
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 config.limitZone = 30.0 -- Limite se o player se afastar muito ou nao carregar a casa, teleportar para o blip de entrada.
-config.imagemDir = "http://177.54.148.31:4020/veiculos/" -- Diretorio das imagens dos veiculos
+config.imagemDir = "http://191.96.81.87/carros/" -- Diretorio das imagens dos veiculos
 
 config.drawlable = function(id, coords, tipo, porta)
     if tipo == "apartamento" then -- Configure a mensagem / blip que ira aparecer na propriedade

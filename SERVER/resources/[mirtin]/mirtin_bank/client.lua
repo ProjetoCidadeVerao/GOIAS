@@ -94,7 +94,8 @@ local locations = {
    [73] = { tipo = "banco", coords = vec3(-1416.0,-212.1,46.51), text = "~b~[E]~w~ CAIXA 24h" },
    [74] = { tipo = "banco", coords = vec3(-30.22,-1105.01,26.42), text = "~b~[E]~w~ Empréstimo" },
    [75] = { tipo = "banco", coords = vec3(126.33,-1296.8,29.27), text = "~b~[E]~w~ CAIXA 24h" },
-
+   [76] = { tipo = "banco", coords = vec3(-487.94,-982.47,24.24), text = "~b~[E]~w~ CAIXA 24h" },
+   
 }
 
 Citizen.CreateThread(function()
