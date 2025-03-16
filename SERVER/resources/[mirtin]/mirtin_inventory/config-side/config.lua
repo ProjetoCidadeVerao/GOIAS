@@ -15,7 +15,7 @@ cfg.chestOrgs = {
     [12] = { coords = { x= -3043.72, y= 96.97, z= 12.35  }, maxbau = 10000, org = "DeboxeLider", perm = "perm.deboxe", weebhook = "https://discord.com/api/webhooks/1306534296076550204/1qdQgZl6GO1BAGEZSjdLtYFwoPdkLdwR2QgRf1iAlfQzCT27QHaepa2QMm0-sJFwqmPF" }, -- ARMAS -- 
     [13] = { coords = { x= -571.68, y= 289.26, z= 79.18  }, maxbau = 10000, org = "Tequila", perm = "perm.tequila", weebhook = "https://discord.com/api/webhooks/1318242519888302170/OGeDb-fJ65l_Va3dD5mhVbvuU00Elu_e3WHO_3z4lTXKp5qQ0FlSOz_BETtVjDt8wXv4" }, -- ARMAS --
     [14] = { coords = { x= -3370.9, y= 1136.92, z= 9.65  }, maxbau = 10000, org = "Yakuza", perm = "perm.yakuza", weebhook = "https://discord.com/api/webhooks/1310873627457093673/jsNkNS0NTjSndJCSMwWPiR1AsLfURc5zL_Wnn7DgItypc49e0SfLyv-uVf-ZsN9M7seI" }, -- ARMAS -- 
-    [15] = { coords = { x= -2679.57, y= 1336.54, z= 144.25  }, maxbau = 10000, org = "franca", perm = "perm.franca", weebhook = "https://discord.com/api/webhooks/1341099986267668541/2zF2KJ-bNJF6DctdYq7z7wHdPk6oM7it93av2DFudAL-vvAn-rsJN66s84NMuS09NBiv" }, -- ARMAS --
+    [15] = { coords = { x= -2361.15, y= 1735.26, z= 212.13  }, maxbau = 10000, org = "franca", perm = "perm.franca", weebhook = "https://discord.com/api/webhooks/1341099986267668541/2zF2KJ-bNJF6DctdYq7z7wHdPk6oM7it93av2DFudAL-vvAn-rsJN66s84NMuS09NBiv" }, -- ARMAS --
     [16] = { coords = { x= 1391.56, y= 1158.81, z= 114.33  }, maxbau = 10000, org = "LCartel", perm = "perm.lider.cartel", weebhook = "https://discord.com/api/webhooks/1325881895950483538/ka7XrsaO--L6CFIaDrbCrCMlnRM_DV6YiNH6C2zt1HtwYl8THPDrLJUz6ZdKjMxzNTqn" },
     [17] = { coords = { x= 144.41, y= 335.53, z= 116.6  }, maxbau = 10000, org = "Vilacanaa", perm = "perm.vilacanaa", weebhook = "https://discord.com/api/webhooks/1315752051581517895/zZhhaq-xc9PjvettZ27oBS0zCp7WaycZKg9qOzVw52fkQiZvOFeQ3Tp4NzostWkUp7sK" }, -- ARMAS
     [18] = { coords = { x= 189.34, y= 747.7, z= 208.63  }, maxbau = 10000, org = "Veracruz", perm = "perm.veracruz", weebhook = "https://discord.com/api/webhooks/1306535513112707113/cDoaFKzVYff_Mlk66l4tVIo-8B-Da-hvUgeAk8Bwfz2VRXSLEcMwmdXbW9HyASUfoj8q" }, -- ARMAS  --
@@ -28,7 +28,7 @@ cfg.chestOrgs = {
     [25] = { coords = { x= 951.04, y= 30.45, z= 51.9 }, maxbau = 10000, org = "Cassino", perm = "perm.cassino", weebhook = "" },--
     [26] = { coords = { x= -2237.45, y= -165.4, z= 71.83  }, maxbau = 30000, org = "Liderbrasil", perm = "perm.lider.brasil", weebhook = "https://discord.com/api/webhooks/1306540709670686721/ZlL9TWgDH4Ny_xqpY_8D8hWEqNo3ij0BkSb7ZzgrHLQEpK_c06C_tLpEeZK4TaFA7czI" }, -- ARMAS  -
     --[27] = { coords = { x= 2056.21, y= 3924.44, z= 36.04  }, maxbau = 10000, org = "Madregermano", perm = "perm.lider.madregermano", weebhook = "https://discord.com/api/webhooks/1306538415235272704/J9Z1Q7TX5eathdAHIsNcflxdDyyxuz0BjQMnci7jIgSmLu79yghMB50zg3dM8N2ZhCs3" }, -- ARMAS  -
-    [28] = { coords = { x= -2679.71, y= 1336.55, z= 215.48  }, maxbau = 10000, org = "LFranca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341099851798024282/vEiQ4vrt9YWOrdIlBJTKVDAOq7bbHsd-fb1to7S8lSb2iXLiD1rMZDNsq4mj6oFPH0zF" }, -- ARMAS  -
+    --[28] = { coords = { x= -2679.71, y= 1336.55, z= 215.48  }, maxbau = 10000, org = "LFranca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341099851798024282/vEiQ4vrt9YWOrdIlBJTKVDAOq7bbHsd-fb1to7S8lSb2iXLiD1rMZDNsq4mj6oFPH0zF" }, -- ARMAS  -
     [29] = { coords = { x= 138.93, y= 339.68, z= 144.25 }, maxbau = 10000, org = "LMotoclub", perm = "perm.lider.motoclub", weebhook = "" }, -- ARMAS  -
     [30] = { coords = { x= 944.22, y= -1054.33, z= 40.84  }, maxbau = 10000, org = "Deboxe", perm = "perm.mecanico", weebhook = "https://discord.com/api/webhooks/1322806852123103302/A6dU9fbAGVTMQkUTCxrIsRRFZOf011v_W0thILvMHiuZepW3kFEVaSkoNCRmE3AutQVR" }, -- ARMAS  -
     [31] = { coords = { x= -2351.23, y= 3253.65, z= 92.89  }, maxbau = 10000, org = "TorreEB", perm = "perm.exercito", weebhook = "https://discord.com/api/webhooks/1329617330677874728/176vzo1heWk3kOCcoRlBLf2PrBiwz7y6rNgSfS3J3Q6blq9tT2Qno-1rfBl7d_kSJQog" }, -- ARMAS  -  
@@ -43,7 +43,7 @@ cfg.chestOrgs = {
     [41] = { coords = { x= -1545.13, y= 327.37, z= 87.25  }, maxbau = 100000, org = "Parqueoeste", perm = "perm.parqueoeste", weebhook = "https://discord.com/api/webhooks/1310870477908217856/JUiX7GMKb6_filiGa3RmG8UKuikUzmU8xBJ6VC6c7c1EztkDUxk56v9DuAifG9J5oEmB" }, -- ARMAS  -            
     [42] = { coords = { x= -3231.9, y= 820.42, z= 14.07  }, maxbau = 100000, org = "Lagunapark", perm = "perm.lagunapark", weebhook = "https://discord.com/api/webhooks/1306532906155380776/WIbpS69PXKfElt0hPhVnTtICF1COn9tVH2sGqLbkdOtIdON9IjfpzOl8cvTfBQrvp-uX" }, -- ARMAS  -            
     [43] = { coords = { x= -1866.44, y= 2061.24, z= 35.44 }, maxbau = 100000, org = "Vinhedo", perm = "perm.vinhedo", weebhook = "" }, -- ARMAS  -            
-    [44] = { coords = { x= -401.24, y= 1535.68, z= 381.31 }, maxbau = 100000, org = "Macaco", perm = "perm.macaco", weebhook = "https://discord.com/api/webhooks/1328928715677106237/diIzeD8g-Q6C0Nmg2Jm1x_NQDS_igO6seWdvqfsLkvkah_WA7oW2yLgFiOqKfIppfEMy" }, -- ARMAS  -            
+    [44] = { coords = { x= -470.46, y= 1544.13, z= 407.25 }, maxbau = 100000, org = "Macaco", perm = "perm.macaco", weebhook = "https://discord.com/api/webhooks/1328928715677106237/diIzeD8g-Q6C0Nmg2Jm1x_NQDS_igO6seWdvqfsLkvkah_WA7oW2yLgFiOqKfIppfEMy" }, -- ARMAS  -            
     [45] = { coords = { x= -2676.56, y= 1310.22, z= 152.0 }, maxbau = 300000, org = "Gerentejardimnovomundo", perm = "perm.jardimnovomundo", weebhook = "https://discord.com/api/webhooks/1257505233781657625/QP8oRwoghCZkDg5EpR-eVMpv_jq7VtA41W6esmE3qkVWHZtQHiivyVGpcpuRklBZ_ZDt" }, -- ARMAS  - 
     [46] = { coords = { x= -2680.06, y= 2336.3, z= 21.13  }, maxbau = 300000, org = "Lvovo", perm = "perm.lider.vovo", weebhook = "https://discord.com/api/webhooks/1329142637973737483/CodyJat3tZnFEkFxF-MKXtoc-8kjfGmgZXAykPoniIDkuqca-Px-iUjIS_2OEKYAJQGn" }, -- ARMAS  - 
     [47] = { coords = { x= 1144.94, y= -1573.47, z= 35.38 }, maxbau = 100000, org = "Hopsital", perm = "perm.hospital", weebhook = "" }, -- ARMAS  -
@@ -52,19 +52,19 @@ cfg.chestOrgs = {
     [50] = { coords = { x= -2065.7, y= -457.05, z= 12.27 }, maxbau = 10000, org = "Rotam", perm = "perm.liderpolicia", weebhook = "" }, -- ARMAS
     [51] = { coords = { x= 1403.89, y= 1153.48, z= 114.33 }, maxbau = 10000, org = "Cartel", perm = "perm.cartel", weebhook = "https://discord.com/api/webhooks/1325882049457950742/WmkpQc2Jm0w3VJPxVIDYCBH0SJmYQFhhT3SeYTdlt_ZfISzUnT_qSlnr84s6HTrE7Lhx" },
     [52] = { coords = { x= -1756.9, y= -793.17, z= 17.04 }, maxbau = 10000, org = "Giro", perm = "perm.policia", weebhook = "" },
-    [53] = { coords = { x= -2361.09, y= 1735.13, z= 212.12 }, maxbau = 10000, org = "L3Franca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341100205994545256/pyfX1w-0wY3C6M93blrRFfOAs75fYnRNz-1Xon4hp0_OdXEsn2Pm_FT1goUayeAdRinl" },
-    [54] = { coords = { x= -470.33, y= 1544.18, z= 407.24 }, maxbau = 20000, org = "LMacaco", perm = "perm.lider.macaco", weebhook = "https://discord.com/api/webhooks/1328928484986192012/EBfeh86mSXzuVoWn3E08YuGZKC10aK3kwibGT9eeyYXPsudW28GVUFdTYQwoQRN674oW" },
+    --[53] = { coords = { x= -2361.09, y= 1735.13, z= 212.12 }, maxbau = 10000, org = "L3Franca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341100205994545256/pyfX1w-0wY3C6M93blrRFfOAs75fYnRNz-1Xon4hp0_OdXEsn2Pm_FT1goUayeAdRinl" },
+   -- [54] = { coords = { x= -470.33, y= 1544.18, z= 407.24 }, maxbau = 20000, org = "LMacaco", perm = "perm.lider.macaco", weebhook = "https://discord.com/api/webhooks/1328928484986192012/EBfeh86mSXzuVoWn3E08YuGZKC10aK3kwibGT9eeyYXPsudW28GVUFdTYQwoQRN674oW" },
     [55] = { coords = { x= -1753.79, y= 3179.83, z= 32.91 }, maxbau = 10000, org = "EBalojamento", perm = "perm.exercito", weebhook = "" }, -- ARMAS  -  
     [56] = { coords = { x= 1861.82, y= 3688.36, z= 34.26 }, maxbau = 10000, org = "EBPE", perm = "perm.exercito", weebhook = "" }, -- ARMAS  - 
     [57] = { coords = { x= -1693.76, y= -968.33, z= 8.36 }, maxbau = 10000, org = "Abelvolks", perm = "perm.abelvolks", weebhook = "" }, -- ARMAS  - 
     [58] = { coords = { x= -1870.28, y= 2059.09, z= 135.44 }, maxbau = 10000, org = "LDeboxe", perm = "perm.liderdeboxe", weebhook = "" }, -- ARMAS  - 
-    [59] = { coords = { x= 609.92, y= 2235.55, z= 63.39 }, maxbau = 20000, org = "LMACACOD", perm = "perm.lider.macaco", weebhook = "" }, -- ARMAS  -
+    --[59] = { coords = { x= 609.92, y= 2235.55, z= 63.39 }, maxbau = 20000, org = "LMACACOD", perm = "perm.lider.macaco", weebhook = "" }, -- ARMAS  -
     [60] = { coords = { x= 2328.24, y= 4025.95, z= 41.11  }, maxbau = 10000, org = "LChapadao", perm = "perm.lider.chapadao", weebhook = "https://discord.com/api/webhooks/1335596018783227945/DozyF2x76E7OBZWH1ciKLN_g9ZdGjyYhFUaKVjcNTdX0aLqvBt3fXIUY_LI3q6K-wJtI" }, -- ARMAS
-    [61] = { coords = { x= -2671.59, y= 1333.59, z= 144.25 }, maxbau = 10000, org = "L2franca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1338205985927594074/QjCOGlbUGT6LiygY2BrhhibscVTG42LBrFlUDGdvfs9c5e7y6VmWugaCK31aJqEMQzaa" }, -- ARMAS --
-    [62] = { coords = { x= 93.62, y= -1291.17, z= 29.27 }, maxbau = 10000, org = "LVanilla", perm = "perm.lider.redline", weebhook = "https://discord.com/api/webhooks/1341498891090264064/3-u9YRZKX_s3rYhc3JiZhu79VoSaADOFw1-mKVYg4Ixcr8uBjS6noSQKvVFYMzbV_e9H" }, -- ARMAS --
+    --[61] = { coords = { x= -2671.59, y= 1333.59, z= 144.25 }, maxbau = 10000, org = "L2franca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1338205985927594074/QjCOGlbUGT6LiygY2BrhhibscVTG42LBrFlUDGdvfs9c5e7y6VmWugaCK31aJqEMQzaa" }, -- ARMAS --
+   -- [62] = { coords = { x= 93.62, y= -1291.17, z= 29.27 }, maxbau = 10000, org = "LVanilla", perm = "perm.lider.redline", weebhook = "https://discord.com/api/webhooks/1341498891090264064/3-u9YRZKX_s3rYhc3JiZhu79VoSaADOFw1-mKVYg4Ixcr8uBjS6noSQKvVFYMzbV_e9H" }, -- ARMAS --
     [63] = { coords = { x= 108.56, y= -1304.69, z= 28.76 }, maxbau = 10000, org = "L2Vanilla", perm = "perm.redline", weebhook = "https://discord.com/api/webhooks/1342244026954416200/e7faIpMLyEkPXDS0tn4cUuJWuYSECCQdlBdEHJBMHXPkHlCH_p2NPjwcY_jpvuaLc_Uw" }, -- ARMAS --
 }   
- 
+
 cfg.stores = { 
     ["Medicamentos"] = {               
         bonus = false,

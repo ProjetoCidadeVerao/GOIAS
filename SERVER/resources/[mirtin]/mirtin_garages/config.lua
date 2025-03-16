@@ -1169,24 +1169,24 @@ Garages.List = {
     
         vehicles = {
             {vehicle = 'dusterrp1'},
-            {vehicle = 'dusterrp2'},
+            
 
         },
     },
 
     [30] = {
         type = "service", -- public / service [ tipo da garagem ] -- Helicoptero
-        permiss = "perm.policiaM", -- permissao
+        permiss = "perm.tatico", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(1031.9,-2291.9,31.81),
+        coords = vec3(-897.93,-2030.64,9.41),
         spawnCoords = {
-            vector4(1025.06,-2299.97,31.76,10.72),
+            vector4(-897.52,-2035.67,9.3,222.42),
         },
     
         vehicles = {
-            {vehicle = 'fenixpmerj'},
-            {vehicle = 'hueypmerj'}, -- 
+            {vehicle = 'dusterrp2'},
+            {vehicle = 's10pm'}, -- 
         },
     },
 
@@ -2312,7 +2312,77 @@ Garages.List = {
             vector4(-941.25,-2107.74,9.3,48.31),
         },
     },
+    [109] = {
+        type = "service", -- public / service [ tipo da garagem ] -- 
+        permiss = nil, -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(736.14,129.61,80.61),
+        spawnCoords = {
+            vector4(742.94,127.73,79.81,237.21),
+        },
+    
+        vehicles = {
+            {vehicle = 'unofirma'},
 
+        },
+    },
+
+    [110] = {
+        type = "service", -- public / service [ tipo da garagem ] --   MORRO MACACO
+        permiss = "perm.macaco", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(-431.78,1651.77,360.16),
+        spawnCoords = {
+            vector4(-438.06,1652.28,360.15,182.02),
+        },
+    
+        vehicles = {
+            {vehicle = 'kuruma'},
+            {vehicle = 'sanchez'},
+
+        },
+    },
+
+    [111] = {
+        type = "public", -- public / service [ tipo da garagem ] -- MORRO MACACO
+        permiss = nil, -- permissao
+        blip = true, -- blip no mapa
+        
+        coords = vec3(-444.08,1651.43,360.14),
+        spawnCoords = {
+            vector4(-438.06,1652.28,360.15,182.02),
+        },
+    },
+    [112] = {
+        type = "service", -- public / service [ tipo da garagem ] --   Mfrança
+        permiss = "perm.franca", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(-2420.42,1750.82,187.97),
+        spawnCoords = {
+            vector4(-2424.85,1761.13,187.97,310.98),
+        },
+    
+        vehicles = {
+            {vehicle = 'kuruma'},
+            {vehicle = 'sanchez'},
+
+        },
+    },
+
+    [113] = {
+        type = "public", -- public / service [ tipo da garagem ] -- Mfrança
+        permiss = nil, -- permissao
+        blip = true, -- blip no mapa
+        
+        coords = vec3(-2429.05,1758.72,187.97),
+        spawnCoords = {
+            vector4(-2424.85,1761.13,187.97,310.98),
+        },
+    },
+    
     
 }
 

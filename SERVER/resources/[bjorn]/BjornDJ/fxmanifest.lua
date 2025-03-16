@@ -1,6 +1,6 @@
 shared_script "@EQPG/shared.lua"
 
-shared_script '@comida/shared_fg-obfuscated.lua'
+
 fx_version "bodacious"
 game "gta5"
 lua54 "yes"

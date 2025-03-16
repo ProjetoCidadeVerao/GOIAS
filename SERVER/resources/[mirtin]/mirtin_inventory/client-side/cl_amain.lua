@@ -109,8 +109,8 @@ end)
  
 RegisterCommand("revistar",function(source,args)
 	if not IsPlayerFreeAiming(PlayerPedId()) and GetEntityHealth(PlayerPedId()) > 105 and myRevistar == nil and NetworkIsSessionActive() and segundos <= 0 and not vRP.isHandcuffed() and not IsPedInAnyVehicle(PlayerPedId()) then
-		print("EXPORT",exports["safe-zone"]:isInSafe())
-		if not exports["safe-zone"]:isInSafe() then
+		--print("EXPORT",exports["safe-zone"]:isInSafe())
+		--if not exports["safe-zone"]:isInSafe() then
 			segundos = 2
 			local revistar = vSERVER.checkOpenRevistar()
 			if revistar then
@@ -121,9 +121,9 @@ RegisterCommand("revistar",function(source,args)
 				SetCursorLocation(0.5,0.5)
 				SendNUIMessage({ action = "showRevistar" })
 			end
-		else
-			TriggerEvent('Notify','negado','Você não pode revistar em zona safe!')
-		end
+		-- else
+		-- 	TriggerEvent('Notify','negado','Você não pode revistar em zona safe!')
+		-- end
 	end
 end)
 

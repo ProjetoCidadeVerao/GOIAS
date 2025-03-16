@@ -116,7 +116,7 @@ Config = {
                                },
  
                                dangerRoute = {
-                                    status = false,       -- Rota Perigosa ( CHANCE DE CHAMAR A POLICIA )
+                                    status = true,       -- Rota Perigosa ( CHANCE DE CHAMAR A POLICIA )
                                     percentualPolice = 3, -- 3% De chamar A Policia ( APENAS SE O DangerRoute For ativo )
                                },
                                dominationBonus = {       -- Caso utilize o script mirtin_dominacao e queira dobrar/triplicar o farm se tiver a zona dominada.
@@ -154,42 +154,21 @@ Config = {
                locations = {  
                     -- LOCALIZACOES DESSAS BANCADAS
 
+
+
                     {     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                         name = 'Franca',
-                         coords = vec3(180.56,2464.48,55.72), -- COORDENADAS DA BANCADA
+                         name = 'MACACOMORRO',
+                         coords = vec3(-459.72,1547.8,407.28), -- COORDENADAS DA BANCADA
 
                          requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
                               active = true,
-                              name = 'Franca'
-                         },
-                         amountSlots = 5,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
-
-                         tablePermission = "perm.franca",          -- PERMISSAO PARA ACESSAR A BANCADA
-                         craftPermission = "perm.franca",    -- PERMISSAO PARA CRAFTAR ITEM
-                         withdrawPermission = "perm.franca", -- PERMISSAO PARA RETIRAR ITEM
-
-                         drawMarker = function(coords, dist)
-                              if dist <= 5.0 then
-                                   DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
-                                   DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
-                                   255, 180, 0, 0, 0, 1)
-                              end
-                         end,                                     -- BLIP DO CHAO
-                    },
-
-                    {     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                         name = 'CDM',
-                         coords = vec3(2882.01,4511.78,48.0), -- COORDENADAS DA BANCADA
-
-                         requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
-                              active = true,
-                              name = 'CDM'
+                              name = 'MACACOMORRO'
                          },
                          amountSlots = 2,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
 
-                         tablePermission = "cdm.permissao",          -- PERMISSAO PARA ACESSAR A BANCADA
-                         craftPermission = "cdm.permissao",    -- PERMISSAO PARA CRAFTAR ITEM
-                         withdrawPermission = "cdm.permissao", -- PERMISSAO PARA RETIRAR ITEM
+                         tablePermission = "perm.macaco",          -- PERMISSAO PARA ACESSAR A BANCADA
+                         craftPermission = "perm.macaco",    -- PERMISSAO PARA CRAFTAR ITEM
+                         withdrawPermission = "perm.macaco", -- PERMISSAO PARA RETIRAR ITEM
 
                          drawMarker = function(coords, dist)
                          if dist <= 5.0 then
@@ -546,7 +525,28 @@ Config = {
                               end
                          end,                                   -- BLIP DO CHAO
                     },
+                    {     -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
+                         name = 'Franca',
+                         coords = vec3(-2416.97,1761.55,187.97), -- COORDENADAS DA BANCADA
 
+                         requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
+                              active = true,
+                              name = 'Franca'
+                         },
+                         amountSlots = 5,                                   -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
+
+                         tablePermission = "perm.franca",          -- PERMISSAO PARA ACESSAR A BANCADA
+                         craftPermission = "perm.franca",    -- PERMISSAO PARA CRAFTAR ITEM
+                         withdrawPermission = "perm.franca", -- PERMISSAO PARA RETIRAR ITEM
+
+                         drawMarker = function(coords, dist)
+                              if dist <= 5.0 then
+                                   DrawText3Ds(coords.x, coords.y, coords.z + 0.1, "Pressione ~b~[E]~w~ para acessar a bancada.")
+                                   DrawMarker(27, coords.x, coords.y, coords.z - 0.95, 0, 0, 0, 0, 0, 0, 1.5, 1.5, 1.5, 0, 179,
+                                   255, 180, 0, 0, 0, 1)
+                              end
+                         end,                                     -- BLIP DO CHAO
+                    },
                     {                                            -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
                          name = 'Amarelinho',
                          coords = vec3(1268.39,-1710.09,54.76), -- COORDENADAS DA BANCADA
@@ -623,14 +623,14 @@ Config = {
                craft = {
                     {
                          item = 'money',                                 -- SPAWN DO ITEM
-                         amount = 170000,                                -- Quantidade de item que vai receber por unidade selecionada.
+                         amount = 100000,                                -- Quantidade de item que vai receber por unidade selecionada.
                          itemTime = 15,                                  -- 30 segundo(s) para a maquina concluir o craft.
                          requirePayment = false,                         -- Caso Necessitar de Pagamento para craftar este item ( PAGAR PARA CRAFTAR )
                          givePayment = false,                            -- Caso Deseja Efetuar um  pagamento ao craftar este item .
  
                          requires = {                                    -- ITENS NECESSARIOS PARA O CRAFT
-                              { item = "dirty_money", amount = 200000 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
-                              { item = "l-alvejante", amount = 10002000 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
+                              { item = "dirty_money", amount = 115000 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
+                              { item = "l-alvejante", amount = 100 }, -- ITEM NECESSARIO, QUANTIDADE NECESSARIA
                          }
                     }
                },
@@ -707,18 +707,18 @@ Config = {
                     },
 
                     {                                          -- POSSIVEL ADICIONAR VARIAS LOCALIZACOES E VARIAS ORGANIZACOES DIFERENTE
-                         name = 'Anonymous',
-                         coords = vec3(-1503.21,834.82,177.04), -- COORDENADAS DA BANCADA
+                         name = 'Vanilla',
+                         coords = vec3(94.44,-1294.08,29.27), -- COORDENADAS DA BANCADA
 
                          requireStorage = {                     -- SE VAI PUXAR OS ITENS DO ARMAZEM NA HORA DE FABRICAR ( Caso for true configurar na parte Storages )
                               active = true,
-                              name = 'Anonymous'
+                              name = 'Vanilla'
                          },
                          amountSlots = 2,                                 -- Quantidade maxima que a mesa consegue fabricar ao mesmo tempo. ( Possivel Utilizar para vendas no site )
 
-                         tablePermission = "anonymous.permissao",          -- PERMISSAO PARA ACESSAR A BANCADA
-                         craftPermission = "anonymous.permissao",    -- PERMISSAO PARA CRAFTAR ITEM
-                         withdrawPermission = "anonymous.permissao", -- PERMISSAO PARA RETIRAR ITEM
+                         tablePermission = "perm.redline",          -- PERMISSAO PARA ACESSAR A BANCADA
+                         craftPermission = "perm.redline",    -- PERMISSAO PARA CRAFTAR ITEM
+                         withdrawPermission = "perm.redline", -- PERMISSAO PARA RETIRAR ITEM
 
                          drawMarker = function(coords, dist)
                               if dist <= 5.0 then
@@ -1414,16 +1414,9 @@ Config = {
      -- CONFIGURACAO DOS ARMAZENS
      Storages = {
           -- ARMAS
-          ['Franca'] = {
-               itens = {
-                    ['pecadearma'] = 5000,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['gatilho'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['molas'] = 9999999, -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-                    ['metal'] = 9999999,      -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
-               },
-          },
 
-          ['CDM'] = {
+
+          ['MACACOMORRO'] = {
                itens = {
                     ['pecadearma'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                     ['gatilho'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
@@ -1477,7 +1470,7 @@ Config = {
                },
           },
 
-          ['Amarelinho'] = {
+          ['Franca'] = {
                itens = {
                     ['polvora'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                     ['capsulas'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
@@ -1506,7 +1499,7 @@ Config = {
                },
           },
 
-          ['Anonymous'] = {
+          ['Vanilla'] = {
                itens = {
                     ['dirty_money'] = 9999999,        -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
                     ['l-alvejante'] = 9999999,   -- ITEM / QUANTIDADE MAXIMA QUE CONSEGUE GUARDAR
@@ -1741,7 +1734,7 @@ Config = {
      end
 
      function callPolice(coords) -- CHAMAR A POLICIA
-          local polices = vRP.getUsersByPermission("policia.permissao") 
+          local polices = vRP.getUsersByPermission("perm.policia") 
           for l,w in pairs(polices) do
               async(function() 
                   local player = vRP.getUserSource(parseInt(w))

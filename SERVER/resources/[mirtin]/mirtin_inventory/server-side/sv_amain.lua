@@ -1155,9 +1155,9 @@ function src.checkVehicleOpen(plate)
 	if user_id then
 		local mPlaca,mName = vRPclient.ModelName(source, 5)
 		local identity = vRP.getUserIdentity(user_id)
-		if mPlaca == identity.registro or vRP.hasPermission(user_id, "perm.policia") or vRP.hasPermission(user_id, "perm.policiacivil") or vRP.hasPermission(user_id, "developer.permissao") then
+		if mPlaca == identity.registro or vRP.hasPermission(user_id, "perm.policia") or vRP.hasPermission(user_id, "perm.civil") or vRP.hasPermission(user_id, "developer.permissao") then
 			local plate = string.gsub(plate, " ","")
-			if plate == identity.registro or vRP.hasPermission(user_id, "perm.policia") or vRP.hasPermission(user_id, "perm.policiacivil") or vRP.hasPermission(user_id, "developer.permissao") then
+			if plate == identity.registro or vRP.hasPermission(user_id, "perm.policia") or vRP.hasPermission(user_id, "perm.civil") or vRP.hasPermission(user_id, "developer.permissao") then
 				if openedVehicle[plate] == nil then
 					openedVehicle[plate] = user_id
 					userVehicleOppened[user_id] = plate
@@ -1814,31 +1814,32 @@ function src.checkOpenRevistar(AdminMode, PlyId)
 		if nplayer then
 			local nuser_id = vRP.getUserId(nplayer)
 			if not AdminMode or not vRP.hasPermission(user_id, 'admin.permissao') then
-				if vRP.hasPermission(nuser_id, "policia.permissao")  then
+				if vRP.hasPermission(nuser_id, "perm.policia")  then
 					print("passando por aqui")
 					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um policia em patrulhamento.", 3)
 					return
 				end
 
-				if vRP.hasPermission(nuser_id, "perm.policiacivil")  then
+				if vRP.hasPermission(nuser_id, "perm.civil")  then
 					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um policia em patrulhamento.", 3)
 					return
 				end
 
-				if vRP.hasPermission(nuser_id, "paramedico.permissao") then
+				if vRP.hasPermission(nuser_id, "perm.hospital") then
 					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um medico.", 3)
 					return
 				end
 
-				if vRP.hasPermission(nuser_id, "mecanico.permissao") then
+				if vRP.hasPermission(nuser_id, "perm.mecanico") then
 					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um mecanico.", 3)
 					return
 				end
-
-				if vRP.hasPermission(nuser_id, "perm.cot")  then
-					TriggerClientEvent("Notify",source,"negado","Você não pode saquear um policial.", 3)
+				
+				if vRP.hasPermission(nuser_id, "suporte.permissao") then
+					TriggerClientEvent("Notify",source,"negado","STAFF EM RP, REPORTE SE ESTIVER EM RP, PROIBIDO SAQUEAR.", 3)
 					return
 				end
+
 			end
 
 			if openedRevistar[nuser_id] == nil then
@@ -2020,7 +2021,7 @@ function src.retirarItemRevistar(id, item, target, amount, slot)
 		if nplayer then
 			if openedRevistar[id] == user_id then
 
-				if vRP.hasPermission(user_id,"perm.policia") or vRP.hasPermission(user_id,"perm.policiacivil") then
+				if vRP.hasPermission(user_id,"perm.policia") or vRP.hasPermission(user_id,"perm.civil") then
 					if itensblock[item] ~= nil then
 						TriggerClientEvent("Notify",source,"negado","Você não pode pegar esse item de bandidos.", 3)
 						return
@@ -2346,7 +2347,7 @@ RegisterCommand('garmas', function(source,args)
         if ok and GetEntityHealth(GetPlayerPed(source)) > 105 and status then
             exports['vrp']:setCooldown(user_id, "garmas", 10)
 
-            if not vRP.hasPermission(user_id, 'policia.permissao') then
+            if not vRP.hasPermission(user_id, 'perm.policia') then
                 local weapons = vRPclient.replaceWeapons(source,{})
                 local mensagem = ""
 				delayGarmas[user_id] = os.time()

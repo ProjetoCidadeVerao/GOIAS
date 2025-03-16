@@ -18,7 +18,7 @@ local services = {
     [2] = {"Sport RACE", 821.3,-929.39,32.44, "perm.mecanica", "perm.lidermecanica" },
     [3] = {"Civil", 370.78,-1602.26,29.3, "perm.civil", "perm.liderpolicia" },
     [4] = {"Giro", -1758.56,-793.06,17.04, "perm.policia", "perm.liderpolicia" },
-    [5] = {"POLICIA", -2035.94,-446.46,12.28, "perm.policia", "perm.liderpolicia" },
+    [5] = {"POLICIA", -946.38,-2053.0,12.93, "perm.policia", "perm.liderpolicia" },
     [6] = {"Rotam", -2035.94,-446.46,12.28, "perm.policia", "perm.liderpolicia" },
 }
 

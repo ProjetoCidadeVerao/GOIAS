@@ -1,11 +1,11 @@
 function onYouTubeIframeAPIReady() {
 	var player;
 	player = new YT.Player('YouTubeBackgroundVideoPlayer', {
-		videoId: '8lDxhkRZRnE', // YouTube Video ID
+		videoId: '1xTyr4lHVys', // YouTube Video ID
 		width: 2560,               // Player width (in px)
 		height: 1080,              // Player height (in px)
 		playerVars: {
-		  playlist: '8lDxhkRZRnE',
+		  playlist: '1xTyr4lHVys',
 			autoplay: 1,        // Auto-play the video on load
 			autohide: 1,
 			disablekb: 1, 
