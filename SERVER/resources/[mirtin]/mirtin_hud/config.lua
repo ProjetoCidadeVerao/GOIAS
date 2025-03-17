@@ -88,6 +88,19 @@ Config = {
                 color = {
                     title = "#5CA795",
                     background = "#2F2E62",
+                    border = "#5E5CA7",
+                },
+            },
+            {
+                commandName = "aviso", -- Comando
+                permiss = "admin.permissao", -- Permissao para usar o comando
+                SeePermission = nil, -- Permissao que vai ver essa notificação ( nil =  todos )
+                author = true, -- Se vai enviar o nome do author ex: mirtin zera enviou...
+                time = 60, -- Tempo em segundo(s) que o alerta vai ficar na tela
+                title = "Prefeitura", -- Titulo do alerta
+                color = {
+                    title = "#5CA795",
+                    background = "#2F2E62",
                     border = "#5E5CA7"
                 }
             }

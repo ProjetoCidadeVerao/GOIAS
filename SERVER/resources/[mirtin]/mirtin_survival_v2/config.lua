@@ -3,7 +3,7 @@ Config = {
     Survival = {
         mouse = true, -- SE A TELA DE MORTE VAI TER MOUSE
         minHealth = 101, -- MINIMO DE VIDA NO SERVIDOR
-        deathTime = 500, -- TEMPO DE MORTE
+        deathTime = 200, -- TEMPO DE MORTE
         showAttacker = true, -- MOSTRAR QUAL ID QUE TE MATOU
 
         -- WEEBHOOK DAS MORTES

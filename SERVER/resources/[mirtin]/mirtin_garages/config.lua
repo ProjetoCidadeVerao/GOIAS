@@ -110,7 +110,7 @@ Garages.VehList = {
  [GetHashKey('carbonizzare')] = { model = 'carbonizzare', price = nil, banned = false, name = 'Carbonizzare', trunk = 200, type = 'outros' },
  [GetHashKey('comet2')] = { model = 'comet2', price = 400000, banned = false, name = 'Comet2', trunk = 200, type = 'outros' },
  [GetHashKey('comet3')] = { model = 'comet3', price = 500000, banned = false, name = 'Comet3', trunk = 200, type = 'outros' },
- [GetHashKey('comet5')] = { model = 'comet5', price = 1250000, banned = false, name = 'Comet5', trunk = 200, type = 'outros' },
+ [GetHashKey('comet5')] = { model = 'comet5', price = 1250000, banned = false, name = 'Comet5', trunk = 200, type = 'exclusive' },
  [GetHashKey('coquette')] = { model = 'coquette', price = 500000, banned = false, name = 'Coquette', trunk = 200, type = 'outros' },
  [GetHashKey('coquette4')] = { model = 'coquette4', price = 8000000, banned = false, name = 'Coquette 4', trunk = 200, type = 'outros' },
  [GetHashKey('elegy')] = { model = 'elegy', price = 500000, banned = false, name = 'Elegy', trunk = 200, type = 'outros' },
@@ -132,7 +132,7 @@ Garages.VehList = {
  [GetHashKey('raiden')] = { model = 'raiden', price = 850000, banned = false, name = 'Raiden', trunk = 200, type = 'outros' },
  [GetHashKey('rapidgt')] = { model = 'rapidgt', price = 800000, banned = false, name = 'Rapidgt', trunk = 200, type = 'outros' },
  [GetHashKey('rapidgt2')] = { model = 'rapidgt2', price = nil, banned = false, name = 'Rapidgt2', trunk = 200, type = 'outros' },
- [GetHashKey('ruston')] = { model = 'ruston', price = 3000000, banned = false, name = 'Ruston', trunk = 200, type = 'outros' },
+ [GetHashKey('ruston')] = { model = 'ruston', price = 3000000, banned = false, name = 'Ruston', trunk = 200, type = 'exclusive' },
  [GetHashKey('schafter3')] = { model = 'schafter3', price = 300000, banned = false, name = 'Schafter3', trunk = 200, type = 'carros' },
  [GetHashKey('schafter4')] = { model = 'schafter4', price = 250000, banned = false, name = 'Schafter4', trunk = 200, type = 'outros' },
  [GetHashKey('schafter5')] = { model = 'schafter5', price = 175000, banned = false, name = 'Schafter5', trunk = 200, type = 'outros' },
@@ -830,18 +830,127 @@ Garages.VehList = {
 [GetHashKey("killeri8")] = { model = "killeri8", name = "BMW I8 Animated", price = 1320145, type = "exclusive", trunk = 30, banned = false },
 [GetHashKey("g63sam")] = { model = "g63sam", name = "Limosine G36 12 LUGARES", price = 1320145, type = "exclusive", trunk = 30, banned = false },
 
+	-----------------------exercito
+[GetHashKey("a29b")] = { model = "a29b", name = "A29B", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("agrale")] = { model = "agrale", name = "Marrua", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bs_bmwx6eb")] = { model = "bs_bmwx6eb", name = "BMW Speed EB", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("brad")] = { model = "brad", name = "Tanque EB 1", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("f5m")] = { model = "f5m", name = "Jato EB", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("gripene")] = { model = "gripene", name = "Jato EB 2", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("haitun")] = { model = "haitun", name = "Pantera EB 1", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("sherb")] = { model = "sherb", name = "Escolta EB", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("iveco")] = { model = "iveco", name = "Iveco", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("iveco2")] = { model = "iveco2", name = "Iveco 2", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("jeep4")] = { model = "jeep4", name = "Jeep 1", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("kc390")] = { model = "kc390", name = "Força Aerea Brasileira", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("m939")] = { model = "m939", name = "Caminhão 3T", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("mi26")] = { model = "mi26", name = "Pantera EB 2", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_robozaoeb")] = { model = "bcs_robozaoeb", name = "R1200GS EB", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("polpatriot")] = { model = "polpatriot", name = "EB Comando", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bs_tanqueeb")] = { model = "bs_tanqueeb", name = "Tanque 2", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("uh1mash")] = { model = "uh1mash", name = "Aguia EB", price = 1000, type = "service", trunk = 1, banned = false },
+	-----------------------exercito pack eb_cars
+[GetHashKey("amarokeb")] = { model = "amarokeb", name = "amarokeb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("dustereb1")] = { model = "dustereb1", name = "dustereb1", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("eb350")] = { model = "eb350", name = "eb350", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("s10eb")] = { model = "s10eb", name = "s10eb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("sw4eb")] = { model = "sw4eb", name = "sw4eb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("trail17eb")] = { model = "trail17eb", name = "trail17eb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("trail19eb")] = { model = "trail19eb", name = "trail19eb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("trail20eb")] = { model = "trail20eb", name = "trail20eb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("trail21eb")] = { model = "trail21eb", name = "trail21eb", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("xregeb")] = { model = "xregeb", name = "xregeb", price = 1000, type = "service", trunk = 1, banned = false },
+
+[GetHashKey("gurupi")] = { model = "gurupi", name = "Barco Marinha", price = 1000, type = "service", trunk = 1, banned = false },
+	
+	-----------------------------------CARROS SOM
+[GetHashKey("amarokm")] = { model = "amarokm", name = "Amarok SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("bs_babyftoro")] = { model = "bs_babyftoro", name = "Baby Toro SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("bora")] = { model = "bora", name = "Bora SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("carreta")] = { model = "carreta", name = "Carreta", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("cbm")] = { model = "cbm", name = "Carreta Automotiva", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("celtach")] = { model = "celtach", name = "Celta SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("fox")] = { model = "fox", name = "Fox SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("ftoro")] = { model = "ftoro", name = "Toro SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("gcram1500")] = { model = "gcram1500", name = "GC RAM 1500 SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("golfrebaixado")] = { model = "golfrebaixado", name = "Golf Rebaixado SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("kadett")] = { model = "kadett", name = "Kadett SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("nka45")] = { model = "nka45", name = "A45 SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("paredao2")] = { model = "paredao2", name = "paredao2", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("rrab")] = { model = "rrab", name = "Ranger Rove SON", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("s10black")] = { model = "s10black", name = "S10Black SOM", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("tremetreme")] = { model = "tremetreme", name = "Reboque tremetreme", price = 320145, type = "exclusive", trunk = 70,banned = false },
 
 
----------------------------------------POLICIA FEDERAL
+	-----------------------------------OuTROS
 
-[GetHashKey("bcs_aguiapf")] = { model = "bcs_aguiapf", name = "Aguia PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_blindadopf")] = { model = "bcs_blindadopf", name = "Blindado PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_camaropf")] = { model = "bcs_camaropf", name = "Camaro PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_corollapf")] = { model = "bcs_corollapf", name = "Corolla PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_l200pf")] = { model = "bcs_l200pf", name = "L200 PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_rampf")] = { model = "bcs_rampf", name = "DodRam PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_robopf")] = { model = "bcs_robopf", name = "R1200 PF", price = 1320145, type = "service", trunk = 30, banned = false },
-[GetHashKey("bcs_trailpf")] = { model = "bcs_trailpf", name = "Trail PF", price = 1320145, type = "service", trunk = 30, banned = false }
+[GetHashKey("Ikrownrcf")] = { model = "Ikrownrcf", name = "Nissan R35 Stich", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("dog_r1250baby")] = { model = "dog_r1250baby", name = "dog_R1250baby", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("minir34")] = { model = "minir34", name = "MiniR34", price = 320145, type = "exclusive", trunk = 70,banned = false },
+
+
+    ------------------ serviço
+[GetHashKey("pbus")] = { model = "pbus", name = "Onibus Civil", price = 320145, type = "service", trunk = 70,banned = false },
+[GetHashKey("kc390")] = { model = "kc390", name = "KC 390", price = 320145, type = "service", trunk = 70,banned = false },
+	--[GetHashKey("gripene")] = { model = "gripene", name = "Jato Caça", price = 320145, type = "service", trunk = 70,banned = false },
+[GetHashKey("e1000")] = { model = "e1000", name = "Avião Prefeitura", price = 320145, type = "service", trunk = 70,banned = false },
+[GetHashKey("e314eda")] = { model = "e314eda", name = "Tucano", price = 320145, type = "service", trunk = 70,banned = false },
+[GetHashKey("dinghy")] = { model = "dinghy", name = "Barco", price = 320145, type = "service", trunk = 70,banned = false },
+[GetHashKey("bcat")] = { model = "bcat", name = "Blindado Core", price = 320145, type = "service", trunk = 70,banned = false },
+
+
+
+
+	-----------------------------------OuTROS
+
+[GetHashKey("Ikrownrcf")] = { model = "Ikrownrcf", name = "Nissan R35 Stich", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("dog_r1250baby")] = { model = "dog_r1250baby", name = "dog_R1250baby", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("minir34")] = { model = "minir34", name = "MiniR34", price = 320145, type = "exclusive", trunk = 70,banned = false },
+
+	
+[GetHashKey("20xb7")] = { model = "20xb7", name = "BMW X7 Blindada", price = 320145, type = "exclusive", trunk = 70,banned = false },
+[GetHashKey("fxiaop")] = { model = "fxiaop", name = "Drone", price = 1320145, type = "exclusive", trunk = 30,banned = false },
+
+[GetHashKey("killeri8")] = { model = "killeri8", name = "BMW I8 Animated", price = 1320145, type = "exclusive", trunk = 30,banned = false },
+[GetHashKey("g63sam")] = { model = "g63sam", name = "Limosine G36 12 LUGARES", price = 1320145, type = "exclusive", trunk = 30,banned = false },
+
+	-----------------------judiciario
+[GetHashKey("gmcoab")] = { model = "gmcoab", name = "SSPRJ", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bc_escaladejuiz")] = { model = "bc_escaladejuiz", name = "escalade juiz", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bc_escaladeoab")] = { model = "bc_escaladeoab", name = "escalade oab", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bc_aguiaoab")] = { model = "bc_aguiaoab", name = "aguia oab", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bc_robozaooab")] = { model = "bc_robozaooab", name = "robozao oab", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bc_subaruoab")] = { model = "bc_subaruoab", name = "subaru oab", price = 1000, type = "service", trunk = 1, banned = false },
+
+
+	-----------------------mecanica
+[GetHashKey("bs_caminhonete")] = { model = "bs_caminhonete", name = "caminhonete", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bs_guincho")] = { model = "bs_guincho", name = "guincho", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bs_helimec")] = { model = "bs_helimec", name = "helimec", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bs_reboque")] = { model = "bs_reboque", name = "reboque", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bs_robozao")] = { model = "bs_robozao", name = "robozao", price = 1000, type = "service", trunk = 1, banned = false },
+
+	-----------------------prf
+[GetHashKey("bcs_aguiaprf")] = { model = "bcs_aguiaprf", name = "aguiaprf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_blindadoprf")] = { model = "bcs_blindadoprf", name = "blindado prf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_bmwm5prf")] = { model = "bcs_bmwm5prf", name = "bmw m5 prf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_ram8lprf")] = { model = "bcs_ram8lprf", name = "ram 8l prf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_dodgeramfederal")] = { model = "bcs_dodgeramfederal", name = "dodge ram federal", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_guinchoprf")] = { model = "bcs_guinchoprf", name = "guincho prf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_roverprf")] = { model = "bcs_roverprf", name = "rover prf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_robozaoprf")] = { model = "bcs_robozaoprf", name = "robozao prf", price = 1000, type = "service", trunk = 1, banned = false },
+[GetHashKey("bcs_bmwi8prf")] = { model = "bcs_bmwi8prf", name = "bmw i8 prf", price = 1000, type = "service", trunk = 1, banned = false },
+
+    ---------------------------------------POLICIA FEDERAL
+
+    [GetHashKey("bcs_aguiapf")] = { model = "bcs_aguiapf", name = "Aguia PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_blindadopf")] = { model = "bcs_blindadopf", name = "Blindado PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_camaropf")] = { model = "bcs_camaropf", name = "Camaro PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_corollapf")] = { model = "bcs_corollapf", name = "Corolla PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_l200pf")] = { model = "bcs_l200pf", name = "L200 PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_rampf")] = { model = "bcs_rampf", name = "DodRam PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_robopf")] = { model = "bcs_robopf", name = "R1200 PF", price = 1320145, type = "service", trunk = 30, banned = false },
+    [GetHashKey("bcs_trailpf")] = { model = "bcs_trailpf", name = "Trail PF", price = 1320145, type = "service", trunk = 30, banned = false }
 
 
 
@@ -1135,28 +1244,33 @@ Garages.List = {
         },
     },
 
-    [27] = {
-        type = "public", -- public / service [ tipo da garagem ]
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [27] = {
+    --     type = "public", -- public / service [ tipo da garagem ]
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(164.89,1695.6,227.398),
-        spawnCoords = {
-            vector4(173.31,1688.46,227.93,204.33),
-        },
-    },
+    --     coords = vec3(164.89,1695.6,227.398),
+    --     spawnCoords = {
+    --         vector4(173.31,1688.46,227.93,204.33),
+    --     },
+    -- },
 
     [28] = {
-        type = "service", -- public / service [ tipo da garagem ] 
-        permiss = nil, -- permissao
+        type = "service", -- public / service [ tipo da garagem ]   GAragem Helicoptero PM
+        permiss = "perm.policia", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(164.89,1695.6,227.398),
+        coords = vec3(-943.82,-2023.57,11.33),
         spawnCoords = {
-            vector4(173.31,1688.46,227.93,204.33),
+            vector4(-950.99,-2020.97,11.33,221.55),
         },
-    },
+            vehicles = {
+                 {vehicle = 'polmav'},
+        
 
+            },
+    },
+    
     [29] = {
         type = "service", -- public / service [ tipo da garagem ] 
         permiss = "perm.policia", -- permissao
@@ -1192,98 +1306,73 @@ Garages.List = {
 
     [31] = {
         type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.bope", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(306.18,-330.01,46.39),
-        spawnCoords = {
-           vector4(300.31,-340.12,46.34,157.73),
-        },
-    
-        vehicles = {
-            {vehicle = 'hiluxbope'},
-            {vehicle = 'rangerbope'}, --
-            {vehicle = 'rangerbopesm'}, -- 
-            {vehicle = 'rangeriespp'}, -- 
-            {vehicle = 'hiluxrecom'}, -- 
-            {vehicle = 'l200choquesm'}, -- 
-            {vehicle = 'l200coe'}, -- 
-            {vehicle = 'rangerrecom'}, -- 
-            {vehicle = 'rangerrecomg'}, -- 
-            {vehicle = 's10recom'}, -- 
-            {vehicle = 's10recom16'}, -- 
-            {vehicle = 'sw4recom'}, -- 
-            {vehicle = 'sw4recom24'}, -- 
-            {vehicle = 'sw4recom24p'}, -- 
-            {vehicle = 'tigergetem'}, --  
-            {vehicle = 'blindadobope'}, --  
-            {vehicle = 'urutu'}, -- 
-
-        },
-    },
-
-    [32] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -792.23,-2568.44,13.95
         permiss = "perm.civil", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(846.23,147.28,82.29),
+        coords = vec3(383.56,-1612.34,29.3),
         spawnCoords = {
-            vector4(vector4(838.87,144.1,82.29,324.49)),
+           vector4(389.39,-1613.18,29.3,230.89),
         },
     
         vehicles = {
-            {vehicle = 'corollapcerj'},
-            {vehicle = 's10pcerj'}, --
-            {vehicle = 'rangerpcerj'}, -- 
-            {vehicle = 'versapcerj'}, -- sprinterpcerj
-            {vehicle = 'rangercore'}, -- versapcerj
-            {vehicle = 'rangercorec'}, -- 
-            {vehicle = 'rangerpcerj'}, -- 
-            {vehicle = 'rangerpcerj22'}, -- 
-            {vehicle = 'sprintergesar'}, -- 
-            {vehicle = 'blindadocore'}, -- 
-            {vehicle = 'blindadodre'}, -- 
-            {vehicle = 'blindadodrfc'}, -- 
+            {vehicle = 's10iml'},
+            {vehicle = 'trail21pc'}, --
+            {vehicle = 'dusterpc'}, -- 
+
+        },
+    },
+             
+    [32] = {
+        type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO POLICIA CIVIL
+        permiss = "perm.civil", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(403.08,-1632.19,29.3),
+        spawnCoords = {
+            vector4(vector4(409.06,-1640.4,29.3,91.4)),
+        },
+    
+        vehicles = {
+            {vehicle = 'pantera'},
 
         },
     },
     [33] = {
         type = "public", -- public / service [ tipo da garagem ] -- 1139.03,-183.12,70.36
         permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+        blip = true, -- blip no mapa
         
         coords = vec3(-792.23,-2568.44,13.95),
         spawnCoords = {
             vector4(-794.05,-2564.63,13.8,330.89),
         },
     },
-    [34] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -463.43,-350.51,34.49
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [34] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -463.43,-350.51,34.49
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1146.81,-187.45,70.36),
-        spawnCoords = {
-            vector4(1144.99,-183.07,70.26,147.31),
-        },
+    --     coords = vec3(1146.81,-187.45,70.36),
+    --     spawnCoords = {
+    --         vector4(1144.99,-183.07,70.26,147.31),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
-    [35] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    --     },
+    -- },
+    -- [35] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1139.03,-183.12,70.36),
-        spawnCoords = {
-            vector4(1144.99,-183.07,70.26,147.31),
-        },
-    },
+    --     coords = vec3(1139.03,-183.12,70.36),
+    --     spawnCoords = {
+    --         vector4(1144.99,-183.07,70.26,147.31),
+    --     },
+    -- },
     [36] = {
         type = "service", -- public / service [ tipo da garagem ] -- 
         permiss = "perm.hospital", -- permissao
@@ -1299,7 +1388,6 @@ Garages.List = {
             {vehicle = 'Wrgle53'},
             {vehicle = 'WRr1200'},
             {vehicle = 'Wrasprinter'},
-            {vehicle = 'Wrasprinter'},
 
         },
     },
@@ -1313,21 +1401,21 @@ Garages.List = {
             vector4(-465.92,-322.18,34.36,20.24),
         },
     },
-    [38] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [38] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1177.05,-890.83,13.8),
-        spawnCoords = {
-            vector4(-1165.18,-887.96,14.14,118.62),
-        },
+    --     coords = vec3(-1177.05,-890.83,13.8),
+    --     spawnCoords = {
+    --         vector4(-1165.18,-887.96,14.14,118.62),
+    --     },
     
-        vehicles = {
-            {vehicle = '150ifod'},
+    --     vehicles = {
+    --         {vehicle = '150ifod'},
 
-        },
-    },
+    --     },
+    -- },
     [39] = {
         type = "service", -- public / service [ tipo da garagem ] -- 
         permiss = nil, -- permissao
@@ -1345,505 +1433,505 @@ Garages.List = {
     },
 
     
-    [40] = {
-        type = "service", -- public / service [ tipo da garagem ] -- helicopteros
-        permiss = "perm.civil", -- permissao
-        blip = false, -- blip no mapa
+    -- [40] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- helicopteros
+    --     permiss = "perm.civil", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(846.23,147.28,82.29),
-        spawnCoords = {
-            vector4(838.87,144.1,82.29,324.49),
-        },
+    --     coords = vec3(846.23,147.28,82.29),
+    --     spawnCoords = {
+    --         vector4(838.87,144.1,82.29,324.49),
+    --     },
     
-        vehicles = {
-            {vehicle = 'falcaopcerj'},
-            {vehicle = 'hueypcerj'}, --
+    --     vehicles = {
+    --         {vehicle = 'falcaopcerj'},
+    --         {vehicle = 'hueypcerj'}, --
 
-        },
-    },
+    --     },
+    -- },
 
-    [41] = {
-        type = "service", -- public / service [ tipo da garagem ] -- helicopteros
-        permiss = "perm.mecanico", -- permissao
-        blip = false, -- blip no mapa
+    -- [41] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- helicopteros
+    --     permiss = "perm.mecanico", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(958.54,-1036.11,41.03),
-        spawnCoords = {
-            vector4(965.53,-1041.82,41.27,266.77),
-        },
+    --     coords = vec3(958.54,-1036.11,41.03),
+    --     spawnCoords = {
+    --         vector4(965.53,-1041.82,41.27,266.77),
+    --     },
     
-        vehicles = {
-            {vehicle = 'bennys1200'},
-            {vehicle = 'bennysraptor'}, --
-            {vehicle = 'bennysscania'}, --
+    --     vehicles = {
+    --         {vehicle = 'bennys1200'},
+    --         {vehicle = 'bennysraptor'}, --
+    --         {vehicle = 'bennysscania'}, --
 
-        },
-    },
+    --     },
+    -- },
 
-    [42] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [42] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-960.3,-1471.31,5.17),
-        spawnCoords = {
-            vector4(-967.09,-1473.86,5.02,110.03),
-        },
-    },
-    [43] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 1360.69,-2086.33,52.0
-        permiss = "perm.yakuza", -- permissao
-        blip = false, -- blip no mapa
+    --     coords = vec3(-960.3,-1471.31,5.17),
+    --     spawnCoords = {
+    --         vector4(-967.09,-1473.86,5.02,110.03),
+    --     },
+    -- },
+    -- [43] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 1360.69,-2086.33,52.0
+    --     permiss = "perm.yakuza", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-956.32,-1487.31,5.16),
-        spawnCoords = {
-            vector4(-961.87,-1488.22,5.0,107.43),
-        },
+    --     coords = vec3(-956.32,-1487.31,5.16),
+    --     spawnCoords = {
+    --         vector4(-961.87,-1488.22,5.0,107.43),
+    --     },
     
-        vehicles = {
-            {vehicle = 'tiger800'},
-            {vehicle = 'q820'},
-            {vehicle = 'mule'},
+    --     vehicles = {
+    --         {vehicle = 'tiger800'},
+    --         {vehicle = 'q820'},
+    --         {vehicle = 'mule'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [44] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [44] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1360.69,-2086.33,52.0),
-        spawnCoords = {
-            vector4(1365.67,-2085.04,52.0,313.75),
-        },
+    --     coords = vec3(1360.69,-2086.33,52.0),
+    --     spawnCoords = {
+    --         vector4(1365.67,-2085.04,52.0,313.75),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
-
-    
-    [45] = {
-        type = "public", -- public / service [ tipo da garagem ] -- -1521.19,80.54,56.72
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(1363.84,-2090.05,52.0),
-        spawnCoords = {
-            vector4(vector4(1365.22,-2085.98,52.0,306.29)),
-        },
-    },
-
-    [46] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-1521.19,80.54,56.72),
-        spawnCoords = {
-            vector4(-1523.64,85.43,56.48,268.2),
-        },
-    },
-
-    [47] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-1531.38,79.4,56.73),
-        spawnCoords = {
-            vector4(-1523.64,85.43,56.48,268.2),
-        },
-    
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
-
-        },
-    },
-
-    [48] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(961.47,-122.69,74.34),
-        spawnCoords = {
-            vector4(965.64,-127.66,74.34,148.8),
-        },
-    
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
-
-        },
-    },
-    [49] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(974.3,-136.57,74.17),
-        spawnCoords = {
-            vector4(965.64,-127.66,74.34,148.8),
-        },
-    },
-
-    [50] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(191.19,695.53,209.06),
-        spawnCoords = {
-            vector4(185.45,694.98,209.06,356.0),
-        },
-    },
-    
-
-    [51] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(189.42,709.69,209.06),
-        spawnCoords = {
-            vector4(185.89,707.94,209.06,184.19),
-        },
-    
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
-
-        },
-    },
+    --     },
+    -- },
 
     
-    [52] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [45] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- -1521.19,80.54,56.72
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(906.32,351.97,112.46),
-        spawnCoords = {
-            vector4(902.92,354.69,112.52,315.92),
-        },
+    --     coords = vec3(1363.84,-2090.05,52.0),
+    --     spawnCoords = {
+    --         vector4(vector4(1365.22,-2085.98,52.0,306.29)),
+    --     },
+    -- },
+
+    -- [46] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1521.19,80.54,56.72),
+    --     spawnCoords = {
+    --         vector4(-1523.64,85.43,56.48,268.2),
+    --     },
+    -- },
+
+    --[47] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1531.38,79.4,56.73),
+    --     spawnCoords = {
+    --         vector4(-1523.64,85.43,56.48,268.2),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [53] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [48] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(921.59,366.27,112.46),
-        spawnCoords = {
-            vector4(918.06,369.0,112.52,320.3),
-        },
-    },
-
-    [54] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(1416.66,1115.62,114.83),
-        spawnCoords = {
-            vector4(1416.8,1118.56,114.83,94.95),
-        },
-    },
-
-    [55] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(1398.32,1115.4,114.83),
-        spawnCoords = {
-            vector4(1398.44,1118.13,114.83,89.36),
-        },
+    --     coords = vec3(961.47,-122.69,74.34),
+    --     spawnCoords = {
+    --         vector4(965.64,-127.66,74.34,148.8),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
-
-    [56] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    --     },
+    -- },
+    -- [49] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(2998.25,2920.4,78.6),
-        spawnCoords = {
-            vector4(2998.48,2918.97,78.47,49.62),
-        },
+    --     coords = vec3(974.3,-136.57,74.17),
+    --     spawnCoords = {
+    --         vector4(965.64,-127.66,74.34,148.8),
+    --     },
+    -- },
+
+    -- [50] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(191.19,695.53,209.06),
+    --     spawnCoords = {
+    --         vector4(185.45,694.98,209.06,356.0),
+    --     },
+    -- },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
 
-        },
-    },
-
-    [57] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [51] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(3008.3,2912.52,78.91),
-        spawnCoords = {
-            vector4(3007.42,2911.07,78.81,227.1),
-        },
-    },
-
-    [58] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(1728.9,4490.97,42.44),
-        spawnCoords = {
-            vector4(1724.21,4491.51,42.44,0.09),
-        },
-    },
-
-    [59] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(1729.43,4505.36,42.44),
-        spawnCoords = {
-            vector4(1724.35,4505.06,42.44,180.83),
-        },
+    --     coords = vec3(189.42,709.69,209.06),
+    --     spawnCoords = {
+    --         vector4(185.89,707.94,209.06,184.19),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
-
-    [60] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-1943.27,4488.12,34.63),
-        spawnCoords = {
-            vector4(-1948.37,4485.04,34.63,41.45),
-        },
-    
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
-
-        },
-    },
+    --     },
+    -- },
 
     
-    [61] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [52] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1951.72,4498.28,34.63),
-        spawnCoords = {
-            vector4(-1955.94,4494.74,34.63,222.67),
-        },
-    },
-
-    [62] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(381.13,-10.82,82.99),
-        spawnCoords = {
-            vector4(380.14,-4.95,82.99,129.62),
-        },
-    },
+    --     coords = vec3(906.32,351.97,112.46),
+    --     spawnCoords = {
+    --         vector4(902.92,354.69,112.52,315.92),
+    --     },
     
-    [63] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1695.19,561.2,154.36
-        permiss = "perm.mafia", -- permissao
-        blip = false, -- blip no mapa
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
+
+    --     },
+    -- },
+
+    -- [53] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(376.09,-13.95,82.99),
-        spawnCoords = {
-            vector4(372.61,-12.68,82.99,34.89),
-        },
+    --     coords = vec3(921.59,366.27,112.46),
+    --     spawnCoords = {
+    --         vector4(918.06,369.0,112.52,320.3),
+    --     },
+    -- },
+
+    -- [54] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(1416.66,1115.62,114.83),
+    --     spawnCoords = {
+    --         vector4(1416.8,1118.56,114.83,94.95),
+    --     },
+    -- },
+
+    -- [55] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(1398.32,1115.4,114.83),
+    --     spawnCoords = {
+    --         vector4(1398.44,1118.13,114.83,89.36),
+    --     },
     
-        vehicles = {
-            {vehicle = 'q820'},
-            {vehicle = 'tiger800'},
-            {vehicle = 'mule'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [64] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1683.87,574.44,154.36
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [56] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1695.19,561.2,154.36),
-        spawnCoords = {
-            vector4(-1691.73,560.67,154.36,316.16),
-        },
+    --     coords = vec3(2998.25,2920.4,78.6),
+    --     spawnCoords = {
+    --         vector4(2998.48,2918.97,78.47,49.62),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [65] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 147.95,-1294.8,29.64
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [57] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1683.85,574.44,154.36),
-        spawnCoords = {
-            vector4(-1682.37,570.74,154.36,135.14),
-        },
-    },
+    --     coords = vec3(3008.3,2912.52,78.91),
+    --     spawnCoords = {
+    --         vector4(3007.42,2911.07,78.81,227.1),
+    --     },
+    -- },
 
-    [66] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [58] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(147.95,-1294.8,29.64),
-        spawnCoords = {
-            vector4(149.21,-1300.47,28.98,122.79),
-        },
-    },
+    --     coords = vec3(1728.9,4490.97,42.44),
+    --     spawnCoords = {
+    --         vector4(1724.21,4491.51,42.44,0.09),
+    --     },
+    -- },
 
-    [67] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [59] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(153.39,-1314.21,29.2),
-        spawnCoords = {
-            vector4(151.05,-1318.68,28.96,237.48),
-        },
+    --     coords = vec3(1729.43,4505.36,42.44),
+    --     spawnCoords = {
+    --         vector4(1724.35,4505.06,42.44,180.83),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
+
+    -- [60] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1943.27,4488.12,34.63),
+    --     spawnCoords = {
+    --         vector4(-1948.37,4485.04,34.63,41.45),
+    --     },
     
-    [68] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-1391.78,-581.76,30.09),
-        spawnCoords = {
-            vector4(-1396.43,-584.07,30.14,127.56),
-        },
-    
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
 
     
-    [69] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [61] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1400.09,-586.03,30.19),
-        spawnCoords = {
-            vector4(-1405.88,-589.6,30.25,114.86),
-        },
-    },
-    [70] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    --     coords = vec3(-1951.72,4498.28,34.63),
+    --     spawnCoords = {
+    --         vector4(-1955.94,4494.74,34.63,222.67),
+    --     },
+    -- },
+
+    -- [62] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-819.49,180.93,71.88),
-        spawnCoords = {
-            vector4(-823.01,182.47,71.81,138.41),
-        },
-    },
-    [71] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.russia", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-812.66,163.64,71.54),
-        spawnCoords = {
-            vector4(-823.01,182.47,71.81,138.41),
-        },
+    --     coords = vec3(381.13,-10.82,82.99),
+    --     spawnCoords = {
+    --         vector4(380.14,-4.95,82.99,129.62),
+    --     },
+    -- },
     
-        vehicles = {
-            {vehicle = 'tiger800'},
-            {vehicle = 'q820'},
-            {vehicle = 'mule'},
-
-        },
-    },
-    [72] = {
-        type = "public", -- public / service [ tipo da garagem ] -- -565.72,305.66,83.17
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [63] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1695.19,561.2,154.36
+    --     permiss = "perm.mafia", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(2951.42,2753.52,43.41),
-        spawnCoords = {
-            vector4(2951.79,2748.74,43.49,140.0),
-        },
-    },
-
-    [73] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-565.72,305.66,83.17),
-        spawnCoords = {
-            vector4(-559.06,302.48,83.2,260.37),
-        },
-    },
-
-    [74] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
-        
-        coords = vec3(-565.46,298.44,83.07),
-        spawnCoords = {
-            vector4(-559.06,302.48,83.2,260.37),
-        },
+    --     coords = vec3(376.09,-13.95,82.99),
+    --     spawnCoords = {
+    --         vector4(372.61,-12.68,82.99,34.89),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'q820'},
+    --         {vehicle = 'tiger800'},
+    --         {vehicle = 'mule'},
 
-        },
-    },
+    --     },
+    -- },
+
+    -- [64] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1683.87,574.44,154.36
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1695.19,561.2,154.36),
+    --     spawnCoords = {
+    --         vector4(-1691.73,560.67,154.36,316.16),
+    --     },
+    
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
+
+    --     },
+    -- },
+
+    -- [65] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 147.95,-1294.8,29.64
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1683.85,574.44,154.36),
+    --     spawnCoords = {
+    --         vector4(-1682.37,570.74,154.36,135.14),
+    --     },
+    -- },
+
+    -- [66] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(147.95,-1294.8,29.64),
+    --     spawnCoords = {
+    --         vector4(149.21,-1300.47,28.98,122.79),
+    --     },
+    -- },
+
+    -- [67] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(153.39,-1314.21,29.2),
+    --     spawnCoords = {
+    --         vector4(151.05,-1318.68,28.96,237.48),
+    --     },
+    
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
+
+    --     },
+    -- },
+    
+    -- [68] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1391.78,-581.76,30.09),
+    --     spawnCoords = {
+    --         vector4(-1396.43,-584.07,30.14,127.56),
+    --     },
+    
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
+
+    --     },
+    -- },
+
+    
+    -- [69] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-1400.09,-586.03,30.19),
+    --     spawnCoords = {
+    --         vector4(-1405.88,-589.6,30.25,114.86),
+    --     },
+    -- },
+    -- [70] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-819.49,180.93,71.88),
+    --     spawnCoords = {
+    --         vector4(-823.01,182.47,71.81,138.41),
+    --     },
+    -- },
+    -- [71] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+    --     permiss = "perm.russia", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-812.66,163.64,71.54),
+    --     spawnCoords = {
+    --         vector4(-823.01,182.47,71.81,138.41),
+    --     },
+    
+    --     vehicles = {
+    --         {vehicle = 'tiger800'},
+    --         {vehicle = 'q820'},
+    --         {vehicle = 'mule'},
+
+    --     },
+    -- },
+    -- [72] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- -565.72,305.66,83.17
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(2951.42,2753.52,43.41),
+    --     spawnCoords = {
+    --         vector4(2951.79,2748.74,43.49,140.0),
+    --     },
+    -- },
+
+    -- [73] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-565.72,305.66,83.17),
+    --     spawnCoords = {
+    --         vector4(-559.06,302.48,83.2,260.37),
+    --     },
+    -- },
+
+    -- [74] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
+        
+    --     coords = vec3(-565.46,298.44,83.07),
+    --     spawnCoords = {
+    --         vector4(-559.06,302.48,83.2,260.37),
+    --     },
+    
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
+
+    --     },
+    -- },
 
     [75] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
+        type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO VIP
         permiss = "perm.helicoptero", -- permissao
         blip = false, -- blip no mapa
         
@@ -1876,50 +1964,50 @@ Garages.List = {
         },
     },
 
-    [77] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 983.95,-1008.29,42.01 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [77] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 983.95,-1008.29,42.01 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(113.45,6615.64,31.86),
-        spawnCoords = {
-            vector4(116.67,6612.45,31.88,218.12),
-        },
-    },
-    [78] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    --     coords = vec3(113.45,6615.64,31.86),
+    --     spawnCoords = {
+    --         vector4(116.67,6612.45,31.88,218.12),
+    --     },
+    -- },
+    -- [78] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(983.95,-1008.29,42.01),
-        spawnCoords = {
-            vector4(980.33,-1014.9,41.0,273.05),
-        },
-    },
-    [79] = {
-        type = "public", -- public / service [ tipo da garagem ] -- -1860.07,321.06,88.71
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    --     coords = vec3(983.95,-1008.29,42.01),
+    --     spawnCoords = {
+    --         vector4(980.33,-1014.9,41.0,273.05),
+    --     },
+    -- },
+    -- [79] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- -1860.07,321.06,88.71
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1615.2,-2610.48,53.82),
-        spawnCoords = {
-            vector4(1603.02,-2601.56,53.43,88.13),
-        },
-    },
+    --     coords = vec3(1615.2,-2610.48,53.82),
+    --     spawnCoords = {
+    --         vector4(1603.02,-2601.56,53.43,88.13),
+    --     },
+    -- },
 
-    [80] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [80] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-255.12,-712.41,33.58),
-        spawnCoords = {
-            vector4(-245.6,-715.25,33.41,156.31),
-        },
-    },
+    --     coords = vec3(-255.12,-712.41,33.58),
+    --     spawnCoords = {
+    --         vector4(-245.6,-715.25,33.41,156.31),
+    --     },
+    -- },
 
    [81] = {
-       type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+       type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO VIP
        permiss = "perm.helicoptero", -- permissao
        blip = false, -- blip no mapa
        
@@ -1935,80 +2023,78 @@ Garages.List = {
        },
    },
 
-    [82] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [82] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1669.26,-219.38,55.12),
-        spawnCoords = {
-            vector4(-1665.57,-220.47,55.0,250.28),
-        },
-    },
+    --     coords = vec3(-1669.26,-219.38,55.12),
+    --     spawnCoords = {
+    --         vector4(-1665.57,-220.47,55.0,250.28),
+    --     },
+    -- },
 
     [83] = {
         type = "service", -- public / service [ tipo da garagem ] 
         permiss = "perm.prf", -- permissao
         blip = false, -- blip no mapa
         
-        coords = vec3(2621.65,5313.17,47.53),
+        coords = vec3(-2660.95,2360.69,18.83),
         spawnCoords = {
-            vector4(2619.49,5309.03,47.4,96.42),
+            vector4(-2653.37,2356.73,18.83,168.97),
         },
     
         vehicles = {
-            {vehicle = 'rangerprf'},
-            {vehicle = 'rangergrr'},
-            {vehicle = 'rangerprfblind'},
-            {vehicle = 'trailblazerprf'},
-            {vehicle = 'trailblazer24prf'},
-            {vehicle = 'trailblazergrr'},   
-             {vehicle = 'prf1200'},
+            {vehicle = 'as350prf'},
+            {vehicle = 'equinoxprf'},
+            {vehicle = 'r1200prf'},
+            {vehicle = 'trail20prf'},
+            {vehicle = 'trail22prf'},
 
         },
     },
-
-    [84] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+                
+    -- [84] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(2630.75,5339.41,47.26),
-        spawnCoords = {
-            vector4(2627.28,5338.54,47.3,108.07),
-        },
-    },
+    --     coords = vec3(2630.75,5339.41,47.26),
+    --     spawnCoords = {
+    --         vector4(2627.28,5338.54,47.3,108.07),
+    --     },
+    -- },
 
-    [85] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [85] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1211.96,-1750.41,4.6),
-        spawnCoords = {
-            vector4(-1215.16,-1754.32,4.5,255.24),
-        },
-    },
+    --     coords = vec3(-1211.96,-1750.41,4.6),
+    --     spawnCoords = {
+    --         vector4(-1215.16,-1754.32,4.5,255.24),
+    --     },
+    -- },
 
-    [86] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [86] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1209.07,-1760.55,4.6),
-        spawnCoords = {
-            vector4(-1198.65,-1757.2,4.4,279.63),
-        },
+    --     coords = vec3(-1209.07,-1760.55,4.6),
+    --     spawnCoords = {
+    --         vector4(-1198.65,-1757.2,4.4,279.63),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
 
     [87] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+        type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO VIP
         permiss = "perm.helicoptero", -- permissao
         blip = false, -- blip no mapa
         
@@ -2024,16 +2110,16 @@ Garages.List = {
         },
     },
     
-    [88] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [88] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-303.44,-726.72,28.02),
-        spawnCoords = {
-            vector4(-308.58,-731.63,27.36,70.57),
-        },
-    },
+    --     coords = vec3(-303.44,-726.72,28.02),
+    --     spawnCoords = {
+    --         vector4(-308.58,-731.63,27.36,70.57),
+    --     },
+    -- },
 
     [89] = {
         type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
@@ -2046,189 +2132,189 @@ Garages.List = {
         },
     },
 
-    [90] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [90] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-2545.04,3738.35,13.11),
-        spawnCoords = {
-            vector4(-2536.6,3735.83,13.09,259.3),
-        },
-    },
+    --     coords = vec3(-2545.04,3738.35,13.11),
+    --     spawnCoords = {
+    --         vector4(-2536.6,3735.83,13.09,259.3),
+    --     },
+    -- },
 
-    [91] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [91] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- Gagrame no morro
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1353.42,-2439.52,50.92),
-        spawnCoords = {
-            vector4(1354.26,-2445.34,50.33,149.72),
-        },
-    },
+    --     coords = vec3(1353.42,-2439.52,50.92),
+    --     spawnCoords = {
+    --         vector4(1354.26,-2445.34,50.33,149.72),
+    --     },
+    -- },
 
-    [92] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [92] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1353.47,-2456.18,49.59),
-        spawnCoords = {
-            vector4(1346.85,-2463.73,48.97,147.37),
-        },
+    --     coords = vec3(1353.47,-2456.18,49.59),
+    --     spawnCoords = {
+    --         vector4(1346.85,-2463.73,48.97,147.37),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [93] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    -- [93] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(2116.42,3973.18,36.33),
-        spawnCoords = {
-            vector4(2116.34,3982.37,36.23,337.69),
-        },
+    --     coords = vec3(2116.42,3973.18,36.33),
+    --     spawnCoords = {
+    --         vector4(2116.34,3982.37,36.23,337.69),
+    --     },
     
-        vehicles = {
-            {vehicle = 'titan160'},
-            {vehicle = 'premier'},
+    --     vehicles = {
+    --         {vehicle = 'titan160'},
+    --         {vehicle = 'premier'},
 
-        },
-    },
-    [94] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 923.45,464.75,121.23
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    --     },
+    -- },
+    -- [94] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 923.45,464.75,121.23
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(2105.41,3965.75,36.33),
-        spawnCoords = {
-            vector4(2099.77,3971.27,35.55,69.6),
-        },
-    },
-    [95] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.ilegal", -- permissao
-        blip = false, -- blip no mapa
+    --     coords = vec3(2105.41,3965.75,36.33),
+    --     spawnCoords = {
+    --         vector4(2099.77,3971.27,35.55,69.6),
+    --     },
+    -- },
+    -- [95] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.ilegal", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-1391.78,-581.76,30.09),
-        spawnCoords = {
-            vector4(912.22,465.87,120.83,92.83),
-        },
+    --     coords = vec3(-1391.78,-581.76,30.09),
+    --     spawnCoords = {
+    --         vector4(912.22,465.87,120.83,92.83),
+    --     },
     
-        vehicles = {
-            {vehicle = 'volatus'},
+    --     vehicles = {
+    --         {vehicle = 'volatus'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [96] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -2593.02,1927.75,167.3
-        permiss = "perm.mansaoronnald", -- permissao
-        blip = false, -- blip no mapa
+    -- [96] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -2593.02,1927.75,167.3
+    --     permiss = "perm.mansaoronnald", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(1544.99,-2570.07,55.59),
-        spawnCoords = {
-            vector4(1544.52,-2564.59,56.23,352.58),
-        },
+    --     coords = vec3(1544.99,-2570.07,55.59),
+    --     spawnCoords = {
+    --         vector4(1544.52,-2564.59,56.23,352.58),
+    --     },
     
-        vehicles = {
-            {vehicle = 'volatus'},
-            {vehicle = 'supervolito'},
+    --     vehicles = {
+    --         {vehicle = 'volatus'},
+    --         {vehicle = 'supervolito'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [97] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 
-        permiss = nil, -- permissao
-        blip = false, -- blip no mapa
+    -- [97] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 
+    --     permiss = nil, -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-2591.86,1927.92,167.3),
-        spawnCoords = {
-            vector4(-2587.87,1931.16,167.3,259.15),
-        },
-    },
+    --     coords = vec3(-2591.86,1927.92,167.3),
+    --     spawnCoords = {
+    --         vector4(-2587.87,1931.16,167.3,259.15),
+    --     },
+    -- },
 
-    [98] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.civil", -- permissao
-        blip = false, -- blip no mapa
+    -- [98] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.civil", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(843.59,141.87,82.29),
-        spawnCoords = {
-            vector4(834.27,151.63,82.29,51.63),
-        },
+    --     coords = vec3(843.59,141.87,82.29),
+    --     spawnCoords = {
+    --         vector4(834.27,151.63,82.29,51.63),
+    --     },
     
-        vehicles = {
-            {vehicle = 'corollapcerj'},
-            {vehicle = 'falcaopcerj'},
-            {vehicle = 'rangerpcerj'},
-            {vehicle = 'rangerpcerj22'},
-            {vehicle = 'sprinterpcerj'},
-            {vehicle = 'rangerpcerj'},
-            {vehicle = 'versapcerj'},
-            {vehicle = 's10pcerj'},
+    --     vehicles = {
+    --         {vehicle = 'corollapcerj'},
+    --         {vehicle = 'falcaopcerj'},
+    --         {vehicle = 'rangerpcerj'},
+    --         {vehicle = 'rangerpcerj22'},
+    --         {vehicle = 'sprinterpcerj'},
+    --         {vehicle = 'rangerpcerj'},
+    --         {vehicle = 'versapcerj'},
+    --         {vehicle = 's10pcerj'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [99] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 863.24,346.29,127.42
-        permiss = "perm.bope", -- permissao
-        blip = false, -- blip no mapa
+    -- [99] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 863.24,346.29,127.42
+    --     permiss = "perm.bope", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(277.89,-348.3,53.119),
-        spawnCoords = {
-            vector4(287.06,-344.01,53.25,267.82),
-        },
+    --     coords = vec3(277.89,-348.3,53.119),
+    --     spawnCoords = {
+    --         vector4(287.06,-344.01,53.25,267.82),
+    --     },
     
-        vehicles = {
-            {vehicle = 'hueypmerj'},
+    --     vehicles = {
+    --         {vehicle = 'hueypmerj'},
 
-        },
-    },
+    --     },
+    -- },
 
     
-    [100] = {
-        type = "service", -- public / service [ tipo da garagem ] -- -505.05,5017.32,153.55
-        permiss = "perm.franca", -- permissao
-        blip = false, -- blip no mapa
+    -- [100] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- -505.05,5017.32,153.55
+    --     permiss = "perm.franca", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(863.24,346.29,127.42),
-        spawnCoords = {
-            vector4(857.73,338.46,127.47,137.23),
-        },
+    --     coords = vec3(863.24,346.29,127.42),
+    --     spawnCoords = {
+    --         vector4(857.73,338.46,127.47,137.23),
+    --     },
     
-        vehicles = {
-            {vehicle = 'volatus'},
+    --     vehicles = {
+    --         {vehicle = 'volatus'},
 
-        },
-    },
+    --     },
+    -- },
 
-    [101] = {
-        type = "service", -- public / service [ tipo da garagem ] -- 
-        permiss = "perm.mansaodudu", -- permissao
-        blip = false, -- blip no mapa
+    -- [101] = {
+    --     type = "service", -- public / service [ tipo da garagem ] -- 
+    --     permiss = "perm.mansaodudu", -- permissao
+    --     blip = false, -- blip no mapa
         
-        coords = vec3(-505.05,5017.32,153.55),
-        spawnCoords = {
-            vector4(-503.44,5009.61,153.57,17.39),
-        },
+    --     coords = vec3(-505.05,5017.32,153.55),
+    --     spawnCoords = {
+    --         vector4(-503.44,5009.61,153.57,17.39),
+    --     },
     
-        vehicles = {
-            {vehicle = 'volatus'},
+    --     vehicles = {
+    --         {vehicle = 'volatus'},
 
-        },
-    },
+    --     },
+    -- },
 
     [102] = {
-        type = "public", -- public / service [ tipo da garagem ] -- -464.46,-286.9,78.17
+        type = "public", -- public / service [ tipo da garagem ] -- Garagem na cabana floresta
         permiss = nil, -- permissao
         blip = false, -- blip no mapa
         
@@ -2253,16 +2339,16 @@ Garages.List = {
         },
     },
 
-    [104] = {
-        type = "public", -- public / service [ tipo da garagem ] -- 419.15,6537.22,27.72
-        permiss = nil, -- permissao
-        blip = true, -- blip no mapa
+    -- [104] = {
+    --     type = "public", -- public / service [ tipo da garagem ] -- 419.15,6537.22,27.72
+    --     permiss = nil, -- permissao
+    --     blip = true, -- blip no mapa
         
-        coords = vec3(1744.46,4965.25,46.42),
-        spawnCoords = {
-            vector4(1745.11,4961.21,46.03,214.6),
-        },
-    },
+    --     coords = vec3(1744.46,4965.25,46.42),
+    --     spawnCoords = {
+    --         vector4(1745.11,4961.21,46.03,214.6),
+    --     },
+    -- },
 
     [105] = {
         type = "public", -- public / service [ tipo da garagem ] -- -828.83,276.37,86.36
@@ -2383,7 +2469,16 @@ Garages.List = {
         },
     },
     
-    
+    [114] = {
+        type = "public", -- public / service [ tipo da garagem ] -- hospital publico
+        permiss = nil, -- permissao
+        blip = true, -- blip no mapa
+        
+        coords = vec3(-479.6,-982.78,24.13),
+        spawnCoords = {
+            vector4(-469.01,-989.03,24.29,176.95),
+        },
+    },
 }
 
 --  

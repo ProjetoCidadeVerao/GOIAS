@@ -1,0 +1,17 @@
+RegisterCommand('extras', function(s, a, r)
+    if IsPedInAnyVehicle(PlayerPedId()) then
+        local count = GetVehicleLiveryCount(GetVehiclePedIsIn(PlayerPedId()))
+        SendNUIMessage({ action = 'open', count = count })
+        SetNuiFocus(true, true)
+    end
+end)
+
+RegisterNUICallback('select', function(data, cb)
+    if IsPedInAnyVehicle(PlayerPedId()) then
+        SetVehicleLivery(GetVehiclePedIsIn(PlayerPedId()), data.livery)
+    end
+end)
+
+RegisterNUICallback('close', function(data, cb)
+    SetNuiFocus(false, false)
+end)
