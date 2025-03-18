@@ -8905,7 +8905,7 @@ end }
     AddEventHandler('emotes',function(nome)
     local ped = PlayerPedId()
     if GetEntityHealth(ped) > 101 then
-        vRP.DeletarObjeto()
+        vRP._DeletarObjeto()
         for _,emote in pairs(animacoes) do
             if not IsPedInAnyVehicle(ped) and not emote.carros then
                 if nome == emote.nome then
@@ -10352,7 +10352,7 @@ end)
     -- AddEventHandler('emotes',function(nome)
     -- 	local ped = PlayerPedId()
     -- 	if GetEntityHealth(ped) > 100 then
-    -- 		vRP.DeletarObjeto()
+    -- 		vRP._DeletarObjeto()
     -- 		for _,emote in pairs(animacoes) do
     -- 			if not IsPedInAnyVehicle(ped) and not emote.carros then
     -- 				if nome == emote.nome then
@@ -10493,3 +10493,23 @@ end)
 -- 		end
 -- 	end
 -- end)
+
+function cancelEmote()
+    ClearPedTasks(GetPlayerPed(-1))
+end
+
+local lastClearTime = 0
+
+RegisterKeyMapping("clear", "Limpar Emotes", "keyboard", "F6")
+
+RegisterCommand("clear", function(source, args)
+    local currentTime = GetGameTimer()
+    if (currentTime - lastClearTime) >= 5000 then
+        if true then
+            cancelEmote()
+            FreezeEntityPosition(GetPlayerPed(-1), false)
+            vRP._DeletarObjeto()
+        end
+        lastClearTime = currentTime
+    end
+end)

@@ -129,7 +129,7 @@ function animLixo(status)
 		Wait(2000)
 		coletando = true
 	else
-		vRP.DeletarObjeto()
+		vRP._DeletarObjeto()
 		DetachEntity(prop, true, false)
 		SetEntityCoords(prop, 0.0, 0.0, 0.0, false, false, false, true)
 		coletando = false

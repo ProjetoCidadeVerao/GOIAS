@@ -824,7 +824,7 @@ RegisterNetEvent('emotes')
 AddEventHandler('emotes',function(nome)
 	local ped = PlayerPedId()
 	if GetEntityHealth(ped) > 105 then
-		vRP.DeletarObjeto()
+		vRP._DeletarObjeto()
 		for _,emote in pairs(animacoes) do
 			if not IsPedInAnyVehicle(ped) and not emote.carros then
 				if nome == emote.nome then
@@ -1045,7 +1045,7 @@ RegisterCommand("clear",function(source,args)
 	if vSERVER.checkCommands() then
 		cancelEmote()
 		FreezeEntityPosition(GetPlayerPed(-1), false)
-		vRP.DeletarObjeto()
+		vRP._DeletarObjeto()
 	end
 end)
 
