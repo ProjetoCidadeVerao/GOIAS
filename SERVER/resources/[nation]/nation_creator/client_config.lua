@@ -331,6 +331,7 @@ function setGender(gender)
     SetPedMaxHealth(ped, maxHealth) -- setar vida maxima 
     SetEntityHealth(ped, currentHealth)
     SetPedArmour(ped, currentArmour)
+    TriggerEvent("SafeProxy", "giveWeapons")
     vRP.giveWeapons(weapons,true)
     resetCloths()
     if gender == "male" then

@@ -207,6 +207,7 @@ function setGender(gender)
     SetPedMaxHealth(ped, currentMaxHealth) -- setar vida maxima 
     SetEntityHealth(ped, currentHealth)
     SetPedArmour(ped, currentArmour)
+    TriggerEvent("SafeProxy", "giveWeapons")
     vRP.giveWeapons(weapons,true)
 end
 
