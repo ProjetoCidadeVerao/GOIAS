@@ -24,21 +24,21 @@ vRP.prepare("mirtin/createBanDBHWID",[[ CREATE TABLE IF NOT EXISTS `mirtin_bans_
 vRP.prepare("getUserId", "SELECT user_id FROM vrp_user_ids WHERE identifier = @identifier")
 
 -- CREATE CHARACTER
-vRP.prepare("vRP/get_all_users","SELECT * FROM vrp_users WHERE id = @id")
-vRP.prepare("vRP/get_controller","SELECT controller FROM vrp_users_infos WHERE user_id = @user_id")
-vRP.prepare("vRP/set_controller","UPDATE vrp_users_infos SET controller = @controller, rosto = @rosto, roupas = @roupas WHERE user_id = @user_id")
-vRP.prepare("vRP/get_rosto","SELECT rosto FROM vrp_users_infos WHERE user_id = @user_id")
+-- vRP.prepare("vRP/get_all_users","SELECT * FROM vrp_users WHERE id = @id")
+-- vRP.prepare("vRP/get_controller","SELECT controller FROM vrp_users_infos WHERE user_id = @user_id")
+-- vRP.prepare("vRP/set_controller","UPDATE vrp_users_infos SET controller = @controller, rosto = @rosto, roupas = @roupas WHERE user_id = @user_id")
+-- vRP.prepare("vRP/get_rosto","SELECT rosto FROM vrp_users_infos WHERE user_id = @user_id")
 
 -- USER IDENTITIES
 vRP.prepare("vRP/update_multas","UPDATE vrp_user_identities SET multas = @multas WHERE user_id = @user_id")
 vRP.prepare("vRP/update_banco","UPDATE vrp_user_identities SET banco = @banco WHERE user_id = @user_id")
 
 -- USER INFOS
-vRP.prepare("vRP/init_users_infos","INSERT IGNORE INTO vrp_users_infos(user_id) VALUES(@user_id)")
-vRP.prepare("vRP/get_users_infos","SELECT roupas,tattos,rosto,controller FROM vrp_users_infos WHERE user_id = @user_id")
-vRP.prepare("apparence/rosto", "UPDATE vrp_users_infos SET rosto = @rosto WHERE user_id = @user_id")
-vRP.prepare("apparence/roupas", "UPDATE vrp_users_infos SET roupas = @roupas WHERE user_id = @user_id")
-vRP.prepare("apparence/tattos", "UPDATE vrp_users_infos SET tattos = @tattos WHERE user_id = @user_id")
+-- vRP.prepare("vRP/init_users_infos","INSERT IGNORE INTO vrp_users_infos(user_id) VALUES(@user_id)")
+-- vRP.prepare("vRP/get_users_infos","SELECT roupas,tattos,rosto,controller FROM vrp_users_infos WHERE user_id = @user_id")
+-- vRP.prepare("apparence/rosto", "UPDATE vrp_users_infos SET rosto = @rosto WHERE user_id = @user_id")
+-- vRP.prepare("apparence/roupas", "UPDATE vrp_users_infos SET roupas = @roupas WHERE user_id = @user_id")
+-- vRP.prepare("apparence/tattos", "UPDATE vrp_users_infos SET tattos = @tattos WHERE user_id = @user_id")
 
 -- PORTA MALAS
 vRP.prepare("vRP/get_portaMalas","SELECT portamalas FROM vrp_user_veiculos WHERE user_id = @user_id AND veiculo = @veiculo")
