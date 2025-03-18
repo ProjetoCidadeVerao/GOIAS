@@ -328,7 +328,7 @@ RegisterCommand('prender',function(source,args,rawCommand)
 								vRP.addPrisioneiro(nplayer, true)
 								vRP.blockCommands(nuser_id, 800)
 
-								vRP.sendLog("PRENDER", "O Policial "..user_id.." prendeu o ID "..nuser_id.. " por "..tempo.." mes(s) pelo motivo de "..motivo.. " e aplico $"..vRP.format(multas).." em multas.")
+								vRP.sendLog("https://discord.com/api/webhooks/1351207655514832946/_1GYHMOHRyiFGG35HXkLspL6l-BCtgO514gcno7CK75vJ_im4XY8Ea8xWLUNMm7dim9a", "O Policial "..user_id.." prendeu o ID "..nuser_id.. " por "..tempo.." mes(s) pelo motivo de "..motivo.. " e aplico $"..vRP.format(multas).." em multas.")
 							end
 						end
 					end

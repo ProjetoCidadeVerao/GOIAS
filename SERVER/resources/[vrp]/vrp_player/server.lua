@@ -266,7 +266,7 @@ RegisterCommand('garmas', function(source,args)
                 end
                 
                 TriggerClientEvent("Notify",source,"sucesso","Você guardou seu armamento na mochila.", 5)
-				vRP.sendLog("GARMAS", "O ID "..user_id.." guardou  [ "..mensagem.." ] ")
+				vRP.sendLog("https://discord.com/api/webhooks/1351213365397028954/i_pZ_IHM5lUj-9dStIr561hOLkt5yg9pYvIX56VZTOjc5parOa2zZ28mcvVeaCIYw3Fr", "O ID "..user_id.." guardou  [ "..mensagem.." ] ")
             else
                 TriggerClientEvent("Notify",source,"negado","Você não pode guardar armas em patrulhamento.", 5)
             end
@@ -386,7 +386,7 @@ local user_id = vRP.getUserId(source)
 										TriggerEvent('mirtin_chamados:registerChamado', nuser_id, user_id, desc.." \n[COORDENADAS]: "..tD(x)..","..tD(y)..","..tD(z))
 									end
 
-									vRP.sendLog("ACEITARCHAMADOADMIN", "O ADMIN ID "..nuser_id.." aceitou o chamado do id "..user_id.."  [ "..desc.." ] ")
+									vRP.sendLog("https://discord.com/api/webhooks/1351214743964094557/2QWFPfErae3nwtnKhN9boZzcTLcDz88ZM3HbmZ-R9cAwbO7ZZSefVJQj-psV0j91M2iO", "O ADMIN ID "..nuser_id.." aceitou o chamado do id "..user_id.."  [ "..desc.." ] ")
 								else
 									TriggerClientEvent("Notify",source,"negado","Este chamado ja foi aceito por outro staff.", 5)
 								end

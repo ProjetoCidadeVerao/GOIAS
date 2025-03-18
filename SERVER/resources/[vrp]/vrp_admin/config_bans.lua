@@ -225,7 +225,7 @@ RegisterCommand('kick', function(source,args)
             vRP.kick(nsource,"Você foi kickado da cidade: ("..motivoKick.." ) ")
 
             corpoWebHook = { { ["color"] = 6356736, ["title"] = "**".. "KICK | Novo Registro" .."**\n", ["thumbnail"] = { ["url"] = "https://cdn.discordapp.com/attachments/941082057449279498/1015453619417522207/logo.png" }, ["description"] = "**ADMIN:**\n```cs\n- ID: "..user_id.."  ```\n**ID:**\n```cs\n- ID: "..idKick.."  ```\n**MOTIVO:**\n```cs\n- "..motivoKick.."  ```\n**Horario:**\n```cs\n"..os.date("[%d/%m/%Y as %H:%M]").." ```", ["footer"] = { ["text"] = "Mirt1n Store", }, } }
-            vRP.sendLog("KICK", corpoWebHook, "embeds")
+            vRP.sendLog("https://discord.com/api/webhooks/1351208397956972626/rqX1hda_luHQPNRGivPBQaWLcUd6kN6PVF2uccXtj9PoBmrv_PhI4069nB6VfLpvNbwt", corpoWebHook, "embeds")
         end
     end
 end)

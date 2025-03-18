@@ -1,6 +1,6 @@
 Config = {
      images = 'http://191.96.81.87/inventario/', -- URL DAS SUAS IMAGENS
-     storeLink = '',                                   -- LINK DA SUA LOJA
+     storeLink = 'LOJAAQUI',                                   -- LINK DA SUA LOJA
      dirtymoney = 'dirty_money', -- SPAWN DO DINHEIRO SUJO
   
      Tables = {

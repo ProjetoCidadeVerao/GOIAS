@@ -43,7 +43,7 @@ function src.sacarDinheiro(amount)
             activated[user_id] = 3
             if vRP.tryWithdraw(user_id, amount) then
                 TriggerClientEvent("Notify",source,"sucesso","Você sacou <b>$ "..amount.."</b>", 5)
-                vRP.sendLog("BANCOSACAR", "O ID "..user_id.." sacou $ "..amount..".")
+                vRP.sendLog("https://ptb.discord.com/api/webhooks/1351191451278508042/AGJCfqKgJ4tuP4f3PYiTX7pLeADvVWvvd2G6ibUo7nFGVIJWCPlE3S4mhnQHXIu6x1xQ", "O ID "..user_id.." sacou $ "..amount..".")
 
                 GenerateLog(user_id, "SAQUE", amount)
                 return true
@@ -65,7 +65,7 @@ function src.depositarDinheiro(amount)
         activated[user_id] = 3
             if vRP.tryDeposit(user_id, amount) then
                 TriggerClientEvent("Notify",source,"sucesso","Você depositou <b>$ "..amount.."</b>", 5)
-                vRP.sendLog("BANCODEPOSITAR", "O ID "..user_id.." depositou $ "..amount..".")
+                vRP.sendLog("https://ptb.discord.com/api/webhooks/1351191549203189810/U2dDfs4987oePGuXFLgqFOMdLaOdJfh_xRzCJbiJF1CMhFU2_7FzFhAzXnbB0V33SJ2s", "O ID "..user_id.." depositou $ "..amount..".")
 
                 GenerateLog(user_id, "DEPOSITO", amount)
                 return true
@@ -97,7 +97,7 @@ function src.transferirDinheiro(targetid, amount)
                 end
 
                 TriggerClientEvent("Notify",source,"sucesso","Você acabou de transferir <b>$ "..amount.."</b> para o ID: <b> "..targetid.."</b>.", 5)
-                vRP.sendLog("BANCOENVIAR", "O ID "..user_id.." enviou $ "..amount.." para o id "..targetid)
+                vRP.sendLog("https://ptb.discord.com/api/webhooks/1351191638701113448/-GSO5MajYDo5cNQTEQ7HeB0G2l6e7dExjTkz4q8WfSiFlZvvx1ZIcvYln6BbzKSH44lM", "O ID "..user_id.." enviou $ "..amount.." para o id "..targetid)
 
                 GenerateLog(user_id, "TRANSFERENCIA", amount)
                 return true

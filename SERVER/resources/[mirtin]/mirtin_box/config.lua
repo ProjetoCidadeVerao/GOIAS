@@ -51,7 +51,7 @@ Config = {
 
     weebhook = {
         color = 6356736,
-        logo = "https://cdn.discordapp.com/attachments/941082057449279498/951537784433303663/logo_sem_fundo.png?ex=65e9fe9e&is=65d7899e&hm=653c1d7e9eaeb8a7e973e7eef5b394348a99d615fa56294ec5139f196135ccf3&",
+        logo = "http://191.96.81.87/logo/logo.png",
         footer = "© Goias"
     },
 
@@ -99,7 +99,7 @@ Config = {
 Config.cratesPoints = { -- Todas que vao ser usada por [ Points ] 
     { -- CAIXA COMUM
         crate = "Comum", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318227644197765200/X1QGpYZ1JLy8Uvx-B8pM2gmaXkGAOKAvavyPL7WBMBLaT4_c7LiFxaL9NhDbYqM4LGow", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 60, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -226,7 +226,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
     { -- CAIXA LENDARIA
         crate = "Lendaria", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318227786695053363/jGSvBnpymqvHTY3hZwePHlmI1aEEflK5QXn15a4t41zjX-pVMrFN8vPeoJVsGVLBubG3", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -366,7 +366,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
     { -- CAIXA MAGNIFICA
         crate = "Magnifica", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318228221094920253/jno6ax1dvtl_8tQVT8BiYr10xwZPy9w2UXJ4Wnp9_7a0DzxKK0yN5VYjG5NHotEF1lyE", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -506,7 +506,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 
     { -- CAIXA Fantastica
         crate = "Fantastica", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318228356612886629/PctBpXskJzlAAaV8KEeKxRlKqWlgJQBGKBH2VEfEH-3SEXf6OGUdL3LyuglMoSkQek7S", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -651,7 +651,7 @@ Config.cratesPoints = { -- Todas que vao ser usada por [ Points ]
 Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ] 
     { -- CAIXA DE PACOTES VIPS
         crate = "Caixa da Maldade", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318228480877662208/3ccMrkOTMBjCibR94_c2Nss2eb7QbPJD4-4I-bSU-1Cf37h41v63riVcHChXS4K7Eblo", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -795,7 +795,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
 
     { -- CAIXA DE PACOTES VIPS
         crate = "Caixa de Pandora", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318228480877662208/3ccMrkOTMBjCibR94_c2Nss2eb7QbPJD4-4I-bSU-1Cf37h41v63riVcHChXS4K7Eblo", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas
@@ -938,7 +938,7 @@ Config.cratesCoins = { -- Todas que vao ser usada por [ Coins ]
 
     { -- CAIXA DE PACOTES VIPS
         crate = "Caixa do Madruga", -- Nome da Caixa
-        weebhook = "https://discord.com/api/webhooks/1318228480877662208/3ccMrkOTMBjCibR94_c2Nss2eb7QbPJD4-4I-bSU-1Cf37h41v63riVcHChXS4K7Eblo", -- WEEBHOOK Dessa Caixa
+        weebhook = "https://ptb.discord.com/api/webhooks/1351192728171712553/JY6MV1zq05gfMQdazq5BLfPZmzAt5lDURtVNnD5Yi-sQ565CW9wlATQ0nUc0hhjkA765", -- WEEBHOOK Dessa Caixa
         price = 50, -- PREÇO Dessa Caixa
 
         itensList = { -- Itens das Caixas

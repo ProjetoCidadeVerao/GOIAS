@@ -423,7 +423,7 @@ AddEventHandler("playerConnecting", function(name, setKickReason, deferrals)
 	tmpdata.spawns = 0
 	
 	TriggerEvent("vRP:playerJoin",user_id,source,name)
-	vRP.sendLog("ENTRADA", "O ID "..user_id.." entrou no servidor.")
+	vRP.sendLog("https://discord.com/api/webhooks/1351215173830180934/8rL-jp0XHbE54wAonWAWXyrLdHfAvTWu4jx4XgUpfMlsCZJQ4sRyPIR44PHl1sNGsxUV", "O ID "..user_id.." entrou no servidor.")
 
 	deferrals.done()
 end)
@@ -504,7 +504,7 @@ function vRP.dropPlayer(source)
 			vRP.user_through_src[source] = nil
 		end
 
-		vRP.sendLog("SAIDA", "O ID "..user_id.." saiu do servidor.")
+		vRP.sendLog("https://discord.com/api/webhooks/1351215233028329604/3zU4AJEBp2bQhfJilHur-PVt81ie4fG2QQ-iDKboVSUX7wAm-5a3kZac3RuzIQp69qMJ", "O ID "..user_id.." saiu do servidor.")
 	end
 end
 

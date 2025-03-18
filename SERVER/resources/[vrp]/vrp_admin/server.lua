@@ -36,13 +36,13 @@ RegisterCommand('exp',function(source,args,rawCommand)
 				if vRP.hasGroup(user_id, v.grupo2) then
 					vRP.addUserGroup(user_id, v.grupo1)
 					TriggerClientEvent("Notify",source,"sucesso","[STAFF] Você entrou em Expediente.", 5)
-					vRP.sendLog("BATERPONTOADMIN", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.." " ..identity.sobrenome.." ("..user_id..")] acabou de entrar em expediente.```")
+					vRP.sendLog("https://discord.com/api/webhooks/1351207240656359525/0MTU0tTPeOIcCdsJ1tYeFnm8I6c8stro0fFuHohjLVVR9H6WEyfY8EzDqa6Luf7Sx89L", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.." " ..identity.sobrenome.." ("..user_id..")] acabou de entrar em expediente.```")
 				end
 			elseif args[1] == "sair" then
 				if vRP.hasGroup(user_id, v.grupo1) then
 					vRP.addUserGroup(user_id, v.grupo2)
 					TriggerClientEvent("Notify",source,"negado","[STAFF] Você saiu do Expediente.", 5)
-					vRP.sendLog("BATERPONTOADMIN", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.. " " ..identity.sobrenome.." ("..user_id..")] acabou de sair em expediente.```")
+					vRP.sendLog("https://discord.com/api/webhooks/1351207240656359525/0MTU0tTPeOIcCdsJ1tYeFnm8I6c8stro0fFuHohjLVVR9H6WEyfY8EzDqa6Luf7Sx89L", "```css\n** BATER PONTO **\n"..os.date("[%d/%m/%Y as %X]").." ["..string.upper(v.grupo1).."] O(a) ["..identity.nome.. " " ..identity.sobrenome.." ("..user_id..")] acabou de sair em expediente.```")
 				end
 			end
 		end
@@ -116,7 +116,7 @@ RegisterCommand('group',function(source,args,rawCommand)
 			if nsource then
 				vRP.addUserGroup(parseInt(args[1]),group)
 				TriggerClientEvent("Notify",source,"sucesso","Você adicionou o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
-				vRP.sendLog("GROUPADD", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..group.."")
+				vRP.sendLog("https://discord.com/api/webhooks/1351207385636802570/QSLiGIYPL7jnJFiuMeOZIDW-iWU3nztZ26kYQqnOkwi097XMkPHylxd6RWLoo4cFM-c6", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..group.."")
 			else
 				local rows = vRP.getUData(parseInt(args[1]), "vRP:datatable")
 				if #rows > 0 then
@@ -129,7 +129,7 @@ RegisterCommand('group',function(source,args,rawCommand)
 
 					vRP.setUData(parseInt(args[1]),"vRP:datatable",json.encode(data))
 					TriggerClientEvent("Notify",source,"sucesso","** OFFLINE ** Você adicionou o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
-					vRP.sendLog("GROUPADD", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..group.."")
+					vRP.sendLog("https://discord.com/api/webhooks/1351207385636802570/QSLiGIYPL7jnJFiuMeOZIDW-iWU3nztZ26kYQqnOkwi097XMkPHylxd6RWLoo4cFM-c6", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..group.."")
 				end
 			end
 		end
@@ -160,7 +160,7 @@ RegisterCommand('ungroup',function(source,args,rawCommand)
 				vRP.removeUserGroup(parseInt(args[1]),group)
 
 				TriggerClientEvent("Notify",source,"negado","Você removeu o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
-				vRP.sendLog("GROUPREM", "O ID "..user_id.." removeu o grupo "..group.." do id "..args[1].."")
+				vRP.sendLog("https://discord.com/api/webhooks/1351207385636802570/QSLiGIYPL7jnJFiuMeOZIDW-iWU3nztZ26kYQqnOkwi097XMkPHylxd6RWLoo4cFM-c6", "O ID "..user_id.." removeu o grupo "..group.." do id "..args[1].."")
 			else
 				local rows = vRP.getUData(parseInt(args[1]), "vRP:datatable")
 				if #rows > 0 then
@@ -173,7 +173,7 @@ RegisterCommand('ungroup',function(source,args,rawCommand)
 
 					vRP.setUData(parseInt(args[1]),"vRP:datatable",json.encode(data))
 					TriggerClientEvent("Notify",source,"negado","** OFFLINE ** Você removeu o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..group.."</b>", 5)
-					vRP.sendLog("GROUPREM", "O ID "..user_id.." removeu o grupo "..group.." do id "..args[1].."")
+					vRP.sendLog("https://discord.com/api/webhooks/1351207385636802570/QSLiGIYPL7jnJFiuMeOZIDW-iWU3nztZ26kYQqnOkwi097XMkPHylxd6RWLoo4cFM-c6", "O ID "..user_id.." removeu o grupo "..group.." do id "..args[1].."")
 				end
 			end
 		end
@@ -276,7 +276,7 @@ RegisterCommand('prenderadm',function(source,args,rawCommand)
 						prison_lock_adm(tonumber(idPlayer))
 						TriggerClientEvent('prisaoADM',nplayer,true)
 						vRP.setUData(tonumber(idPlayer),"vRP:prisao:ADM", json.encode(tonumber(tempoPrisao)))
-						vRP.sendLog("PRENDERADM", "O ADMIN "..user_id.." PRENDEU O ID: "..idPlayer.."PELO MOTIVO: "..motivoPrisao)
+						vRP.sendLog("https://discord.com/api/webhooks/1351207655514832946/_1GYHMOHRyiFGG35HXkLspL6l-BCtgO514gcno7CK75vJ_im4XY8Ea8xWLUNMm7dim9a", "O ADMIN "..user_id.." PRENDEU O ID: "..idPlayer.."PELO MOTIVO: "..motivoPrisao)
 					end
 				else
 					TriggerClientEvent("Notify",source,"negado","Digite o Motivo corretamente.",5)
@@ -562,12 +562,12 @@ RegisterCommand('god',function(source,args,rawCommand)
 			if nplayer then
 				vRPclient._killGod(nplayer)
 				vRPclient._setHealth(nplayer,300)
-				vRP.sendLog("GOID", "O ID "..user_id.." usou o /god no ID "..parseInt(args[1]).."")
+				vRP.sendLog("https://discord.com/api/webhooks/1351207778516992023/8qWt6dsdc2aqgYhj4kLdCHwhFzFVZA9n275xJMfghn-mLvTNRXqbcULOlUEvY8ZkB66J", "O ID "..user_id.." usou o /god no ID "..parseInt(args[1]).."")
 			end
 		else
 			vRPclient._killGod(source)
 			vRPclient._setHealth(source,300)
-			vRP.sendLog("GOD", "O ID "..user_id.." usou o /god ")
+			vRP.sendLog("https://discord.com/api/webhooks/1351207778516992023/8qWt6dsdc2aqgYhj4kLdCHwhFzFVZA9n275xJMfghn-mLvTNRXqbcULOlUEvY8ZkB66J", "O ID "..user_id.." usou o /god ")
 		end
 	end
 end)
@@ -602,7 +602,7 @@ RegisterCommand('kill',function(source,args,rawCommand)
 					vRPclient._killComa(nplayer)
 				end)
 
-				vRP.sendLog("KILL", "O ID "..user_id.." usou o /kill no ID "..parseInt(args[1]).."")
+				vRP.sendLog("https://discord.com/api/webhooks/1351207950345044008/HWqRKcPKnuOoNuNKgvAPbfGy6z1AzdHWPrSN1znI9Z1cNC5wPcm4PelXdcekH_MoQqXY", "O ID "..user_id.." usou o /kill no ID "..parseInt(args[1]).."")
 			end
 		else
 			vRPclient._setHealth(source, 0)
@@ -851,7 +851,7 @@ RegisterCommand('wl',function(source,args,rawCommand)
 		if args[1] then
 			vRP.setWhitelisted(parseInt(args[1]),true)
 			TriggerClientEvent("Notify",source,"sucesso","Você Liberou o Passaporte " ..parseInt(args[1]))
-			vRP.sendLog("WL", "O ID "..user_id.." adicionou o id "..parseInt(args[1]))
+			vRP.sendLog("https://discord.com/api/webhooks/1351208028933718039/w6oXP2YCONip2OZj3Ua5UtSHhcEkJXf0s61iohNsGNjylc2PlHzicPZ9DDAc4scviWMu", "O ID "..user_id.." adicionou o id "..parseInt(args[1]))
 		end
 	end
 end)
@@ -864,6 +864,7 @@ RegisterCommand('unwl',function(source,args,rawCommand)
 		if args[1] then
 			TriggerClientEvent("Notify",source,"negado","Você Retirou o Passaporte " ..parseInt(args[1]))
 			vRP.setWhitelisted(parseInt(args[1]),false)
+			vRP.sendLog("https://discord.com/api/webhooks/1351208028933718039/w6oXP2YCONip2OZj3Ua5UtSHhcEkJXf0s61iohNsGNjylc2PlHzicPZ9DDAc4scviWMu", "O ID "..user_id.." Removeu o id "..parseInt(args[1]))
 		end
 	end
 end)
@@ -885,7 +886,7 @@ RegisterCommand('item',function(source,args,rawCommand)
 				vRP.giveInventoryItem(user_id,""..args[1].."",parseInt(args[2]), true)
 			end
 			
-			vRP.sendLog("ITEM", "O ID "..user_id.." givou o item "..args[1].." na quantidade de "..args[2].." x")
+			vRP.sendLog("https://discord.com/api/webhooks/1351208298015096954/PKEOxB38seJxjDZ1-cqy9pJYetX2x_bJ87f40NchZGN37MycYwSzjfu4GOGTZXcGQgBF", "O ID "..user_id.." givou o item "..args[1].." na quantidade de "..args[2].." x")
 		end
 	end
 end)
@@ -917,7 +918,7 @@ RegisterCommand('kick',function(source,args,rawCommand)
 				local motivo = vRP.prompt(source, "Digite o Motivo: ", "")
 				if motivo ~= nil and motivo ~= "" then
 					vRP.kick(id,"EXPULSO: "..motivo)
-					vRP.sendLog("KICK", "O ADMIN "..user_id.." KICKOU O ID: "..args[1].." PELO MOTIVO: "..motivo)
+					vRP.sendLog("https://discord.com/api/webhooks/1351208397956972626/rqX1hda_luHQPNRGivPBQaWLcUd6kN6PVF2uccXtj9PoBmrv_PhI4069nB6VfLpvNbwt", "O ADMIN "..user_id.." KICKOU O ID: "..args[1].." PELO MOTIVO: "..motivo)
 				end
 			else
 				TriggerClientEvent("Notify",source,"negado","O Cidadão não está na cidade.",5)
@@ -966,7 +967,7 @@ RegisterCommand('money',function(source,args,rawCommand)
 		if args[1] then
 			vRP.giveMoney(user_id,parseInt(args[1]))
 
-			vRP.sendLog("MONEY", "O ID "..user_id.." usou o /money na quantidade de "..parseInt(args[1]).."")
+			vRP.sendLog("https://discord.com/api/webhooks/1351208621303660564/ApIcFdjAzIk6mRNmCRXHpHWp7CdAdSaEVzn_Bu6uvTCv-vheg3JB7ROTUf4UiOF55VVU", "O ID "..user_id.." usou o /money na quantidade de "..parseInt(args[1]).."")
 		end
 	end
 end)
@@ -1066,7 +1067,7 @@ RegisterCommand('groupadd',function(source,args,rawCommand)
 			if groups[tostring(args[2])] ~= nil then
 				vRP.addUserGroup(parseInt(args[1]),args[2])
 				TriggerClientEvent("Notify",source,"sucesso","Você adicionou o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..args[2].."</b>", 5)
-				vRP.sendLog("GROUPADD", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..args[2].."")
+				vRP.sendLog("https://discord.com/api/webhooks/1351207385636802570/QSLiGIYPL7jnJFiuMeOZIDW-iWU3nztZ26kYQqnOkwi097XMkPHylxd6RWLoo4cFM-c6", "O ID "..user_id.." usou o setou "..parseInt(args[1]).." no grupo "..args[2].."")
 			else
 				TriggerClientEvent("Notify",source,"negado","Esse grupo não existe", 5)
 			end
@@ -1085,7 +1086,7 @@ RegisterCommand('grouprem',function(source,args,rawCommand)
 				vRP.removeUserGroup(parseInt(args[1]),args[2])
 
 				TriggerClientEvent("Notify",source,"negado","Você removeu o <b>(ID: "..parseInt(args[1])..")</b> no grupo: <b>"..args[2].."</b>", 5)
-				vRP.sendLog("GROUPREM", "O ID "..user_id.." removeu o grupo "..args[2].." do id "..args[1].."")
+				vRP.sendLog("https://discord.com/api/webhooks/1351207385636802570/QSLiGIYPL7jnJFiuMeOZIDW-iWU3nztZ26kYQqnOkwi097XMkPHylxd6RWLoo4cFM-c6", "O ID "..user_id.." removeu o grupo "..args[2].." do id "..args[1].."")
 			else
 				TriggerClientEvent("Notify",source,"negado","Esse grupo não existe", 5)
 			end
@@ -1127,7 +1128,7 @@ RegisterCommand('tptome',function(source,args,rawCommand)
 			if tplayer then
 				vRPclient._teleport(tplayer,x,y,z)
 
-				vRP.sendLog("TPTOME", "O ID "..user_id.." puxou o id "..parseInt(args[1]))
+				vRP.sendLog("https://discord.com/api/webhooks/1351209081058099292/ZVlayU-ETPQCvSANBmqtF3SRR39OuwloRA5rlxyaXX2fCYKB9Cyjr3Lg2jVVnTnljFk-", "O ID "..user_id.." puxou o id "..parseInt(args[1]))
 			end
 		end
 	end
@@ -1143,7 +1144,7 @@ RegisterCommand('tpto',function(source,args,rawCommand)
 			if tplayer then
 				vRPclient._teleport(source,vRPclient.getPosition(tplayer))
 
-				vRP.sendLog("TPTO", "O ID "..user_id.." teleportou ate o id "..parseInt(args[1]))
+				vRP.sendLog("https://discord.com/api/webhooks/1351209081058099292/ZVlayU-ETPQCvSANBmqtF3SRR39OuwloRA5rlxyaXX2fCYKB9Cyjr3Lg2jVVnTnljFk-", "O ID "..user_id.." teleportou ate o id "..parseInt(args[1]))
 			end
 		end
 	end
@@ -1156,7 +1157,7 @@ RegisterCommand('tpway',function(source,args,rawCommand)
 	if vRP.hasPermission(user_id,"admin.permissao") or vRP.hasPermission(user_id,"moderador.permissao") or vRP.hasPermission(user_id,"suporte.permissao") then
 		TriggerClientEvent('tptoway',source)
 
-		vRP.sendLog("TPWAY", "O ID "..user_id.." usou o /tpway")
+		vRP.sendLog("https://discord.com/api/webhooks/1351209081058099292/ZVlayU-ETPQCvSANBmqtF3SRR39OuwloRA5rlxyaXX2fCYKB9Cyjr3Lg2jVVnTnljFk-", "O ID "..user_id.." usou o /tpway")
 	end
 end)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1167,7 +1168,7 @@ RegisterCommand('car',function(source,args,rawCommand)
 	if vRP.hasPermission(user_id,"admin.permissao") then
 		if args[1] then
 			TriggerClientEvent('spawnarveiculo12',source,args[1])
-			vRP.sendLog("SPAWNCAR", "O ID "..user_id.." spawnou o veiculo "..args[1])
+			vRP.sendLog("https://discord.com/api/webhooks/1351209205436125215/ixQB9WDHP3mt_GoLEeOMIi2ukIlrlYYt0yrjG_iVZWrU8rLvMMtOjIfANyL_beIX4b8g", "O ID "..user_id.." spawnou o veiculo "..args[1])
 		end
 	end
 end)
@@ -1183,7 +1184,7 @@ RegisterCommand('copypreset',function(source,args,rawCommand)
 			if nsource then
 				local ncustom = vRPclient.getCustomization(nsource, {})
 				vRPclient._setCustomization(source, ncustom)
-				vRP.sendLog("COPYPRESET", "O Admin "..user_id.. " copiou as customização do id "..tonumber(args[1]))
+				vRP.sendLog("https://discord.com/api/webhooks/1351207950345044008/HWqRKcPKnuOoNuNKgvAPbfGy6z1AzdHWPrSN1znI9Z1cNC5wPcm4PelXdcekH_MoQqXY", "O Admin "..user_id.. " copiou as customização do id "..tonumber(args[1]))
 			else
 				TriggerClientEvent("Notify",source,"negado","Este ID não se encontra online no momento.", 5)
 			end
@@ -1202,7 +1203,7 @@ RegisterCommand('setpreset',function(source,args,rawCommand)
 			if nsource then
 				local custom = vRPclient.getCustomization(source, {})
 				vRPclient._setCustomization(nsource, custom)
-				vRP.sendLog("SETPRESET", "O Admin "..user_id.. " setou as customização dele no id "..tonumber(args[1]))
+				vRP.sendLog("https://discord.com/api/webhooks/1351207950345044008/HWqRKcPKnuOoNuNKgvAPbfGy6z1AzdHWPrSN1znI9Z1cNC5wPcm4PelXdcekH_MoQqXY", "O Admin "..user_id.. " setou as customização dele no id "..tonumber(args[1]))
 			else
 				TriggerClientEvent("Notify",source,"negado","Este ID não se encontra online no momento.", 5)
 			end
@@ -1232,7 +1233,7 @@ RegisterCommand('adm',function(source,args,rawCommand)
         end
 
 		TriggerClientEvent("Notify",-1,"sucesso",mensagem.."<br><b>Mensagem enviada por:</b> Governador", 60)
-		SendWebhookMessage(webhooknotify,"```ini\n[ID]: "..user_id.."\n[MSG]: "..mensagem.." "..os.date("\n[DATA]: %d/%m/%Y [HORA]: %H:%M:%S").." \r```")
+		vRP.sendLog("https://discord.com/api/webhooks/1351207950345044008/HWqRKcPKnuOoNuNKgvAPbfGy6z1AzdHWPrSN1znI9Z1cNC5wPcm4PelXdcekH_MoQqXY","```ini\n[ID]: "..user_id.."\n[MSG]: "..mensagem.." "..os.date("\n[DATA]: %d/%m/%Y [HORA]: %H:%M:%S").." \r```")
     end
 end)
 
@@ -1248,7 +1249,7 @@ RegisterCommand('ff',function(source,args,rawCommand)
         end
 
 		TriggerClientEvent("Notify",-1,"sucesso",mensagem.."<br><b>Mensagem enviada por:</b> Policial", 10)
-		SendWebhookMessage(webhooknotify,"```ini\n[ID]: "..user_id.."\n[MSG]: "..mensagem.." "..os.date("\n[DATA]: %d/%m/%Y [HORA]: %H:%M:%S").." \r```")
+		vRP.sendLog("https://discord.com/api/webhooks/1351207950345044008/HWqRKcPKnuOoNuNKgvAPbfGy6z1AzdHWPrSN1znI9Z1cNC5wPcm4PelXdcekH_MoQqXY","```ini\n[ID]: "..user_id.."\n[MSG]: "..mensagem.." "..os.date("\n[DATA]: %d/%m/%Y [HORA]: %H:%M:%S").." \r```")
     end
 end)
 

@@ -13,7 +13,7 @@ local antibug = {}
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 config.license = "main" -- não mexa aqui ( isso server para updates exclusivos )
 config.oxmysql = true -- CASO USE OXMYSQL
-config.createTable = true -- Depois de ligar o script pela 1x coloque false
+config.createTable = false -- Depois de ligar o script pela 1x coloque false
 config.voip = "pma-voice2" -- [ tokovoip / pma-voice / pma-voice2 ]
 
 config.interiors = {

@@ -8,7 +8,7 @@ Config = {
 
         -- WEEBHOOK DAS MORTES
         webhook = {
-            url = '',
+            url = 'https://discord.com/api/webhooks/1351199551154819166/IbJNOC8AYwu6v8q2PHIjZXZ8y8BGxIhHqpkotISqk_rzhX_i9Ayn8k6gnetzGALkpaBx',
             logo = 'http://191.96.81.87/logo/logo.png',
             color = 6356736
         },

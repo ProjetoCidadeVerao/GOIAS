@@ -275,15 +275,15 @@ RegisterCommand("keybind",function(source,args)
 	end
 end)
 
-RegisterKeyMapping("keybind accept","Aceitar chamado","keyboard","y")
-RegisterKeyMapping("keybind reject","Rejeitar chamado","keyboard","u")
-RegisterKeyMapping("keybind left","Menu Esquerda","keyboard","left")
-RegisterKeyMapping("keybind right","Menu Direita","keyboard","right")
-RegisterKeyMapping("keybind up","Menu Cima","keyboard","up")
-RegisterKeyMapping("keybind down","Menu Baixo","keyboard","down")
-RegisterKeyMapping("keybind select","Menu Select","keyboard","return")
-RegisterKeyMapping("keybind exit","Fechar Menu","keyboard","escape")
-RegisterKeyMapping("keybind exit2","Fechar Menu 2","keyboard","BACK")
+-- RegisterKeyMapping("keybind accept","Aceitar chamado","keyboard","y")
+-- RegisterKeyMapping("keybind reject","Rejeitar chamado","keyboard","u")
+-- RegisterKeyMapping("keybind left","Menu Esquerda","keyboard","left")
+-- RegisterKeyMapping("keybind right","Menu Direita","keyboard","right")
+-- RegisterKeyMapping("keybind up","Menu Cima","keyboard","up")
+-- RegisterKeyMapping("keybind down","Menu Baixo","keyboard","down")
+-- RegisterKeyMapping("keybind select","Menu Select","keyboard","return")
+-- RegisterKeyMapping("keybind exit","Fechar Menu","keyboard","escape")
+-- RegisterKeyMapping("keybind exit2","Fechar Menu 2","keyboard","BACK")
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- KEY MAPPING DE EMOTES
@@ -406,18 +406,48 @@ RegisterCommand('emote', function(source,args)
 	end
 end)
 
-RegisterKeyMapping("emote aguardar","Executar Animação","keyboard","f1")
-RegisterKeyMapping("emote aguardar2","Executar Animação","keyboard","f2")
-RegisterKeyMapping("emote dedomeio","Executar Animação","keyboard","f3")
-RegisterKeyMapping("emote assobiar","Executar Animação","keyboard","down")
-RegisterKeyMapping("emote joia","Executar Animação","keyboard","left")
-RegisterKeyMapping("emote lamentar","Executar Animação","keyboard","right")
-RegisterKeyMapping("emote saudacao","Executar Animação","keyboard","up")
-RegisterKeyMapping("emote maonacabeca","Executar Animação","keyboard","f10")
-RegisterKeyMapping("emote levantarmao","Executar Animação","keyboard","x")
-RegisterKeyMapping("emote motor","Executar Animação","keyboard","z")
-RegisterKeyMapping("emote apontar","Executar Animação","keyboard","b")
-RegisterKeyMapping("emote agachar","Executar Animação","keyboard","LCONTROL")
+-- RegisterKeyMapping("emote aguardar","Executar Animação","keyboard","f1")
+-- RegisterKeyMapping("emote aguardar2","Executar Animação","keyboard","f2")
+-- RegisterKeyMapping("emote dedomeio","Executar Animação","keyboard","f3")
+-- RegisterKeyMapping("emote assobiar","Executar Animação","keyboard","down")
+-- RegisterKeyMapping("emote joia","Executar Animação","keyboard","left")
+-- RegisterKeyMapping("emote lamentar","Executar Animação","keyboard","right")
+-- RegisterKeyMapping("emote saudacao","Executar Animação","keyboard","up")
+-- RegisterKeyMapping("emote maonacabeca","Executar Animação","keyboard","f10")
+-- RegisterKeyMapping("emote levantarmao","Executar Animação","keyboard","x")
+-- RegisterKeyMapping("emote motor","Executar Animação","keyboard","z")
+-- RegisterKeyMapping("emote apontar","Executar Animação","keyboard","b")
+-- RegisterKeyMapping("emote agachar","Executar Animação","keyboard","LCONTROL")
+
+
+CreateThread(function()
+	RegisterKeyMapping("exit_keybind 3","Beleza","keyboard","3")
+	RegisterKeyMapping("exit_keybind 4","Saudação","keyboard","4")
+	RegisterKeyMapping("exit_keybind 5","Assobiar","keyboard","5")
+	RegisterKeyMapping("exit_keybind 6","Vergonha!","keyboard","6")
+	RegisterKeyMapping("exit_keybind 7","Mãonacinta","keyboard","7")
+	RegisterKeyMapping("exit_keybind 8","Mãonacintura","keyboard","8")
+	RegisterKeyMapping("exit_keybind 9","Mãosnacabeça","keyboard","9")
+	RegisterKeyMapping("exit_keybind f1","Cruzarosbraços","keyboard","f1")
+	RegisterKeyMapping("exit_keybind f2","Aguardar","keyboard","f2")
+	RegisterKeyMapping("exit_keybind f4","Dedodomeio","keyboard","f4")
+	RegisterKeyMapping("exit_keybind f5","Puto","keyboard","f5")
+	RegisterKeyMapping("exit_keybind f10","Mãosnacabeça","keyboard","f10")
+	RegisterKeyMapping("exit_keybind x","Levantarasmãos","keyboard","x")
+	RegisterKeyMapping("exit_keybind z","Ligarmotor","keyboard","z")
+	RegisterKeyMapping("exit_keybind b","Apontarodedo","keyboard","b")
+	RegisterKeyMapping("exit_keybind agachar","Agachar","keyboard","LCONTROL")
+	RegisterKeyMapping("exit_keybind left","Esquerda","keyboard","left")
+	RegisterKeyMapping("exit_keybind right","Direita","keyboard","right")
+	RegisterKeyMapping("exit_keybind up","Cima","keyboard","up")
+	RegisterKeyMapping("exit_keybind down","Baixo","keyboard","down")
+	RegisterKeyMapping("exit_keybind select","Selecionar","keyboard","return")
+	RegisterKeyMapping("exit_keybind cancel","Cancelar","keyboard","back")
+	RegisterKeyMapping("exit_keybind delete","BindDelete","keyboard","delete")
+	RegisterKeyMapping("exit_cancelAnims","Cancelaranimações","keyboard","f6")
+	RegisterKeyMapping("exit_accept","Aceitar","keyboard","y")
+	RegisterKeyMapping("exit_decline","Negar","keyboard","n")
+end)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ABRIR MENUS
@@ -506,4 +536,161 @@ Citizen.CreateThread(function()
             segundos = 0
         end
     end
+end)
+RegisterCommand("exit_keybind",function(source,args)
+	if (IsPauseMenuActive() or GetEntityHealth(ply) <= 101 or menu_celular) then return end
+	if args[1] == "3" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"anim@mp_player_intincarthumbs_upbodhi@ps@","enter",3) then
+			StopAnimTask(ply,"anim@mp_player_intincarthumbs_upbodhi@ps@","enter",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"anim@mp_player_intincarthumbs_upbodhi@ps@","enter"}},false) end
+	elseif args[1] == "4" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"anim@mp_player_intcelebrationmale@salute","salute",3) then
+			StopAnimTask(ply,"anim@mp_player_intcelebrationmale@salute","salute",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"anim@mp_player_intcelebrationmale@salute","salute"}},false) end
+	elseif args[1] == "5" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"rcmnigel1c","hailing_whistle_waive_a",3) then
+			StopAnimTask(ply,"rcmnigel1c","hailing_whistle_waive_a",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"rcmnigel1c","hailing_whistle_waive_a"}},false) end
+	elseif args[1] == "6" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"anim@mp_player_intcelebrationmale@face_palm","face_palm",3) then
+			StopAnimTask(ply,"anim@mp_player_intcelebrationmale@face_palm","face_palm",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"anim@mp_player_intcelebrationmale@face_palm","face_palm"}},false) end
+	elseif args[1] == "7" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"anim@heists@prison_heiststation@cop_reactions","cop_a_idle",3) then
+			StopAnimTask(ply,"anim@heists@prison_heiststation@cop_reactions","cop_a_idle",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"anim@heists@prison_heiststation@cop_reactions","cop_a_idle"}},true) end
+	elseif args[1] == "8" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"amb@world_human_cop_idles@female@base","base",3) then
+			StopAnimTask(ply,"amb@world_human_cop_idles@female@base","base",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"amb@world_human_cop_idles@female@base","base"}},false) end
+	elseif args[1] == "9" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"random@arrests@busted","idle_a",3) then
+			StopAnimTask(ply,"random@arrests@busted","idle_a",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"random@arrests@busted","idle_a"}},false) end
+	elseif args[1] == "f1" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"anim@heists@heist_corona@single_team","single_team_loop_boss",3) then
+			StopAnimTask(ply,"anim@heists@heist_corona@single_team","single_team_loop_boss",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"anim@heists@heist_corona@single_team","single_team_loop_boss"}},true) end
+	elseif args[1] == "f2" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"mini@strip_club@idles@bouncer@base","base",3) then
+			StopAnimTask(ply,"mini@strip_club@idles@bouncer@base","base",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"mini@strip_club@idles@bouncer@base","base"}},true) end
+	elseif args[1] == "f3" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		--if IsEntityPlayingAnim(ply,"anim@heists@prison_heiststation@cop_reactions","cop_a_idle",3) then
+		--	StopAnimTask(ply,"anim@heists@prison_heiststation@cop_reactions","cop_a_idle",2.0)
+		--	tvRP.stopAnimActived()
+		--else tvRP.playAnim(true,{{"anim@heists@prison_heiststation@cop_reactions","cop_a_idle"}},true) end
+	elseif args[1] == "f4" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"anim@mp_player_intupperfinger","idle_a_fp",3) then
+			StopAnimTask(ply,"anim@mp_player_intupperfinger","idle_a_fp",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"anim@mp_player_intupperfinger","idle_a_fp"}},true) end
+	elseif args[1] == "f5" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"misscarsteal4@actor","actor_berating_loop",3) then
+			StopAnimTask(ply,"misscarsteal4@actor","actor_berating_loop",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"misscarsteal4@actor","actor_berating_loop"}},false) end
+	elseif args[1] == "f10" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if IsEntityPlayingAnim(ply,"random@arrests@busted","idle_a",3) then
+			StopAnimTask(ply,"random@arrests@busted","idle_a",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"random@arrests@busted","idle_a"}},false) end
+	elseif args[1] == "x" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SetCurrentPedWeapon(ply,joaat("WEAPON_UNARMED"),true)
+		if IsEntityPlayingAnim(ply,"random@mugging3","handsup_standing_base",3) then
+			StopAnimTask(ply,"random@mugging3","handsup_standing_base",2.0)
+			tvRP.stopAnimActived()
+		else tvRP.playAnim(true,{{"random@mugging3","handsup_standing_base"}},true) end
+	elseif args[1] == "z" and not menu_state.opened and not cancelando then
+		if not IsPedInAnyVehicle(ply) then return end
+		local vehicle = GetVehiclePedIsUsing(ply)
+		if not (GetPedInVehicleSeat(vehicle,-1) == ply) then return end
+		tvRP.stopAnimActived()
+		local running = GetIsVehicleEngineRunning(vehicle)
+		SetVehicleEngineOn(vehicle,not running,true,true)
+		if running then SetVehicleUndriveable(vehicle,true)
+		else SetVehicleUndriveable(vehicle,false) end
+		if GetVehicleClass(vehicle) == 8 then return end
+		tvRP.playAnim(true,{{"veh@std@ds@base","start_engine"}},false)
+	elseif args[1] == "b" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		animActived = false
+		tvRP.CarregarAnim("anim@mp_point")
+		if not apontar then
+			SetPedCurrentWeaponVisible(ply,0,1,1,1)
+			SetPedConfigFlag(ply,36,1)
+			Citizen.InvokeNative(0x2D537BA194896636,ply,"task_mp_pointing",0.5,0,"anim@mp_point",24)
+			apontar = true
+		else
+			Citizen.InvokeNative(0xD01015C7316AE176,ply,"Stop")
+			if not IsPedInjured(ply) then ClearPedSecondaryTask(ply) end
+			if not IsPedInAnyVehicle(ply) then SetPedCurrentWeaponVisible(ply,1,1,1,1) end
+			SetPedConfigFlag(ply,36,0)
+			ClearPedSecondaryTask(ply)
+			apontar = false
+		end
+	elseif args[1] == "agachar" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		if agachar then
+			ResetPedStrafeClipset(ply)
+			ResetPedMovementClipset(ply,0.25)
+			agachar = false
+		else
+			RequestAnimSet("move_ped_crouched")
+			RequestAnimSet("move_ped_crouched_strafing")
+			SetPedStrafeClipset(ply,"move_ped_crouched_strafing")
+			SetPedMovementClipset(ply,"move_ped_crouched",0.25)
+			agachar = true
+		end
+	elseif args[1] == "left" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		tvRP.playAnim(true,{{"anim@mp_player_intincarthumbs_uplow@ds@","enter"}},false)
+	elseif args[1] == "right" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		tvRP.playAnim(true,{{"anim@mp_player_intupperface_palm","idle_a"}},false)
+	elseif args[1] == "up" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		tvRP.playAnim(true,{{"mp_player_int_uppersalute","mp_player_int_salute"}},false)
+	elseif args[1] == "down" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		tvRP.playAnim(true,{{"rcmnigel1c","hailing_whistle_waive_a"}},false)
+	elseif args[1] == "left" and menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SendNUIMessage({ act = "event", event = "LEFT" })
+		tvRP.playSound("NAV_LEFT_RIGHT","HUD_FRONTEND_DEFAULT_SOUNDSET")
+	elseif args[1] == "right" and menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SendNUIMessage({ act = "event", event = "RIGHT" })
+		tvRP.playSound("NAV_LEFT_RIGHT","HUD_FRONTEND_DEFAULT_SOUNDSET")
+	elseif args[1] == "up" and menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SendNUIMessage({ act = "event", event = "UP" })
+		tvRP.playSound("NAV_UP_DOWN","HUD_FRONTEND_DEFAULT_SOUNDSET")
+	elseif args[1] == "down" and menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SendNUIMessage({ act = "event", event = "DOWN" })
+		tvRP.playSound("NAV_UP_DOWN","HUD_FRONTEND_DEFAULT_SOUNDSET")
+	elseif args[1] == "select" and menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SendNUIMessage({ act = "event", event = "SELECT" })
+		tvRP.playSound("SELECT","HUD_FRONTEND_DEFAULT_SOUNDSET")
+	elseif args[1] == "cancel" and menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		SendNUIMessage({ act = "event", event = "CANCEL" })
+	elseif args[1] == "delete" and not menu_state.opened and not IsPedInAnyVehicle(ply) and not cancelando then
+		tvRP.playAnim(true,{{"anim@mp_player_intincarthumbs_upbodhi@ps@","enter"}},false)
+		tvRP.stopAnimActived()
+	end
+end)
+
+RegisterCommand("exit_cancelAnims", function()
+	if (GetEntityHealth(ply) <= 101 or menu_celular or cancelando or menu_state.opened or IsEntityPlayingAnim(ply,"reaction@intimidation@1h","intro",3) or IsEntityPlayingAnim(ply,"reaction@intimidation@1h","outro",3)) then return end
+	tvRP.DeletarObjeto()
+	tvRP.stopAnimActived()
+	ClearPedTasks(ply)
+end)
+
+RegisterCommand("exit_accept", function()
+    SendNUIMessage({ act = "event", event = "Y" })
+end)
+
+RegisterCommand("exit_decline", function()
+    SendNUIMessage({ act = "event", event = "N" })
 end)

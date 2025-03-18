@@ -9,7 +9,7 @@ Config.licenca = '727674669280395286-cc_mdt-txgfi' -- Licença do script; Não l
 --[ CONFIGURAÇÃO ]----------------------------------------------------------------------------------------------------------------
 --[ LOGO ]--------------------------------------------------------------------------------------------------------------------
 
-Config.logo = 'http://89.213.5.115/verao_images/niteroi/logop.png'
+Config.logo = 'http://191.96.81.87/logo/logo.png'
 
 --[ COMANDO ]--------------------------------------------------------------------------------------------------------------------
 
@@ -79,7 +79,7 @@ Config.penaMaxima = 500 -- Pena maxima permitida;
 
 --[ URL IMAGEM CARROS ]------------------------------------------------------------------------------------------------------------------
 
-Config.urlImagemCarros = 'http://89.213.5.115/verao_images/exit_inventory/' -- URL em que seus carros ficam hospedados;
+Config.urlImagemCarros = 'http://191.96.81.87/carros/' -- URL em que seus carros ficam hospedados;
 
 --[ CODIGO PENAL ]--------------------------------------------------------------------------------------------------------------
 

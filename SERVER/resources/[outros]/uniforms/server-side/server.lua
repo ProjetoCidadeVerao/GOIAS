@@ -313,15 +313,15 @@ AddEventHandler("sysClothes:applyPreset",function(perm)
 
         elseif perm == "sairPtr" then
             if vRP.hasPermission(user_id, "perm.policia") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1029551169711906897/nhM3PCiwEIWk6lWPb1Br7KKWU-PGN0R0TzQNWtRXNBRJstrGuxUUh1Ep7TCdoAhSWJqy", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             elseif vRP.hasPermission(user_id, "perm.Sportrace") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1029549339019849758/PgPq-hyMwHgOH5UZXUvtQwyquNmzNXCezCXnHHUr-jPja4FbYXok2hdZF1-GCxIh3kVg", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             elseif vRP.hasPermission(user_id, "perm.sportrace") then
                 --vRP.sendLog("https://discordapp.com/api/webhooks/1029551169711906897/nhM3PCiwEIWk6lWPb1Br7KKWU-PGN0R0TzQNWtRXNBRJstrGuxUUh1Ep7TCdoAhSWJqy", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             elseif vRP.hasPermission(user_id, "perm.autosport") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1030754926428692530/yekozBbary8etAU1gTW6-1E1b_H094Di_YzbOTBlQYGQamcIGccdOlR-noALJ17F9acS", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             elseif vRP.hasPermission(user_id, "perm.hospital") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1029549859742695475/UFLxSX9WwJ98CGiATSMgpsaO1z5QWnOvQMoJdihgJScBSeSHNoso_D2v3Tm33SXlljl0", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             end
 
             limparItems(user_id)
@@ -368,15 +368,15 @@ AddEventHandler("sysClothes:applyPreset",function(perm)
             
 
             if vRP.hasPermission(user_id, "perm.policia") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1029551169711906897/nhM3PCiwEIWk6lWPb1Br7KKWU-PGN0R0TzQNWtRXNBRJstrGuxUUh1Ep7TCdoAhSWJqy", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
             elseif vRP.hasPermission(user_id, "perm.Sportrace") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1029549339019849758/PgPq-hyMwHgOH5UZXUvtQwyquNmzNXCezCXnHHUr-jPja4FbYXok2hdZF1-GCxIh3kVg", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
             elseif vRP.hasPermission(user_id, "perm.sportrace") then
-                --vRP.sendLog("https://discordapp.com/api/webhooks/1029551169711906897/nhM3PCiwEIWk6lWPb1Br7KKWU-PGN0R0TzQNWtRXNBRJstrGuxUUh1Ep7TCdoAhSWJqy", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+                --vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
             elseif vRP.hasPermission(user_id, "perm.autosport") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1030754926428692530/yekozBbary8etAU1gTW6-1E1b_H094Di_YzbOTBlQYGQamcIGccdOlR-noALJ17F9acS", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
             elseif vRP.hasPermission(user_id, "perm.hospital") then
-                vRP.sendLog("https://discordapp.com/api/webhooks/1029549859742695475/UFLxSX9WwJ98CGiATSMgpsaO1z5QWnOvQMoJdihgJScBSeSHNoso_D2v3Tm33SXlljl0", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
             end 
         end
     end

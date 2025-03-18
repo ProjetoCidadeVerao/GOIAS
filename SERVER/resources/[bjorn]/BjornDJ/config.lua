@@ -19,8 +19,8 @@ SystemConfig = {
 	["PermPanel"] = "perm.som1",					---- Define a permissão caso acima esteja true	
 	["InitialSoundValue"] = 1,						---- Define o som inicial de cada mesa entre 0 e 1
 	["DistanceSound"] = 80, 							---- Distancia do som em metros
-	["DistanceFireWork"] = 0,							---- Distancia que os fogos carregam em metros
-	["Log"] = "https://discord.com/api/webhooks/1256973952417534013/JoSzXYtFJxGe4DzxzsPuCR2EQ_76tYOR_haXyrChMtvL9hciRQ02fByPE7LCDvEq0xIw",										---- Link de sua log (Se quiser configurar a log basta descer mais o config que tem a função)
+	["DistanceFireWork"] = 10,							---- Distancia que os fogos carregam em metros
+	["Log"] = "https://ptb.discord.com/api/webhooks/1351185311358779554/Jqjeue58hdclRxV_tFKuU8hUww8ZRYeC40b3AujP8Yy0uPUVFYbsHF5IcP6ALGW3WcpP",										---- Link de sua log (Se quiser configurar a log basta descer mais o config que tem a função)
 	["LogOnlyCreate"] = true,							---- Se tiver true só irá enviar log quando a mesa for criada/removida.
 }
 
@@ -37,7 +37,7 @@ Lights = {
 CreateTableAnim = {"" , ""}		---- Desativado por enquanto
 
 DjAnims = {
-	["CancelAnimOnExit"] = false,	---- Define se irá cancelar a animação do DJ ao sair do menu.
+	["CancelAnimOnExit"] = true,	---- Define se irá cancelar a animação do DJ ao sair do menu.
 	
 	["InitialDance"] = {"anim@amb@nightclub@djs@solomun@","sol_idle_ctr_mid_a_sol"},	---- Essa será a dança inicial ao entrar na mesa
 	

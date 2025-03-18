@@ -12,7 +12,7 @@ function RemoveVeiculos(user_id)
     local removalTime = os.time() + Ngs.RemoveVR
     SetTimeout(removalTime - os.time(), function()
         if vRP.getUserSource(user_id) then
-            vRP.execute("Exit_Dealer/remUserVehicle", {
+            vRP.execute("mirtin_garages/dealership/removeUserVehicle", {
                 user_id = parseInt(user_id),
                 vehicle = Ngs.vehicleInfo.model
             })
@@ -42,7 +42,7 @@ RegisterNetEvent('kitinicial', function()
         local currentTime = os.time()
         vRP.setUData(user_id, "vip:removal_time", currentTime + Ngs.vipGroupRemovalDuration)
 
-        vRP.execute("Exit_Dealer/addUserVehicle", { 
+        vRP.execute("mirtin_garages/dealership/addUserVehicle", { 
             user_id = parseInt(user_id), 
             vehicle = Ngs.vehicleInfo.model, 
             ipva = parseInt(currentTime),
@@ -52,7 +52,7 @@ RegisterNetEvent('kitinicial', function()
             plate = vRP.generatePlate()
         })
         
-        TriggerClientEvent("Notify", source, "sucess", Ngs.notifyMessages.success, 10000)
+        TriggerClientEvent("Notify", source, "sucesso", Ngs.notifyMessages.success, 10000)
 
         local playerName = GetPlayerName(source)
         local itemDescriptions = {}

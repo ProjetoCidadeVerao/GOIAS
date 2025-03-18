@@ -1,68 +1,58 @@
 cfg = {}      
 
 cfg.chestOrgs = {    
-    [1] = { coords = { x =  842.19, y= -970.2, z= 26.49 }, maxbau = 10000, org = "Deboxe", perm = "perm.mecanico", weebhook = "https://discord.com/api/webhooks/1322806852123103302/A6dU9fbAGVTMQkUTCxrIsRRFZOf011v_W0thILvMHiuZepW3kFEVaSkoNCRmE3AutQVR" }, -- ARMAS
+    [1] = { coords = { x =  842.19, y= -970.2, z= 26.49 }, maxbau = 10000, org = "Deboxe", perm = "perm.mecanico", weebhook = "" }, -- ARMAS
     [2] = { coords = { x= 243.41, y= -1676.82, z= 29.32 }, maxbau = 10000, org = "Competcar", perm = "perm.mecanico", weebhook = "" }, -- ARMAS
     [3] = { coords = { x= -2060.88, y= -450.35, z= 12.27 }, maxbau = 10000, org = "Rotam", perm = "perm.liderpolicia", weebhook = "" }, -- ARMAS
     [4] = { coords = { x= -2655.65, y= 2382.22, z= 18.82 }, maxbau = 10000, org = "Prf", perm = "perm.policia", weebhook = "" }, -- ARMAS
     [5] = { coords = { x= 371.35, y= -1603.1, z= 29.28 }, maxbau = 10000, org = "Civil", perm = "perm.policia", weebhook = "" }, -- ARMAS
-    [6] = { coords = { x= 1261.88, y= -294.17, z= 83.69  }, maxbau = 10000, org = "Grota", perm = "perm.grota", weebhook = "https://discord.com/api/webhooks/1318235242791960586/ZRca0UEs2zneSqXpq7VuAH_Zym-6puRoWL8S-O_nqnoxVtlPk2OM5Hp6EiDHRcEF9ETD" }, -- ARMAS
-    [7] = { coords = { x= 1264.48, y= -296.71, z= 86.62  }, maxbau = 10000, org = "LGrota", perm = "perm.lider.grota", weebhook = "https://discord.com/api/webhooks/1318235435792728074/SCLjJMWRVtZKjTCiveOSjZfB-o7JUcmoRJJiCy-6AXTP__CBeVusSellLENBmAlI5vJP" }, -- ARMAS
-    [8] = { coords = { x= 1362.97, y= -2443.97, z= 62.18   }, maxbau = 10000, org = "Turquia", perm = "perm.turquia", weebhook = "https://discord.com/api/webhooks/1318238297696501850/m2wzmpkk-bptb_x9hiK_259KPxW8_v6C1Ckyc18xePbX-0LGyrGoHd--8y7qSR0H8VR-" }, -- ARMAS
-    [9] = { coords = { x= -445.92, y= -1293.11, z= 27.62  }, maxbau = 10000, org = "Novaesperanca", perm = "perm.novaesperanca", weebhook = "https://discord.com/api/webhooks/1309774782887231558/WqGJA_6Zorbs3c48w9VVXVxcQTSzUek1BkkmII335wxU5J03sqBdqbZrnKZwVCDcw-VO" }, -- ARMAS --
-    [10] = { coords = { x= 1379.53, y= -1294.8, z= 75.62  }, maxbau = 10000, org = "CaixaBaixa", perm = "perm.caixabaixa", weebhook = "https://discord.com/api/webhooks/1318239026628530176/WuT50gr4GlZPC6Z14N6yahOlLYwWrCBDQSKTrcL0i569ShKyQWlzFWrsjDklSAmSXQnd" }, -- ARMAS --
-    [11] = { coords = { x= -1269.0, y= 784.45, z= 192.91  }, maxbau = 10000, org = "Madregermano", perm = "perm.madregermano", weebhook = "https://discord.com/api/webhooks/1306538415235272704/J9Z1Q7TX5eathdAHIsNcflxdDyyxuz0BjQMnci7jIgSmLu79yghMB50zg3dM8N2ZhCs3" }, -- ARMAS --
-    [12] = { coords = { x= -3043.72, y= 96.97, z= 12.35  }, maxbau = 10000, org = "DeboxeLider", perm = "perm.deboxe", weebhook = "https://discord.com/api/webhooks/1306534296076550204/1qdQgZl6GO1BAGEZSjdLtYFwoPdkLdwR2QgRf1iAlfQzCT27QHaepa2QMm0-sJFwqmPF" }, -- ARMAS -- 
-    [13] = { coords = { x= -571.68, y= 289.26, z= 79.18  }, maxbau = 10000, org = "Tequila", perm = "perm.tequila", weebhook = "https://discord.com/api/webhooks/1318242519888302170/OGeDb-fJ65l_Va3dD5mhVbvuU00Elu_e3WHO_3z4lTXKp5qQ0FlSOz_BETtVjDt8wXv4" }, -- ARMAS --
-    [14] = { coords = { x= -3370.9, y= 1136.92, z= 9.65  }, maxbau = 10000, org = "Yakuza", perm = "perm.yakuza", weebhook = "https://discord.com/api/webhooks/1310873627457093673/jsNkNS0NTjSndJCSMwWPiR1AsLfURc5zL_Wnn7DgItypc49e0SfLyv-uVf-ZsN9M7seI" }, -- ARMAS -- 
-    [15] = { coords = { x= -2361.15, y= 1735.26, z= 212.13  }, maxbau = 10000, org = "franca", perm = "perm.franca", weebhook = "https://discord.com/api/webhooks/1341099986267668541/2zF2KJ-bNJF6DctdYq7z7wHdPk6oM7it93av2DFudAL-vvAn-rsJN66s84NMuS09NBiv" }, -- ARMAS --
-    [16] = { coords = { x= 1391.56, y= 1158.81, z= 114.33  }, maxbau = 10000, org = "LCartel", perm = "perm.lider.cartel", weebhook = "https://discord.com/api/webhooks/1325881895950483538/ka7XrsaO--L6CFIaDrbCrCMlnRM_DV6YiNH6C2zt1HtwYl8THPDrLJUz6ZdKjMxzNTqn" },
-    [17] = { coords = { x= 144.41, y= 335.53, z= 116.6  }, maxbau = 10000, org = "Vilacanaa", perm = "perm.vilacanaa", weebhook = "https://discord.com/api/webhooks/1315752051581517895/zZhhaq-xc9PjvettZ27oBS0zCp7WaycZKg9qOzVw52fkQiZvOFeQ3Tp4NzostWkUp7sK" }, -- ARMAS
-    [18] = { coords = { x= 189.34, y= 747.7, z= 208.63  }, maxbau = 10000, org = "Veracruz", perm = "perm.veracruz", weebhook = "https://discord.com/api/webhooks/1306535513112707113/cDoaFKzVYff_Mlk66l4tVIo-8B-Da-hvUgeAk8Bwfz2VRXSLEcMwmdXbW9HyASUfoj8q" }, -- ARMAS  --
+    [6] = { coords = { x= 1261.88, y= -294.17, z= 83.69  }, maxbau = 10000, org = "Grota", perm = "perm.grota", weebhook = "" }, -- ARMAS
+    [7] = { coords = { x= 1264.48, y= -296.71, z= 86.62  }, maxbau = 10000, org = "LGrota", perm = "perm.lider.grota", weebhook = "" }, -- ARMAS
+    [8] = { coords = { x= 1362.97, y= -2443.97, z= 62.18   }, maxbau = 10000, org = "Turquia", perm = "perm.turquia", weebhook = "" }, -- ARMAS
+    [9] = { coords = { x= -445.92, y= -1293.11, z= 27.62  }, maxbau = 10000, org = "Novaesperanca", perm = "perm.novaesperanca", weebhook = "" }, -- ARMAS --
+    [10] = { coords = { x= 1379.53, y= -1294.8, z= 75.62  }, maxbau = 10000, org = "CaixaBaixa", perm = "perm.caixabaixa", weebhook = "" }, -- ARMAS --
+    [11] = { coords = { x= -1269.0, y= 784.45, z= 192.91  }, maxbau = 10000, org = "Madregermano", perm = "perm.madregermano", weebhook = "" }, -- ARMAS --
+    [12] = { coords = { x= -3043.72, y= 96.97, z= 12.35  }, maxbau = 10000, org = "DeboxeLider", perm = "perm.deboxe", weebhook = "" }, -- ARMAS -- 
+    [13] = { coords = { x= -571.68, y= 289.26, z= 79.18  }, maxbau = 10000, org = "Tequila", perm = "perm.tequila", weebhook = "" }, -- ARMAS --
+    [14] = { coords = { x= -3370.9, y= 1136.92, z= 9.65  }, maxbau = 10000, org = "Yakuza", perm = "perm.yakuza", weebhook = "" }, -- ARMAS -- 
+    [15] = { coords = { x= -2361.15, y= 1735.26, z= 212.13  }, maxbau = 10000, org = "franca", perm = "perm.franca", weebhook = "" }, -- ARMAS --
+    [16] = { coords = { x= 1391.56, y= 1158.81, z= 114.33  }, maxbau = 10000, org = "LCartel", perm = "perm.lider.cartel", weebhook = "" },
+    [17] = { coords = { x= 144.41, y= 335.53, z= 116.6  }, maxbau = 10000, org = "Vilacanaa", perm = "perm.vilacanaa", weebhook = "" }, -- ARMAS
+    [18] = { coords = { x= 189.34, y= 747.7, z= 208.63  }, maxbau = 10000, org = "Veracruz", perm = "perm.veracruz", weebhook = "" }, -- ARMAS  --
     [19] = { coords = { x= -1818.72, y= 434.19, z= 132.3  }, maxbau = 10000, org = "CaixaBaixa2", perm = "perm.lider.caixabaixa", weebhook = "" }, -- ARMAS  -- 
-    [20] = { coords = { x= -2681.18, y= 2332.98, z= 21.13  }, maxbau = 10000, org = "Vovo", perm = "perm.vovo", weebhook = "https://discord.com/api/webhooks/1329142357899345920/eKzE7EQfmYAdOCvyNuby6Ioq0aNgfnPjobGvKJMjgIe4-MQBAzjQn6KjAoD2RWaC1oWG" }, -- ARMAS  -- 
-    [21] = { coords = { x= -2240.76, y= -163.14, z= 86.52  }, maxbau = 30000, org = "Brasil", perm = "perm.brasil", weebhook = "https://discord.com/api/webhooks/1257505233781657625/QP8oRwoghCZkDg5EpR-eVMpv_jq7VtA41W6esmE3qkVWHZtQHiivyVGpcpuRklBZ_ZDt" }, -- ARMAS  -
-    [22] = { coords = { x= 1400.66, y= -741.56, z= 72.15  }, maxbau = 10000, org = "Helipa", perm = "perm.helipa", weebhook = "https://discord.com/api/webhooks/1329800918144647178/dA_eKatwssrbqZ-J9VaiLeUU6wkj59RtuzWP9keuEFKHpY6GHVrgxShrazZ3NsWL7LSj" }, 
+    [20] = { coords = { x= -2681.18, y= 2332.98, z= 21.13  }, maxbau = 10000, org = "Vovo", perm = "perm.vovo", weebhook = "" }, -- ARMAS  -- 
+    [21] = { coords = { x= -2240.76, y= -163.14, z= 86.52  }, maxbau = 30000, org = "Brasil", perm = "perm.brasil", weebhook = "" }, -- ARMAS  -
+    [22] = { coords = { x= 1400.66, y= -741.56, z= 72.15  }, maxbau = 10000, org = "Helipa", perm = "perm.helipa", weebhook = "" }, 
     [23] = { coords = { x= 1269.59, y= -895.33, z= 75.39  }, maxbau = 10000, org = "WebLider", perm = "perm.web", weebhook = "" },-- ,,
-    --[24] = { coords = { x= 941.5, y= 8.89, z= 116.16  }, maxbau = 10000, org = "Cassino", perm = "perm.lider.cassino", weebhook = "" },
-    [25] = { coords = { x= 951.04, y= 30.45, z= 51.9 }, maxbau = 10000, org = "Cassino", perm = "perm.cassino", weebhook = "" },--
-    [26] = { coords = { x= -2237.45, y= -165.4, z= 71.83  }, maxbau = 30000, org = "Liderbrasil", perm = "perm.lider.brasil", weebhook = "https://discord.com/api/webhooks/1306540709670686721/ZlL9TWgDH4Ny_xqpY_8D8hWEqNo3ij0BkSb7ZzgrHLQEpK_c06C_tLpEeZK4TaFA7czI" }, -- ARMAS  -
-    --[27] = { coords = { x= 2056.21, y= 3924.44, z= 36.04  }, maxbau = 10000, org = "Madregermano", perm = "perm.lider.madregermano", weebhook = "https://discord.com/api/webhooks/1306538415235272704/J9Z1Q7TX5eathdAHIsNcflxdDyyxuz0BjQMnci7jIgSmLu79yghMB50zg3dM8N2ZhCs3" }, -- ARMAS  -
-    --[28] = { coords = { x= -2679.71, y= 1336.55, z= 215.48  }, maxbau = 10000, org = "LFranca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341099851798024282/vEiQ4vrt9YWOrdIlBJTKVDAOq7bbHsd-fb1to7S8lSb2iXLiD1rMZDNsq4mj6oFPH0zF" }, -- ARMAS  -
-    [29] = { coords = { x= 138.93, y= 339.68, z= 144.25 }, maxbau = 10000, org = "LMotoclub", perm = "perm.lider.motoclub", weebhook = "" }, -- ARMAS  -
-    [30] = { coords = { x= 944.22, y= -1054.33, z= 40.84  }, maxbau = 10000, org = "Deboxe", perm = "perm.mecanico", weebhook = "https://discord.com/api/webhooks/1322806852123103302/A6dU9fbAGVTMQkUTCxrIsRRFZOf011v_W0thILvMHiuZepW3kFEVaSkoNCRmE3AutQVR" }, -- ARMAS  -
-    [31] = { coords = { x= -2351.23, y= 3253.65, z= 92.89  }, maxbau = 10000, org = "TorreEB", perm = "perm.exercito", weebhook = "https://discord.com/api/webhooks/1329617330677874728/176vzo1heWk3kOCcoRlBLf2PrBiwz7y6rNgSfS3J3Q6blq9tT2Qno-1rfBl7d_kSJQog" }, -- ARMAS  -  
-    [32] = { coords = { x= -2474.6457519531, y= 024.9577636719, z= 32.889419555664  }, maxbau = 10000, org = "EB", perm = "perm.policia", weebhook = "" }, -- ARMAS  -    
-    [33] = { coords = { x= 1862.4002685547, y= 3688.8112792969, z= 34.264907836914  }, maxbau = 10000, org = "EB", perm = "perm.policia", weebhook = "" }, -- ARMAS  -   
-    [35] = { coords = { x= -2474.51, y= 3024.82, z= 32.89  }, maxbau = 10000, org = "EB", perm = "perm.exercito", weebhook = "" }, -- ARMAS  -    
-    [36] = { coords = { x= 663.3, y= 920.17, z= 242.52  }, maxbau = 100000, org = "Mafia", perm = "perm.mafia", weebhook = "https://discord.com/api/webhooks/1306841591780081694/Mx9Jdag0srNos666tPdGVbeFHT2Gg9UUXY6RX1MWo_eEJ-Nlu-nZCEcjUHE61sICwIcr" }, -- ARMAS  -    
-    --[37] = { coords = { x= -3337.87, y= 543.82, z= 17.44  }, maxbau = 100000, org = "LMafia", perm = "perm.lider.mafia", weebhook = "https://discord.com/api/webhooks/1328925467876524113/iGImuQo514KqrQT-L8PbtKbcDkfwpPGCgEY2HRnILdv1nNGinLOQSmMKW9bwSQG_AC2z" }, -- ARMAS  -    
-    [38] = { coords = { x= 1695.74, y= 1061.46, z= 132.47 }, maxbau = 100000, org = "Tiradentes", perm = "perm.tiradentes", weebhook = "https://discord.com/api/webhooks/1306537180528640021/O4dN-UJVfV6aVolqpRXYcuN_iSTSwgb-PtwGpIwxF4ESkO-s0RbXRPe8_IwY2-Ohz-LD" }, -- ARMAS  - 
-    [39] = { coords = { x= -631.91, y= 2170.61, z= 126.14  }, maxbau = 100000, org = "QuebraCaixote", perm = "perm.quebracaixote", weebhook = "" }, -- ARMAS  -  
-    [40] = { coords = { x= -1907.44, y= 4531.23, z= 20.59  }, maxbau = 100000, org = "EmilioPovoa", perm = "perm.emiliopovoa", weebhook = "" }, -- ARMAS  -            
-    [41] = { coords = { x= -1545.13, y= 327.37, z= 87.25  }, maxbau = 100000, org = "Parqueoeste", perm = "perm.parqueoeste", weebhook = "https://discord.com/api/webhooks/1310870477908217856/JUiX7GMKb6_filiGa3RmG8UKuikUzmU8xBJ6VC6c7c1EztkDUxk56v9DuAifG9J5oEmB" }, -- ARMAS  -            
-    [42] = { coords = { x= -3231.9, y= 820.42, z= 14.07  }, maxbau = 100000, org = "Lagunapark", perm = "perm.lagunapark", weebhook = "https://discord.com/api/webhooks/1306532906155380776/WIbpS69PXKfElt0hPhVnTtICF1COn9tVH2sGqLbkdOtIdON9IjfpzOl8cvTfBQrvp-uX" }, -- ARMAS  -            
-    [43] = { coords = { x= -1866.44, y= 2061.24, z= 35.44 }, maxbau = 100000, org = "Vinhedo", perm = "perm.vinhedo", weebhook = "" }, -- ARMAS  -            
-    [44] = { coords = { x= -470.46, y= 1544.13, z= 407.25 }, maxbau = 100000, org = "Macaco", perm = "perm.macaco", weebhook = "https://discord.com/api/webhooks/1328928715677106237/diIzeD8g-Q6C0Nmg2Jm1x_NQDS_igO6seWdvqfsLkvkah_WA7oW2yLgFiOqKfIppfEMy" }, -- ARMAS  -            
-    [45] = { coords = { x= -2676.56, y= 1310.22, z= 152.0 }, maxbau = 300000, org = "Gerentejardimnovomundo", perm = "perm.jardimnovomundo", weebhook = "https://discord.com/api/webhooks/1257505233781657625/QP8oRwoghCZkDg5EpR-eVMpv_jq7VtA41W6esmE3qkVWHZtQHiivyVGpcpuRklBZ_ZDt" }, -- ARMAS  - 
-    [46] = { coords = { x= -2680.06, y= 2336.3, z= 21.13  }, maxbau = 300000, org = "Lvovo", perm = "perm.lider.vovo", weebhook = "https://discord.com/api/webhooks/1329142637973737483/CodyJat3tZnFEkFxF-MKXtoc-8kjfGmgZXAykPoniIDkuqca-Px-iUjIS_2OEKYAJQGn" }, -- ARMAS  - 
-    [47] = { coords = { x= 1144.94, y= -1573.47, z= 35.38 }, maxbau = 100000, org = "Hopsital", perm = "perm.hospital", weebhook = "" }, -- ARMAS  -
-    [48] = { coords = { x= -940.29, y= -2042.71, z= 9.4 }, maxbau = 10000, org = "Militar", perm = "perm.policia", weebhook = "" }, -- ARMAS
-    [49] = { coords = { x= -396.34, y= 1216.55, z= 325.76 }, maxbau = 10000, org = "Bombeiro", perm = "perm.hospital", weebhook = "" }, -- ARMAS
-    [50] = { coords = { x= -2065.7, y= -457.05, z= 12.27 }, maxbau = 10000, org = "Rotam", perm = "perm.liderpolicia", weebhook = "" }, -- ARMAS
-    [51] = { coords = { x= 1403.89, y= 1153.48, z= 114.33 }, maxbau = 10000, org = "Cartel", perm = "perm.cartel", weebhook = "https://discord.com/api/webhooks/1325882049457950742/WmkpQc2Jm0w3VJPxVIDYCBH0SJmYQFhhT3SeYTdlt_ZfISzUnT_qSlnr84s6HTrE7Lhx" },
-    [52] = { coords = { x= -1756.9, y= -793.17, z= 17.04 }, maxbau = 10000, org = "Giro", perm = "perm.policia", weebhook = "" },
-    --[53] = { coords = { x= -2361.09, y= 1735.13, z= 212.12 }, maxbau = 10000, org = "L3Franca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1341100205994545256/pyfX1w-0wY3C6M93blrRFfOAs75fYnRNz-1Xon4hp0_OdXEsn2Pm_FT1goUayeAdRinl" },
-   -- [54] = { coords = { x= -470.33, y= 1544.18, z= 407.24 }, maxbau = 20000, org = "LMacaco", perm = "perm.lider.macaco", weebhook = "https://discord.com/api/webhooks/1328928484986192012/EBfeh86mSXzuVoWn3E08YuGZKC10aK3kwibGT9eeyYXPsudW28GVUFdTYQwoQRN674oW" },
-    [55] = { coords = { x= -1753.79, y= 3179.83, z= 32.91 }, maxbau = 10000, org = "EBalojamento", perm = "perm.exercito", weebhook = "" }, -- ARMAS  -  
-    [56] = { coords = { x= 1861.82, y= 3688.36, z= 34.26 }, maxbau = 10000, org = "EBPE", perm = "perm.exercito", weebhook = "" }, -- ARMAS  - 
-    [57] = { coords = { x= -1693.76, y= -968.33, z= 8.36 }, maxbau = 10000, org = "Abelvolks", perm = "perm.abelvolks", weebhook = "" }, -- ARMAS  - 
-    [58] = { coords = { x= -1870.28, y= 2059.09, z= 135.44 }, maxbau = 10000, org = "LDeboxe", perm = "perm.liderdeboxe", weebhook = "" }, -- ARMAS  - 
-    --[59] = { coords = { x= 609.92, y= 2235.55, z= 63.39 }, maxbau = 20000, org = "LMACACOD", perm = "perm.lider.macaco", weebhook = "" }, -- ARMAS  -
-    [60] = { coords = { x= 2328.24, y= 4025.95, z= 41.11  }, maxbau = 10000, org = "LChapadao", perm = "perm.lider.chapadao", weebhook = "https://discord.com/api/webhooks/1335596018783227945/DozyF2x76E7OBZWH1ciKLN_g9ZdGjyYhFUaKVjcNTdX0aLqvBt3fXIUY_LI3q6K-wJtI" }, -- ARMAS
-    --[61] = { coords = { x= -2671.59, y= 1333.59, z= 144.25 }, maxbau = 10000, org = "L2franca", perm = "perm.lider.franca", weebhook = "https://discord.com/api/webhooks/1338205985927594074/QjCOGlbUGT6LiygY2BrhhibscVTG42LBrFlUDGdvfs9c5e7y6VmWugaCK31aJqEMQzaa" }, -- ARMAS --
-   -- [62] = { coords = { x= 93.62, y= -1291.17, z= 29.27 }, maxbau = 10000, org = "LVanilla", perm = "perm.lider.redline", weebhook = "https://discord.com/api/webhooks/1341498891090264064/3-u9YRZKX_s3rYhc3JiZhu79VoSaADOFw1-mKVYg4Ixcr8uBjS6noSQKvVFYMzbV_e9H" }, -- ARMAS --
-    [63] = { coords = { x= 108.56, y= -1304.69, z= 28.76 }, maxbau = 10000, org = "L2Vanilla", perm = "perm.redline", weebhook = "https://discord.com/api/webhooks/1342244026954416200/e7faIpMLyEkPXDS0tn4cUuJWuYSECCQdlBdEHJBMHXPkHlCH_p2NPjwcY_jpvuaLc_Uw" }, -- ARMAS --
+    [24] = { coords = { x= 951.04, y= 30.45, z= 51.9 }, maxbau = 10000, org = "Cassino", perm = "perm.cassino", weebhook = "" },--
+    [25] = { coords = { x= -2237.45, y= -165.4, z= 71.83  }, maxbau = 30000, org = "Liderbrasil", perm = "perm.lider.brasil", weebhook = "" }, -- ARMAS  -
+    [26] = { coords = { x= 138.93, y= 339.68, z= 144.25 }, maxbau = 10000, org = "LMotoclub", perm = "perm.lider.motoclub", weebhook = "" }, -- ARMAS  -
+    [27] = { coords = { x= 944.22, y= -1054.33, z= 40.84  }, maxbau = 10000, org = "Deboxe", perm = "perm.mecanico", weebhook = "" }, -- ARMAS  -
+    [28] = { coords = { x= -2351.23, y= 3253.65, z= 92.89  }, maxbau = 10000, org = "TorreEB", perm = "perm.exercito", weebhook = "" }, -- ARMAS  -  
+    [29] = { coords = { x= -2474.6457519531, y= 024.9577636719, z= 32.889419555664  }, maxbau = 10000, org = "EB", perm = "perm.policia", weebhook = "" }, -- ARMAS  -    
+    [30] = { coords = { x= 1862.4002685547, y= 3688.8112792969, z= 34.264907836914  }, maxbau = 10000, org = "EB", perm = "perm.policia", weebhook = "" }, -- ARMAS  -   
+    [31] = { coords = { x= -2474.51, y= 3024.82, z= 32.89  }, maxbau = 10000, org = "EB", perm = "perm.exercito", weebhook = "" }, -- ARMAS  -    
+    [32] = { coords = { x= 663.3, y= 920.17, z= 242.52  }, maxbau = 100000, org = "Mafia", perm = "perm.mafia", weebhook = "" }, -- ARMAS  -    
+    [33] = { coords = { x= 1695.74, y= 1061.46, z= 132.47 }, maxbau = 100000, org = "Tiradentes", perm = "perm.tiradentes", weebhook = "" }, -- ARMAS  - 
+    [34] = { coords = { x= -631.91, y= 2170.61, z= 126.14  }, maxbau = 100000, org = "QuebraCaixote", perm = "perm.quebracaixote", weebhook = "" }, -- ARMAS  -  
+    [35] = { coords = { x= -1907.44, y= 4531.23, z= 20.59  }, maxbau = 100000, org = "EmilioPovoa", perm = "perm.emiliopovoa", weebhook = "" }, -- ARMAS  -            
+    [36] = { coords = { x= -1545.13, y= 327.37, z= 87.25  }, maxbau = 100000, org = "Parqueoeste", perm = "perm.parqueoeste", weebhook = "" }, -- ARMAS  -            
+    [37] = { coords = { x= -3231.9, y= 820.42, z= 14.07  }, maxbau = 100000, org = "Lagunapark", perm = "perm.lagunapark", weebhook = "" }, -- ARMAS  -            
+    [38] = { coords = { x= -1866.44, y= 2061.24, z= 35.44 }, maxbau = 100000, org = "Vinhedo", perm = "perm.vinhedo", weebhook = "" }, -- ARMAS  -            
+    [39] = { coords = { x= -470.46, y= 1544.13, z= 407.25 }, maxbau = 100000, org = "Macaco", perm = "perm.macaco", weebhook = "" }, -- ARMAS  -            
+    [40] = { coords = { x= -2676.56, y= 1310.22, z= 152.0 }, maxbau = 300000, org = "Gerentejardimnovomundo", perm = "perm.jardimnovomundo", weebhook = "" }, -- ARMAS  - 
+    [41] = { coords = { x= -2680.06, y= 2336.3, z= 21.13  }, maxbau = 300000, org = "Lvovo", perm = "perm.lider.vovo", weebhook = "" }, -- ARMAS  - 
+    [42] = { coords = { x= 1144.94, y= -1573.47, z= 35.38 }, maxbau = 100000, org = "Hopsital", perm = "perm.hospital", weebhook = "" }, -- ARMAS  -
+    [43] = { coords = { x= -940.29, y= -2042.71, z= 9.4 }, maxbau = 10000, org = "Militar", perm = "perm.policia", weebhook = "" }, -- ARMAS
+    [44] = { coords = { x= -396.34, y= 1216.55, z= 325.76 }, maxbau = 10000, org = "Bombeiro", perm = "perm.hospital", weebhook = "" }, -- ARMAS
+    [45] = { coords = { x= -2065.7, y= -457.05, z= 12.27 }, maxbau = 10000, org = "Rotam", perm = "perm.liderpolicia", weebhook = "" }, -- ARMAS
+    [46] = { coords = { x= 1403.89, y= 1153.48, z= 114.33 }, maxbau = 10000, org = "Cartel", perm = "perm.cartel", weebhook = "" },
+    [47] = { coords = { x= -1753.79, y= 3179.83, z= 32.91 }, maxbau = 10000, org = "EBalojamento", perm = "perm.exercito", weebhook = "" }, -- ARMAS  -  
+    [48] = { coords = { x= 1861.82, y= 3688.36, z= 34.26 }, maxbau = 10000, org = "EBPE", perm = "perm.exercito", weebhook = "" }, -- ARMAS  - 
+    [49] = { coords = { x= -1693.76, y= -968.33, z= 8.36 }, maxbau = 10000, org = "Abelvolks", perm = "perm.abelvolks", weebhook = "" }, -- ARMAS  - 
+    [50] = { coords = { x= -1870.28, y= 2059.09, z= 135.44 }, maxbau = 10000, org = "LDeboxe", perm = "perm.liderdeboxe", weebhook = "" }, -- ARMAS  - 
+    [51] = { coords = { x= 2328.24, y= 4025.95, z= 41.11  }, maxbau = 10000, org = "LChapadao", perm = "perm.lider.chapadao", weebhook = "" }, -- ARMAS
+    [52] = { coords = { x= 108.56, y= -1304.69, z= 28.76 }, maxbau = 10000, org = "L2Vanilla", perm = "perm.redline", weebhook = "" }, -- ARMAS --
 }   
 
 cfg.stores = { 

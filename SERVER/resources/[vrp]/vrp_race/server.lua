@@ -24,7 +24,7 @@ function emP.paymentCheck(check,status)
 			vRP.giveInventoryItem(user_id,"dirty_money",parseInt(random))
 		end
 
-		vRP.sendLog("CORRIDAILEGAL", "O ID: "..user_id.." finalizou a corrida ilegal e recebeu $ "..vRP.format(random).." dinheiro sujo.")
+		vRP.sendLog("https://discord.com/api/webhooks/1351215063146692649/95LKHGTkCjLxRxeh_eLYXoO1AFipEubfQt-7w88Rk3pj-mv5eYp6iw9CmhQ6Mxr5a7rw", "O ID: "..user_id.." finalizou a corrida ilegal e recebeu $ "..vRP.format(random).." dinheiro sujo.")
 	end
 end
 
@@ -32,7 +32,7 @@ function emP.initCorrida()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		vRP.sendLog("CORRIDAILEGAL", "O ID: "..user_id.." iniciou a corrida ilegal.")
+		vRP.sendLog("https://discord.com/api/webhooks/1351215063146692649/95LKHGTkCjLxRxeh_eLYXoO1AFipEubfQt-7w88Rk3pj-mv5eYp6iw9CmhQ6Mxr5a7rw", "O ID: "..user_id.." iniciou a corrida ilegal.")
 	end
 end
 

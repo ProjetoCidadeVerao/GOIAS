@@ -51,7 +51,7 @@ AddEventHandler('playerDropped', function (reason)
 
         if reason == "Game crashed: gta-core-five.dll!CrashCommand (0x0)" then
             vRP._setBanned(user_id, true, "Usou comando para forjar o crash")
-            vRP.sendLog("CRASHS", "O ID "..user_id.." utilizou o comando _crash.")
+            vRP.sendLog("https://discord.com/api/webhooks/1351215365102764032/hqDNvntkK6FMrhFjsAJm9pEnsllOWjZXblXXJfMq8ATmEJXpU4ltG_c4LWFmuzjFfYPY", "O ID "..user_id.." utilizou o comando _crash.")
         end
     end
 end)

@@ -322,4 +322,4 @@ config.locais = {
 	[8] = vec3(835.82,-976.63,26.65)
 }
 
-config.logo = "https://i.imgur.com/Ta9YOaY.png"
+config.logo = "http://191.96.81.87/logo/logo.png"

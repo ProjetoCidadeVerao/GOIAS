@@ -2,17 +2,17 @@
 cfglogmortes = {}
 
 -- [ WEBHOOKS ] --
-cfglogmortes.logmortes = "https://discord.com/api/webhooks/1343287914611605544/dLG9Oc-DToHzjpbSbUxZBkjpxqDGHJz7pG5b69pxxIYVs_i2CIebraIS-Ezif0ugMRkj" -- WEBHOOK LOG DE MORTES
-cfglogmortes.logscreenshot = "https://discord.com/api/webhooks/1343287914611605544/dLG9Oc-DToHzjpbSbUxZBkjpxqDGHJz7pG5b69pxxIYVs_i2CIebraIS-Ezif0ugMRkj" -- WEBHOOK LOG DE SCREENSHOTS (NECESSÁRIO SOMENTE SE VOCÊ HABILITAR A OPÇÃO DE SCREENSHOT)
+cfglogmortes.logmortes = "https://discord.com/api/webhooks/1351200890811318272/BqafsXoteoR38JOALv5B69JYtZB1WrxwcIW6WV6_scaGooqVv9u_MJTEpQLFmobxGM7F" -- WEBHOOK LOG DE MORTES
+cfglogmortes.logscreenshot = "https://discord.com/api/webhooks/1351200890811318272/BqafsXoteoR38JOALv5B69JYtZB1WrxwcIW6WV6_scaGooqVv9u_MJTEpQLFmobxGM7F" -- WEBHOOK LOG DE SCREENSHOTS (NECESSÁRIO SOMENTE SE VOCÊ HABILITAR A OPÇÃO DE SCREENSHOT)
 
 -- [ FEED DE MORTES IN GAME ] --
 cfglogmortes.notify = "notifykill" -- **false** desativa, **chat** receberá via chat, **notify** via notify em cima do mini-mapa e **notifykill** via notify com imagem
-cfglogmortes.feedOnOff = "founder.permissao" -- permissão para ativar ou desativar as notificações in-game, exemplo abaixo:
+cfglogmortes.feedOnOff = "admin.permissao" -- permissão para ativar ou desativar as notificações in-game, exemplo abaixo:
 -- utilizando o comando in-game "/feedmortes chat" altera para modo chat
 -- utilizando o comando in-game "/feedmortes notify" altera para modo notificação em cima do mini-mapa
 -- utilizando o comando in-game "/feedmortes notifykill" altera para modo notificação com imagem
 -- utilizando o comando in-game "/feedmortes" desativa o feed
-cfglogmortes.permissao = "staff.permissao" -- permissão para receber as notificações in-game
+cfglogmortes.permissao = "admin.permissao" -- permissão para receber as notificações in-game
 
 -- [ SCREENSHOT ] --
 cfglogmortes.screenshot = false -- Habilitar caso queira tirar print da tela de quem matou (OBS: requer o script "DISCORD-SCREENSHOT")

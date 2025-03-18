@@ -135,27 +135,27 @@ function src.payment(tipo, quantidade)
             
             if vRP.tryGetInventoryItem(user_id, "maconha", quantidade, true) then
                 vRP.giveInventoryItem(user_id, "dirty_money", cfg.config[tipo].price*quantidade+valorPolicial, true)
-                vRP.sendLog("VENDERDROGAS", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("maconha").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
+                vRP.sendLog("https://discord.com/api/webhooks/1351214335476891679/FcfhhzxaAE8pRm8ihfN8zKZFAmoZ_ztVwjxAtO03L52du8f7n_TLkKAcKFchHvzaR4He", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("maconha").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
                 return true
             elseif vRP.tryGetInventoryItem(user_id, "cocaina", quantidade, true) then
                 vRP.giveInventoryItem(user_id, "dirty_money", cfg.config[tipo].price*quantidade+valorPolicial, true)
-                vRP.sendLog("VENDERDROGAS", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("cocaina").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
+                vRP.sendLog("https://discord.com/api/webhooks/1351214335476891679/FcfhhzxaAE8pRm8ihfN8zKZFAmoZ_ztVwjxAtO03L52du8f7n_TLkKAcKFchHvzaR4He", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("cocaina").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
                 return true
             elseif vRP.tryGetInventoryItem(user_id, "lsd", quantidade, true) then
                 vRP.giveInventoryItem(user_id, "dirty_money", cfg.config[tipo].price*quantidade+valorPolicial, true)
-                vRP.sendLog("VENDERDROGAS", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("lsd").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
+                vRP.sendLog("https://discord.com/api/webhooks/1351214335476891679/FcfhhzxaAE8pRm8ihfN8zKZFAmoZ_ztVwjxAtO03L52du8f7n_TLkKAcKFchHvzaR4He", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("lsd").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
                 return true
             elseif vRP.tryGetInventoryItem(user_id, "heroina", quantidade, true) then
                 vRP.giveInventoryItem(user_id, "dirty_money", cfg.config[tipo].price*quantidade+valorPolicial, true)
-                vRP.sendLog("VENDERDROGAS", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("heroina").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
+                vRP.sendLog("https://discord.com/api/webhooks/1351214335476891679/FcfhhzxaAE8pRm8ihfN8zKZFAmoZ_ztVwjxAtO03L52du8f7n_TLkKAcKFchHvzaR4He", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("heroina").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
                 return true
             elseif vRP.tryGetInventoryItem(user_id, "ecstasy", quantidade, true) then
                 vRP.giveInventoryItem(user_id, "dirty_money", cfg.config[tipo].price*quantidade+valorPolicial, true)
-                vRP.sendLog("VENDERDROGAS", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("ecstasy").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
+                vRP.sendLog("https://discord.com/api/webhooks/1351214335476891679/FcfhhzxaAE8pRm8ihfN8zKZFAmoZ_ztVwjxAtO03L52du8f7n_TLkKAcKFchHvzaR4He", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("ecstasy").. " na quantidade de ".." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
                 return true
             elseif vRP.tryGetInventoryItem(user_id, "metanfetamina", quantidade, true) then
                 vRP.giveInventoryItem(user_id, "dirty_money", cfg.config[tipo].price*quantidade+valorPolicial, true)
-                vRP.sendLog("VENDERDROGAS", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("metanfetamina").. " na quantidade de "..quantidade.." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
+                vRP.sendLog("https://discord.com/api/webhooks/1351214335476891679/FcfhhzxaAE8pRm8ihfN8zKZFAmoZ_ztVwjxAtO03L52du8f7n_TLkKAcKFchHvzaR4He", "O ID: "..user_id.." vendeu o item " ..vRP.getItemName("metanfetamina").. " na quantidade de "..quantidade.." e recebeu $ "..cfg.config[tipo].price*quantidade+valorPolicial.." dinheiro sujo")
                 return true
             else
                 TriggerClientEvent("Notify",source,"negado","Você não possui a quantia de <b>"..quantidade.." x</b> drogas.", 5)

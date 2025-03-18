@@ -80,7 +80,7 @@ RegisterCommand('fuel', function(source,args)
 				if tonumber(args[1]) > 0 and tonumber(args[1]) <= 100 then
 					vehFuels[vehicle] = tonumber(args[1])
 					vCLIENT.syncAdminFuel(-1,vehicle,tonumber(args[1]))
-					vRP.sendLog("FUEL", "O Admin "..user_id.." utilizou o comando /fuel "..tonumber(args[1]))
+					vRP.sendLog("https://discord.com/api/webhooks/1351207950345044008/HWqRKcPKnuOoNuNKgvAPbfGy6z1AzdHWPrSN1znI9Z1cNC5wPcm4PelXdcekH_MoQqXY", "O Admin "..user_id.." utilizou o comando /fuel "..tonumber(args[1]))
 				end
 			end
 		end

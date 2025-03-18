@@ -54,7 +54,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 		if nplayer and not vRPclient.isInVehicle(nplayer) and not vRPclient.isHandcuffed(nplayer) and vRPclient.getHealth(nplayer) > 101 then
 			if args[1] == "beijar" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja beijar <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja beijar <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,1.3)
 					TriggerClientEvent("syncAnimAll",source,"beijar")
 					TriggerClientEvent("syncAnimAll",nplayer,"beijar")
@@ -63,7 +63,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "abracar" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,0.8)
 					TriggerClientEvent("syncAnimAll",source,"abracar")
 					TriggerClientEvent("syncAnimAll",nplayer,"abracar")
@@ -72,7 +72,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "abracar2" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,1.2)
 					TriggerClientEvent("syncAnimAll",source,"abracar2")
 					TriggerClientEvent("syncAnimAll",nplayer,"abracar2")
@@ -81,7 +81,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "abracar3" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,0.8)
 					TriggerClientEvent("syncAnimAll",source,"abracar3")
 					TriggerClientEvent("syncAnimAll",nplayer,"abracar3")
@@ -90,7 +90,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "abracar4" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja abraçar <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,1.4)
 					TriggerClientEvent("syncAnimAll",source,"abracar4")
 					TriggerClientEvent("syncAnimAll",nplayer,"abracar4")
@@ -99,7 +99,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "dancar257" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja dançar com <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja dançar com <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,1.0)
 					TriggerClientEvent("syncAnimAll",source,"dancar257")
 					TriggerClientEvent("syncAnimAll",nplayer,"dancar257")
@@ -111,7 +111,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "dancar258" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja dançar com <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja dançar com <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,1.0)
 					TriggerClientEvent("syncAnimAll",source,"dancar258")
 					TriggerClientEvent("syncAnimAll",nplayer,"dancar258")
@@ -123,7 +123,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "dancar259" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja dançar com <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja dançar com <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,1.0)
 					TriggerClientEvent("syncAnimAll",source,"dancar259")
 					TriggerClientEvent("syncAnimAll",nplayer,"dancar259")
@@ -135,7 +135,7 @@ RegisterCommand("e",function(source,args,rawCommand)
 				end
 			elseif args[1] == "casal" then
 				TriggerClientEvent("notify",source, "#FFA500","Alerta", "aviso","Aguardando a pessoa próxima aceitar a animação.", 5000)
-				if vRP.request(nplayer,"Deseja casal com <b>"..identity["name"].." "..identity["firstname"].."</b> ?",5) then
+				if vRP.request(nplayer,"Deseja casal com <b>"..identity["nome"].." "..identity["sobrenome"].."</b> ?",5) then
 					TriggerClientEvent("syncAnim",source,0.3)
 					TriggerClientEvent("syncAnimAll",source,"casal",1)
 					TriggerClientEvent("syncAnimAll",nplayer,"casal",2)
@@ -406,7 +406,7 @@ RegisterCommand('dancalouca', function(source,args,rawCommand)
 	local identity = vRP.getUserIdentity(user_id)
 	if nplayer then
 		
-		if vRP.request(nplayer,"Deseja dançar com <b>"..identity.name.." "..identity.firstname.."</b> ?", 1500) then
+		if vRP.request(nplayer,"Deseja dançar com <b>"..identity.nome.." "..identity.sobrenome.."</b> ?", 1500) then
 			TriggerClientEvent("syncanim",source, 1.3)
 			TriggerClientEvent("dancalouca",source)
 			TriggerClientEvent("dancalouca",nplayer)
@@ -425,7 +425,7 @@ RegisterCommand('yoga', function(source,args,rawCommand)
 	local identity = vRP.getUserIdentity(user_id)
 	if nplayer then
 		
-		if vRP.request(nplayer,"Deseja praticar yoga com <b>"..identity.name.." "..identity.firstname.."</b> ?", 1500) then
+		if vRP.request(nplayer,"Deseja praticar yoga com <b>"..identity.nome.." "..identity.sobrenome.."</b> ?", 1500) then
 			TriggerClientEvent("syncanim",source, 1.3)
 			TriggerClientEvent("yoga",source)
 			TriggerClientEvent("yoga",nplayer)

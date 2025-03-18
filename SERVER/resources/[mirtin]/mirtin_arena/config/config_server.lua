@@ -10,7 +10,7 @@ local old_health = {}
 config = {}
 
 config.weebhook = {
-    link = "WEBHOOK",
+    link = "https://ptb.discord.com/api/webhooks/1351190619824853033/rV6ggfAh4E6wb-wQHz0-BvYFWrPfh13CtiQU0ss-etqopxqE7cjjg_1-tTqFgCDZ7WwG",
     logo = "http://191.96.81.87/logo/logo.png",
     color = 6356736
 }

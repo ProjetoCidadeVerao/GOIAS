@@ -163,7 +163,7 @@ function RegisterTunnel.dealershipBuyVehicle(name)
                 local price = parseInt(car.price - ( car.price * discount/100 ))
                 if vRP.tryFullPayment(user_id, price) then
                     TriggerClientEvent("Notify",source,"sucesso","Parabens pela compra!!! Você comprou um <b>"..car.name.."</b> por <b>R$ "..vRP.format(price).."</b>", 5)
-                    vRP.sendLog("https://discordapp.com/api/webhooks/1145039343988248729/Gp9YGHrwy-HyLL1-8f8agOqWcga3AQjA9692CWVv-gL4hYY5K8AxBZqobOFjWB2r3XWc", "```prolog\n[USER_ID]: "..user_id.."\n[COMPROU]: "..car.name.."\n[POR]: "..vRP.format(price).."```")
+                    vRP.sendLog("https://ptb.discord.com/api/webhooks/1351193754819760148/FDaPmmuMxDBV7sizSNadDhmUTIKFZ7r8-fJfVuKq-tmchyJ_tNUULtRipE4MHLX-cVJJ", "```prolog\n[USER_ID]: "..user_id.."\n[COMPROU]: "..car.name.."\n[POR]: "..vRP.format(price).."```")
                     vRP.execute("mirtin_garages/dealership/addUserVehicle", { user_id = user_id, vehicle = name, ipva = os.time() })
                     dealership:updateStock(name, (car.stock - 1))
                 else
@@ -202,7 +202,7 @@ function RegisterTunnel.dealershipSellVehicle(name)
                     TriggerClientEvent("Notify",source,"sucesso","Você vendeu seu veiculo <b>"..car.name.."</b> para concessionaria e recebeu R$ ".. price, 5)
 
                     vRP.execute("mirtin_garages/dealership/removeUserVehicle", { user_id = user_id, vehicle = name })
-                    vRP.sendLog("", "```prolog\n[USER_ID]: "..user_id.."\n[VENDEU]: "..car.name.."\n[POR]: "..price.."```")
+                    vRP.sendLog("https://ptb.discord.com/api/webhooks/1351193754819760148/FDaPmmuMxDBV7sizSNadDhmUTIKFZ7r8-fJfVuKq-tmchyJ_tNUULtRipE4MHLX-cVJJ", "```prolog\n[USER_ID]: "..user_id.."\n[VENDEU]: "..car.name.."\n[POR]: "..price.."```")
                 else
                     TriggerClientEvent("Notify",source,"negado","Você não possui esse veiculo em sua garagem.", 5)
                 end
