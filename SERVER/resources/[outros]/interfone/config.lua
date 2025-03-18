@@ -15,7 +15,7 @@ config.interfone = {
                         
         },
 
-        ['suporte.permissao'] = {
+        ['dv.permissao'] = {
             entrada = vector3(1277.6, -281.07, 82.02)
                         
         },

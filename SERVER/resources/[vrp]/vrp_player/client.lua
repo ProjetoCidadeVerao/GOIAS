@@ -1089,3 +1089,82 @@ Citizen.CreateThread(function()
 		end
 	end
 end)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- SORTEIO NOTIFY
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterNetEvent("sorteio:Notify")
+AddEventHandler("sorteio:Notify", function(color, title, info, timeSended)
+	timeSetted = timeSended
+	
+	CreateThread(function()
+		local announced    = false
+		local announcedout = false
+		
+		while true do
+			Wait(0)
+			midsizedmessage = RequestScaleformMovie("MIDSIZED_MESSAGE")
+			if not announced then
+				while not HasScaleformMovieLoaded(midsizedmessage) do
+					Wait(0)
+				end
+				BeginScaleformMovieMethod(midsizedmessage, "SHOW_COND_SHARD_MESSAGE")
+				BeginTextCommandScaleformString("STRING")
+				AddTextComponentScaleform(title)
+				EndTextCommandScaleformString()
+				BeginTextCommandScaleformString("STRING")
+				AddTextComponentScaleform(info)
+				EndTextCommandScaleformString()
+				PushScaleformMovieMethodParameterInt(color)
+				EndScaleformMovieMethodReturn()
+				Timera = GetNetworkTime()
+				PlaySoundFrontend(-1, "Deliver_Pick_Up", "HUD_FRONTEND_MP_COLLECTABLE_SOUNDS", 1)
+				announced = true
+			end
+			DrawScaleformMovieFullscreen(midsizedmessage, 255, 255, 255, 255)
+			if not announcedout then
+				if GetTimeDifference(GetNetworkTime(), Timera) > (timeSetted * 1000) then
+					BeginScaleformMovieMethod(midsizedmessage, "SHARD_ANIM_OUT")
+					PushScaleformMovieMethodParameterInt(1)
+					PushScaleformMovieMethodParameterFloat(0.33)
+					PopScaleformMovieFunctionVoid()
+					announcedout = true
+				end
+			end
+			if GetTimeDifference(GetNetworkTime(), Timera) > ((timeSetted + 5) * 1000) then
+				if HasScaleformMovieLoaded(midsizedmessage) then
+					SetScaleformMovieAsNoLongerNeeded(midsizedmessage)
+					SetTimeout(100, function()
+						announced    = false
+						announcedout = false
+						timeSetted   = 0
+					end)
+					break
+					return
+				end
+			end
+		end
+	end)
+end)
+
+CreateThread( function()
+	while true do
+	  Citizen.Wait(0)
+	  RestorePlayerStamina(PlayerId(), 1.0)
+	end
+end)
+
+----ATIRAR DENTRO DO CARRO
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(500) -- Executa a cada frame
+        local playerPed = PlayerPedId()
+
+        if IsPedInAnyVehicle(playerPed, false) then
+            DisableControlAction(0, 24, true) -- Bloqueia tiro (botão esquerdo do mouse)
+            DisableControlAction(0, 25, true) -- Bloqueia mira (botão direito do mouse)
+            DisableControlAction(0, 68, true) -- Bloqueia tiro de arma secundária
+            DisableControlAction(0, 91, true) -- Bloqueia tiro de sniper
+        end
+    end
+end)

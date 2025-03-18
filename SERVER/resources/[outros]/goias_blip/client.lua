@@ -3,8 +3,8 @@ local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 
 cnVRP = {}
-Tunnel.bindInterface("verao_blip",cnVRP)
-vSERVER = Tunnel.getInterface("verao_blip")
+Tunnel.bindInterface("goias_blip",cnVRP)
+vSERVER = Tunnel.getInterface("goias_blip")
 
 local blipsEmMemoria = {}
 

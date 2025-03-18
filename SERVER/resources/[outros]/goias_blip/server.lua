@@ -5,8 +5,8 @@ vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 
 cnVRP = {}
-Tunnel.bindInterface("verao_blip", cnVRP)
-vCLIENT = Tunnel.getInterface("verao_blip")
+Tunnel.bindInterface("goias_blip", cnVRP)
+vCLIENT = Tunnel.getInterface("goias_blip")
 
 -- validação
 --vRP.prepare("blip_create_table", "CREATE TABLE IF NOT EXISTS blip (id BIGINT auto_increment NOT NULL, x varchar(20) NOT NULL, y varchar(20) NOT NULL, z varchar(20) NOT NULL, icone varchar(20) NOT NULL, cor varchar(20) NOT NULL, nome varchar(20) NOT NULL, tamanho varchar(20) NOT NULL, CONSTRAINT NewTable_pk PRIMARY KEY (id));")

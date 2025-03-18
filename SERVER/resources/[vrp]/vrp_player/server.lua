@@ -759,3 +759,28 @@ RegisterServerEvent("trydoors")
 AddEventHandler("trydoors",function(nveh,door)
 	TriggerClientEvent("syncdoors",-1,nveh,door)
 end)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- SORTEIO PLAYERS ONLINE
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand("sorteioss",function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	local id_usuarios = {}
+	if user_id then
+		if vRP.hasPermission(user_id,"admin.permissao") then
+			local users = vRP.getUsers()
+			for k,v in pairs(users) do
+				local target_source = vRP.getUserSource(k)
+				if target_source ~= nil then
+					table.insert(id_usuarios,k)
+				end
+			end
+			local sorteado = math.random(#id_usuarios)
+			local identity = vRP.getUserIdentity(id_usuarios[sorteado])
+			TriggerClientEvent("sorteio:Notify", -1, 121, "Sorteio", "O sorteio foi realizado e o sortudo foi: [ID]: "..id_usuarios[sorteado].." [NOME]: "..identity.name.." "..identity.firstname.."!", 6)
+			vRP.sendLog("https://discord.com/api/webhooks/1351388190484987946/Bi104DiU7H-R-p9QSLoeC__Jv3NYPKurO5zxzNXXExaOZ4oWp8hi_xZOpP55D33AC-v9", "O ID "..id_usuarios[sorteado].." Ganhou o Sorteio  \n"..os.date("[%d/%m/%Y as %X]").." ")
+        end
+	end
+end)
+
+

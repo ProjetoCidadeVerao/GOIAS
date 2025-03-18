@@ -42,8 +42,8 @@ var app = new Vue({
          768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 
          795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 
          822, 823, 824, 825, 826],
-      erroImg: 'http://89.213.5.115/verao_images/niteroi/logop.png',
-		logoImg: 'http://89.213.5.115/verao_images/niteroi/logop.png',
+      erroImg: 'http://191.96.81.87/logo/logo.png',
+		logoImg: 'http://191.96.81.87/logo/logo.png',
       urlFotosIcones: 'https://j4v4.site/MC/iconsmarkers/',
       criarBlip: {'show': false, 'nome': '', 'icone': '', 'tamanho': '', 'cor': '0'},
       carregando: false,
@@ -55,7 +55,7 @@ var app = new Vue({
 function getBlips () {
    app.carregando = true
 
-   fetch("http://verao_blip/getBlips",{
+   fetch("http://goias_blip/getBlips",{
       method: "POST"
 
    }).then(response => response.json()).then(data => {
@@ -99,7 +99,7 @@ function criarBlip () {
 
    app.carregando = true
 
-   fetch("http://verao_blip/createBlip",{
+   fetch("http://goias_blip/createBlip",{
       headers: {"Content-Type": "application/json"},
       method: "POST",
       body: JSON.stringify({
@@ -132,7 +132,7 @@ function teleportar (x, y, z) {
 
    }).then((result) => {
       if (result.isConfirmed) {
-         fetch("http://verao_blip/teleport",{
+         fetch("http://goias_blip/teleport",{
             headers: {"Content-Type": "application/json"},
             method: "POST",
             body: JSON.stringify({
@@ -165,7 +165,7 @@ function removerBlip (idBlip) {
       if (result.isConfirmed) {
          app.carregando = true
       
-         fetch("http://verao_blip/removeBlip",{
+         fetch("http://goias_blip/removeBlip",{
             headers: {"Content-Type": "application/json"},
             method: "POST",
             body: JSON.stringify({
@@ -188,7 +188,7 @@ function removerBlip (idBlip) {
 
 function sair (deslogar) {
    document.getElementById('app').style.display = 'none'
-   fetch("http://verao_blip/close", { method: "POST" })
+   fetch("http://goias_blip/close", { method: "POST" })
    
    if (deslogar) {
       app.isLogado = false
