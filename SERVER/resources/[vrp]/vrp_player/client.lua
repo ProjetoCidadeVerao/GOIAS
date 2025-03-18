@@ -1168,3 +1168,9 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
+
+AddEventHandler("playerSpawned", function()
+    NetworkSetTalkerProximity(0.4)
+	print("Goiano gay")
+end)
