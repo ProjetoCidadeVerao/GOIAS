@@ -171,7 +171,7 @@ function vRP.getUserIdByIdentifiers(ids)
 				end
 			end
 
-			vRP.execute("vRP/init_user_data",{ user_id = user_id })
+			vRP.execute("vRP/init_users_infos",{ user_id = user_id })
 			return user_id
 		end
 	end
@@ -408,7 +408,7 @@ AddEventHandler("playerConnecting", function(name, setKickReason, deferrals)
 	local data = json.decode(sdata)
 	if type(data) == "table" then vRP.user_tables[user_id] = data end
 
-	local auser = vRP.query("vRP/get_user_data",{ user_id = user_id })
+	local auser = vRP.query("vRP/get_users_infos",{ user_id = user_id })
 	if #auser > 0 then
 		vRP.user_appareance[user_id] = {
 			clothes = json.decode(auser[1].roupas) or {},
