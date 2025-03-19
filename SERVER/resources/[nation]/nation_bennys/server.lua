@@ -108,7 +108,7 @@ end)
 function src.checkPermission()
     local source = source
     local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id, "perm.sportrace") or vRP.hasPermission(user_id, "perm.bennys") then
+	if vRP.hasPermission(user_id, "perm.competcar") or vRP.hasPermission(user_id, "perm.deboxe") or vRP.hasPermission(user_id, "perm.abelvolks") then
         return true
     end
 end

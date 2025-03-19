@@ -440,6 +440,22 @@ config.elevador = {
             ["1"] = { 183.72,-891.45,83.86 }
         }
     },
+
+    ["ABELVOLKS"] = {
+        name = "ABELVOLKS",
+        andares = {
+            ["T"] = { 63.77,6513.73,47.49 },
+            ["1"] = { 76.24,6517.11,32.14 }
+        }
+    },
+
+    ["COMPETCAR"] = {  
+        name = "COMPETCAR",
+        andares = {
+            ["T"] = { 230.5,-1683.56,29.32 },
+            ["1"] = { 244.07,-1669.33,34.75 }
+        }
+    },
 } 
 
 config.locationElevador = {
@@ -537,5 +553,11 @@ config.locationElevador = {
 
     { type = "PRACAHELI", coords = vec3(208.03,-885.3,29.47), andar = "H" },
     { type = "PRACAHELI", coords = vec3(183.72,-891.45,83.86), andar = "T" },
+
+    { type = "ABELVOLKS", coords = vec3(63.77,6513.73,47.49), andar = "H" },
+    { type = "ABELVOLKS", coords = vec3(76.24,6517.11,32.14), andar = "T" },
+
+    { type = "COMPETCAR", coords = vec3(244.07,-1669.33,34.75), andar = "H" },
+    { type = "COMPETCAR", coords = vec3(230.5,-1683.56,29.32), andar = "T" },
 
 }  

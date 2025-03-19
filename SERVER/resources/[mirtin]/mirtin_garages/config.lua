@@ -1576,8 +1576,8 @@ Garages.List = {
 
     
     -- [40] = {
-    --     type = "service", -- public / service [ tipo da garagem ] -- helicopteros
-    --     permiss = "perm.civil", -- permissao
+    --     type = "service", -- public / service [ tipo da garagem ] -- MECANICA DEBOXE HELIPONTO
+    --     permiss = "perm.deboxe", -- permissao
     --     blip = false, -- blip no mapa
         
     --     coords = vec3(846.23,147.28,82.29),
@@ -1586,97 +1586,111 @@ Garages.List = {
     --     },
     
     --     vehicles = {
-    --         {vehicle = 'falcaopcerj'},
-    --         {vehicle = 'hueypcerj'}, --
+    --         {vehicle = 'BS_HeliMec'},
 
     --     },
     -- },
 
-    -- [41] = {
-    --     type = "service", -- public / service [ tipo da garagem ] -- helicopteros
-    --     permiss = "perm.mecanico", -- permissao
-    --     blip = false, -- blip no mapa
+    [41] = {
+        type = "service", -- public / service [ tipo da garagem ] -- MECANICA DEBOXE
+        permiss = "perm.deboxe", -- permissao
+        blip = false, -- blip no mapa
         
-    --     coords = vec3(958.54,-1036.11,41.03),
-    --     spawnCoords = {
-    --         vector4(965.53,-1041.82,41.27,266.77),
-    --     },
+        coords = vec3(823.39,-938.38,26.5),
+        spawnCoords = {
+            vector4(817.38,-941.08,26.5,186.12),
+        },
     
-    --     vehicles = {
-    --         {vehicle = 'bennys1200'},
-    --         {vehicle = 'bennysraptor'}, --
-    --         {vehicle = 'bennysscania'}, --
+        vehicles = {
+            {vehicle = 'BS_Caminhonete'},
+            {vehicle = 'BS_Guincho'}, --
+            {vehicle = 'BS_Reboque'}, --
+            {vehicle = 'BS_Robozao'}, --
 
-    --     },
-    -- },
-
-    -- [42] = {
-    --     type = "public", -- public / service [ tipo da garagem ] -- 
-    --     permiss = nil, -- permissao
-    --     blip = false, -- blip no mapa
-        
-    --     coords = vec3(-960.3,-1471.31,5.17),
-    --     spawnCoords = {
-    --         vector4(-967.09,-1473.86,5.02,110.03),
-    --     },
-    -- },
-    -- [43] = {
-    --     type = "service", -- public / service [ tipo da garagem ] -- 1360.69,-2086.33,52.0
-    --     permiss = "perm.yakuza", -- permissao
-    --     blip = false, -- blip no mapa
-        
-    --     coords = vec3(-956.32,-1487.31,5.16),
-    --     spawnCoords = {
-    --         vector4(-961.87,-1488.22,5.0,107.43),
-    --     },
+        },
+    },
     
-    --     vehicles = {
-    --         {vehicle = 'tiger800'},
-    --         {vehicle = 'q820'},
-    --         {vehicle = 'mule'},
-
-    --     },
-    -- },
-
-    -- [44] = {
-    --     type = "service", -- public / service [ tipo da garagem ] -- 
-    --     permiss = "perm.ilegal", -- permissao
-    --     blip = false, -- blip no mapa
+    [42] = {
+        type = "public", -- public / service [ tipo da garagem ] -- GARAGEM PROXIMA A DEBOXE
+        permiss = nil, -- permissao
+        blip = false, -- blip no mapa
         
-    --     coords = vec3(1360.69,-2086.33,52.0),
-    --     spawnCoords = {
-    --         vector4(1365.67,-2085.04,52.0,313.75),
-    --     },
+        coords = vec3(826.79,-1017.05,26.43),
+        spawnCoords = {
+            vector4(828.98,-1020.63,26.56,92.99),
+        },
+    },
+
+    [43] = {
+        type = "service", -- public / service [ tipo da garagem ] -- MECANICA abelvolks
+        permiss = "perm.abelvolks", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(83.63,6515.6,32.13),
+        spawnCoords = {
+            vector4(85.32,6506.65,31.48,322.85),
+        },
     
-    --     vehicles = {
-    --         {vehicle = 'titan160'},
-    --         {vehicle = 'premier'},
+        vehicles = {
+            {vehicle = 'BS_Caminhonete'},
+            {vehicle = 'BS_Guincho'}, --
+            {vehicle = 'BS_Reboque'}, --
+            {vehicle = 'BS_Robozao'}, --
 
-    --     },
-    -- },
+        },
+    },
+
+    [44] = {
+        type = "service", -- public / service [ tipo da garagem ] -- MECANICA abelvolks HELIPONTO
+        permiss = "perm.abelvolks", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(65.51,6525.91,49.39),
+        spawnCoords = {
+            vector4(58.09,6529.75,49.32,44.12),
+        },
+    
+        vehicles = {
+            {vehicle = 'BS_HeliMec'},
+
+        },
+    },
 
     
-    -- [45] = {
-    --     type = "public", -- public / service [ tipo da garagem ] -- -1521.19,80.54,56.72
-    --     permiss = nil, -- permissao
-    --     blip = false, -- blip no mapa
+    [45] = {
+        type = "service", -- public / service [ tipo da garagem ] -- MECANICA competcar
+        permiss = "perm.competcar", -- permissao
+        blip = false, -- blip no mapa
         
-    --     coords = vec3(1363.84,-2090.05,52.0),
-    --     spawnCoords = {
-    --         vector4(vector4(1365.22,-2085.98,52.0,306.29)),
-    --     },
-    -- },
+        coords = vec3(240.42,-1655.79,29.32),
+        spawnCoords = {
+            vector4(232.81,-1654.49,29.33,316.83),
+        },
+    
+        vehicles = {
+            {vehicle = 'BS_Caminhonete'},
+            {vehicle = 'BS_Guincho'}, --
+            {vehicle = 'BS_Reboque'}, --
+            {vehicle = 'BS_Robozao'}, --
 
-    -- [46] = {
-    --     type = "public", -- public / service [ tipo da garagem ] -- 
-    --     permiss = nil, -- permissao
-    --     blip = false, -- blip no mapa
+        },
+    },
+
+    [46] = {
+        type = "service", -- public / service [ tipo da garagem ] -- MECANICA competcar HELIPONTO
+        permiss = "perm.competcar", -- permissao
+        blip = false, -- blip no mapa
         
-    --     coords = vec3(-1521.19,80.54,56.72),
-    --     spawnCoords = {
-    --         vector4(-1523.64,85.43,56.48,268.2),
-    --     },
-    -- },
+        coords = vec3(241.7,-1672.37,34.75),
+        spawnCoords = {
+            vector4(250.12,-1674.32,34.75,328.39),
+        },
+    
+        vehicles = {
+            {vehicle = 'BS_HeliMec'},
+
+        },
+    },
 
     --[47] = {
     --     type = "service", -- public / service [ tipo da garagem ] -- 
@@ -2055,22 +2069,22 @@ Garages.List = {
     --     },
     -- },
 
-    -- [74] = {
-    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-    --     permiss = "perm.ilegal", -- permissao
-    --     blip = false, -- blip no mapa
+    [74] = {
+        type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO VIP
+        permiss = "perm.helicoptero", -- permissao
+        blip = false, -- blip no mapa
         
-    --     coords = vec3(-565.46,298.44,83.07),
-    --     spawnCoords = {
-    --         vector4(-559.06,302.48,83.2,260.37),
-    --     },
+        coords = vec3(89.12,6548.39,49.44),
+        spawnCoords = {
+            vector4(80.67,6552.05,49.32,46.85),
+        },
     
-    --     vehicles = {
-    --         {vehicle = 'titan160'},
-    --         {vehicle = 'premier'},
+        vehicles = {
+            {vehicle = 'volatus'},
+            {vehicle = 'supervolito'},
 
-    --     },
-    -- },
+        },
+    },
 
     [75] = {
         type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO VIP
@@ -2088,7 +2102,7 @@ Garages.List = {
 
         },
     },
-
+    
     [76] = {
         type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
         permiss = "perm.ilegal", -- permissao
