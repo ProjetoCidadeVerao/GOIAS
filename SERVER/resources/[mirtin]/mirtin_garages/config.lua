@@ -2080,8 +2080,11 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'volatus'},
-            {vehicle = 'supervolito'},
+            {vehicle = 'bloodheli'},
+            {vehicle = 'mh47g'},
+            {vehicle = 'ospreyhmx'},
+            {vehicle = 'taxipolmav'},
+            {vehicle = 'volatus2'},
 
         },
     },
@@ -2097,8 +2100,11 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'volatus'},
-            {vehicle = 'supervolito'},
+            {vehicle = 'bloodheli'},
+            {vehicle = 'mh47g'},
+            {vehicle = 'ospreyhmx'},
+            {vehicle = 'taxipolmav'},
+            {vehicle = 'volatus2'},
 
         },
     },
@@ -2173,8 +2179,11 @@ Garages.List = {
        },
    
        vehicles = {
-           {vehicle = 'volatus'},
-           {vehicle = 'supervolito'},
+        {vehicle = 'bloodheli'},
+        {vehicle = 'mh47g'},
+        {vehicle = 'ospreyhmx'},
+        {vehicle = 'taxipolmav'},
+        {vehicle = 'volatus2'},
 
        },
    },
@@ -2201,53 +2210,77 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'as350prf'},
             {vehicle = 'equinoxprf'},
             {vehicle = 'r1200prf'},
             {vehicle = 'trail20prf'},
             {vehicle = 'trail22prf'},
+            {vehicle = 'BCs_BlindadoPRF'},
+            {vehicle = 'BCs_BmwM5PRF'},
+            {vehicle = 'BCs_Ram8LPRF'},
+            {vehicle = 'BCs_DodgeRamFederal'},
+            {vehicle = 'BCs_GuinchoPRF'},
+            {vehicle = 'BCs_RoverPRF'},
+            {vehicle = 'BCs_RobozaoPRF'},
+            {vehicle = 'BCs_BmwI8PRF'},
+
+
 
         },
     },
                 
-    -- [84] = {
-    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-    --     permiss = nil, -- permissao
-    --     blip = false, -- blip no mapa
+    [84] = {
+        type = "service", -- public / service [ tipo da garagem ] 
+        permiss = "perm.prf", -- permissao
+        blip = false, -- blip no mapa
         
-    --     coords = vec3(2630.75,5339.41,47.26),
-    --     spawnCoords = {
-    --         vector4(2627.28,5338.54,47.3,108.07),
-    --     },
-    -- },
-
-    -- [85] = {
-    --     type = "public", -- public / service [ tipo da garagem ] -- 2621.89,5312.48,47.53
-    --     permiss = nil, -- permissao
-    --     blip = false, -- blip no mapa
-        
-    --     coords = vec3(-1211.96,-1750.41,4.6),
-    --     spawnCoords = {
-    --         vector4(-1215.16,-1754.32,4.5,255.24),
-    --     },
-    -- },
-
-    -- [86] = {
-    --     type = "service", -- public / service [ tipo da garagem ] -- -1391.78,-581.76,30.09
-    --     permiss = "perm.ilegal", -- permissao
-    --     blip = false, -- blip no mapa
-        
-    --     coords = vec3(-1209.07,-1760.55,4.6),
-    --     spawnCoords = {
-    --         vector4(-1198.65,-1757.2,4.4,279.63),
-    --     },
+        coords = vec3(-2641.32,2397.09,19.89),
+        spawnCoords = {
+            vector4(-2634.88,2397.42,19.89,351.04),
+        },
     
-    --     vehicles = {
-    --         {vehicle = 'titan160'},
-    --         {vehicle = 'premier'},
+        vehicles = {
+            {vehicle = 'as350prf'},
+            {vehicle = 'BCs_AguiaPRF'},
 
-    --     },
-    -- },
+        },
+    },
+
+    [85] = {
+        type = "service", -- public / service [ tipo da garagem ] 
+        permiss = "perm.bombeiro", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(-391.2,1217.01,325.76),
+        spawnCoords = {
+            vector4(-393.92,1217.7,325.76,163.72),
+            vector4(-389.0,1215.56,325.76,167.27),
+            vector4(-384.2,1214.37,325.78,163.88),
+        },
+    
+        vehicles = {
+            {vehicle = 'trail22grau'},
+            {vehicle = 'xt660cb2'},
+            {vehicle = 'firetruk'},
+            {vehicle = 'sprinter'},
+            {vehicle = 'sw4grau1'},
+        },
+    },
+
+    [8865] = {
+        type = "service", -- public / service [ tipo da garagem ] 
+        permiss = "perm.bombeiro", -- permissao
+        blip = false, -- blip no mapa
+        
+        coords = vec3(-423.39,1176.22,327.61),
+        spawnCoords = {
+            vector4(-426.84,1168.47,327.43,135.32),
+        },
+    
+        vehicles = {
+            {vehicle = 'helibombeiros'},
+        },
+    },
+
 
     [87] = {
         type = "service", -- public / service [ tipo da garagem ] -- HELIPONTO VIP
@@ -2260,8 +2293,11 @@ Garages.List = {
         },
     
         vehicles = {
-            {vehicle = 'volatus'},
-            {vehicle = 'supervolito'},
+            {vehicle = 'bloodheli'},
+            {vehicle = 'mh47g'},
+            {vehicle = 'ospreyhmx'},
+            {vehicle = 'taxipolmav'},
+            {vehicle = 'volatus2'},
 
         },
     },

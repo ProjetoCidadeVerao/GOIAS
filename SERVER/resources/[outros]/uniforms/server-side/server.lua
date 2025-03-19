@@ -314,12 +314,10 @@ AddEventHandler("sysClothes:applyPreset",function(perm)
         elseif perm == "sairPtr" then
             if vRP.hasPermission(user_id, "perm.policia") then
                 vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
-            elseif vRP.hasPermission(user_id, "perm.Sportrace") then
+            elseif vRP.hasPermission(user_id, "perm.mecanica") then
                 vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
-            elseif vRP.hasPermission(user_id, "perm.sportrace") then
+            elseif vRP.hasPermission(user_id, "perm.civil") then
                 --vRP.sendLog("https://discordapp.com/api/webhooks/1029551169711906897/nhM3PCiwEIWk6lWPb1Br7KKWU-PGN0R0TzQNWtRXNBRJstrGuxUUh1Ep7TCdoAhSWJqy", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
-            elseif vRP.hasPermission(user_id, "perm.autosport") then
-                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             elseif vRP.hasPermission(user_id, "perm.hospital") then
                 vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." saiu de serviço```")
             end
@@ -369,15 +367,13 @@ AddEventHandler("sysClothes:applyPreset",function(perm)
 
             if vRP.hasPermission(user_id, "perm.policia") then
                 vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
-            elseif vRP.hasPermission(user_id, "perm.Sportrace") then
-                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
-            elseif vRP.hasPermission(user_id, "perm.sportrace") then
-                --vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
-            elseif vRP.hasPermission(user_id, "perm.autosport") then
-                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
             elseif vRP.hasPermission(user_id, "perm.hospital") then
                 vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
-            end 
+            elseif vRP.hasPermission(user_id, "perm.mecanica") then
+                --vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+            elseif vRP.hasPermission(user_id, "perm.civil") then
+                vRP.sendLog("SAIUDESERVIÇO", "```prolog\n[USER_ID]: "..user_id.." Entrou em serviço```")
+            end
         end
     end
 end)

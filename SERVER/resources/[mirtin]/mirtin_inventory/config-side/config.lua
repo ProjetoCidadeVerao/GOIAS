@@ -5,7 +5,7 @@ cfg.chestOrgs = {
     [2] = { coords = { x= 243.41, y= -1676.82, z= 29.32 }, maxbau = 10000, org = "Competcar", perm = "perm.mecanico", weebhook = "" }, -- ARMAS
     [3] = { coords = { x= -2060.88, y= -450.35, z= 12.27 }, maxbau = 10000, org = "Rotam", perm = "perm.liderpolicia", weebhook = "" }, -- ARMAS
     [4] = { coords = { x= -2655.65, y= 2382.22, z= 18.82 }, maxbau = 10000, org = "Prf", perm = "perm.policia", weebhook = "" }, -- ARMAS
-    [5] = { coords = { x= 371.35, y= -1603.1, z= 29.28 }, maxbau = 10000, org = "Civil", perm = "perm.policia", weebhook = "" }, -- ARMAS
+    [5] = { coords = { x= 367.89, y= -1600.05, z= 29.3 }, maxbau = 10000, org = "Civil", perm = "perm.policia", weebhook = "" }, -- ARMAS
     [6] = { coords = { x= 1261.88, y= -294.17, z= 83.69  }, maxbau = 10000, org = "Grota", perm = "perm.grota", weebhook = "" }, -- ARMAS
     [7] = { coords = { x= 1264.48, y= -296.71, z= 86.62  }, maxbau = 10000, org = "LGrota", perm = "perm.lider.grota", weebhook = "" }, -- ARMAS
     [8] = { coords = { x= 1362.97, y= -2443.97, z= 62.18   }, maxbau = 10000, org = "Turquia", perm = "perm.turquia", weebhook = "" }, -- ARMAS
