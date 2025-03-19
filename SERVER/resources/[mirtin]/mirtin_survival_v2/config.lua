@@ -54,9 +54,9 @@ Config = {
 
         -- SISTEMA DE ANIMAÇÃO AO MORRER
         animDeath = function(ped, firstAlert)
-            --if not IsEntityPlayingAnim(ped,"misslamar1dead_body","dead_idle",3) then -- Caso voce queira utilizar por animação
-                --vRP.playAnim(false,{{"misslamar1dead_body","dead_idle"}},true)
-            --end 
+            if not IsEntityPlayingAnim(ped,"misslamar1dead_body","dead_idle",3) then -- Caso voce queira utilizar por animação
+                vRP.playAnim(false,{{"misslamar1dead_body","dead_idle"}},true)
+            end 
 
             SetPedToRagdoll(ped, 1000, 1000, 0, 0, 0, 0)
 
