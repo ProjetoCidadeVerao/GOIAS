@@ -460,9 +460,9 @@ end
 
 
 RegisterCommand('skinshop',function() -- COMANDO DE ADMIN
-    if func.checkPermission({"manager.permissao", "mod.permissao"}) then
+    -- if func.checkPermission({"manager.permissao", "mod.permissao"}) then
         toggleMenu("manager")
-    end
+    -- end
 end)
 
 
@@ -472,11 +472,7 @@ AddEventHandler("nation_skinshop:toggleMenu", function(menu)
 end)
 
 
-
-
---------- CREATIVE V3 ------------
-
---[[ local skinData = {
+local skinData = {
 	["pants"] = "legs",
 	["arms"] = "torsos",
 	["t-shirt"] = "undershirts",
@@ -506,6 +502,10 @@ function fclient.getCloths()
     end
     return cloths
 end
+
+--------- CREATIVE V3 ------------
+
+--[[ 
 
 function resetClothing(data)
 	local ped = PlayerPedId()

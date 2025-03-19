@@ -97,15 +97,31 @@ end
 
 
 function setPlayerTattoos(source, user_id)
-    local data = vRP.getUData(user_id,"Tattoos")
+    local data = vRP.getUData(user_id,"nation_char")
+    local data2 = json.decode(data)
     if data and data ~= "" then 
-        tattoos = json.decode(data) or {}
+        print("at",data2.tattoos,data2.overlay)
+        data2.tattoos, data2.overlay = fclient.getClientTattoos(source) 
+        print("dc",data2.tattoos,data2.overlay)
+        vRP._setUData(user_id, "nation_char", json.encode(data2))
         TriggerClientEvent("tattoos:setTattoos", source, tattoos)
+        -- TriggerClientEvent("tattoos:Apply", source, tattoos)
     end
+    Citizen.Wait(1000)
     TriggerClientEvent("reloadtattos", source)
     TriggerEvent('dpn_tattoo:setPedServer',source)
-    TriggerClientEvent("nyoModule:tattooUpdate",source, false)
 end
+
+-- function setPlayerTattoos(source, user_id)
+--     local data = vRP.getUData(user_id,"Tattoos")
+--     if data and data ~= "" then 
+--         tattoos = json.decode(data) or {}
+--         TriggerClientEvent("tattoos:setTattoos", source, tattoos)
+--     end
+--     TriggerClientEvent("reloadtattos", source)
+--     TriggerEvent('dpn_tattoo:setPedServer',source)
+--     TriggerClientEvent("nyoModule:tattooUpdate",source, false)
+-- end
 
 function func.setPlayerTattoos()
     local source = source
@@ -114,3 +130,16 @@ function func.setPlayerTattoos()
         setPlayerTattoos(source, user_id)
     end
 end
+
+
+-- RegisterCommand("bvida2", function(source)
+--     local user_id = vRP.getUserId(source)
+--     local data = vRP.getUData(user_id, "nation_char")
+--     if data and data ~= "" then
+--         local char = json.decode(data)
+--         fclient._setPlayerChar(source, char, false, true)
+--         TriggerClientEvent("nation_barbershop:init", source, char)
+--         setPlayerTattoos(source, user_id)
+--         fclient._setClothing(source, getUserClothes(user_id))
+--     end
+-- end)

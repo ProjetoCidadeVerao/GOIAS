@@ -159,6 +159,7 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterNetEvent("syncdeleteobj")
 AddEventHandler("syncdeleteobj",function(index)
+    print("index client delete object")
 	Citizen.CreateThread(function()
 		if NetworkDoesNetworkIdExist(index) then
 			SetEntityAsMissionEntity(index,true,true)

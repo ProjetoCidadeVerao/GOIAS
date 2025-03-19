@@ -589,6 +589,11 @@ function finishBarbershop()
 end
 
 
+function fclient.getClientTattoos()
+    return exports["nation_tattoos"]:getTattoos()
+end
+
+
 local overlays = {
     [GetHashKey("mp_m_freemode_01")] = {
         { collection = 'mpbeach_overlays', overlay = 'FM_Hair_Fuzz' },

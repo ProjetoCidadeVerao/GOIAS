@@ -10,7 +10,6 @@ Tunnel.bindInterface("nation_skinshop", func)
 -----------------------VERIFICAÇÃO DE PERMISSÃO--------------------------
 ---------------------------------------------------------------------------
 
-
 function func.checkPermission(permission)
     local source = source
     local user_id = vRP.getUserId(source)
@@ -36,7 +35,11 @@ function func.tryPayClothes(value)
     local source = source
     local user_id = vRP.getUserId(source)
     if value >= 0 then
-        return vRP.tryPayment(user_id, value) or value == 0
+        local clothes = fclient.getCloths(source)
+        print(clothes)
+        vRP.setUData(user_id,"Clothings",json.encode(clothes))
+        -- return vRP.tryPayment(user_id, value) or value == 0
+        return true
     end
     return false
 end

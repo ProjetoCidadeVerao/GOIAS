@@ -104,6 +104,7 @@ function tvRP.DeletarObjeto()
 	tvRP.stopAnim(true)
 	TriggerEvent("binoculos")
 	if DoesEntityExist(object) then
+		print("entity Exist")
 		DetachEntity(object,false,false)
 		TriggerServerEvent("trydeleteobj",ObjToNet(object))
 		object = nil

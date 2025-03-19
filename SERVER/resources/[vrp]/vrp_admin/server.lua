@@ -252,6 +252,7 @@ end)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RegisterServerEvent("trydeleteobj")
 AddEventHandler("trydeleteobj",function(index)
+	print("delete vrp admin sync players",index)
 	TriggerClientEvent("syncdeleteobj",-1,index)
 end)
 

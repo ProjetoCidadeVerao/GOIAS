@@ -10505,11 +10505,14 @@ RegisterKeyMapping("clear", "Limpar Emotes", "keyboard", "F6")
 RegisterCommand("clear", function(source, args)
     local currentTime = GetGameTimer()
     if (currentTime - lastClearTime) >= 5000 then
-        if true then
+        -- if true then
             cancelEmote()
+            print("teste clear")
             FreezeEntityPosition(GetPlayerPed(-1), false)
+            local ped = PlayerPedId()
+            vRP.stopAnimActived()
             vRP._DeletarObjeto()
-        end
+        -- end
         lastClearTime = currentTime
     end
 end)
